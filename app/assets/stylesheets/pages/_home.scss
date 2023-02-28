@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+
+.normal {
+  color: $color2;
+  font-family: $jost-font;
+  font-weight: $jost-font-weight-normal;
+  font-size: 40px;
+}
+
+.light {
+  color: $color2;
+  font-family: $jost-font;
+  font-weight: $jost-font-weight-light;
+  font-size: 40px;
+}
+
+.body {
+  background-color: $color1;
+}
