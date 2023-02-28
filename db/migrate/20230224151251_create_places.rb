@@ -6,7 +6,7 @@ class CreatePlaces < ActiveRecord::Migration[7.0]
       t.string :search_rating
       t.string :search_user_ratings_total
       t.string :search_photo_reference
-      t.string :search_place_deteails_id
+      t.string :search_place_details_id
       t.string :details_overview
       t.string :details_formatted_phone_number
       t.string :details_opening_hours_periods
@@ -16,7 +16,7 @@ class CreatePlaces < ActiveRecord::Migration[7.0]
       t.string :details_wheelchair_accessible_entrance
       t.string :details_url
       t.string :search_geometry_location
-      t.string :details_serves_vegeterian_food
+      t.string :details_serves_vegetarian_food
 
       t.timestamps
     end

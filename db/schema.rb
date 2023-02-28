@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_25_175142) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_28_193201) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -54,20 +54,20 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_25_175142) do
   create_table "places", force: :cascade do |t|
     t.string "details_formatted_address"
     t.string "search_types"
-    t.string "search_rating"
-    t.string "search_user_ratings_total"
+    t.integer "search_rating"
+    t.integer "search_user_ratings_total"
     t.string "search_photo_reference"
-    t.string "search_place_deteails_id"
+    t.string "search_place_details_id"
     t.string "details_overview"
     t.string "details_formatted_phone_number"
     t.string "details_opening_hours_periods"
-    t.string "search_price_level"
+    t.integer "search_price_level"
     t.string "details_reviews"
     t.string "details_website"
-    t.string "details_wheelchair_accessible_entrance"
+    t.boolean "details_wheelchair_accessible_entrance"
     t.string "details_url"
     t.string "search_geometry_location"
-    t.string "details_serves_vegeterian_food"
+    t.boolean "details_serves_vegetarian_food"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
