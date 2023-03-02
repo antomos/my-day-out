@@ -1,0 +1,47 @@
+// Responsive alignment of divs, relative to media devices
+
+.parent1-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent2-text-align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Added text-align property */
+}
+
+// Only one child option:
+
+.child {
+  flex: 1 1 300px;
+  align-self: flex-start;
+}
+
+@media only screen and (max-width: 767px) { /* For phones */
+  .child {
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { /* For iPads */
+  .child {
+    flex: 1 1 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) { /* For laptops */
+  .child {
+    flex: 1 1 33.33%;
+  }
+}
+
+@media only screen and (min-width: 1200px) { /* For large screens */
+  .child {
+    flex: 1 1 25%;
+  }
+}

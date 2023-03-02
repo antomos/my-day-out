@@ -1,0 +1,11 @@
+// div margin & padding using flex, set up for different media devices, hover effects, click effects
+
+.spacing1-small {
+  margin: 20px auto; /* centers the element and adds 20 pixels of margin on top and bottom */
+  padding: 20px; /* adds 20 pixels of padding on all sides */
+}
+
+.spacing2-big {
+  margin: 30px; /* adds 30 pixels of margin on all sides */
+  padding: 10px 20px; /* adds 10 pixels of padding on top and bottom, and 20 pixels on the sides */
+}
