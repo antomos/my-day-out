@@ -22,4 +22,8 @@ class EventsController < ApplicationController
   def set_event
     @event = Event.find(params[:id])
   end
+
+  def event_params
+    params.require(:event).permit(:itinerary_id, :place_id, :start_time, :end_time)
+  end
 end
