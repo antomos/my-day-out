@@ -8,28 +8,12 @@ class ItinerariesController < ApplicationController
   end
 
   def create
-    @itinerary = Itinerary.new(params[:itinerary])
-    if @itinerary.save
-      flash[:notice] = "Successfully created itinerary."
-      redirect_to @itinerary
-    else
-      render :action => 'new'
-    end
   end
 
   def update
-    if @itinerary.update_attributes(params[:itinerary])
-      flash[:notice] = "Successfully updated itinerary."
-      redirect_to @itinerary
-    else
-      render :action => 'edit'
-    end
   end
 
   def destroy
-    @itinerary.destroy
-    flash[:notice] = "Successfully destroyed itinerary."
-    redirect_to itineraries_url
   end
 
   private
