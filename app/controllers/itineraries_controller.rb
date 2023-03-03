@@ -2,6 +2,7 @@ class ItinerariesController < ApplicationController
   before_action :set_itinerary, only: [:show, :update, :destroy]
 
   def index
+    @events = TestEvent.all
   end
 
   def show
@@ -11,6 +12,7 @@ class ItinerariesController < ApplicationController
   end
 
   def update
+
   end
 
   def destroy
@@ -24,5 +26,9 @@ class ItinerariesController < ApplicationController
 
   def itinerary_params
     params.require(:itinerary).permit(:name, :description)
+  end
+
+  def event_params
+    params.require(:event).permit(:title, :duration)
   end
 end

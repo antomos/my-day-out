@@ -1,0 +1,34 @@
+
+<div class="row event-card" data-controller="edit-event" data-edit-event-target="card" >
+  <div class="col" data-action="mouseover->edit-event#displayDetails mouseout->edit-event#hideDetails">
+    <%= image_tag event.image_url %>
+    <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
+      <h2><%= event.title %><small> (<%= event.duration %> mins)</small></h2>
+    </div>
+
+    <div class="d-none" data-edit-event-target="details" >
+      <h2>Description: </h2><%= event.description %> <br>
+      <h2>Address: </h2><%= event.address %></p>
+      <button class="btn btn-primary " data-edit-event-target="button" data-action="click->edit-event#displayForm">
+              Edit
+            </button>
+    </div>
+  </div>
+
+  <div class="col d-none" data-edit-event-target="form" data-action="mouseout->edit-event#hideForm">
+    <h2>Form goes here</h2>
+      <%= simple_form_for event,
+        html: {
+
+          data: {
+
+            action: "submit->edit-event#update  "
+          }
+        } do |f|
+      %>
+        <%= f.input :title, collection: ["Event1","Event2","Event3","Event4","Event5"] %>
+        <%= f.input :duration, range: {min:"0", max:"200", value:"100"}%>
+        <%= f.submit "Update event", class: "btn btn-sm btn-primary btn-block mt-2" %>
+      <% end %>
+  </div>
+</div>

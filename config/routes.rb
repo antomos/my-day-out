@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resources :events, only: [:create, :update, :destroy]
   end
   resources :places, only: [:create]
+  resources :test_events, only: [:index, :update]
 end
