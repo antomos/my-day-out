@@ -1,20 +1,23 @@
-// Specific CSS for your home-page
-
-.normal {
-  color: $color2;
-  font-family: $jost-font;
-  font-weight: $jost-font-weight-normal;
-  font-size: 40px;
+.home {
+  @extend .parent2;
+  @extend .content1;
+  @extend .spacing1;
 }
 
-.light {
-  color: $color2;
-  font-family: $jost-font;
-  font-weight: $jost-font-weight-light;
-  font-size: 40px;
+.banner {
+  background-image: url("https://www.theplanner.co.uk/sites/default/files/images/features-tech-landscape-taming-the-wind---web-p33-london-0z7a3340-2.png");
+  background-size: 100% auto;
+  height: 60vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.title {
-  font-family: $monoton-font;
-  background-color: $color1;
+.banner-content {
+  position: absolute;
+  left: 50%;
+  top: 22%; /* adjust this value to your desired percentage */
+  transform: translate(-50%, -50%);
 }
