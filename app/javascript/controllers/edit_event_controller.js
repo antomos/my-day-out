@@ -6,17 +6,27 @@ export default class extends Controller {
 
   displayDetails() {
     // this.infosTarget.classList.add("d-none")
+    //console.log("displayDetails")
     this.detailsTarget.classList.remove("d-none")
+
   }
+
   displayForm() {
     console.log("displayForm")
     // this.infosTarget.classList.add("d-none")
+    const forms = document.querySelectorAll("div.edit-form")
+    forms.forEach((form) => {
+      form.classList.add("d-none");
+    });
+
     this.formTarget.classList.remove("d-none")
 
     this.detailsTarget.classList.add("d-none")
+
   }
   hideDetails() {
     // this.infosTarget.classList.remove("d-none")
+    //console.log("displayForm")
     this.detailsTarget.classList.add("d-none")
   }
   hideForm() {
