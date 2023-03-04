@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Create a new day out</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <%= simple_form_for [itinerary], data: { controller: 'flatpickr' } do |f| %>
+            <%= f.input :start_address %>
+            <%= f.input :start_time, :as => :time, :minute_step => 5%>
+            <%= f.input :interests,
+                        as: :check_boxes,
+                        collection_wrapper_tag: 'div',
+                        collection_wrapper_class: 'category-wrapper',
+                        item_wrapper_class: 'category-item',
+                        input_html: {class: 'category-selector'},
+                        collection: Itinerary::INTERESTS %>
+            <%= f.input :details_wheelchair_accessible_entrance, as: :radio_buttons %>
+            <%= f.submit class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
