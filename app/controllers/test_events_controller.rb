@@ -19,7 +19,7 @@ class TestEventsController < ApplicationController
   private
 
   def set_event
-    @event = Event.find(params[:id])
+    @event = TestEvent.find(params[:id])
   end
 
   def event_params
@@ -27,6 +27,6 @@ class TestEventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:title, :duration)
+    params.require(:test_event).permit(:title, :duration)
   end
 end
