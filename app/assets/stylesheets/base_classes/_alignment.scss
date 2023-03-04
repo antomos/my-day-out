@@ -1,0 +1,62 @@
+// Responsive alignment of divs, relative to media devices
+
+.parent1 { // parent for columns
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.parent2 { // parent for rows
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+// Only one child option:
+
+.child {
+  flex: 1 1 300px;
+}
+
+@media only screen and (max-width: 767px) { /* For phones */
+  .child {
+    flex: 1 1 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { /* For iPads */
+  .child {
+    flex: 1 1 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) { /* For laptops */
+  .child {
+    flex: 1 1 33.33%;
+  }
+}
+
+@media only screen and (min-width: 1200px) { /* For large screens */
+  .child {
+    flex: 1 1 25%;
+  }
+}
+
+.child1 { // child for columns
+  @extend .child;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.child2 { // child for rows
+  @extend .child;
+  align-self: center;
+  text-align: center;
+}
+
+.child3 {
+  width: 100%;
+  height: auto;
+}

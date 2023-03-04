@@ -1,6 +1,17 @@
+// .navbar {
+//   justify-content: space-between;
+//   // opacity: 0.5;
+// }
+
 .navbar {
-  justify-content: space-between;
-  background: white;
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  // .navbar-wagon-link {
+  //   color: white;
+  //   font-weight: bold;
+  // }
 }
 
 .navbar .navbar-collapse {
