@@ -36,10 +36,22 @@ ul {
   z-index: 10;
 }
 
+.edit-form{
+
+  // position: absolute;
+  // top: 0px;
+  // right: -200px;
+  z-index: 10000;
+  background-color: grey;
+  border: 2px solid black;
+  width: 190px;
+  height: 360px;
+}
+
 .event-card {
   border-radius: 8px;
   position: relative;
-  overflow: hidden;
+
   padding: 5px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
   height: fit-content;

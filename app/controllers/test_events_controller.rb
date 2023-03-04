@@ -6,7 +6,7 @@ class TestEventsController < ApplicationController
 
   def update
     @event = TestEvent.find(params[:id])
-    @event.update(event_params)
+    @event.update!(event_params)
     respond_to do |format|
       format.html { redirect_to events_path }
       format.text { render partial: "itineraries/event_infos", locals: {event: @event}, formats: [:html] }
