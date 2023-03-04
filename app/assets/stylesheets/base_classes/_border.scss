@@ -1,35 +1,33 @@
 // border thickness, color, roundness of corners, shadow, hover effects, click effects
 
-.border1-with-shadow {
-  border: 2px solid #ccc; /* 2-pixel thick border with color #ccc */
-  border-radius: 8px; /* rounded corners with an 8-pixel radius */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* creates a subtle drop shadow */
-  transition: all 0.3s ease; /* animates all CSS properties with a 0.3-second ease transition */
-}
-
-.border1-with-shadow:hover {
-  border-color: #555; /* changes border color to #555 on hover */
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* increases the size of the drop shadow on hover */
-  transform: translateY(-2px); /* moves the element up 2 pixels on hover */
-}
-
-.border1-with-shadow:active {
-  transform: translateY(2px); /* moves the element down 2 pixels on click */
-}
-
-.border2-very-rounded {
-  border: 1px solid #d9d9d9; /* 1-pixel thick border with color #d9d9d9 */
+.border1 {
   border-radius: 20px; /* rounded corners with a 20-pixel radius */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* creates a subtle drop shadow */
   transition: all 0.3s ease; /* animates all CSS properties with a 0.3-second ease transition */
 }
 
-.border2-very-rounded:hover {
+.border1:hover {
   border-color: #555; /* changes border color to #555 on hover */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* increases the size of the drop shadow on hover */
   transform: scale(1.1); /* scales the element up to 110% on hover */
 }
 
-.border2-very-rounded:active {
+.border1:active {
   transform: scale(0.9); /* scales the element down to 90% on click */
+}
+
+.border2 {
+  border: 2px solid $color3;
+  border-radius: 8px; /* rounded corners with an 8-pixel radius */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* creates a subtle drop shadow */
+  transition: all 0.3s ease; /* animates all CSS properties with a 0.3-second ease transition */
+}
+
+.border2:hover {
+  border-color: $color5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* increases the size of the drop shadow on hover */
+  transform: translateY(-2px); /* moves the element up 2 pixels on hover */
+}
+
+.border2:active {
+  transform: translateY(2px); /* moves the element down 2 pixels on click */
 }
