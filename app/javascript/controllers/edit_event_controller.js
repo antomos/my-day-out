@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="edit-movie"
 export default class extends Controller {
-  static targets = ["infos", "form", "card","details","forms"]
+  static targets = ["infos", "form","formdiv", "card","details","forms"]
 
   displayDetails() {
     // this.infosTarget.classList.add("d-none")
@@ -19,7 +19,7 @@ export default class extends Controller {
       form.classList.add("d-none");
     });
 
-    this.formTarget.classList.remove("d-none")
+    this.formdivTarget.classList.remove("d-none")
 
     this.detailsTarget.classList.add("d-none")
     this.cardTarget.classList.add("w-400")
@@ -32,7 +32,7 @@ export default class extends Controller {
   }
   hideForm() {
     // this.infosTarget.classList.remove("d-none")
-    this.formTarget.classList.add("d-none")
+    this.formdivTarget.classList.add("d-none")
   }
 
   update(event) {
