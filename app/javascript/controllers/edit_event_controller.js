@@ -22,6 +22,7 @@ export default class extends Controller {
     this.formTarget.classList.remove("d-none")
 
     this.detailsTarget.classList.add("d-none")
+    this.cardTarget.classList.add("w-400")
 
   }
   hideDetails() {
@@ -36,6 +37,7 @@ export default class extends Controller {
 
   update(event) {
     event.preventDefault()
+    console.log("update")
     const url = this.formTarget.action
     fetch(url, {
       method: "PATCH",
