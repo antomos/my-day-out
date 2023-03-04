@@ -12,7 +12,7 @@
       <%= image_tag event.image_url, style: "min-width:250px; min-height:350px;" %>
 
       <%# edit form %>
-      <div class="col d-none edit-form" data-edit-event-target="form", style="min-width:350px; max-height:350px;">
+      <div class="col d-none edit-form" data-edit-event-target="formdiv", style="min-width:350px; max-height:350px;">
         <button aria-label="Edit <%= event.title %>" style="float: right;">
           <i class="fa-solid fa-circle-xmark " data-action="click->edit-event#hideForm"></i>
         </button>
@@ -22,6 +22,7 @@
 
               data: {
 
+                edit_event_target: "form",
                 action: "submit->edit-event#update  "
               }
             } do |f|
