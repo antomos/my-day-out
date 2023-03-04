@@ -1,0 +1,30 @@
+// background color, font, font color, font size, font weight
+
+.content1 {
+  font-family: $jost-font;
+  font-weight: $jost-font-weight-normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color1;
+}
+
+.content2 {
+  @extend .content1;
+  font-weight: $jost-font-weight-light;
+}
+
+.content3 {
+  font-family: $monoton-font;
+  font-size: 40px;
+  line-height: 3;
+  color: $color4;
+  letter-spacing: 0.05em;
+}
+
+.content4 {
+  font-family: $pacifico-font;
+  font-size: 24px;
+  line-height: 3;
+  color: $color1;
+  background: linear-gradient(to bottom, $color3, $color4);
+}
