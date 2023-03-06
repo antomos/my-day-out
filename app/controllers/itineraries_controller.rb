@@ -10,9 +10,13 @@ class ItinerariesController < ApplicationController
 
   def create
     @itinerary = Itinerary.new(itinerary_params)
-    details_wheelchair_accessible_entrance = params[:itinerary][:details_wheelchair_accessible_entrance]
-    @itinerary.details_wheelchair_accessible_entrance = details_wheelchair_accessible_entrance
-    raise
+    @itinerary.user = current_user
+
+    if @itinerary.save!
+      redirect_to itinerary_path(@itinerary)
+    else
+      render root_path, status: :unprocessable_entity
+    end
   end
 
   def update
@@ -28,10 +32,19 @@ class ItinerariesController < ApplicationController
   end
 
   def itinerary_params
-    params.require(:itinerary).permit(:start_address, :start_time, :end_time,  :interests, :details_wheelchair_accessible_entrance)
+    params.require(:itinerary).permit(
+      :start_address,
+      :date,
+      :start_time,
+      :end_time,
+      :budget,
+      :dining_requirements,
+      :details_wheelchair_accessible_entrance,
+      interests: []
+    )
   end
 
   def event_params
-    params.require(:event).permit(:title, :duration)
+    params.require(:event).permit(:title, :durasion)
   end
 end
