@@ -20,7 +20,8 @@
                         collection_wrapper_class: 'category-wrapper spacing3',
                         item_wrapper_class: 'category-item border1',
                         input_html: {class: 'category-selector'},
-                        collection: Itinerary::INTERESTS %>
+                        collection: Itinerary::INTERESTS,
+                        include_hidden: false %>
             <%= f.input :dining_requirements, placeholder: "Italian"  %>
             <%= f.input :details_wheelchair_accessible_entrance, as: :radio_buttons %>
             <%= f.submit class: "btn btn-pink border2 spacing1" %>

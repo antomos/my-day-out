@@ -11,5 +11,5 @@ class Itinerary < ApplicationRecord
 
   attr_accessor :details_wheelchair_accessible_entrance
 
-  INTERESTS = ["History", "Art_culture", "Dining", "Drinks", "Activity", "Shopping", "Outdoors", "Attraction"]
+  INTERESTS = ["History", "Art & Culture", "Dining", "Drinks", "Activity", "Shopping", "Outdoors", "Attraction"]
 end

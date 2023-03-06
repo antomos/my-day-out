@@ -13,6 +13,8 @@ class ItinerariesController < ApplicationController
     @itinerary.user = current_user
 
     if @itinerary.save!
+      x = ItineraryTemplate.new(itinerary_params).perform
+      raise
       redirect_to itinerary_path(@itinerary)
     else
       render root_path, status: :unprocessable_entity
