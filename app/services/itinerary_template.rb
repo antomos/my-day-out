@@ -171,13 +171,14 @@ class ItineraryTemplate < ApplicationRecord
 
     while interests.length.positive?
       interests.each do |interest|
-        if (interests & %w["dining_lunch dining_lunch_drinks"]).any?
+        if (interests & ["dining_lunch", "dining_lunch_drinks"]).any?
           dining = true if event_end >= LUNCH_CUTOFF
-        elsif (interests & %w["dining_dinner dining_dinner_drinks"]).any?
+        elsif (interests & ["dining_dinner", "dining_dinner_drinks"]).any?
           dining = true if event_end >= DINNER_CUTOFF
         else
           dining = false
         end
+
 
         drinking = true if event_end >= DRINKING_CUTOFF && interest == 'Drinks'
 
@@ -199,8 +200,10 @@ class ItineraryTemplate < ApplicationRecord
             event_start = event_end + TRAVEL_TIME * 60
             event_end = event_start + INTEREST_VALUES[:"#{interest}"][:time] * 60
             new_event_order << interest
-          elsif interests.sort == %w["dining_dinner drinks"] || interests.sort == %w["dining_lunch drinks"]
-            interests.reverse.each do |interest|
+          elsif interests == ["dining_dinner", "Drinks"] || interests == ["dining_lunch", "Drinks"]
+            puts interests
+            puts interests.reverse
+            interests.sort.each do |interest|
               event_start = event_end + TRAVEL_TIME * 60
               event_end = event_start + INTEREST_VALUES[:"#{interest}"][:time] * 60
               new_event_order << interest
