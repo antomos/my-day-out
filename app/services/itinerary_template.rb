@@ -229,10 +229,9 @@ class ItineraryTemplate < ApplicationRecord
       event_start = event_end + TRAVEL_TIME * 60
       event_end = event_start + INTEREST_VALUES[:"#{event}"][:time] * 60
 
-      if %w["dining_lunch dining_lunch_drinks dining_dinner dining_dinner_drinks"].include?(event)
+      if ["dining_lunch", "dining_lunch_drinks", "dining_dinner", "dining_dinner_drinks"].include?(event)
         keyword = "#{params[:dining_requirements]}|#{INTEREST_VALUES[:"#{event}"][:keyword]}"
-        minprice = params[:dining_budget][0]
-        maxprice = params[:dining_budget][1]
+        maxprice = params[:dining_budget]
       else
         keyword = INTEREST_VALUES[:"#{event}"][:keyword]
         minprice = nil
@@ -244,7 +243,6 @@ class ItineraryTemplate < ApplicationRecord
         input_category: event,
         place_type: INTEREST_VALUES[:"#{event}"][:type],
         keyword: keyword,
-        minprice: minprice,
         maxprice: maxprice,
         time_allocation: INTEREST_VALUES[:"#{event}"][:time],
         radius: INTEREST_VALUES[:"#{event}"][:radius],

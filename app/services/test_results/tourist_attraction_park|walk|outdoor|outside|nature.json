@@ -1,0 +1,713 @@
+{
+  "html_attributions": [],
+  "results": [
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5040558,
+                  "lng": -0.119154
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50540562989271,
+                      "lng": -0.1178041701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50270597010726,
+                      "lng": -0.1205038298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Queen’s Walk",
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/107599245498384909890\">Nawal Hassan</a>"
+                  ],
+                  "photo_reference": "AfLeUgMRiGhrwfAFUhyUmcsNykJvJUSVLlIQvxVv0YMvBLT20sevWRMFLxJhKdmMexXuc8GmcCLysd_lhGszAU8o7A62mxBVP0d9PEmQ4tHZPbpxA5AZokoXxvXSiw4fAX8iWcecYcbmzGpvrAdAELeVJ_22SQpPYoLh6JmhGajt-VPXy2uZ",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJOyzF19MFdkgRtjXSNZRVYGI",
+          "plus_code": {
+              "compound_code": "GV3J+J8 London",
+              "global_code": "9C3XGV3J+J8"
+          },
+          "rating": 4.6,
+          "reference": "ChIJOyzF19MFdkgRtjXSNZRVYGI",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 31,
+          "vicinity": "Eye Pier, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5050131,
+                  "lng": -0.1593744
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50636292989272,
+                      "lng": -0.1580245701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50366327010728,
+                      "lng": -0.1607242298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "The Diana Princess Of Wales Memorial Walk",
+          "photos": [
+              {
+                  "height": 4000,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115735370190454967210\">Taha Yasseen</a>"
+                  ],
+                  "photo_reference": "AfLeUgNpSZ_ukJ75rnxc3oexYNVRf0q89pMsBFdHQ-gljcUH8neWtxtKPlcDEavbHvIG0ZfUUa1jFsigdjghNWZe6sJDOwO2D7-0FDTkbDNiP1pfeYeP3PcT67Tm5oTV1-xkmNq-Z9ehdbPdUs08Mi0PoTi8xwIhhpEh0WzlyM-4twvaeM0m",
+                  "width": 3000
+              }
+          ],
+          "place_id": "ChIJMR7RgnMFdkgRBvElquocbxs",
+          "rating": 5,
+          "reference": "ChIJMR7RgnMFdkgRBvElquocbxs",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 2,
+          "vicinity": "GV26+6C, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5225331,
+                  "lng": -0.1573283
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52378377989272,
+                      "lng": -0.1558930701072778
+                  },
+                  "southwest": {
+                      "lat": 51.52108412010728,
+                      "lng": -0.1585927298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "The Wonderpass",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115951345556663749009\">Dominic Dean</a>"
+                  ],
+                  "photo_reference": "AfLeUgPUT_fOYI8KpFW_-hVO0l4znnDZ6qw2jCKByYXgXicjq5877VNKcEwSbA7rzdM33eMq9sO7w4xhOjC7_LAqe0B8fxgXYpvr5ip8kP83q8mVWturDqjPYs9o-6p5_S2jAxv7xbsHrha3zs_wKk3C2zD9MIlNrf9tBSFFIGx-noT0yIHs",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJjzSmws4adkgRbAm4DUue7U8",
+          "plus_code": {
+              "compound_code": "GRFV+23 London",
+              "global_code": "9C3XGRFV+23"
+          },
+          "rating": 4.3,
+          "reference": "ChIJjzSmws4adkgRbAm4DUue7U8",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 30,
+          "vicinity": "134 Marylebone Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5015204,
+                  "lng": -0.1096936
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50275072989272,
+                      "lng": -0.1084911201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50005107010728,
+                      "lng": -0.1111907798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+          "icon_background_color": "#4DB546",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+          "name": "Waterloo Millennium Green",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/114571692711813335927\">Leonardo Bonan Renofio</a>"
+                  ],
+                  "photo_reference": "AfLeUgOi8PCZCJyefCBzPQYSCZhdwVOCdU3B878nlwgDlJOanZUXbgoeixR0tSgd3AgW4DklGFvI5QpfBDd3AMHRhxJ255VO-2EN_w6v0ilKdhmoNvDIzPaqDXplJQCPeONAps4T8c3uCk0pZf6w4Ha1o6V_W1sIXy1m-bpWClXDawajvRz1",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJTQB1tLsEdkgRukOs5zPHWhc",
+          "plus_code": {
+              "compound_code": "GV2R+J4 London",
+              "global_code": "9C3XGV2R+J4"
+          },
+          "rating": 4.2,
+          "reference": "ChIJTQB1tLsEdkgRukOs5zPHWhc",
+          "scope": "GOOGLE",
+          "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 521,
+          "vicinity": "Baylis Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5065497,
+                  "lng": -0.1581045
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51030360000001,
+                      "lng": -0.15473565
+                  },
+                  "southwest": {
+                      "lat": 51.5052984,
+                      "lng": -0.15922745
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+          "icon_background_color": "#4DB546",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+          "name": "Parade Ground, Hyde Park",
+          "photos": [
+              {
+                  "height": 1080,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/102272117883468250664\">Tho Iva</a>"
+                  ],
+                  "photo_reference": "AfLeUgP-350JOd5hUrhQY1XOthRZjYbM5ckMQ8YI7F2V1k0GwCirwYmWcKGiA1Hb-3plqBOTPq38xlf85jNHyMpEjwRl_SDtL8zxDAjfpLx8UySpZDRoa0OO4crv59FnrN3KJPHP4jYVWbX_ek3FYltv_WeRJ14YmrYaW0sDP_YrY0ZGKwcC",
+                  "width": 1620
+              }
+          ],
+          "place_id": "ChIJfYxOljkFdkgR1DJng5852Ec",
+          "plus_code": {
+              "compound_code": "GR4R+JQ London",
+              "global_code": "9C3XGR4R+JQ"
+          },
+          "rating": 4.7,
+          "reference": "ChIJfYxOljkFdkgR1DJng5852Ec",
+          "scope": "GOOGLE",
+          "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 127,
+          "vicinity": "Hyde Park, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5039038,
+                  "lng": -0.1438567
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50748129999999,
+                      "lng": -0.1355542
+                  },
+                  "southwest": {
+                      "lat": 51.50090329999999,
+                      "lng": -0.1541745999999999
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+          "icon_background_color": "#4DB546",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+          "name": "Green Park",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2592,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100914852207075938325\">Nicolas Mendoza</a>"
+                  ],
+                  "photo_reference": "AfLeUgMWOBOkhetiMcKcT5FeN4pEAbq4JWLtJezwFFXH81wKCZVhpnoPmpoo6yV7FDJCtVgxycoNC_GHqOKTyJF4kSgYlXk_mL6KThNkwHfIEzJFSAvDhlgMnV7wwZA2s4ViKTIF7CTyumEAQazz0dLiH89j4UssnyP_tigBRgL9NnvBR9VX",
+                  "width": 4608
+              }
+          ],
+          "place_id": "ChIJ2Sv_gSgFdkgRo_HVykixWts",
+          "plus_code": {
+              "compound_code": "GV34+HF London",
+              "global_code": "9C3XGV34+HF"
+          },
+          "rating": 4.6,
+          "reference": "ChIJ2Sv_gSgFdkgRo_HVykixWts",
+          "scope": "GOOGLE",
+          "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 21988,
+          "vicinity": "London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5312705,
+                  "lng": -0.1569694
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.54591365000001,
+                      "lng": -0.1284406
+                  },
+                  "southwest": {
+                      "lat": 51.51366944999998,
+                      "lng": -0.1782178
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+          "icon_background_color": "#4DB546",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+          "name": "The Regent's Park",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 9000,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/110600434063505290014\">manoharan niroshika</a>"
+                  ],
+                  "photo_reference": "AfLeUgPOs3tYAYrFf2BSECUCmqoOlTOJNKqAtYB2h5KJib2YuCofILJgsVMdtE9QGMxBJiYiVSSO3s1WKr51-ebUC3CO7hdhlbS__d9DlBJei9uqeTYIM9CNPAtqxC2cYv5eewlb1aK7DmhDz0jBdutMHb3DACXvFScKZnDYGVdCyQ4IlYGV",
+                  "width": 12000
+              }
+          ],
+          "place_id": "ChIJB76zsMMadkgRvhhquw8-mAg",
+          "plus_code": {
+              "compound_code": "GRJV+G6 London",
+              "global_code": "9C3XGRJV+G6"
+          },
+          "rating": 4.7,
+          "reference": "ChIJB76zsMMadkgRvhhquw8-mAg",
+          "scope": "GOOGLE",
+          "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 40094,
+          "vicinity": "London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50523440000001,
+                  "lng": -0.1563279
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50658422989272,
+                      "lng": -0.1549780701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50388457010727,
+                      "lng": -0.1576777298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Hyde Park Winter Wonderland Ice Rink",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/111456203939855706059\">manuel fougere</a>"
+                  ],
+                  "photo_reference": "AfLeUgOON4XpfFBNr9tDknH21mnej43N3D9YBEyhLD-JmWK2R0YYbQ0pPwrvuYWAxct0Q8SePuBy2PnOS40OPYjxGJsVKmSQyomUDfU75aD0MmIqKqr-bzLkpZ2ZlIs5C5HUYHxmKXazGJHbr50Laa4IoGZdlK8DP_-ufDrbrvyFUPZbSbc6",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJsepXS4sFdkgR-XiqFqEKiCM",
+          "plus_code": {
+              "compound_code": "GR4V+3F London",
+              "global_code": "9C3XGR4V+3F"
+          },
+          "rating": 4.4,
+          "reference": "ChIJsepXS4sFdkgR-XiqFqEKiCM",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5354,
+          "vicinity": "Hyde Park, Serpentine Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5035645,
+                  "lng": -0.1359578
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50498072989271,
+                      "lng": -0.1346783701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50228107010727,
+                      "lng": -0.1373780298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Diana Princess of Wales Memorial Walk",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1616,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/103068988924414283334\">Pearl Legaspi</a>"
+                  ],
+                  "photo_reference": "AfLeUgNgW6OJMtdSBcjKcPBxvVaKlgH0s1uzGw9iVglPfZKMHTZN3fApmi7znyb32oFacE26f_kDzyhJxSQkJ4Cimt32Q1h9lcW-VANPxeF8WkaCatOk02uUxEbhUW6YiaO3d595Xs3psdQXgfKebaMVxrTVSKYGWI0AGZFRnVI38ppC0ena",
+                  "width": 3264
+              }
+          ],
+          "place_id": "ChIJvxvK6NkEdkgRcxYmaAtj-4M",
+          "plus_code": {
+              "compound_code": "GV37+CJ London",
+              "global_code": "9C3XGV37+CJ"
+          },
+          "rating": 4.7,
+          "reference": "ChIJvxvK6NkEdkgRcxYmaAtj-4M",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 157,
+          "vicinity": "42 The Mall, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5216138,
+                  "lng": -0.1223489
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52297392989272,
+                      "lng": -0.1209548201072778
+                  },
+                  "southwest": {
+                      "lat": 51.52027427010728,
+                      "lng": -0.1236544798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+          "icon_background_color": "#4DB546",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+          "name": "Queen Square Gardens",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3769,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/106957124579971686772\">Matthew Bradby</a>"
+                  ],
+                  "photo_reference": "AfLeUgOnFKmpMcq-banbKOH7Vz5-CM6UwmH2X6Ul4iXT-ef3khhfKkUeBDxBVCTMZj2dpffFxncXKQ2SXFeCycxdTX3Rk5YUsjs4c0W-HATmnxKWZeuAqiloWmYsFDUs45-imCKYarZLNYvIn8PQjeNooHykfYRyQLV2pwZdRMUc7nLYrTv7",
+                  "width": 2827
+              }
+          ],
+          "place_id": "ChIJ8YzgxjYbdkgRG2_MmsQF3CI",
+          "plus_code": {
+              "compound_code": "GVCH+J3 London",
+              "global_code": "9C3XGVCH+J3"
+          },
+          "rating": 4.4,
+          "reference": "ChIJ8YzgxjYbdkgRG2_MmsQF3CI",
+          "scope": "GOOGLE",
+          "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 372,
+          "vicinity": "Queen Square, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5025925,
+                  "lng": -0.1508545
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50385267989272,
+                      "lng": -0.1490953201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50115302010727,
+                      "lng": -0.1517949798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Wellington Arch",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3267,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100217583315506364915\">Silas Lozano Paz</a>"
+                  ],
+                  "photo_reference": "AfLeUgON3NE4ycCL3jraYcj_j2MMLEbV0vL2xr9HGp3MLUfvxJKN_H9g0Lmc8e3JHl7z8_LaJHUCdQsFxJbIixXAVzb2tFadwpoTBKveR-71NowPkNyKyEwIIpxnavuAGTlLi_O6BDQH9J457WtlERLMzQxhM8Y-R_lm70m2rb93RoCOnEax",
+                  "width": 4896
+              }
+          ],
+          "place_id": "ChIJrZIzFyUFdkgRQlxXXtD9UF4",
+          "plus_code": {
+              "compound_code": "GR3X+2M London",
+              "global_code": "9C3XGR3X+2M"
+          },
+          "rating": 4.4,
+          "reference": "ChIJrZIzFyUFdkgRQlxXXtD9UF4",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 3897,
+          "vicinity": "Apsley Way, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5032973,
+                  "lng": -0.1195537
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50464877989272,
+                      "lng": -0.1164435999999999
+                  },
+                  "southwest": {
+                      "lat": 51.50194912010727,
+                      "lng": -0.1205904
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "lastminute.com London Eye",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 643,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100056324039315259956\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMutMdFqMXxyvxZD-kJImcsLOKxXIvEP16-uocqN2VZIWN7Y5Sr-6fuy7MaAH7d8KM4USW-z0FTpPxFncin--0tF3726Rs7O2Mzpz84sqLbHxxtJBtKVY_l3N3if7jRTcDFiXk0FPPrjdKBPCMLm67ps0WpzBNlqyl273IxHmM05pe1",
+                  "width": 820
+              }
+          ],
+          "place_id": "ChIJc2nSALkEdkgRkuoJJBfzkUI",
+          "plus_code": {
+              "compound_code": "GV3J+85 London",
+              "global_code": "9C3XGV3J+85"
+          },
+          "rating": 4.5,
+          "reference": "ChIJc2nSALkEdkgRkuoJJBfzkUI",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 150801,
+          "vicinity": "Riverside Building, County Hall, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5031723,
+                  "lng": -0.1306315
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50452212989271,
+                      "lng": -0.1292816701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50182247010727,
+                      "lng": -0.1319813298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "London Parks & Gardens Trust",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1200,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/113138887111122657915\">Craig McMichael</a>"
+                  ],
+                  "photo_reference": "AfLeUgMUtoPllSbPDVVJOwFNp8gJ3ceuWXVrPW5h1TA6k-9xw2d-FmEE72QUrLFwW3lRZhPebrCGjuOFc_eJjsQK0rLOKFJIExaBJ6OhXGNqz8J4fi3rdG_9OfJOdyxmhtDHysYUIWDxuUz-aAV9xrsoZ2BoDIi69v6sxO9FUIMi5GXDfbKG",
+                  "width": 1600
+              }
+          ],
+          "place_id": "ChIJE-CxwNoEdkgRp4aaDHkmLs4",
+          "plus_code": {
+              "compound_code": "GV39+7P London",
+              "global_code": "9C3XGV39+7P"
+          },
+          "rating": 4.4,
+          "reference": "ChIJE-CxwNoEdkgRp4aaDHkmLs4",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 20,
+          "vicinity": "Duck Island Cottage, St James's Park, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.51529499999999,
+                  "lng": -0.1320622
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51665037989272,
+                      "lng": -0.1308708701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51395072010727,
+                      "lng": -0.1335705298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/park-71.png",
+          "icon_background_color": "#4DB546",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/tree_pinlet",
+          "name": "Soho Square Gardens",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3456,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/114256552426399753563\">Felix Fabian Villegas Sierra</a>"
+                  ],
+                  "photo_reference": "AfLeUgN6OsZAAd_eCSOO1dyjC6AmrcSWuNSADV30di1m2YGX5-Rjc1kcUr5LIWoFr7LhA2Y38wa85Kl73R71SMbTJIZvO0LByGLW23qMULnJTXBdzOYBUtE46BGlC_cQeUXPHEluOpWxKLEJcvsFCc7_cgYBLGBALlKTZKy-tmDbA8lF9xPp",
+                  "width": 4608
+              }
+          ],
+          "place_id": "ChIJMUId1iwbdkgRjmeHrj-skio",
+          "plus_code": {
+              "compound_code": "GV89+45 London",
+              "global_code": "9C3XGV89+45"
+          },
+          "rating": 4.3,
+          "reference": "ChIJMUId1iwbdkgRjmeHrj-skio",
+          "scope": "GOOGLE",
+          "types": [
+              "park",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5567,
+          "vicinity": "Soho Square, London"
+      }
+  ],
+  "status": "OK"
+}

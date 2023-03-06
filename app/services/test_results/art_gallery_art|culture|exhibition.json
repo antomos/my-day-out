@@ -1,0 +1,1026 @@
+{
+  "html_attributions": [],
+  "next_page_token": "AfLeUgP6_it0w5BTfyviR96x4Qa6sDZjguyd5IcJn8P44QVGQE62IWt_ze8ZF2aSP9-pcGQhYAMZJhMUOuLqJ442IwAQfpflByxQYFp-6QH2xLfoLNsWj_ubfJK-HA88T6ugVqPvfjzuIaaqxvAalJPEKo3P4mW9R-JiUkYBlGFwq3Skq-cKtKcivC03hPgKLseQB2-tiYZTAXaqoxapOr2N0KgPmFeLy-7zoQakfXnctGf4FA3Oxf1idBicGn6nifsTnDGji0pXBEUACj1Y0GJRriiQvab5ztJrwZQUAyUFPDW17a0Vu0hx24pH-REVeLlV04xiGYBTSnub-I2nKtqreNcBC3FurCG3AZ4vy6Nz6HIWq5kPQuKtrAGGUrYNf9FpKs_jDnX62TS-KOQz3YeVzk4TP6GhHugdNBkhjpZcqlIUhB8r4ph3JPUjVTUzR-wA8XN23XgY8v-XmBuvff_4B7oXwYwVy3aJ",
+  "results": [
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50892899999999,
+                  "lng": -0.128299
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51035402989272,
+                      "lng": -0.1274232
+                  },
+                  "southwest": {
+                      "lat": 51.50765437010728,
+                      "lng": -0.1306532
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The National Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3864,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/103945027469691673218\">vali bosoi</a>"
+                  ],
+                  "photo_reference": "AfLeUgPHxLQZe1BCp5w5m5ZiQraJrokbHdqPXPrT62bOJhWlF5XCEIofriMTR5imJc9SY5CskgBwNV1w7xl41yIa7cS6flJqQekDOYJrTJy6DY1cTxLgrgwmQ5fdswyygDoWF6VfwmrFjlXClIQENnkxdDV_qvrAu2HT6uAFiYQa87ntskry",
+                  "width": 5152
+              }
+          ],
+          "place_id": "ChIJeclqF84EdkgRtKAjTmWFr0I",
+          "plus_code": {
+              "compound_code": "GV5C+HM London",
+              "global_code": "9C3XGV5C+HM"
+          },
+          "rating": 4.7,
+          "reference": "ChIJeclqF84EdkgRtKAjTmWFr0I",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "art_gallery",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 41908,
+          "vicinity": "Trafalgar Square, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50620850000001,
+                  "lng": -0.1154442
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50747992989272,
+                      "lng": -0.1141344701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50478027010728,
+                      "lng": -0.1168341298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Hayward Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3648,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/118267936529718083053\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgNvpVC4HRAlVu9Ut_GNJ_ztMgsaAB3w8Z3PdEN1Gf2aJri_HDEZi_OvV8CY9mgisv06euyxw-s4bcWZJHmQ-TKh7t87j7ovybjpDs-R8h1etPpQ_shVf916UxsFqvuOfWYHO-H6zpS1jQAAsRWrmwRpto8yner2a3WduliXnRAOE6sL",
+                  "width": 5472
+              }
+          ],
+          "place_id": "ChIJEYfH57cEdkgRuNeOk-nbgeo",
+          "plus_code": {
+              "compound_code": "GV4M+FR London",
+              "global_code": "9C3XGV4M+FR"
+          },
+          "rating": 4.6,
+          "reference": "ChIJEYfH57cEdkgRuNeOk-nbgeo",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 1099,
+          "vicinity": "Hayward Gallery, Southbank Centre, Belvedere Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5136848,
+                  "lng": -0.1460496
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51504707989272,
+                      "lng": -0.1446383701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51234742010728,
+                      "lng": -0.1473380298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Eden Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3577,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/117219112212044105822\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgPPRFUcANePFWeRfTeeeO4rs7JkwC4Vl8Wetch146KwirAd9Q5BcGm9YW-k4ywaUXKd2Wrw5h6upiL_C_OzjK4BCBlHnEA2xAXI3CpFCGKU4VK1xlSs2StUepaWHk-wh6c-t4oHtIVoOSZQYIFljrNEpe9K4HWOoWMjlcF9jGvqY8s",
+                  "width": 5366
+              }
+          ],
+          "place_id": "ChIJzSD-CysFdkgRgLh7Ktac4dQ",
+          "plus_code": {
+              "compound_code": "GV73+FH London",
+              "global_code": "9C3XGV73+FH"
+          },
+          "rating": 4.4,
+          "reference": "ChIJzSD-CysFdkgRgLh7Ktac4dQ",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 195,
+          "vicinity": "103 New Bond St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50720510000001,
+                  "lng": -0.1395892
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50854757989273,
+                      "lng": -0.1383766201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50584792010728,
+                      "lng": -0.1410762798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Miart Gallery London",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1466,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/102594307899817455829\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMbUWfOLdcNbmmuo3j4rhc_wsV00P6o73jAGvnXT8223swRK6ssbKIMa1CpIVVj7hUsqReXsFCz9Wsds5G6HU62vYYeu5L7dRvSpg3KBjvHnxLiLeB9igOaIbGTEi-6rEAvl1yvFklJTFSnUFlqz9EichZ1ZIEpoozbYNnCpv_m-4dk",
+                  "width": 1988
+              }
+          ],
+          "place_id": "ChIJsZP9gbEFdkgRSFv2H7t2B1o",
+          "plus_code": {
+              "compound_code": "GV46+V5 London",
+              "global_code": "9C3XGV46+V5"
+          },
+          "rating": 5,
+          "reference": "ChIJsZP9gbEFdkgRSFv2H7t2B1o",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 10,
+          "vicinity": "31-32 St James's St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5172059,
+                  "lng": -0.1352534
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51853987989272,
+                      "lng": -0.1339671201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51584022010728,
+                      "lng": -0.1366667798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Eclectic Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 608,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115603197239217430310\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgNr14GD8bsAcjajwFkZobKZhusRglp0UoyuOZppmbc6KJQpmvZY7rVyQTPZo7EyFm2GHEhnUAzKqivDQaaIoVV081PPPsbtLO-fl5NgS2nfHukqFarXim-YkPivMFPj8Iz7GjnXW7H0bQGodrzEJd4mMVnRu0HjY9TS1XhK5p4G1-np",
+                  "width": 1080
+              }
+          ],
+          "place_id": "ChIJRwjMpYobdkgRbO4VvY5uKOI",
+          "plus_code": {
+              "compound_code": "GV87+VV London",
+              "global_code": "9C3XGV87+VV"
+          },
+          "rating": 5,
+          "reference": "ChIJRwjMpYobdkgRbO4VvY5uKOI",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 7,
+          "vicinity": "16 Newman St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5238323,
+                  "lng": -0.1240952
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52525167989273,
+                      "lng": -0.1229049201072778
+                  },
+                  "southwest": {
+                      "lat": 51.52255202010728,
+                      "lng": -0.1256045798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "The Brunswick Art Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3744,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/102562008317160421521\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMXhLna-TOfHJLzchdjnC2Yyt-mPuD1vdgrIpNNNTjVdjPocpZzrvJfGrr8s9Rv6OISPGRTMaaqjnB3_vupHkSLDNBtPJWjuIcn-vuMe-ySgk_YwQmuHAyP6LQ7q6AKE9F6RDk3CfTVj3p7csKNB6oFa5N0UNuON1hdtgoYJXt5lqBd",
+                  "width": 4044
+              }
+          ],
+          "place_id": "ChIJCT-2ucEbdkgR-AimLjQ1lBY",
+          "plus_code": {
+              "compound_code": "GVFG+G9 London",
+              "global_code": "9C3XGVFG+G9"
+          },
+          "rating": 4.9,
+          "reference": "ChIJCT-2ucEbdkgR-AimLjQ1lBY",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 20,
+          "vicinity": "Unit 68, The Brunswick Centre, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5067373,
+                  "lng": -0.1382566
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50805732989271,
+                      "lng": -0.1369258701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50535767010727,
+                      "lng": -0.1396255298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "The Nine British Art",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1972,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/103321603261909599596\">Paisnel Gallery Ltd</a>"
+                  ],
+                  "photo_reference": "AfLeUgPW-gdRpj8HY0ijIqYv1h-Qzf_HBOIKPsJfLJLrxWvbPVvx7a1yXNZX44MzmUbDVJQ0ot8uXfhODwui62LCg-XjnAmXtiqpjIoMfrTIt18L0R3fvdCzT__K7Qq-O4eAtQ9_ZJv6l2lwZOl9OktD-VINZ9ZElZvLqgdrRlCC0yXED4rL",
+                  "width": 3648
+              }
+          ],
+          "place_id": "ChIJy0jmq9cEdkgRu3_tEBWaIcY",
+          "plus_code": {
+              "compound_code": "GV46+MP London",
+              "global_code": "9C3XGV46+MP"
+          },
+          "rating": 4.8,
+          "reference": "ChIJy0jmq9cEdkgRu3_tEBWaIcY",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 4,
+          "vicinity": "9 Bury St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5115865,
+                  "lng": -0.1175593
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51290697989273,
+                      "lng": -0.1162551701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51020732010728,
+                      "lng": -0.1189548298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Courtauld Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3072,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/102265438423470461700\">Nikko R.</a>"
+                  ],
+                  "photo_reference": "AfLeUgM52hs3zirhNW_8S3201OyLh3LmFo5B_fVt5hzP5bx_vb8OJ8wSYUbMIgAmNmeYypNm53JY44VIFXGFaDZrUFx4k-r-LZnO7FHVlzjOJJ-MRGz-Wwnn0CvHYkSD0ghf8unyhl5sQ2bBK1dpok-wlhBgc2U2lL0fNI_8aude0YKA0akO",
+                  "width": 4096
+              }
+          ],
+          "place_id": "ChIJJUQ-d8oEdkgR-JVIDfRa6aY",
+          "plus_code": {
+              "compound_code": "GV6J+JX London",
+              "global_code": "9C3XGV6J+JX"
+          },
+          "rating": 4.7,
+          "reference": "ChIJJUQ-d8oEdkgR-JVIDfRa6aY",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "art_gallery",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 911,
+          "vicinity": "Somerset House, Strand, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5066786,
+                  "lng": -0.129999
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50787882989272,
+                      "lng": -0.1284524701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50517917010728,
+                      "lng": -0.1311521298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Mall Galleries",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2160,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/109441036498532658541\">Charles Phillpot</a>"
+                  ],
+                  "photo_reference": "AfLeUgP_DlpCCtQD_urSIFmBRSllZSj-vNLCcTh0FjJcyqKOqyVBCoXYRB43z0vPwF30z61do6X2jps4y9bn3i8fwJ0Xl1L-vt6-WNEq6rUEdgOfsR9qQxhH2FDjX_wpY5l8Q5w9TkHJcoSkhmeSKO5i0T-n0QDLOyApC1bpNqksMGm6kH7Z",
+                  "width": 3840
+              }
+          ],
+          "place_id": "ChIJ9bNTJdAEdkgRmSVzJmEoXRI",
+          "plus_code": {
+              "compound_code": "GV4C+M2 London",
+              "global_code": "9C3XGV4C+M2"
+          },
+          "rating": 4.6,
+          "reference": "ChIJ9bNTJdAEdkgRmSVzJmEoXRI",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 590,
+          "vicinity": "The Mall, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5160643,
+                  "lng": -0.1417776
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51740717989271,
+                      "lng": -0.1404244701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51470752010727,
+                      "lng": -0.1431241298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Animation Art Gallery",
+          "place_id": "ChIJk5fpQtUadkgRsZgfDex306k",
+          "plus_code": {
+              "compound_code": "GV85+F7 London",
+              "global_code": "9C3XGV85+F7"
+          },
+          "rating": 0,
+          "reference": "ChIJk5fpQtUadkgRsZgfDex306k",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "13-14 Great Castle St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5182989,
+                  "lng": -0.1278893
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51962497989273,
+                      "lng": -0.1266123701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51692532010728,
+                      "lng": -0.1293120298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Bloomsbury Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2560,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/118131718015928119620\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgPEG67UrFjjkZOMxQC7Kb2lqt6h8rii6mqRJPZvhLCh9rJdpF68ommY2tpyJeDpo8LIxgqbtGiuNPW6apyOzQ9Y4-qH6uNVDvx4uUHSI1MozNIDD4Uqym__3YI7X-Xk8syOmY8a2oNrXo0vOXYtyf-fNJk_qX4O9iCFdcSSX0g_BxRB",
+                  "width": 1920
+              }
+          ],
+          "place_id": "ChIJOdtnaDIbdkgRMt0qEffXMuI",
+          "plus_code": {
+              "compound_code": "GV9C+8R London",
+              "global_code": "9C3XGV9C+8R"
+          },
+          "rating": 4.7,
+          "reference": "ChIJOdtnaDIbdkgRMt0qEffXMuI",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "university",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 9,
+          "vicinity": "34 Bloomsbury St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5094426,
+                  "lng": -0.1398686
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51028052989273,
+                      "lng": -0.1380417701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50758087010728,
+                      "lng": -0.1407414298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Royal Academy of Arts",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3000,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/114710687483344007909\">Koray Albayrak</a>"
+                  ],
+                  "photo_reference": "AfLeUgOxVHr9yNboEO5IsPUkk2xfuwrAhngx2indN08Xon0xXPBxqZfezUOpZjlPOrq0bGFoF3Aes2CXqBPrD5Hnh5M4UXGxkSkiqA71BSBi4cDN3BS8dwPx_LcAu9TtDNcjE1fOba8BMmZCLDuY4_eIiRHg8IChpquCKb8PzK36dTKrUCWe",
+                  "width": 4000
+              }
+          ],
+          "place_id": "ChIJM5ERbdYEdkgRFkMO56hrE_k",
+          "plus_code": {
+              "compound_code": "GV56+Q3 London",
+              "global_code": "9C3XGV56+Q3"
+          },
+          "rating": 4.5,
+          "reference": "ChIJM5ERbdYEdkgRFkMO56hrE_k",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 1311,
+          "vicinity": "Burlington House, Piccadilly, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5113242,
+                  "lng": -0.1457502
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51272062989273,
+                      "lng": -0.1444238201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51002097010728,
+                      "lng": -0.1471234798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Global Art Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1200,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/103823862569114916483\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgNPBx7ZPcQ7tJuwAx4KpackGqQ9wftr8ZaB24YU_dZUdg_JC8d1XvzfERVxedz8iHzYluJA3IL7O4OzcFiHNzHv8qTHYKKn8GdqBP_6m57E8EXvuq4-nTHIWh4bGBSeSBg4akWtrAYY42bbdE_itaW5culhPjjTfHngn2FZhx8XVGQK",
+                  "width": 1795
+              }
+          ],
+          "place_id": "ChIJX1YBzmkFdkgROFOoj6EW0PQ",
+          "plus_code": {
+              "compound_code": "GV63+GM London",
+              "global_code": "9C3XGV63+GM"
+          },
+          "rating": 5,
+          "reference": "ChIJX1YBzmkFdkgROFOoj6EW0PQ",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 1,
+          "vicinity": "Global Art Gallery, 50 Grosvenor Hill, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5206823,
+                  "lng": -0.1217446
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52203977989272,
+                      "lng": -0.1204382701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51934012010727,
+                      "lng": -0.1231379298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "October Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3840,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/102950978315139452350\">October Gallery</a>"
+                  ],
+                  "photo_reference": "AfLeUgOec8J4krJsch7ZQhUvey_jcnMaPExI76psSgqNLyNgv3rIeXqf8v6GkKeUjigyVEzWolBZ_DOr69xr6X4ObUk7ojQAqROF-gYmfTuqRKHhtz3RK_w_zFDdAdrCteYl4FjCs_RLZsUsTnJ-ISqs9vTxwXKRy2T8tI20gKqy-tu04b-7",
+                  "width": 5760
+              }
+          ],
+          "place_id": "ChIJZ3v4mDYbdkgRxByqOXp_5nY",
+          "plus_code": {
+              "compound_code": "GVCH+78 London",
+              "global_code": "9C3XGVCH+78"
+          },
+          "rating": 4.6,
+          "reference": "ChIJZ3v4mDYbdkgRxByqOXp_5nY",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "tourist_attraction",
+              "cafe",
+              "food",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 134,
+          "vicinity": "24 Old Gloucester St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5066478,
+                  "lng": -0.1381678
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50798627989272,
+                      "lng": -0.1368469701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50528662010728,
+                      "lng": -0.1395466298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Modern Art",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 7837,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/113130854642370642941\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOuKJZ4WLETNJ1ysucmVO5zWpYYnXRF-Bd34fkoPFNFQg0T31Xfjr5_SRqUQsDCTmBMnk4LL_6CMomPBtm4UMH1RYX6q1gRLlZ15ATN6_Eth7EYHadQ8wn47YuW6AAK_U41nBU9UO6BXvSICALbLa_b04LvYqIiSAMcQCh6Ybe5Gy8j",
+                  "width": 6269
+              }
+          ],
+          "place_id": "ChIJ54uZ31UFdkgRAKDMhWxLW3E",
+          "plus_code": {
+              "compound_code": "GV46+MP London",
+              "global_code": "9C3XGV46+MP"
+          },
+          "rating": 5,
+          "reference": "ChIJ54uZ31UFdkgRAKDMhWxLW3E",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5,
+          "vicinity": "7 Bury St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.507085,
+                  "lng": -0.1331402
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50840607989272,
+                      "lng": -0.1317630201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50570642010728,
+                      "lng": -0.1344626798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Panter & Hall",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 640,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/105711760238921415253\">Panter &amp; Hall</a>"
+                  ],
+                  "photo_reference": "AfLeUgORyZDMcJqEvCSK48tzZmkaacvv1II8cg1FGE_o2f21s-vHZ_J1QiUF7buyZtOdx9MOnu8mqAK_vSC4oGpnGjIh9qiES9Z_tW6zLE1RaN_Iw-Bu1EP-yASZoNbeySsK2UhwvTBEPnjrNm12xc11M1EauLOGVrc5SjcMQ_pP-j8vb6Hy",
+                  "width": 415
+              }
+          ],
+          "place_id": "ChIJMbP00igFdkgRRi7C10oUdSI",
+          "plus_code": {
+              "compound_code": "GV48+RP London",
+              "global_code": "9C3XGV48+RP"
+          },
+          "rating": 4.3,
+          "reference": "ChIJMbP00igFdkgRRi7C10oUdSI",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 23,
+          "vicinity": "11-12 Pall Mall, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50759679999999,
+                  "lng": -0.1373327
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50891212989271,
+                      "lng": -0.1359539701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50621247010727,
+                      "lng": -0.1386536298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "White Cube Mason's Yard",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1535,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/106196917341125634241\">White Cube</a>"
+                  ],
+                  "photo_reference": "AfLeUgMofBQmq_c7q6esq4NXUhRcOx86ox0pqiT4CJyBf9sxrd_x7YefSsnfhv-u9PbNUxkEYrDir3eyZ0QG53NhoVO8QRmUW565mbELgKIwjWOs_BR7KG9kgdhtfDnjb5BvozoxoEITfxFeABWtijyEFIxnQa3adQswFxskSCc-c9TFQo-F",
+                  "width": 2048
+              }
+          ],
+          "place_id": "ChIJj18fOtAEdkgRroT7k7wG8kI",
+          "plus_code": {
+              "compound_code": "GV57+23 London",
+              "global_code": "9C3XGV57+23"
+          },
+          "rating": 4.4,
+          "reference": "ChIJj18fOtAEdkgRroT7k7wG8kI",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 193,
+          "vicinity": "25-26 Masons Yard, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5087487,
+                  "lng": -0.1417361
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51010947989272,
+                      "lng": -0.1403603201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50740982010728,
+                      "lng": -0.1430599798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "John Martin Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3975,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/101963408730334000054\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOBJiVDHjv1i_KRK1TYN5WsCIOeifw-zyBiv1STD6Ikx-ZRPe7wg02PTdjTkIazS9lvs4xm17eZVeqfhPTNQsmfJWApQafPRZbJwRM15ajGjpx4qhviz6c-AIaemCRbyZucC9wsrO_0gcIR7OEYYO2jg2mhBUPAdoobHWY-bBo86dB5",
+                  "width": 5008
+              }
+          ],
+          "place_id": "ChIJNR5o7ykFdkgRQIJeQYSviOg",
+          "plus_code": {
+              "compound_code": "GV55+F7 London",
+              "global_code": "9C3XGV55+F7"
+          },
+          "rating": 4.7,
+          "reference": "ChIJNR5o7ykFdkgRQIJeQYSviOg",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 10,
+          "vicinity": "First Floor, 38 Albemarle St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5115802,
+                  "lng": -0.1435297
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51292142989274,
+                      "lng": -0.1422022701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51022177010729,
+                      "lng": -0.1449019298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Halcyon Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/117082065083635983686\">sayaka</a>"
+                  ],
+                  "photo_reference": "AfLeUgPy9en0oAqcF79_ruRZTRAdA7DGdSu_QYLQG9gSC4msks5fxkljkYAT72LjW__1WSUQV11t0CIm60bjuIGZM7KYAR7TAUjwvzi_inAwvGz__pwokF-rmsah6BCSLHIdrgktvibT-paIah5XDblw6FrCxA04KgaEa7GDzM9SbG-4epI6",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJTX_e6SsFdkgRL-4j6KhM8_0",
+          "plus_code": {
+              "compound_code": "GV64+JJ London",
+              "global_code": "9C3XGV64+JJ"
+          },
+          "rating": 4.7,
+          "reference": "ChIJTX_e6SsFdkgRL-4j6KhM8_0",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 353,
+          "vicinity": "29 New Bond St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5138531,
+                  "lng": -0.1472345
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51522347989273,
+                      "lng": -0.1458360201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51252382010728,
+                      "lng": -0.1485356798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Hanina Fine Arts",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1086,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/109027220373931342298\">Hanina Fine Arts Ltd</a>"
+                  ],
+                  "photo_reference": "AfLeUgMHTOcLCWFH2YTiiAcZy2sy3P302ckivG9Tfrg6TlMRebakuKIYAsQ6qT5-jBzYvO0u8PkN_zoHweAqrjI45Zoe7qIEFTNLcpLGCOtpIzsNxYuOHuek7L8Xz0KZzCZ6AGZlnGVlgUY_KDGX1IDdNW_-kmZUiGh1o3goZr0s57IxZqbI",
+                  "width": 1630
+              }
+          ],
+          "place_id": "ChIJIbMlqeIPdkgRB4njRtxl0dM",
+          "plus_code": {
+              "compound_code": "GV73+G4 London",
+              "global_code": "9C3XGV73+G4"
+          },
+          "rating": 4.7,
+          "reference": "ChIJIbMlqeIPdkgRB4njRtxl0dM",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 14,
+          "vicinity": "21 Woodstock St, London"
+      }
+  ],
+  "status": "OK"
+}
