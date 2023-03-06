@@ -21,3 +21,9 @@
   top: 22%; /* adjust this value to your desired percentage */
   transform: translate(-50%, -50%);
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

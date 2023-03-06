@@ -1,0 +1,57 @@
+
+.category-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.category-item {
+  flex: 0 0 50%;
+}
+
+.category-selector {
+  position: absolute;
+  transform: scale(0);
+}
+
+.category-selector + label {
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid $color1;
+  border-radius: 2px;
+  background-color: $color4;
+}
+
+.category-selector:checked + label {
+  color: $color1;
+  background-color: transparent;
+}
+
+.bg-color {
+  background-color: transparent;
+}
+
+.btn-pink{
+  background-color: $color4;
+  color: $color1;
+}
+
+//SLIDER
+
+.slider {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: $color2;
+  color: $color4;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
