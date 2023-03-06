@@ -1,5 +1,6 @@
 class Itinerary < ApplicationRecord
   belongs_to :user
+  has_many :events
   has_many :places, through: :events
 
   validates :location, presence: true
