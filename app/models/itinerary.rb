@@ -1,10 +1,12 @@
 class Itinerary < ApplicationRecord
   belongs_to :user
+  has_many :events
   has_many :places, through: :events
 
-  validates :location, presence: true
-  validates :start_date, presence: true
-  validates :end_date, presence: true
+  validates :start_address, presence: true
+  validates :date, presence: true
+  validates :start_time, presence: true
+  validates :end_time, presence: true
   validates :interests, presence: true
   validates :budget, presence: true
 
