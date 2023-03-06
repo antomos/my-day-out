@@ -2,16 +2,19 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
-import { application } from "./application";
+import { application } from "./application"
 
-import EditEventController from "./edit_event_controller";
-application.register("edit-event", EditEventController);
+import EditEventController from "./edit_event_controller"
+application.register("edit-event", EditEventController)
 
-import EventsController from "./events_controller";
-application.register("events", EventsController);
+import EventsController from "./events_controller"
+application.register("events", EventsController)
 
-import HelloController from "./hello_controller";
-application.register("hello", HelloController);
+import FlatpickrController from "./flatpickr_controller"
+application.register("flatpickr", FlatpickrController)
 
-import MapController from "./map_controller";
-application.register("map", MapController);
+import HelloController from "./hello_controller"
+application.register("hello", HelloController)
+
+import MapController from "./map_controller"
+application.register("map", MapController)

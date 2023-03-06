@@ -11,6 +11,7 @@ class ItinerariesController < ApplicationController
   def create
     @itinerary = Itinerary.new(itinerary_params)
     details_wheelchair_accessible_entrance = params[:itinerary][:details_wheelchair_accessible_entrance]
+    @itinerary.details_wheelchair_accessible_entrance = details_wheelchair_accessible_entrance
     raise
   end
 
@@ -27,7 +28,7 @@ class ItinerariesController < ApplicationController
   end
 
   def itinerary_params
-    params.require(:itinerary).permit(:start_address, :start_time, :interests, :details_wheelchair_accessible_entrance)
+    params.require(:itinerary).permit(:start_address, :start_time, :end_time,  :interests, :details_wheelchair_accessible_entrance)
   end
 
   def event_params

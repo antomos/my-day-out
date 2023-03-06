@@ -2,18 +2,12 @@
   <div class="banner-content child2 border1 content1 spacing2">
     <h1>Plan my day out in London</h1>
     <p>A personalised itinerary in minutes, browse popular itineraries and save your favourites.</p>
-    <%= link_to "Sign Up", new_user_session_path  %>
+    <%= button_to "Sign Up", new_user_session_path, :class => "btn btn-pink border2 spacing1" %>
   </div>
 </div>
 <div class="parent1 spacing2">
-
-  <div class="parent1">
-    <p class="child2 border2 content1 spacing2">This is a test alert</p>
-    <p class="child2 border1 content1 spacing2">This is a test alert</p>
-  </div>
-
   <div class="parent2">
-    <p>Home page's sticky form goes here</p>
+    <%= render "form_new_dayout", itinerary: @itinerary%>
     <div class="parent1">
       <div class="child2">This is an itinerary card</div>
       <div class="child2">This is an itinerary card</div>
@@ -23,4 +17,4 @@
 
 </div>
 
-<h1 class="child2 content4 spacing3">This is a test tagline</h1>
+<h1 class="child2 content4 spacing3">Work done by the DREAM TEAM</h1>
