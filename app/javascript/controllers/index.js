@@ -2,33 +2,32 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
-import { application } from "./application"
+import { application } from "./application";
 
-import EditEventController from "./edit_event_controller"
-application.register("edit-event", EditEventController)
+import EditEventController from "./edit_event_controller";
+application.register("edit-event", EditEventController);
 
-import AddressController from "./address_controller"
-application.register("address", AddressController)
+import AddressController from "./address_controller";
+application.register("address", AddressController);
 
-import EventsController from "./events_controller"
-application.register("events", EventsController)
+import EventsController from "./events_controller";
+application.register("events", EventsController);
 
-import FlatpickrController from "./flatpickr_controller"
-application.register("flatpickr", FlatpickrController)
+import FlatpickrController from "./flatpickr_controller";
+application.register("flatpickr", FlatpickrController);
 
-import HelloController from "./hello_controller"
-application.register("hello", HelloController)
+import HelloController from "./hello_controller";
+application.register("hello", HelloController);
 
-import MapController from "./map_controller"
-application.register("map", MapController)
+import MapController from "./map_controller";
+application.register("map", MapController);
 
+// import { initSortable } from "./init_sortable"
+// initSortable()
 
-import { initSortable } from "./init_sortable"
-initSortable()
+import { Application } from "@hotwired/stimulus";
+import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers";
 
-import { Application } from "@hotwired/stimulus"
-import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
-
-window.Stimulus = Application.start()
-const context = require.context("./", true, /\.js$/)
-Stimulus.load(definitionsFromContext(context))
+window.Stimulus = Application.start();
+const context = require.context("./", true, /\.js$/);
+Stimulus.load(definitionsFromContext(context));
