@@ -50,26 +50,26 @@ class PopulateEvent < ApplicationRecord
   end
 
   def generate_url
-    key = "1234"
+    key = "AIzaSyD_LhDBKQlxOLO34kgMh0cuT8YXR63ndFg"
 
     URI("https://maps.googleapis.com/maps/api/place/details/json?place_id=#{@search_place_details[:place_id]}&key=#{key}")
   end
 
   def fetch_place_details(url)
-    # https = Net::HTTP.new(url.host, url.port)
-    # https.use_ssl = true
+    https = Net::HTTP.new(url.host, url.port)
+    https.use_ssl = true
 
-    # request = Net::HTTP::Get.new(url)
+    request = Net::HTTP::Get.new(url)
 
-    # response = https.request(request)
+    response = https.request(request)
 
-    # response_json = response.read_body
-    # JSON.parse(response_json)
+    response_json = response.read_body
+    JSON.parse(response_json)
 
-    # TEST JSONS
-    filepath = "app/services/test_results/place_details_test.json"
-    serialized_places = File.read(filepath)
-    JSON.parse(serialized_places)
+    # # TEST JSONS
+    # filepath = "app/services/test_results/place_details_test.json"
+    # serialized_places = File.read(filepath)
+    # JSON.parse(serialized_places)
   end
 
 end

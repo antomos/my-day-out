@@ -21,7 +21,7 @@ class PopulatePlace < ApplicationRecord
     place.search_user_ratings_total = @search_place_details[:user_ratings_total]
     place.search_photo_reference = @search_place_details[:photo_reference]
     place.search_place_details_id = @search_place_details[:place_id]
-    place.details_overview = @place_details["result"]["editorial_summary"]["overview"]
+    place.details_overview = @place_details["result"]["editorial_summary"]["overview"] if @place_details["result"]["editorial_summary"]
     place.details_formatted_phone_number = @place_details["result"]["formatted_phone_number"]
     place.details_opening_hours_periods = @place_details["result"]["opening_hours"]
     place.search_price_level = @search_place_details[:price_level]
