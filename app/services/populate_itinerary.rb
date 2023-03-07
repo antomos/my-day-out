@@ -24,6 +24,11 @@ class PopulateItinerary < ApplicationRecord
       search_location = location
       url = generate_url(search_location, event_details)
       alternative_places = fetch_places(url, event_details) # DELETE EVENT ARG
+
+      formatted_places = { "results" => format_places(alternative_places["results"]) }
+
+      raise
+
       place = alternative_places["results"].shift
       place_details = populate_place(place)
 
@@ -88,6 +93,16 @@ class PopulateItinerary < ApplicationRecord
 
     serialized_places = File.read(filepath)
     JSON.parse(serialized_places)
+  end
+
+  def format_places(alternative_place_results)
+    formatted_place_results = []
+
+    alternative_place_results.each do |place|
+      formatted_place_results << populate_place(place)
+    end
+
+    formatted_place_results
   end
 
   def populate_place(place)
