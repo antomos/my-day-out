@@ -8,6 +8,8 @@ class Itinerary < ApplicationRecord
   validates :start_time, presence: true
   validates :end_time, presence: true
   validates :interests, presence: true
+  geocoded_by :start_address
+  after_validation :geocode, if: :will_save_change_to_start_address?
 
   attr_accessor :details_wheelchair_accessible_entrance
 
