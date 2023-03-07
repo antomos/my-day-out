@@ -9,10 +9,10 @@
     <div style="display:flex";>
 
     <%# card image %>
-      <%= image_tag event.image_url, style: "min-width:250px; min-height:350px"; %>
+      <%= image_tag event.image_url, style: "min-width:180px; min-height:230px"; %>
 
       <%# edit form %>
-      <div class="col d-none edit-form" data-edit-event-target="formdiv", style="min-width:350px; max-height:350px";>
+      <div class="col d-none edit-form" data-edit-event-target="formdiv", style="min-width:150px; max-height:320px";>
         <button class= "x-button btn btn-pink border1" aria-label= Edit <%= event.title %> style="float: right";>
           <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
         </button>
