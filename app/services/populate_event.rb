@@ -7,7 +7,7 @@ class PopulateEvent < ApplicationRecord
   def initialize(event_template = {})
     @itinerary = event_template[:itinerary]
     @event_details = event_template[:event_details]
-    @place_details = event_template[:place_details]
+    @search_place_details = event_template[:place_details]
     @alternative_places = event_template[:alternative_places]
   end
 
@@ -29,27 +29,44 @@ class PopulateEvent < ApplicationRecord
     url = generate_url
     place_details = fetch_place_details(url)
 
+    place = PopulatePlace.new({
+                                event_details: @event_details,
+                                search_place_details: @search_place_details,
+                                place_details: place_details
+                              }).perform
+
     event.directions_to_event = "NO DIRECTIONS YET"
-    # event.place =
+    event.place = place
+
+    event.save!
+
     event
   end
 
   def generate_url
     key = 1234
 
-    URI("https://maps.googleapis.com/maps/api/place/details/json?place_id=#{@place_details[:place_id]}&key=#{key}")
+    URI("https://maps.googleapis.com/maps/api/place/details/json?place_id=#{@search_place_details[:place_id]}&key=#{key}")
   end
 
   def fetch_place_details(url)
-    https = Net::HTTP.new(url.host, url.port)
-    https.use_ssl = true
 
-    request = Net::HTTP::Get.new(url)
+  filepath = "app/services/test_results/place_details_test.json"
 
-    response = https.request(request)
 
-    response_json = response.read_body
-    JSON.parse(response_json)
+  serialized_places = File.read(filepath)
+  JSON.parse(serialized_places)
+
+
+    # https = Net::HTTP.new(url.host, url.port)
+    # https.use_ssl = true
+
+    # request = Net::HTTP::Get.new(url)
+
+    # response = https.request(request)
+
+    # response_json = response.read_body
+    # JSON.parse(response_json)
   end
 
 end
