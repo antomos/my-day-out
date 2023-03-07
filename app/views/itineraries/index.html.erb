@@ -1,17 +1,18 @@
-<!--
+<%# <%# <!-- %>
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <h1 class="h2 my-3 d-flex justify-content-center">Events</h1>
-    </div>
-    <div class="flex-container" id="event" >
-      <%# <% @events.each do |event| %> %>
-        <%# <%= render "event_infos", event: event %> %>
-      <%# <% end %> %>
-    </div>
-
+  <div class="parent1 parent-height">
+    <div class="container">
+      <div class="col">
+        <h1 class="h2 m-3 d-flex justify-content-center">Events</h1>
+      </div>
+      <div class="flex-container" id="event" >
+        <% @events.each do |event| %>
+          <%= render "event_infos", event: event %>
+        <% end %>
+      </div>
+  </div>
 </div>
--->
+
 
 
 <div>
