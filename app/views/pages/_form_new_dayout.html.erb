@@ -10,7 +10,7 @@
         <div class="parent2">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center spacing3">Create a new plan</h2>
+
           <%= simple_form_for [itinerary], data: { controller: 'flatpickr' }  do |f| %>
           <%= f.input :start_address,
                          placeholder: "Enter address here",
@@ -18,9 +18,7 @@
                          input_html: {data: {address_target: "address"}, class: "d-none"},
                          wrapper_html: {data: {controller: "address", address_api_key_value: ENV["MAPBOX_API_KEY"]}}
             %>
-            <%= button_tag(type: 'submit' ,class: "btn btn-light loc-icon") do %>
-              <i class="fa-solid fa-location-crosshairs"></i>
-            <% end %>
+
 
 
             <%= f.input :date, as: :string, input_html: { data: {flatpickr_target: "date" } } %>
