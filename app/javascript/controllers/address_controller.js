@@ -33,9 +33,34 @@ export default class extends Controller {
 
     navigator.geolocation.getCurrentPosition((data) => {
       console.log(data.coords.latitude, data.coords.longitude);
+      this.addressTarget.classList.remove("d-none")
 
 
     });
   }
 
 }
+/*
+// Initialize the Geocoder function
+var geocoder = new MapboxGeocoder({
+  accessToken: 'YOUR_ACCESS_TOKEN',
+  mapboxgl: mapboxgl
+});
+
+// Attach the Geocoder function to the input field
+document.getElementById('address-input').appendChild(geocoder.onAdd(map));
+
+// Attach a click event listener to the current location button
+document.getElementById('current-location-btn').addEventListener('click', function() {
+  // Get the user's current location
+  navigator.geolocation.getCurrentPosition(function(position) {
+    var lngLat = [position.coords.longitude, position.coords.latitude];
+    // Set the map's center to the user's current location
+    map.setCenter(lngLat);
+    // Fill the current location into the address input field
+    geocoder.queryReverse(lngLat, function(err, result) {
+      if (err) throw err;
+      document.getElementById('address-input').value = result.features[0].place_name;
+    });
+  });
+}); */
