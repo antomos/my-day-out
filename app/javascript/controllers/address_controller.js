@@ -1,41 +1,38 @@
-import { Controller } from "@hotwired/stimulus"
-import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
+// import { Controller } from "@hotwired/stimulus"
+// import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
 
+// export default class extends Controller {
+//   static values = { apiKey: String }
 
+//   static targets = ["address"]
 
-export default class extends Controller {
-  static values = { apiKey: String }
+//   connect() {
+//     this.geocoder = new MapboxGeocoder({
+//       accessToken: this.apiKeyValue,
+//       types: "country,region,place,postcode,locality,neighborhood,address"
+//     })
+//     this.geocoder.addTo(this.element)
 
-  static targets = ["address"]
+//     this.geocoder.on("result", event => this.#setInputValue(event))
+//     this.geocoder.on("clear", () => this.#clearInputValue())
+//   }
 
-  connect() {
-    this.geocoder = new MapboxGeocoder({
-      accessToken: this.apiKeyValue,
-      types: "country,region,place,postcode,locality,neighborhood,address"
-    })
-    this.geocoder.addTo(this.element)
+//   #setInputValue(event) {
+//     this.addressTarget.value = event.result["place_name"]
+//   }
 
-    this.geocoder.on("result", event => this.#setInputValue(event))
-    this.geocoder.on("clear", () => this.#clearInputValue())
-  }
+//   #clearInputValue() {
+//     this.addressTarget.value = ""
+//   }
 
-  #setInputValue(event) {
-    this.addressTarget.value = event.result["place_name"]
-  }
+//   getLocation(event) {
+//     event.preventDefault();
+//     console.log(event);
 
-  #clearInputValue() {
-    this.addressTarget.value = ""
-  }
+//     navigator.geolocation.getCurrentPosition((data) => {
+//       console.log(data.coords.latitude, data.coords.longitude);
 
-  getLocation(event) {
-    event.preventDefault();
-    console.log(event);
+//     });
+//   }
 
-    navigator.geolocation.getCurrentPosition((data) => {
-      console.log(data.coords.latitude, data.coords.longitude);
-
-
-    });
-  }
-
-}
+// }
