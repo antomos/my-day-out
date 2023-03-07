@@ -9,6 +9,9 @@ export default class extends Controller {
   static targets = ["address"]
 
   connect() {
+    console.log("geocoder connected");
+
+
     this.geocoder = new MapboxGeocoder({
       accessToken: this.apiKeyValue,
       types: "country,region,place,postcode,locality,neighborhood,address"
@@ -20,6 +23,7 @@ export default class extends Controller {
   }
 
   #setInputValue(event) {
+
     this.addressTarget.value = event.result["place_name"]
   }
 
@@ -27,17 +31,25 @@ export default class extends Controller {
     this.addressTarget.value = ""
   }
 
-  getLocation(event) {
+  getLocation() {
+    console.log("link", this.linkTarget);
+    console.log('location address target', this.addressTarget)
+  }
+  /* getLocation(event) {
+    console.log("get location");
     event.preventDefault();
-    console.log(event);
+    //console.log(event);
+   console.log("address target", this.addressTarget);
 
-    navigator.geolocation.getCurrentPosition((data) => {
+   /* navigator.geolocation.getCurrentPosition((data) => {
       console.log(data.coords.latitude, data.coords.longitude);
+
       this.addressTarget.classList.remove("d-none")
 
 
-    });
-  }
+    });*/
+
+
 
 }
 /*
