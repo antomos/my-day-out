@@ -27,19 +27,25 @@ class PopulateEvent < ApplicationRecord
 
     #get event details
     url = generate_url
-    place_details = fetch_place_details(url)
 
-    place = PopulatePlace.new({
-                                event_details: @event_details,
-                                search_place_details: @search_place_details,
-                                place_details: place_details
-                              }).perform
+    # raise
 
-    event.directions_to_event = "NO DIRECTIONS YET"
-    event.place = place
+    if Place.find_by(search_place_details_id: @search_place_details[:place_id])
+      event.place = Place.find_by(search_place_details_id: @search_place_details[:place_id])
+    else
+      place_details = fetch_place_details(url)
+
+      place = PopulatePlace.new({
+                                  event_details: @event_details,
+                                  search_place_details: @search_place_details,
+                                  place_details: place_details
+                                }).perform
+
+      event.directions_to_event = "NO DIRECTIONS YET"
+      event.place = place
+    end
 
     event.save!
-
     event
   end
 
