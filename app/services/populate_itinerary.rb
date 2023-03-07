@@ -17,7 +17,7 @@ class PopulateItinerary < ApplicationRecord
   private
 
   def populate_itinerary
-    location = @params["start_address"]
+    location = "#{@itinerary.latitude}, #{@itinerary.longitude}"
 
     event_places = []
 

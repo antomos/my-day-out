@@ -29,10 +29,10 @@ class ItineraryTemplate < ApplicationRecord
 
 
   TRAVEL_TIME = 15
-  DINING_TYPE_TIME = Time.new(Time.now.year, Time.now.month, Time.now.day, 18, 0, 0)
-  LUNCH_CUTOFF = Time.new(Time.now.year, Time.now.month, Time.now.day, 11, 45, 0)
-  DINNER_CUTOFF = Time.new(Time.now.year, Time.now.month, Time.now.day, 18, 30, 0)
-  DRINKING_CUTOFF = Time.new(Time.now.year, Time.now.month, Time.now.day, 16, 0, 0)
+  DINING_TYPE_TIME = Time.new(1, 1, 1, 17, 0, 0)
+  LUNCH_CUTOFF = Time.new(1, 1, 1, 11, 45, 0)
+  DINNER_CUTOFF = Time.new(1, 1, 1, 18, 30, 0)
+  DRINKING_CUTOFF = Time.new(1, 1, 1, 16, 0, 0)
 
   DINING_DRINKS = ["dining_lunch", "dining_lunch_drinks", "dining_dinner", "dining_dinner_drinks"]
 
@@ -59,24 +59,35 @@ class ItineraryTemplate < ApplicationRecord
 
     # {"start_address"=>"asdsad", "date"=>"04/12/2023", "start_time(1i)"=>"2023", "start_time(2i)"=>"3", "start_time(3i)"=>"6", "start_time(4i)"=>"13", "start_time(5i)"=>"00", "end_time(1i)"=>"2023", "end_time(2i)"=>"3", "end_time(3i)"=>"6", "end_time(4i)"=>"21", "end_time(5i)"=>"00", "budget"=>"2", "dining_requirements"=>"adsd", "details_wheelchair_accessible_entrance"=>"false", "interests"=>["", "History", "Dining", "Drinks", "Activity", "Shopping"]} permitted: true>
 
+    time = @params["start_time"].split(":")
+    start_hour = time[0]
+    start_minute = time[1]
+
+    time = @params["end_time"].split(":")
+    end_hour = time[0]
+    end_minute = time[1]
+
     params = {
       interests: @params["interests"],
-      start_time: Time.new(
-        @params["start_time(1i)"].to_i, # year
-        @params["start_time(2i)"].to_i, # month
-        @params["start_time(3i)"].to_i, # day
-        @params["start_time(4i)"].to_i, # hour
-        @params["start_time(5i)"].to_i, # minute
-        0
-      ),
-      end_time: Time.new(
-        @params["end_time(1i)"].to_i, # year
-        @params["end_time(2i)"].to_i, # month
-        @params["end_time(3i)"].to_i, # day
-        @params["end_time(4i)"].to_i, # hour
-        @params["end_time(5i)"].to_i, # minute
-        0
-      ),
+      # start_time: Time.new(
+      #   @params["start_time(1i)"].to_i, # year
+      #   @params["start_time(2i)"].to_i, # month
+      #   @params["start_time(3i)"].to_i, # day
+      #   @params["start_time(4i)"].to_i, # hour
+      #   @params["start_time(5i)"].to_i, # minute
+      #   0
+      # ),
+      # end_time: Time.new(
+      #   @params["end_time(1i)"].to_i, # year
+      #   @params["end_time(2i)"].to_i, # month
+      #   @params["end_time(3i)"].to_i, # day
+      #   @params["end_time(4i)"].to_i, # hour
+      #   @params["end_time(5i)"].to_i, # minute
+      #   0
+      # ),
+      start_time: Time.new(1, 1, 1, start_hour, start_minute, 0),
+      end_time: Time.new(1, 1, 1, end_hour, end_minute, 0),
+
       dining_requirements: @params["dining_requirements"],
       dining_budget: @params["budget"],
       location: "51.512990,-0.131592"
@@ -85,7 +96,9 @@ class ItineraryTemplate < ApplicationRecord
     interests = params[:interests]
     start_time = params[:start_time]
     end_time = params[:end_time]
-    puts start_time
+    # puts start_time
+
+
     dining_requirements = params[:dining_requirements]
     dining_budget = params[:dining_budget]
     location = params[:location]
