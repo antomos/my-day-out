@@ -1,0 +1,2 @@
+class PopulatePlace < ApplicationRecord
+end

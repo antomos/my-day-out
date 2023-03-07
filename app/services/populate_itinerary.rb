@@ -21,19 +21,19 @@ class PopulateItinerary < ApplicationRecord
 
     @itinerary_template.each do |event_details|
 
-      event = Event.new
-      event.itinerary = @itinerary
-      event.start_time = event_details[:event_start_time]
-      event.end_time = event_details[:event_end_time]
-      event.order_number = event_details[:order_number]
-
       search_location = location
       url = generate_url(search_location, event_details)
       alternative_places = fetch_places(url, event_details) # DELETE EVENT ARG
       place = alternative_places["results"].shift
-
       place_details = populate_place(place)
 
+
+      event = PopulateEvent.new({
+                                  itinerary: @itinerary,
+                                  event_details: event_details,
+                                  place_details: place_details,
+                                  alternative_places: alternative_places
+                                }).perform
 
 
       raise
