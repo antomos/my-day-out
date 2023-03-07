@@ -19,13 +19,13 @@
                          wrapper_html: {data: {controller: "address", address_api_key_value: ENV["MAPBOX_API_KEY"]}}
             %>
             <%= button_tag(type: 'submit' ,class: "btn btn-light loc-icon") do %>
-    <i class="fa-solid fa-location-crosshairs"></i>
-  <% end %>
+              <i class="fa-solid fa-location-crosshairs"></i>
+            <% end %>
 
 
             <%= f.input :date, as: :string, input_html: { data: {flatpickr_target: "date" } } %>
-            <%= f.input :start_time,  as: :string, input_html: { data: {flatpickr_target: "start" } } %>
-            <%= f.input :end_time,  as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+            <%= f.input :start_time,  :as => :time, :minute_step => 15, input_html: { data: {flatpickr_target: "start" } } %>
+            <%= f.input :end_time,  :as => :time, :minute_step => 15, input_html: { data: {flatpickr_target: "end" } } %>
 
             <%= f.input :budget, as: :range, input_html: { min: 0, step: 1, max: 4} %>
             <%= f.input :interests,
@@ -36,7 +36,7 @@
                         input_html: {class: 'category-selector'},
                         collection: Itinerary::INTERESTS,
                         include_hidden: false %>
-            <%= f.input :dining_requirements, placeholder: "Italian"  %>
+            <%= f.input :dining_requirements %>
             <%= f.input :details_wheelchair_accessible_entrance, as: :radio_buttons %>
             <%= f.submit class: "btn btn-pink border2 spacing1" %>
           <% end %>
