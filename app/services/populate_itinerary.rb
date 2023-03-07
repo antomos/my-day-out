@@ -46,7 +46,7 @@ class PopulateItinerary < ApplicationRecord
   end
 
   def generate_url(search_location, event_details)
-    key = ENV["GOOGLE_API_KEY"]#"AIzaSyD_LhDBKQlxOLO34kgMh0cuT8YXR63ndFg"
+    key = ENV["GOOGLE_API_KEY"]
 
     URI("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{search_location}&radius=#{event_details[:radius]}&type=#{event_details[:place_type]}&keyword=#{event_details[:keyword]}&maxprice=#{event_details[:maxprice]}&rankby=prominence&key=#{key}")
   end

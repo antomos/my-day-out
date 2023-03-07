@@ -50,7 +50,7 @@ class PopulateEvent < ApplicationRecord
   end
 
   def generate_url
-    key = ENV["GOOGLE_API_KEY"] # "AIzaSyD_LhDBKQlxOLO34kgMh0cuT8YXR63ndFg"
+    key = ENV["GOOGLE_API_KEY"]
 
     URI("https://maps.googleapis.com/maps/api/place/details/json?place_id=#{@search_place_details[:place_id]}&key=#{key}")
   end
