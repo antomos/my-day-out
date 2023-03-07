@@ -26,7 +26,7 @@ class PopulateItinerary < ApplicationRecord
 
       url = generate_url(search_location, event)
       places = fetch_places(url, event) # DELETE EVENT ARG
-      event_places << places
+      # event_places << places
     end
     raise
   end
