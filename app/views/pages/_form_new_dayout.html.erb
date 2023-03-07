@@ -24,9 +24,8 @@
 
 
             <%= f.input :date, as: :string, input_html: { data: {flatpickr_target: "date" } } %>
-            <%= f.input :start_time,  :as => :time, :minute_step => 15, input_html: { data: {flatpickr_target: "start" } } %>
-            <%= f.input :end_time,  :as => :time, :minute_step => 15, input_html: { data: {flatpickr_target: "end" } } %>
-
+            <%= f.input :start_time,  as: :string, input_html: { data: {flatpickr_target: "start" } } %>
+            <%= f.input :end_time,  as: :string, input_html: { data: {flatpickr_target: "end" } } %>
             <%= f.input :budget, as: :range, input_html: { min: 0, step: 1, max: 4} %>
             <%= f.input :interests,
                         as: :check_boxes,

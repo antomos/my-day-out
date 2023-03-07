@@ -13,13 +13,15 @@ export default class extends Controller {
         });
 
     // Initialize Flatpickr on the start time input
-    const minTime = "08:00";
-    const maxTime = "19:00";
+    const startMinTime = "08:00";
+    const startMaxTime = "18:00";
+    const endMinTime = "09:00";
+    const endMaxTime = "19:00";
     const startTimeInput = flatpickr(this.startTarget, {
       enableTime: true,
       noCalendar: true,
-      minTime: minTime,
-      maxTime: maxTime,
+      minTime: startMinTime,
+      maxTime: startMaxTime,
       time_24hr: true,
       dateFormat: "H:i",
       onChange: function(selectedDates, dateStr, instance) {
@@ -32,8 +34,8 @@ export default class extends Controller {
     const endTimeInput = flatpickr(this.endTarget, {
       enableTime: true,
       noCalendar: true,
-      minTime: minTime,
-      maxTime: maxTime,
+      minTime: endMinTime,
+      maxTime: endMaxTime,
       time_24hr: true,
       dateFormat: "H:i",
       onChange: function(selectedDates, dateStr, instance) {
