@@ -19,18 +19,21 @@ class PopulateItinerary < ApplicationRecord
   def populate_itinerary
     location = @params["start_address"]
 
+    event_places = []
+
     @itinerary_template.each do |event|
       search_location = location
 
       url = generate_url(search_location, event)
       places = fetch_places(url, event) # DELETE EVENT ARG
-      raise
+      event_places << places
     end
+    raise
   end
 
   def generate_url(search_location, event)
     key = 1234
-    # "AIzaSyD_LhDBKQlxOLO34kgMh0cuT8YXR63ndFg"
+
     URI("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{search_location}&radius=#{event[:radius]}&type=#{event[:place_type]}&keyword=#{event[:keyword]}&maxprice=#{event[:maxprice]}&rankby=prominence&key=#{key}")
   end
 
