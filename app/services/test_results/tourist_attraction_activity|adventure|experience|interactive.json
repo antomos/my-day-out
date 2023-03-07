@@ -1,0 +1,825 @@
+{
+  "html_attributions": [],
+  "results": [
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5018817,
+                  "lng": -0.1193734
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50281937989273,
+                      "lng": -0.1182853201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50011972010729,
+                      "lng": -0.1209849798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Shrek's Adventure London",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3456,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/110615338015011702066\">Badal Z</a>"
+                  ],
+                  "photo_reference": "AfLeUgNBgHQQYaJyuAqFDc24mt4xnij-kP-8oXTswJlu8fIfBObt-ZvLc4R1haOlhSG_EUqRXcxtGtVH55_mwIkHzPE6m_6XspEUzNEj1ybdG7SewuS8DcIOpmDux0jf-3Nlhn7Jph3vovVb94Z_rETdeCyFDiCoA9Ba9Dv8ExWP70BaazxY",
+                  "width": 4608
+              }
+          ],
+          "place_id": "ChIJnzLnCMcEdkgRioLEm8rT_aA",
+          "plus_code": {
+              "compound_code": "GV2J+Q7 London",
+              "global_code": "9C3XGV2J+Q7"
+          },
+          "rating": 4.1,
+          "reference": "ChIJnzLnCMcEdkgRioLEm8rT_aA",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5606,
+          "vicinity": "Riverside Building, County Hall, Westminster Bridge Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5109234,
+                  "lng": -0.1335766
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51229022989272,
+                      "lng": -0.1322839701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50959057010728,
+                      "lng": -0.1349836298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "The Crystal Maze LIVE Experience",
+          "opening_hours": {
+              "open_now": false
+          },
+          "photos": [
+              {
+                  "height": 1365,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/109007908229329890042\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOi8zYXQjkV5ok-v3M1LNkFw5uQRAX6yc9IUmIurGNQ71Tl-xoTER7HwV7DK4vnJ293xjvgCXnR0K_Ho14rFaawnPKN_OvN0TuWHC3g2GQu9bLNiztOWnu3pUz5fLPb7mwwLOTy8-0PtpIWmKqbml6w2-xELC4k-o06_AzTvOkTb4sL",
+                  "width": 2048
+              }
+          ],
+          "place_id": "ChIJjzKeFKcFdkgRD85JyyLyBcY",
+          "plus_code": {
+              "compound_code": "GV68+9H London",
+              "global_code": "9C3XGV68+9H"
+          },
+          "rating": 4.7,
+          "reference": "ChIJjzKeFKcFdkgRD85JyyLyBcY",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 1927,
+          "vicinity": "22 - 32 Shaftesbury Ave, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5137169,
+                  "lng": -0.1604557
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51502187989272,
+                      "lng": -0.1591787701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51232222010727,
+                      "lng": -0.1618784298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Frameless Immersive Art Experience",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 5504,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/103786320255622859026\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgNT8Tb9Fd0XEhenPjJ8sl6_gzf1EjC7jlNW0xPL635lcGGVd-_aLNWflhHfBriPCftLwvv6XPwrG6SLAY3vTUGncSveD305NVzqyFYhHO0x0bo2JtL__2mAP5N25iPw08Q2iUkFNX5V7aDc-8nZ3LfSwCIwkVQ8zukEV8d0Bf7lhGrD",
+                  "width": 8256
+              }
+          ],
+          "place_id": "ChIJId2oNroFdkgReafXXIrGnkY",
+          "plus_code": {
+              "compound_code": "GR7Q+FR London",
+              "global_code": "9C3XGR7Q+FR"
+          },
+          "rating": 4.7,
+          "reference": "ChIJId2oNroFdkgReafXXIrGnkY",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 277,
+          "vicinity": "6, Marble Arch Place, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5032973,
+                  "lng": -0.1195537
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50464877989272,
+                      "lng": -0.1164435999999999
+                  },
+                  "southwest": {
+                      "lat": 51.50194912010727,
+                      "lng": -0.1205904
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "lastminute.com London Eye",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/102237000757903675837\">Borbas Viktoria</a>"
+                  ],
+                  "photo_reference": "AfLeUgN4iQkOrjRJzi3I679yVgLa8Os70XLmX1xELFkOBXlfApqBn0AikL7cwRmmD5s81sh-LGU2mt0op5SsY_6E5XFRAManLdaQwlKsDGBfwnto40MNw_HSxAigCPm-kt38RCbUYZYXu3LlX-wvlxas0minIiMC2eTsSzgD3OmkbZlak-cx",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJc2nSALkEdkgRkuoJJBfzkUI",
+          "plus_code": {
+              "compound_code": "GV3J+85 London",
+              "global_code": "9C3XGV3J+85"
+          },
+          "rating": 4.5,
+          "reference": "ChIJc2nSALkEdkgRkuoJJBfzkUI",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 150801,
+          "vicinity": "Riverside Building, County Hall, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.501558,
+                  "lng": -0.119506
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50261787989272,
+                      "lng": -0.1183434201072778
+                  },
+                  "southwest": {
+                      "lat": 51.49991822010728,
+                      "lng": -0.1210430798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "SEA LIFE Centre London Aquarium",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 408,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108239778805830706312\">Alhadi Abdullah</a>"
+                  ],
+                  "photo_reference": "AfLeUgPRIFZziP_QLoikLK1QveWIDfIU8PlHl5UrDWTGNIn0X253EiBRAHBBO-9YvxvXSGfQfwk93WOiwmb-J8y8odu6n7wWjftI_puDmLlufn9w37-9dWn2efKMyirwRP56KjLQZyoJnZVo8TWJQ7XersjXoCAupOXdHs7j9zozWE6v0Gn6",
+                  "width": 612
+              }
+          ],
+          "place_id": "ChIJc2nSALkEdkgRviluWxwFsxA",
+          "plus_code": {
+              "compound_code": "GV2J+J5 London",
+              "global_code": "9C3XGV2J+J5"
+          },
+          "rating": 4.3,
+          "reference": "ChIJc2nSALkEdkgRviluWxwFsxA",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 23171,
+          "vicinity": "Riverside Building, County Hall, Westminster Bridge Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5200231,
+                  "lng": -0.1335483
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52137397989272,
+                      "lng": -0.1321859701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51867432010727,
+                      "lng": -0.1348856298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Monopoly Lifesized",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 7551,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108287529345696716185\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMgYGKpqR4_uDc4TQE0dsC9F1q4r0_EcQXTyHyVhHZYkx9yKUr-UjRlNByWMFzNPBc7XLgyEo1xlrvf4Pfh9GDCIushPX1Al0v9Z2Vc9b6JNmClpj3c_qUKBqpOG7PHLmiMAZgXTwaZ_P87jUFqYZ0Yiah-NL98HoZju8G6frz0gpXR",
+                  "width": 12450
+              }
+          ],
+          "place_id": "ChIJmVD7qH0bdkgRc9vfp-Z3y8M",
+          "plus_code": {
+              "compound_code": "GVC8+2J London",
+              "global_code": "9C3XGVC8+2J"
+          },
+          "rating": 4.3,
+          "reference": "ChIJmVD7qH0bdkgRc9vfp-Z3y8M",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 798,
+          "vicinity": "Monopoly Lifesized, 213-215 Tottenham Ct Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5042538,
+                  "lng": -0.1034012
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50565437989273,
+                      "lng": -0.1020359201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50295472010728,
+                      "lng": -0.1047355798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Immersive Gamebox - London Southbank",
+          "opening_hours": {
+              "open_now": false
+          },
+          "photos": [
+              {
+                  "height": 3252,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/116969879177266116250\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgM5zog0ntIFbruf48fK3VWmvEeUD4kcUkh4Wqkm8kkqE6u_jaS3gK-NYNiB-f4CxYRU0ddd5crYaw0Z6KfvJPD5lZ5Js2sr1ECvKzFwF0gK0gCMK0d5qJtFopNleeZDKiDDI3awQ7xP-salKOHZtbAo48z1ifqz_2b7dZ217M1eA3pQ",
+                  "width": 5184
+              }
+          ],
+          "place_id": "ChIJW0sjYeEFdkgRdwCty-McgJs",
+          "plus_code": {
+              "compound_code": "GV3W+PJ London",
+              "global_code": "9C3XGV3W+PJ"
+          },
+          "rating": 4.9,
+          "reference": "ChIJW0sjYeEFdkgRdwCty-McgJs",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 1708,
+          "vicinity": "Arch 3, 83 Scoresby St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5115156,
+                  "lng": -0.1230723
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51286542989271,
+                      "lng": -0.1217224701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51016577010727,
+                      "lng": -0.1244221298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Huntfun Covent Garden",
+          "photos": [
+              {
+                  "height": 3456,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/116440004921679893563\">Steve Pickering</a>"
+                  ],
+                  "photo_reference": "AfLeUgPxM79BjunDhpsGEi5-DQlQkVEmOc27EL8hiKAYL0gv2nRAzSuLQ8bBTfqwDZnmZqjUfbZ612l2rMwvoum-NTpGwvbJ-lbZhuNICQxreK8s9pqrA31BXJB-rYYis5bLXastgiGQGXRm2VZwFFyM6AW5mRh11y4xIlDnDVya6KAqS7nt",
+                  "width": 4608
+              }
+          ],
+          "place_id": "ChIJDQ2RjTQFdkgRQ38KDlTfWes",
+          "plus_code": {
+              "compound_code": "GV6G+JQ London",
+              "global_code": "9C3XGV6G+JQ"
+          },
+          "rating": 4.9,
+          "reference": "ChIJDQ2RjTQFdkgRQ38KDlTfWes",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 15,
+          "vicinity": "London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5230174,
+                  "lng": -0.1543613
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52417882989272,
+                      "lng": -0.1532724701072778
+                  },
+                  "southwest": {
+                      "lat": 51.52147917010728,
+                      "lng": -0.1559721298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Madame Tussauds London",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 558,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/118312324602128486874\">Roberto Bianco</a>"
+                  ],
+                  "photo_reference": "AfLeUgPbGIge1K6pdgevda-e6GGJsyvIa-SDowx-dzNjjlF6sYMdcBms5pxAQtmvYVGLkVjc_p78T7Cu2ZWMw8AtgO7498aKKDt6eeO9tcghEjBiNTsoKA91eySI_0K_WSYR9rDPwKuACOxnkvlZ2BTm4l67KwFqKWomUHaTKyAstJu38YeO",
+                  "width": 750
+              }
+          ],
+          "place_id": "ChIJgZ24Us4adkgRpDNAwNPO_SY",
+          "plus_code": {
+              "compound_code": "GRFW+67 London",
+              "global_code": "9C3XGRFW+67"
+          },
+          "rating": 4.4,
+          "reference": "ChIJgZ24Us4adkgRpDNAwNPO_SY",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 62973,
+          "vicinity": "Marylebone Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5021585,
+                  "lng": -0.1293572
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50356677989272,
+                      "lng": -0.1279011201072777
+                  },
+                  "southwest": {
+                      "lat": 51.50086712010727,
+                      "lng": -0.1306007798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Churchill War Rooms",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3456,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/106335697136243676410\">Jensie W.</a>"
+                  ],
+                  "photo_reference": "AfLeUgPh9f78aDfBcEDxGS6MBTggUs_s-GmbXkLuSC-2AabcLqVy7m8WiJfeMPI5Agee4TcNiWi3QKzg2ujCy9qdXeKw4ly1a2yNxUve4E_yJUcDjEmOAULQK06ZJHGA0KVWFtHnGXl1G1s7XcYcRkxsTOy3rR_an-Du7PZxzbYnaXnrfji4",
+                  "width": 4608
+              }
+          ],
+          "place_id": "ChIJq4lX1doEdkgR5JXPstgQjc0",
+          "plus_code": {
+              "compound_code": "GV2C+V7 London",
+              "global_code": "9C3XGV2C+V7"
+          },
+          "rating": 4.6,
+          "reference": "ChIJq4lX1doEdkgR5JXPstgQjc0",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 10984,
+          "vicinity": "King Charles St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50251189999999,
+                  "lng": -0.1187628
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50404607989272,
+                      "lng": -0.1165640499999999
+                  },
+                  "southwest": {
+                      "lat": 51.50134642010728,
+                      "lng": -0.12065505
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "The London Dungeon",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1362,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/111238805586210639253\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMVfk3SUKZ6Ck_CenyJkQKOUCKXRmXwEKfyIZlFmafUosK5NgZPy05dU2__CXCyoR1vDpgOuu8_CXDMdr-dhkaxArQ7cAdJrT-EqKtiMkri_Pi7ptnygiaJpOX5UhDsNyIDlRhSxpL9emkW_UaNB3eQfugC10T9MFwXBiu3sH-qwVZA",
+                  "width": 1440
+              }
+          ],
+          "place_id": "ChIJk9LIC8cEdkgR2TkO-raMEDk",
+          "plus_code": {
+              "compound_code": "GV3J+2F London",
+              "global_code": "9C3XGV3J+2F"
+          },
+          "rating": 4.3,
+          "reference": "ChIJk9LIC8cEdkgR2TkO-raMEDk",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 16085,
+          "vicinity": "Riverside Building, County Hall, Westminster Bridge Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5119031,
+                  "lng": -0.1215852
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51310902989272,
+                      "lng": -0.1201050701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51040937010728,
+                      "lng": -0.1228047298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "London Transport Museum",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 6936,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115067780571793013102\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOGlw_Qa60ecPlQNQHftsY8VnvS-VIh-stJgrnqurJZU5Y6S_XZRTeafZYaow-b7vwY8ICTqtw4qe35kw09mv3eb2gUekor_xDK3xa-KgEBLtnGAtv7s99oHUmKLM21ArpyKQ5VtAeUaNDFydFmWZ_Hd7fGun1n4SKvtS1bhXq6CmKo",
+                  "width": 9248
+              }
+          ],
+          "place_id": "ChIJ4bF21K8FdkgRDXc6FiSVAzE",
+          "plus_code": {
+              "compound_code": "GV6H+Q9 London",
+              "global_code": "9C3XGV6H+Q9"
+          },
+          "rating": 4.5,
+          "reference": "ChIJ4bF21K8FdkgRDXc6FiSVAzE",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "tourist_attraction",
+              "cafe",
+              "food",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 8886,
+          "vicinity": "The Piazza, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.4994794,
+                  "lng": -0.1248092
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50086682989271,
+                      "lng": -0.1241313701072778
+                  },
+                  "southwest": {
+                      "lat": 51.49816717010727,
+                      "lng": -0.1268310298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+          "name": "Palace of Westminster",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 372,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104315546018255918878\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgNXVFEy0lagggZUc4TvLMXgXV5H7LYal7TVpa8OfjzG0Veb0AhMIQTLH5OFvu3Nhhbj5jP5haZB7aFJcKdJlZdEAjGjEJkainGUHQONHQYcUE0NTLuZLAJPDArSd5NorkkjV-6JF43a5SH3HsNOcvG49IOqcVwzqtNWtc8ptAzyZLGJ",
+                  "width": 612
+              }
+          ],
+          "place_id": "ChIJmZuNDMQEdkgRfB9O9456eQc",
+          "plus_code": {
+              "compound_code": "FVXG+Q3 London",
+              "global_code": "9C3XFVXG+Q3"
+          },
+          "rating": 4.6,
+          "reference": "ChIJmZuNDMQEdkgRfB9O9456eQc",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 3787,
+          "vicinity": "London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.510359,
+                  "lng": -0.1300625
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51151807989272,
+                      "lng": -0.1287595701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50881842010727,
+                      "lng": -0.1314592298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Leicester Square",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1944,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/111078568834338634144\">Angel De Jesús Rodríguez Ceballos</a>"
+                  ],
+                  "photo_reference": "AfLeUgOEMF7S3ZaGBXtfpPmid9LUxwgw5hqYb4yCHEppdFeZyOBapaDOMgOJaH7fWp641Zry1UEzyUmJOj6Zg9cwaY0f78ZSksJyfZDrEpOj5Gp-nbSuDRDnIJD23lNIGs247YL96UXX2cUqVbVY-6sRhcCaycSOAR5C2ZEPgNbVLL-q6vcO",
+                  "width": 2592
+              }
+          ],
+          "place_id": "ChIJVX1-GtIEdkgR1n_gGjHQZpI",
+          "plus_code": {
+              "compound_code": "GV69+4X London",
+              "global_code": "9C3XGV69+4X"
+          },
+          "rating": 4.5,
+          "reference": "ChIJVX1-GtIEdkgR1n_gGjHQZpI",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "movie_theater",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 17342,
+          "vicinity": "Leicester Square, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5045233,
+                  "lng": -0.1290511
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50604392989273,
+                      "lng": -0.12515555
+                  },
+                  "southwest": {
+                      "lat": 51.50334427010728,
+                      "lng": -0.13063215
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Horse Guards Parade",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2268,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/114665053401315427243\">Maurizio Spinetta</a>"
+                  ],
+                  "photo_reference": "AfLeUgPIeMv5dMwGJazR52CQf3a9lziX58q8jHKoEOK_JDMs7w9fxbNCw-HKBJT1X9TNMx5B9ucnzzHdnSqzRiyEjS8uPo0VZH0f0zOcEnvWVVzkpjhyuTyhxg4mvtRzncFgO3hWdE6mH-EW5lXFcv6GeYaFKWhNFhc6cztymYJUeB9IFKjI",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJk64Ub1wFdkgRnYow99KoPBE",
+          "plus_code": {
+              "compound_code": "GV3C+R9 London",
+              "global_code": "9C3XGV3C+R9"
+          },
+          "rating": 4.7,
+          "reference": "ChIJk64Ub1wFdkgRnYow99KoPBE",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 828,
+          "vicinity": "Horse Guards Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5246064,
+                  "lng": -0.1132016
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52641517989272,
+                      "lng": -0.1108422999999999
+                  },
+                  "southwest": {
+                      "lat": 51.52371552010727,
+                      "lng": -0.1142495
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Mail Rail at The Postal Museum",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 675,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104003152993361082708\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOsSFvhOKi-PqfSTbQIU2JlalZJPcgTTDWbM9VTlEyrhvwAfgSQIhSXJgBY2x-vzYvT5a_qEU_-1XgYHhilEpnY-g0U3-DG8lBREAKsDpCzcE7qYBJE3A1ILKw9YsMLfkTqlWO8epBU0jtfrYadAVZBcA5hcxU_VID1Ncm66y3BrXZp",
+                  "width": 1200
+              }
+          ],
+          "place_id": "ChIJ-6KrlkgbdkgR3YcTn0mEW5M",
+          "plus_code": {
+              "compound_code": "GVFP+RP London",
+              "global_code": "9C3XGVFP+RP"
+          },
+          "rating": 4.6,
+          "reference": "ChIJ-6KrlkgbdkgR3YcTn0mEW5M",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 244,
+          "vicinity": "15-20 Phoenix Pl, London"
+      }
+  ],
+  "status": "OK"
+}

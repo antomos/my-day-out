@@ -1,0 +1,1047 @@
+{
+  "html_attributions": [],
+  "next_page_token": "AfLeUgNDsx9jWqz-4f7exPULzTqJ8se37ds8zjf3zyEGKRaANRTxABwxQnjq9auLINpNefGM6OnOjmFED09G48oLXNTFhlWwELPLoEjHbg3KpUxBT9xqrbFb1mWN5vo-tKnM9wxtxBpiIh_tSbTnJFEZ9WjUIl1h2E2y4mAP43XFxByueVVMtlmNxKxKZXB_YhejLgeaF5Ej_Ez00Giv8r2vaQeQmHMEptpvhBLGfmNJAUbM_9JxNyQULbm_JgQ4yFStT8LmZBjKPwSbtjQ4nGpG1XgVNI1sAwrLP7fbRwkT8H8_M14LDtCY7y3vRhWj3nmuAsmKh1cEHqMBeKLsZGCHrcNId9NTESJt46LfixJ4B5QEbFx-kmiJ1x1Ygp5p27kewS8Ginl7tqryfY6DNdkHAfAnqEp0nyqSUNj0Svz5hj6ngT7NGeUAvoWThPny44Tz-51z0YG5OhfQ",
+  "results": [
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5140329,
+                  "lng": -0.1320651
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51541467989272,
+                      "lng": -0.1305955201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51271502010727,
+                      "lng": -0.1332951798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "Henson's Bar and Social",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 466,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100069294476236001374\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOuu8ikGN3fbWdqEZzzCG-Ucg_M7oz3cmuHXx7rxRyxSgjwLw0Uny8eiXK_iC9Yya37pAU-sdA-lE8iO1rkzH8RkJbeg7-pZMj3aOUBFeur8V1ofQB1uS1Gf5b6HKXnluCSeWPJPta8SY314jLdpKYdiQGziPhY4Qf15zku-QrY4UO_",
+                  "width": 700
+              }
+          ],
+          "place_id": "ChIJjf5lRIMFdkgRnl4w6MUQi7M",
+          "plus_code": {
+              "compound_code": "GV79+J5 London",
+              "global_code": "9C3XGV79+J5"
+          },
+          "rating": 4.6,
+          "reference": "ChIJjf5lRIMFdkgRnl4w6MUQi7M",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 54,
+          "vicinity": "57 Frith St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5167389,
+                  "lng": -0.1290333
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51802517989272,
+                      "lng": -0.1276593201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51532552010728,
+                      "lng": -0.1303589798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "All Bar One New Oxford Street",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/109583659038586875726\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMKMWQXA9BhcrofMYZhUmfx7uukVEigQbl9UaO9Ka0MnYRHXLNzq2xHlFis26bdxaaZPqm-p5ewIkwtJaFP0rPfQsG3l5Znt20tmVqYEgWlsgZRemvFmvXCu1PfpBOsfP27SuqmPIZh0OvR0EWA2EXjzUA-kqEHA_ucx9we_1NB7riT",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJQWX81SwbdkgRIBvdBumb8RU",
+          "plus_code": {
+              "compound_code": "GV8C+M9 London",
+              "global_code": "9C3XGV8C+M9"
+          },
+          "price_level": 2,
+          "rating": 4.4,
+          "reference": "ChIJQWX81SwbdkgRIBvdBumb8RU",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 1936,
+          "vicinity": "108 New Oxford St, Greater, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5100723,
+                  "lng": -0.1306276
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51139382989273,
+                      "lng": -0.1292688201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50869417010728,
+                      "lng": -0.1319684798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "All Bar One Leicester Square",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/113476791042454719829\">Gregory Cl</a>"
+                  ],
+                  "photo_reference": "AfLeUgOdodyo51CW1YOSQHsaay5KAYMMdZtt1ZjyOZRJhezQP5C0nTMDuSFg209GZAX_KR-ITTYFa5fod9rX6OLu0kk8g-8cq4_-cgPeH8IoR92pY_5gV8kUKrQFaMep1wk7fv7iZmvhlwHvPI8SI6tqNe_mnYNG_XAdGTh2PdY4WdI_sFFp",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJl3W9ItIEdkgRknJZX9c147M",
+          "plus_code": {
+              "compound_code": "GV69+2P London",
+              "global_code": "9C3XGV69+2P"
+          },
+          "price_level": 2,
+          "rating": 4.2,
+          "reference": "ChIJl3W9ItIEdkgRknJZX9c147M",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 3070,
+          "vicinity": "46 Leicester Square, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5108125,
+                  "lng": -0.1303708
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51222122989272,
+                      "lng": -0.1294109701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50952157010728,
+                      "lng": -0.1321106298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "Icon Balcony Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108598592949766844053\">Biren Kalaria</a>"
+                  ],
+                  "photo_reference": "AfLeUgNoy0r9KQuxC58fzzM3-8DC4YO84uWN9VfzaWcQnpGqB5RphGUhoxBgr067P-jf3BHYwY20Rz0IDSzq4zNIufcAVDQYdWq8AWeM168UhCKzHq3yf5eIE9H4dgR-wwkLf7xugbrsZNalb-up8sY81cXTEXKWyY6ywovv2F4G6Q0bbrvU",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJ9-9hFNIEdkgRY06ZKvIHijk",
+          "plus_code": {
+              "compound_code": "GV69+8V London",
+              "global_code": "9C3XGV69+8V"
+          },
+          "rating": 4.2,
+          "reference": "ChIJ9-9hFNIEdkgRY06ZKvIHijk",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 63,
+          "vicinity": "5-6 Leicester Square, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.51368799999999,
+                  "lng": -0.129828
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51505277989272,
+                      "lng": -0.1284958701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51235312010727,
+                      "lng": -0.1311955298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "Bar Termini",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108430615441889512003\">kobi kadosh</a>"
+                  ],
+                  "photo_reference": "AfLeUgNJ-p64_4gp_kVn9cxMPMYTf4rdEmRvqaR_BuiUw8G_GT2Laa0QlsKHpTIvM7_cDaBF6rHmkm2yl5jX-MitT6JMYgLmn3RMpnRypMzpC4F9NiJ1PKM3BI1MDHboFIENOQOOKFabVGOnw6VaYz4jmbtuBiZNhKwCgL3huWJoYxgZeadZ",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJ7zNxmNIEdkgR-59PV4KAVhg",
+          "plus_code": {
+              "compound_code": "GV7C+F3 London",
+              "global_code": "9C3XGV7C+F3"
+          },
+          "price_level": 2,
+          "rating": 4.6,
+          "reference": "ChIJ7zNxmNIEdkgR-59PV4KAVhg",
+          "scope": "GOOGLE",
+          "types": [
+              "cafe",
+              "bar",
+              "store",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 1019,
+          "vicinity": "7 Old Compton St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5174738,
+                  "lng": -0.1372109
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51884997989273,
+                      "lng": -0.1356977701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51615032010729,
+                      "lng": -0.1383974298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "Long Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2268,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/107853483428940843765\">Norman Rohr</a>"
+                  ],
+                  "photo_reference": "AfLeUgPMZxxW1obkVyzZ0EEKlD_howLgeRz6NZHJyWc093m7VQEHqPxCQkNYOK7QDWf0OV-1PTkaRbmZHB6itxPDGdDl8rxql2Uy1xzWeR2bz8bmIPDd2uPBmfB-w2qDokP0_wFuUdG563ITpqamzfSs5YGVJSJZsaMhnfBs7p3yYmyIaC8L",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJRXCcCSsbdkgRWngFn-SiwMg",
+          "plus_code": {
+              "compound_code": "GV87+X4 London",
+              "global_code": "9C3XGV87+X4"
+          },
+          "rating": 4.1,
+          "reference": "ChIJRXCcCSsbdkgRWngFn-SiwMg",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "night_club",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 151,
+          "vicinity": "50 Berners St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5166747,
+                  "lng": -0.1331198
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51801357989271,
+                      "lng": -0.1318053701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51531392010727,
+                      "lng": -0.1345050298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "The Black Horse",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1333,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/102956963720110290534\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMIeqeiiIeSN-S3w7TsT9_k3_HBVKZppM_Rgjgu1QsvLcbTPsQ6aYoz4xI4HGUDCcemO0fAWqv5QVRaJbB0g-j6F-mLzemBPXyQGqYuYoVIUeyMTGtoxWEzh6eIb7dgON6e6kH4C4ML7VBka-hhiT_G5fTET9rE1AXPDpywv5dYVcjX",
+                  "width": 2000
+              }
+          ],
+          "place_id": "ChIJddCRj-obdkgRxvYd2ql5z0Q",
+          "plus_code": {
+              "compound_code": "GV88+MQ London",
+              "global_code": "9C3XGV88+MQ"
+          },
+          "rating": 4.6,
+          "reference": "ChIJddCRj-obdkgRxvYd2ql5z0Q",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 108,
+          "vicinity": "6 Rathbone Pl, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.51070559999999,
+                  "lng": -0.1242166
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51207237989272,
+                      "lng": -0.1229372701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50937272010728,
+                      "lng": -0.1256369298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "All Bar One Covent Garden",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2448,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/109071076692395549685\">Rafa Prat</a>"
+                  ],
+                  "photo_reference": "AfLeUgOHHPe3DjQDlA5hPkXgcOECGL0PIDR4BBGfLcH-AGYOlZBsQpV3Ay0XjPZLzFqBi2Fg2zPGrIo_hvdLrWOGdeu6wAZe5ZJJvpVjOptM-zOqJrUL3JdE2SJMzGosaODUFc2Vpm-coDOAnXihytt-zSHXQfgVMDO_8qgu5-coxZWVE4rj",
+                  "width": 3264
+              }
+          ],
+          "place_id": "ChIJiZkKEswEdkgRxr2VLxWhgII",
+          "plus_code": {
+              "compound_code": "GV6G+78 London",
+              "global_code": "9C3XGV6G+78"
+          },
+          "price_level": 2,
+          "rating": 4.3,
+          "reference": "ChIJiZkKEswEdkgRxr2VLxWhgII",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 2265,
+          "vicinity": "19 Henrietta St, Greater, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5082101,
+                  "lng": -0.1241442
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50957697989273,
+                      "lng": -0.1227688701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50687732010729,
+                      "lng": -0.1254685298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "All Bar One Villiers St.",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3337,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/110949825003401544296\">All Bar One</a>"
+                  ],
+                  "photo_reference": "AfLeUgPG-suGnmbvgcROHgNU4KDO_-0Ng5L73b5r6fgzTLChtaATUiF0o4vycT_EGSx5qQSdmw_SzI_Ok0y3dtQRWXqSU3b_ICJWJaa7dMSwHC-BZH6eweFAABChysiX8ZbgpoI4YDYpqKO5ljQazdKIUCC2ixQ7NzPO3NQIwXTXOjb27sXa",
+                  "width": 5000
+              }
+          ],
+          "place_id": "ChIJy7yt6s4EdkgRXlid7Vepfko",
+          "plus_code": {
+              "compound_code": "GV5G+78 London",
+              "global_code": "9C3XGV5G+78"
+          },
+          "price_level": 2,
+          "rating": 4.5,
+          "reference": "ChIJy7yt6s4EdkgRXlid7Vepfko",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 1762,
+          "vicinity": "6 Villiers St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5105817,
+                  "lng": -0.1207773
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51193567989272,
+                      "lng": -0.1194417701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50923602010727,
+                      "lng": -0.1221414298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "American Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1385,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104111246635874032234\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOP7nbvGCuSkxC3f3PDU8kVubZ0LrX03tWIUIENlFL5UiIcHUsOQaH9dwTE0R2Yl2qEpYOrcv1CoxbREe80-Wnrco2fgEbo--6O86x4I1SlIngI2SZGmipU5sJhHosIclQ96AkBbWk_nKjOgKubmrdNSve-L5miesPR4bIXXdbE9Sxd",
+                  "width": 2048
+              }
+          ],
+          "place_id": "ChIJgXiP3MsEdkgRRp0YhagxGsg",
+          "plus_code": {
+              "compound_code": "GV6H+6P London",
+              "global_code": "9C3XGV6H+6P"
+          },
+          "price_level": 4,
+          "rating": 4.7,
+          "reference": "ChIJgXiP3MsEdkgRRp0YhagxGsg",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 740,
+          "vicinity": "The Savoy, Strand, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50898110000001,
+                  "lng": -0.1358999
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51022027989272,
+                      "lng": -0.1344573701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50752062010727,
+                      "lng": -0.1371570298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "5th View",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3000,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/116590632106137876946\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOkUyjFGiGBxvhIlngPn9iFKw9vadIPJIJcGqoV_9oAWg3zSYtLO_TnYx_qzVNTUUDUq-7bf43QtMkkSsofoNa8jvhoseVdhlKyRCqWGuSZfZq4ijAdQpGvneAY4Rt3E6ESFaF6938VX3WJRsqXacyKr2dvKfi2Bks4KPWI0-iIUaAW",
+                  "width": 4000
+              }
+          ],
+          "place_id": "ChIJtyR9o9YEdkgRVBq_pfbjtrw",
+          "plus_code": {
+              "compound_code": "GV57+HJ London",
+              "global_code": "9C3XGV57+HJ"
+          },
+          "price_level": 2,
+          "rating": 3.9,
+          "reference": "ChIJtyR9o9YEdkgRVBq_pfbjtrw",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 484,
+          "vicinity": "203-205 Piccadilly, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5087093,
+                  "lng": -0.1372249
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51012202989272,
+                      "lng": -0.1359261701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50742237010727,
+                      "lng": -0.1386258298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "Swans Bar at Maison Assouline",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4000,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104269010369543293417\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMBNF2DUJuXHjdvhw33pSepj08mfXKtgpX_F5ZdFEkNe1TQ_2g8sIKeB0TEENmHLAAjXoIyNXPduKZehPvXJqFCq1f7F23fn2xtJU8A94TSAeVi-V2VhMwOLHhPo5t5QCj234s4v8nCTZP7rjLv2EzmT9qS_pIBLLWe8gPVpKvjXrD3",
+                  "width": 2667
+              }
+          ],
+          "place_id": "ChIJO84fS0QFdkgRg369Dw9N2Yk",
+          "plus_code": {
+              "compound_code": "GV57+F4 London",
+              "global_code": "9C3XGV57+F4"
+          },
+          "rating": 5,
+          "reference": "ChIJO84fS0QFdkgRg369Dw9N2Yk",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 8,
+          "vicinity": "196A Piccadilly, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.51434889999999,
+                  "lng": -0.1394563
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51565362989272,
+                      "lng": -0.1380750201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51295397010728,
+                      "lng": -0.1407746798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "The Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 534,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/105299139644587506214\">the bar</a>"
+                  ],
+                  "photo_reference": "AfLeUgMyYItd-odSAin8oQzvaZv4ObnUCNnsHUM4gEJrI2PnY1D1uymH-u0sEW6bGTod4kD9gD1ZjWVbFLJaPLTpoc20Gteh-wmIKGm5ps4p36QtAI15ABet3ZkE64oavfP_FHWK7bXP8kIDc7qd73a93PnwX-wZk0n0XJ0ngeHvjW8c116p",
+                  "width": 800
+              }
+          ],
+          "place_id": "ChIJdWq4MNUEdkgRBxvOUHBJM2I",
+          "plus_code": {
+              "compound_code": "GV76+P6 London",
+              "global_code": "9C3XGV76+P6"
+          },
+          "rating": 3.6,
+          "reference": "ChIJdWq4MNUEdkgRBxvOUHBJM2I",
+          "scope": "GOOGLE",
+          "types": [
+              "night_club",
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 52,
+          "vicinity": "19-21 Great Marlborough St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5072291,
+                  "lng": -0.1416229
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50858747989271,
+                      "lng": -0.1402824701072778
+                  },
+                  "southwest": {
+                      "lat": 51.50588782010727,
+                      "lng": -0.1429821298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "The Rivoli Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115995119586114276786\">Ronald Lopez</a>"
+                  ],
+                  "photo_reference": "AfLeUgNGTQAqsqad8C4C5VzJ95eoMWnsIBl5thGinz54QBY6WwFAWXtA1Q6P7xXE5BDrxCAIhty3tcjoyaKT2Ela79_6TQIdD2hydeVChvqUrWXxGKlEzs6a7YAfnfTinRz9Uk1o66LwM5iiFNcpNL0baGJRn5_1w8q9p_KFO4WXKY7Rrdw0",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJV8gP0ykFdkgR0sDGzO2m6XY",
+          "plus_code": {
+              "compound_code": "GV45+V8 London",
+              "global_code": "9C3XGV45+V8"
+          },
+          "price_level": 4,
+          "rating": 4.3,
+          "reference": "ChIJV8gP0ykFdkgR0sDGzO2m6XY",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 127,
+          "vicinity": "The Ritz, 150 Piccadilly, London"
+      },
+      {
+          "business_status": "CLOSED_TEMPORARILY",
+          "geometry": {
+              "location": {
+                  "lat": 51.5082743,
+                  "lng": -0.1382262
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50955472989272,
+                      "lng": -0.1370351201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50685507010728,
+                      "lng": -0.1397347798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "3 and 6 Bar at Fortnum & Mason",
+          "permanently_closed": true,
+          "photos": [
+              {
+                  "height": 2268,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/117523258141175325665\">JOSE HERNEY TRIANA VIUCHE</a>"
+                  ],
+                  "photo_reference": "AfLeUgOtqOjbIs2oLGfGTF-bXKWMLgIjkIr-izzK_yaaF3Wxd8pqRbsWcSZJktKfzvRKOmkppdRoxR2fcnG6opEAiBA_PVLULLmRbY-dHJkByChQbSd0Vxm0WQxBbWenWJJ-QM5LaggkAnFReyakFeO9NTjh0-xuQbE7wzOHXCb28nHj3KID",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJPY9oXtYEdkgRhCrlxG1CPEU",
+          "plus_code": {
+              "compound_code": "GV56+8P London",
+              "global_code": "9C3XGV56+8P"
+          },
+          "rating": 4.5,
+          "reference": "ChIJPY9oXtYEdkgRhCrlxG1CPEU",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "store",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 32,
+          "vicinity": "3rd Floor, Fortnum & Mason, 181 Piccadilly, London"
+      },
+      {
+          "business_status": "CLOSED_TEMPORARILY",
+          "geometry": {
+              "location": {
+                  "lat": 51.51409410000001,
+                  "lng": -0.1265272
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51543557989272,
+                      "lng": -0.1251672701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51273592010727,
+                      "lng": -0.1278669298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "Baileys Treat Bar",
+          "permanently_closed": true,
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/112889470969007350604\">Jonathan Muñoz</a>"
+                  ],
+                  "photo_reference": "AfLeUgNorDYPkESlechvPqoWNDe4_cjF1eMx1JMiPPbrs6Gz5-fGZ3QcoTSECZva7Fw0sub02-1Bxay7fcoRpJBWkFIu1bFMcBy13SrQEwoXtLkHUJKMnUeU2VusAR4fIG-FZYBhwtlM7EcPaN4GvAPI6z2NzO0y1f88TFVxK-ssLaOxgi6F",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJ6956_swEdkgRqKnRGnDd4J8",
+          "plus_code": {
+              "compound_code": "GV7F+J9 London",
+              "global_code": "9C3XGV7F+J9"
+          },
+          "rating": 4.1,
+          "reference": "ChIJ6956_swEdkgRqKnRGnDd4J8",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 48,
+          "vicinity": "9 Short's Gardens, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5165624,
+                  "lng": -0.1327308
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51789212989272,
+                      "lng": -0.1313149201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51519247010727,
+                      "lng": -0.1340145798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "Bradley's Spanish Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2184,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/110305274026690039744\">alison castañeda</a>"
+                  ],
+                  "photo_reference": "AfLeUgMzUiLX9_gfaUevBS0lIy1G_sBu4wDjMLmg9m7BHztdk8YWZTiEoIxP3d7PBtWJ0oOpq8rmt9sELCTZhLGyf8Z0gu80bSw8E86_Jpp5C8n8mzBLn3PXaB04voITnlcr1ojgT_dfaR3hIteaaq0B9or-sviAY59JBmFBrEz6tIfxW5Lb",
+                  "width": 4608
+              }
+          ],
+          "place_id": "ChIJbRSp5iwbdkgRe99-Cu4O8wY",
+          "plus_code": {
+              "compound_code": "GV88+JW London",
+              "global_code": "9C3XGV88+JW"
+          },
+          "price_level": 1,
+          "rating": 4.5,
+          "reference": "ChIJbRSp5iwbdkgRe99-Cu4O8wY",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 953,
+          "vicinity": "42-44 Hanway St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5077049,
+                  "lng": -0.1324177
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50894507989272,
+                      "lng": -0.1307672201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50624542010728,
+                      "lng": -0.1334668798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "St James Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3992,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/114392378286275773559\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMxeT8CgYZqJNEoPLI4awiWs2JWTWpqsqtSymFP7E7YXIr67H-vfGJbtpta-jCWUzczT4vB16iOs5lJPWCSywG9EimbBObpn8xzQKxpzr-zajtUGYt2p_64d_cUFz-FRjbkvddjiDh2H0jGtJ-aFxQJrvukrssHb-TvGcWSnKarFNMW",
+                  "width": 6000
+              }
+          ],
+          "place_id": "ChIJpzJ2lfsFdkgReycDGVafYsM",
+          "plus_code": {
+              "compound_code": "GV59+32 London",
+              "global_code": "9C3XGV59+32"
+          },
+          "rating": 4.3,
+          "reference": "ChIJpzJ2lfsFdkgReycDGVafYsM",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 21,
+          "vicinity": "6 Waterloo Pl, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5121024,
+                  "lng": -0.1311933
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51341972989272,
+                      "lng": -0.1299241701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51072007010728,
+                      "lng": -0.1326238298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "De Hems Dutch Cafe Bar",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3456,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100416223808872659899\">Josh</a>"
+                  ],
+                  "photo_reference": "AfLeUgPtTu5ktZmDG5Rzr7LAhcde982Q6R6Tfdi8d7eculVL4KR_9sqGQwXyUekWWFSdUVsoV8ZzPN1Pv1wLHtUoHdzossiNVndp94DU719RWFofL4i_IM0_eWAlZhTYzCZ8o2w1IqkDvAhgyxSEVi47U7-tuewN-17EPbmvUaspWmR1zayz",
+                  "width": 4608
+              }
+          ],
+          "place_id": "ChIJLx-kWdIEdkgRKxb__pEYKio",
+          "plus_code": {
+              "compound_code": "GV69+RG London",
+              "global_code": "9C3XGV69+RG"
+          },
+          "price_level": 2,
+          "rating": 4.3,
+          "reference": "ChIJLx-kWdIEdkgRKxb__pEYKio",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 2489,
+          "vicinity": "11 Macclesfield St, London"
+      },
+      {
+          "business_status": "CLOSED_TEMPORARILY",
+          "geometry": {
+              "location": {
+                  "lat": 51.5163834,
+                  "lng": -0.1360171
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51773257989272,
+                      "lng": -0.1347158701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51503292010727,
+                      "lng": -0.1374155298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+          "icon_background_color": "#FF9E67",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+          "name": "The Reserve Cocktail Bar & Restaurant",
+          "permanently_closed": true,
+          "photos": [
+              {
+                  "height": 670,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108954651040943248674\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgP85OV_w8tfEnsmx57rEfoQO22Lb7P5YyRPtDzCqIdIlFU6msGzIEi2yoKwKoVHwK1k_mAG6omI2r-DtUaeh54sZmsr55cDI0XeBS9BE-7aUVdYxKtt8kjF1e4ILTmx0oxNgxORT3nJ_a-U8jE-hqZ3RsWf9mX_U8EbgaRpbBJayW69",
+                  "width": 1000
+              }
+          ],
+          "place_id": "ChIJY-Aap8YbdkgRln-1522QkPM",
+          "plus_code": {
+              "compound_code": "GV87+HJ London",
+              "global_code": "9C3XGV87+HJ"
+          },
+          "rating": 4.6,
+          "reference": "ChIJY-Aap8YbdkgRln-1522QkPM",
+          "scope": "GOOGLE",
+          "types": [
+              "bar",
+              "restaurant",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 27,
+          "vicinity": "3 Berners St, London"
+      }
+  ],
+  "status": "OK"
+}

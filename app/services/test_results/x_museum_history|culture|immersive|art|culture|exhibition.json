@@ -1,0 +1,952 @@
+{
+  "html_attributions": [],
+  "results": [
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5132976,
+                  "lng": -0.1346629
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51466432989272,
+                      "lng": -0.1332650201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51196467010728,
+                      "lng": -0.1359646798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "Museum of Youth Culture Shop",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2378,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/106300039306921811607\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgPuV7-tDJFCCcWbVZ99KjI8wHYx7Nd0-5doujpsrgGwwfWpYMr27kY1eXcBEOlFtioQD6H1zkxakIFeKcDi0ddooUUv4cJw0or7Kj8iwCUR0jLU2z0_YNfhqL03z0wS8QRhpDlYiKsQIP5S2GTGZmmlIuG9F56GZN-cbbvyGYpg7HTQ",
+                  "width": 2377
+              }
+          ],
+          "place_id": "ChIJ2YfUEHYDdkgRpO3RqykJtco",
+          "plus_code": {
+              "compound_code": "GV78+84 London",
+              "global_code": "9C3XGV78+84"
+          },
+          "rating": 4.4,
+          "reference": "ChIJ2YfUEHYDdkgRpO3RqykJtco",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 18,
+          "vicinity": "95 Berwick St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5172841,
+                  "lng": -0.1530803
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51852502989273,
+                      "lng": -0.1517040201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51582537010728,
+                      "lng": -0.1544036798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Wallace Collection",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 6936,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104981537650025121849\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOfjLWFfhDuBvx0Ms14j0dqs-ZtiRQ51qrjEFlI91V_MU0rAylQEENzfaF87MGhXu8q6WmJgXxoyzE-SUKEZ9ol3HHLIm_MedaM5iRJR4QXU0Wiq9vk0V72XhNbfu0UYIp9C-Wv4uyIiS5S4KJmKrrkNYLZ5DQ86IIqDw4HOhcvtm0J",
+                  "width": 9248
+              }
+          ],
+          "place_id": "ChIJczuZfc0adkgRc8X-u3ZiHcE",
+          "plus_code": {
+              "compound_code": "GR8W+WQ London",
+              "global_code": "9C3XGR8W+WQ"
+          },
+          "rating": 4.7,
+          "reference": "ChIJczuZfc0adkgRc8X-u3ZiHcE",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "art_gallery",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 6048,
+          "vicinity": "Hertford House, Manchester Square, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.50892899999999,
+                  "lng": -0.128299
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51035402989272,
+                      "lng": -0.1274232
+                  },
+                  "southwest": {
+                      "lat": 51.50765437010728,
+                      "lng": -0.1306532
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The National Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 682,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100248671337702850036\">Sanjay Sharma</a>"
+                  ],
+                  "photo_reference": "AfLeUgPkb0AQ5R-l-Wb0UZYrOX8pGbeoWzLV9cuBZIZTfkr8OAK67Gj-ZcRwhOXmWqNNeW5LIjXYrUAdLe6YSc682TAXq92N3WacyEgJO66nFmEOOW6Owzrt_Z_qmkv9fNaOsR6IKOb-39FqRTZzEavJdBWcFetLVOpQypvD9R3e5mMqMxRJ",
+                  "width": 1024
+              }
+          ],
+          "place_id": "ChIJeclqF84EdkgRtKAjTmWFr0I",
+          "plus_code": {
+              "compound_code": "GV5C+HM London",
+              "global_code": "9C3XGV5C+HM"
+          },
+          "rating": 4.7,
+          "reference": "ChIJeclqF84EdkgRtKAjTmWFr0I",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "art_gallery",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 41908,
+          "vicinity": "Trafalgar Square, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5247361,
+                  "lng": -0.1335244
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52601407989272,
+                      "lng": -0.1323317701072778
+                  },
+                  "southwest": {
+                      "lat": 51.52331442010728,
+                      "lng": -0.1350314298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "UCL Art Museum",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/109690110047656111359\">Ruth Wang</a>"
+                  ],
+                  "photo_reference": "AfLeUgNvjtG_brLiCHxUElo1Iik8zuUY8demGr2fMxswcREt0oWy59-UhVkP1Z5lgdrpnQZD6yCnLOAR8JHacT3jh7S1zbUGj8rqZAsmcdEpBsWjOY3AWuMAaZPalqKPQF3nvw0rYDAIr1Hde_oXRSzg-CwqPK3cf3NmPfl9n2YQbChfQeRe",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJeTUXaS8bdkgRRO3lOGW_VwY",
+          "plus_code": {
+              "compound_code": "GVF8+VH London",
+              "global_code": "9C3XGVF8+VH"
+          },
+          "rating": 4.1,
+          "reference": "ChIJeTUXaS8bdkgRRO3lOGW_VwY",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 36,
+          "vicinity": "23-25 Gower St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5259047,
+                  "lng": -0.1338785
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52737882989271,
+                      "lng": -0.1326277701072778
+                  },
+                  "southwest": {
+                      "lat": 51.52467917010727,
+                      "lng": -0.1353274298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "Wellcome Collection",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2988,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115149129337813830418\">Wellcome Collection</a>"
+                  ],
+                  "photo_reference": "AfLeUgOHv3KRoSNJoxWR3moCrqRoZ2E3U97wkubQGtuL9va5_Q4GfmjObkyi2ecdX-KnhvlU7oAHco9SxNgwNub-L1uT1kAs8zLmHBPQzgWtQVh_u8fSnuwYwV673OhsjEAkn1JEdDPyB5dMwp0YCltC-xBKHBgVvlMN_lstgKWEJP4B2UYt",
+                  "width": 5312
+              }
+          ],
+          "place_id": "ChIJjwAL8SUbdkgRigNbhm-sUe0",
+          "plus_code": {
+              "compound_code": "GVG8+9C London",
+              "global_code": "9C3XGVG8+9C"
+          },
+          "rating": 4.5,
+          "reference": "ChIJjwAL8SUbdkgRigNbhm-sUe0",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "cafe",
+              "art_gallery",
+              "library",
+              "point_of_interest",
+              "food",
+              "establishment"
+          ],
+          "user_ratings_total": 920,
+          "vicinity": "183 Euston Rd., London"
+      },
+      {
+          "business_status": "CLOSED_TEMPORARILY",
+          "geometry": {
+              "location": {
+                  "lat": 51.4998051,
+                  "lng": -0.1424367
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50108922989272,
+                      "lng": -0.1410170701072778
+                  },
+                  "southwest": {
+                      "lat": 51.49838957010728,
+                      "lng": -0.1437167298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Queen's Gallery, Buckingham Palace",
+          "permanently_closed": true,
+          "photos": [
+              {
+                  "height": 567,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100180792004736263958\">The Queen&#39;s Gallery Buckingham Palace</a>"
+                  ],
+                  "photo_reference": "AfLeUgMtl_lbG6Ffpezog70Ue7DjcuJ5SHxOndHoNdniZWIj1502V_hHGrJ5TplkU1xG65XzVtp9qn6jDoG7Fqm3_rZj6Pq1SYLjwK56wheT7yz_NScTH5RPgEAmECMf81WbmSm0cddJieDNi4a7yPJo6OwCqrs3wrkVgBuyVkcl7LvpA_gK",
+                  "width": 850
+              }
+          ],
+          "place_id": "ChIJtV5bzSAFdkgRNZnsvXWXgqI",
+          "plus_code": {
+              "compound_code": "FVX5+W2 London",
+              "global_code": "9C3XFVX5+W2"
+          },
+          "rating": 4.5,
+          "reference": "ChIJtV5bzSAFdkgRNZnsvXWXgqI",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "art_gallery",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 3406,
+          "vicinity": "London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5141095,
+                  "lng": -0.131302
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51546712989271,
+                      "lng": -0.1300035701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51276747010727,
+                      "lng": -0.1327032298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "Nose on the wall",
+          "place_id": "ChIJDV7hhu4FdkgRbKjhipiokY0",
+          "plus_code": {
+              "compound_code": "GV79+JF London",
+              "global_code": "9C3XGV79+JF"
+          },
+          "rating": 0,
+          "reference": "ChIJDV7hhu4FdkgRbKjhipiokY0",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "4 Bateman St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5235861,
+                  "lng": -0.1162944
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52488122989271,
+                      "lng": -0.1150462701072778
+                  },
+                  "southwest": {
+                      "lat": 51.52218157010727,
+                      "lng": -0.1177459298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "Charles Dickens Museum",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/106180798688244341958\">Frank Boedefeld</a>"
+                  ],
+                  "photo_reference": "AfLeUgOvtTXAFvxvw6SjpNRnCZq8Ybjv-lnVeryyU04VWvjLDc07lPXlm650-YMBpZFF39f_EfK-adEMK5IuLVDKCkyQzZQyEKJKXWYdlgFbZ1yTNYMtqlaHtmCzc2ue5TwYH0KBHOQ3eYBJCD8DKag7XXG-Psqz8Y7icPIYQ3qcQi6pGoDn",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJlwm8OUgbdkgRWsaTM35CDTM",
+          "plus_code": {
+              "compound_code": "GVFM+CF London",
+              "global_code": "9C3XGVFM+CF"
+          },
+          "rating": 4.5,
+          "reference": "ChIJlwm8OUgbdkgRWsaTM35CDTM",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 1622,
+          "vicinity": "48-49 Doughty St, London"
+      },
+      {
+          "business_status": "CLOSED_TEMPORARILY",
+          "geometry": {
+              "location": {
+                  "lat": 51.5153551,
+                  "lng": -0.1159625
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51675447989273,
+                      "lng": -0.1149183201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51405482010728,
+                      "lng": -0.1176179798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "Hunterian Museum",
+          "permanently_closed": true,
+          "photos": [
+              {
+                  "height": 367,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/101518064396182416591\">Frank Engel</a>"
+                  ],
+                  "photo_reference": "AfLeUgP7OpY7lNSnR988GshNd5rvtyibuyXb4MpVSHFLN8tcjnvELwaKbYwBUgZ3BDCcTPUZkiZYjr0yCsPIoJDa9oOE5G6e4hU31769URtAe7ryqUfFPpcaOrq_tF7Fp5KvU_QBR8kknC4nOyiladZf8v2iRlPA0LKPzPlHQS1Ytn9vhmjB",
+                  "width": 550
+              }
+          ],
+          "place_id": "ChIJoZX1yUobdkgRIHKAzQa2pO4",
+          "plus_code": {
+              "compound_code": "GV8M+4J London",
+              "global_code": "9C3XGV8M+4J"
+          },
+          "rating": 4.6,
+          "reference": "ChIJoZX1yUobdkgRIHKAzQa2pO4",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 374,
+          "vicinity": "The Royal College of Surgeons of England 38, 43 Lincoln's Inn Fields, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5124351,
+                  "lng": -0.1379605
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51371707989272,
+                      "lng": -0.1365557201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51101742010728,
+                      "lng": -0.1392553798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "3 Street Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2448,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/105554190460897158302\">Paul Atherton</a>"
+                  ],
+                  "photo_reference": "AfLeUgOhfeQ9hckApWpb2YLNKLQ0XgIxRrAQg3Ggq-aCcK83vGT5MEzzXqH44ueTZTnS84ruv0SgES7sr2Moy37KgzrzXaI6B6akX1O5AfIGPgXAYEMvhsisszOq6lIX-cSIYYoYnW_Bd1mETly7CEBQJVwRMN4ey44Ngis0YmT8LVVjwArC",
+                  "width": 3264
+              }
+          ],
+          "place_id": "ChIJoSNirl8FdkgRyaNFBLV1Dsk",
+          "plus_code": {
+              "compound_code": "GV66+XR London",
+              "global_code": "9C3XGV66+XR"
+          },
+          "rating": 0,
+          "reference": "ChIJoSNirl8FdkgRyaNFBLV1Dsk",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "3 Carnaby St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.517592,
+                  "lng": -0.1385749
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51896767989272,
+                      "lng": -0.1371741201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51626802010727,
+                      "lng": -0.1398737798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Cartoon Museum",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115614702436603409841\">Ghene Snowdon</a>"
+                  ],
+                  "photo_reference": "AfLeUgNPT-U_yXihEAvXCpmbcQdBiho3WPXtHR-vxjxIeHci2L7BUhTr5dwzCx586eJAC6kf-9kH9y2nNyHglZ2KDf29IoM2YEpW_ZbDwWyaerPubSGJ3VTjv8AMuQ4xmHIp0CZSMoIdjePxkwySLd0-bgGCw_VL70y1IG9h5aeRdtWFow14",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJjTedqjMbdkgRqmCmSy0Hveg",
+          "plus_code": {
+              "compound_code": "GV96+2H London",
+              "global_code": "9C3XGV96+2H"
+          },
+          "rating": 4.1,
+          "reference": "ChIJjTedqjMbdkgRqmCmSy0Hveg",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 855,
+          "vicinity": "63 Wells St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5115865,
+                  "lng": -0.1175593
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51290697989273,
+                      "lng": -0.1162551701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51020732010728,
+                      "lng": -0.1189548298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Courtauld Gallery",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104586084295586198544\">Xy Pan</a>"
+                  ],
+                  "photo_reference": "AfLeUgMl_QRRKSpTdL1J3HDE__dOtr1WJJv7xCDKgF5m1kikyi5yBOapBHPJcZtTca3erDhiV8jhkVM8LO7kh7Ub0gvyR9ejbpjBfpI8KwAntXcLEMnFDDITBYFbBWp5E6S_p7Y1AWLrs0b9BUsk8jjJDGK2rzP3olYJiFtLvhJuiXEOyO5D",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJJUQ-d8oEdkgR-JVIDfRa6aY",
+          "plus_code": {
+              "compound_code": "GV6J+JX London",
+              "global_code": "9C3XGV6J+JX"
+          },
+          "rating": 4.7,
+          "reference": "ChIJJUQ-d8oEdkgR-JVIDfRa6aY",
+          "scope": "GOOGLE",
+          "types": [
+              "tourist_attraction",
+              "art_gallery",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 911,
+          "vicinity": "Somerset House, Strand, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5240471,
+                  "lng": -0.1112562
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52543542989272,
+                      "lng": -0.1098219701072778
+                  },
+                  "southwest": {
+                      "lat": 51.52273577010728,
+                      "lng": -0.1125216298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Museum of Funeral History",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1148,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/114861498940581659261\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOvydNGaWLxa6v7sA5yksSrpTfilrWGfJU4W-r7bV1TVEjR-CIY1F2Hry6hTB52YGrMbbW7VFZAPOje2knulytByFUHRQfOMWtc1AvNT1qdYbhRv94Xgr9k2gfmI3pd8pc504vQ7dPckW_X8QykGg7rGHhHOENoG5al-L3Cih--BQk9",
+                  "width": 1728
+              }
+          ],
+          "place_id": "ChIJEzJ2Nk8bdkgR-MsdtB-M67g",
+          "plus_code": {
+              "compound_code": "GVFQ+JF London",
+              "global_code": "9C3XGVFQ+JF"
+          },
+          "rating": 3.8,
+          "reference": "ChIJEzJ2Nk8bdkgR-MsdtB-M67g",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "tourist_attraction",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 6,
+          "vicinity": "29-31 Rosebery Ave, London"
+      },
+      {
+          "business_status": "CLOSED_TEMPORARILY",
+          "geometry": {
+              "location": {
+                  "lat": 51.5094236,
+                  "lng": -0.1281216
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51083012989272,
+                      "lng": -0.1268277
+                  },
+                  "southwest": {
+                      "lat": 51.50813047010728,
+                      "lng": -0.1295505
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "National Portrait Gallery",
+          "permanently_closed": true,
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/105495409914464452135\">Natasha Korol</a>"
+                  ],
+                  "photo_reference": "AfLeUgO3zgG0lAuHLy99hbPv9AcUANpgEKZquR0vCEo2j64lNHFSoTJeCxZ_0VJLIhuT4ipOYeJ43g93UeKtIB_f9U3PrGWuMKLFf3rm9sigZ4KC29hu7KtRql59Ty3DcxK0jlGh2aY7kl0DcAJk7cEWnqKItZLkfzU_GQUFvtEXHDriEQJg",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJeclqF84EdkgRYkL4mtJ7rLM",
+          "plus_code": {
+              "compound_code": "GV5C+QQ London",
+              "global_code": "9C3XGV5C+QQ"
+          },
+          "rating": 4.6,
+          "reference": "ChIJeclqF84EdkgRYkL4mtJ7rLM",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "tourist_attraction",
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 7966,
+          "vicinity": "St. Martin's Pl, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5194133,
+                  "lng": -0.1269566
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52024627989272,
+                      "lng": -0.1250742201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51754662010728,
+                      "lng": -0.1277738798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Global Museum",
+          "place_id": "ChIJHfVNJRQbdkgRkN2zV63EY4Y",
+          "plus_code": {
+              "compound_code": "GV9F+Q6 London",
+              "global_code": "9C3XGV9F+Q6"
+          },
+          "rating": 0,
+          "reference": "ChIJHfVNJRQbdkgRkN2zV63EY4Y",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "Great Russell St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.51757139999999,
+                  "lng": -0.149908
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51890947989272,
+                      "lng": -0.1485529701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51620982010728,
+                      "lng": -0.1512526298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "The Brown Collection",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 802,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/110657713339037547577\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgNU5r_SaxjbWFpPHWaX0oaicdWwR73I6PEqI-zyNlcPNJoB240q88OWnCYB6-Y9YdOVk5QZvOSTIF5hxB6rhxezxj9R-rvQVgMXvNpBuN41Dgdz8uuOJKFO9mzV2xWAGoaesbGAmtWWpsISAtqonY4QG_WMZpjEO3zkOFY2JySB-nje",
+                  "width": 1200
+              }
+          ],
+          "place_id": "ChIJ7bxHGYkbdkgRLHFCvR8uXHg",
+          "plus_code": {
+              "compound_code": "GV92+22 London",
+              "global_code": "9C3XGV92+22"
+          },
+          "rating": 5,
+          "reference": "ChIJ7bxHGYkbdkgRLHFCvR8uXHg",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 1,
+          "vicinity": "1 Bentinck Mews, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5042657,
+                  "lng": -0.1103596
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50560807989272,
+                      "lng": -0.1090379201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50290842010727,
+                      "lng": -0.1117375798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "Superman Street Art",
+          "place_id": "ChIJ3z-MlRAFdkgR0Y3I6q6wRqo",
+          "plus_code": {
+              "compound_code": "GV3Q+PV London",
+              "global_code": "9C3XGV3Q+PV"
+          },
+          "rating": 0,
+          "reference": "ChIJ3z-MlRAFdkgR0Y3I6q6wRqo",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "22 Cornwall Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5258654,
+                  "lng": -0.1452812
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.52720927989272,
+                      "lng": -0.1440236201072778
+                  },
+                  "southwest": {
+                      "lat": 51.52450962010727,
+                      "lng": -0.1467232798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/museum-71.png",
+          "icon_background_color": "#13B5C7",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/museum_pinlet",
+          "name": "Royal College of Physicians Museum",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3264,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/105554190460897158302\">Paul Atherton</a>"
+                  ],
+                  "photo_reference": "AfLeUgPbXgSus6u_HyxOg3qdCv1o7CnkDaSYd7QkwJFRVKw2o5tDkNWQSs22cY7Pb3Ht2qkmMxkwv3amsrR1zns_lVD2xqqljOBsiSiANr8jxopc3LUsquMmXPM_yIHJcsRa7CfXxKIF5-VZ361Ea_iNj_ktxbLgA3iUxEPf0sm0jeSSTtEY",
+                  "width": 2448
+              }
+          ],
+          "place_id": "ChIJ0UaYpBgbdkgRpYrOOotSrsg",
+          "plus_code": {
+              "compound_code": "GVG3+8V London",
+              "global_code": "9C3XGVG3+8V"
+          },
+          "rating": 0,
+          "reference": "ChIJ0UaYpBgbdkgRpYrOOotSrsg",
+          "scope": "GOOGLE",
+          "types": [
+              "museum",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 0,
+          "vicinity": "11 St Andrews Pl, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.511959,
+                  "lng": -0.148228
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51311347989272,
+                      "lng": -0.1467796201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51041382010728,
+                      "lng": -0.1494792798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+          "icon_background_color": "#7B9EB0",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+          "name": "Charles Ede",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 847,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/101456976001014981860\">George L</a>"
+                  ],
+                  "photo_reference": "AfLeUgOdq-kkcn0RuMm9t4pmKFfgYOTowS78o6HyaJSnTiYJf6cpWcl4R2nOiIDzP7MdaFiDVA9Bbzmg0O9rQlMHiO_TFvMOiFmKxJiIPDi96M9YGgukvdo0mYBJle4R1-42t5_HLJYq-v59_NfsqpTthmIiwA2jwY2OYQXtmfyKKHVdKmA7",
+                  "width": 1328
+              }
+          ],
+          "place_id": "ChIJyY4lbysFdkgRM9Wpq2r7pAU",
+          "plus_code": {
+              "compound_code": "GV62+QP London",
+              "global_code": "9C3XGV62+QP"
+          },
+          "rating": 5,
+          "reference": "ChIJyY4lbysFdkgRM9Wpq2r7pAU",
+          "scope": "GOOGLE",
+          "types": [
+              "art_gallery",
+              "museum",
+              "home_goods_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5,
+          "vicinity": "1 Three Kings' Yard, Davies St, London"
+      }
+  ],
+  "status": "OK"
+}

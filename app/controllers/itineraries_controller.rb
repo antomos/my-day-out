@@ -2,7 +2,8 @@ class ItinerariesController < ApplicationController
   before_action :set_itinerary, only: [:show, :update, :destroy]
 
   def index
-    @events = TestEvent.all
+    # @events = TestEvent.all
+    @itineraries = Itinerary.all
   end
 
   def show
@@ -11,8 +12,13 @@ class ItinerariesController < ApplicationController
   def create
     @itinerary = Itinerary.new(itinerary_params)
     @itinerary.user = current_user
+    @params = itinerary_params
 
     if @itinerary.save!
+      itinerary_template = ItineraryTemplate.new(itinerary_params).perform
+
+      PopulateItinerary.new({ itinerary: @itinerary, template: itinerary_template, params: itinerary_params }).perform
+
       redirect_to itinerary_path(@itinerary)
     else
       render root_path, status: :unprocessable_entity

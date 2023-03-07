@@ -1,0 +1,1059 @@
+{
+  "html_attributions": [],
+  "next_page_token": "AfLeUgOf0FKJXmoP7vcCvMerpHO8YOGxlvEfjHOlt9Qm7xz8zOnRr8kqgd-KwqHcyQLT_5I-cwTtgeeGitskFIe1757_9yZe-HN3ZzZ78bUVGneS-kwmooJ-g90QC_Yqdn4RAl3T0YiWxeLiQguVUuyDViVUau0cCSAt3c47LVpPNuZYKCnEGAbHKeutzwWSz-OG7FiiQ-J6AMHVVHtBWATlYYbA6f-IHFxvBhfzKYQhiuTytX_4p_Bvz_IVj92T7hGI4kSfqEvocRRGGFMs5ryBFncop8OUVkfToUJNg_Tv8jgarrX138dbMlyOPkdSpgtxDa1Gor6CO7Ox7BwbbD4NKMm0LSE9Tnu888b-awq6lVa0xRBu_uhfpayApPxfIZx9jQJA-426orgcbosV5J6_2FQM_2LHsVzdHb8h_g2nKJpVJjNDrtoocdZpNQVNP0pHJa60DkNOJmxV07Y3wTCPhTqRcHOqmpPrSxY",
+  "results": [
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5139278,
+                  "lng": -0.1492707
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51549647989273,
+                      "lng": -0.1478796701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51279682010728,
+                      "lng": -0.1505793298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "West One",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/117141243701870889727\">Britta</a>"
+                  ],
+                  "photo_reference": "AfLeUgN2M1RB8HNhnpW0xrQDZkUCTXVmYA1x87_HOFOnlK8kmRRIARqyMCndpAblFQ85nBi492sCgM5rgCWA0LGSAQ_FznkPV5lqmZW2qcJPIf4dKnnNKQ1_OKLipnknGlUW06UhYAvZYlpcEGPaFmS_I2ZRSJDMElw5ZLvjztiKNFcmiUjj",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJARwD3ywFdkgRohfrHMp-WgM",
+          "plus_code": {
+              "compound_code": "GV72+H7 London, United Kingdom",
+              "global_code": "9C3XGV72+H7"
+          },
+          "rating": 4.1,
+          "reference": "ChIJARwD3ywFdkgRohfrHMp-WgM",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 764,
+          "vicinity": "75 Davies St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5138717,
+                  "lng": -0.1400263
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51529872989271,
+                      "lng": -0.1387756701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51259907010726,
+                      "lng": -0.1414753298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Liberty London",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2250,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/112539983248071412536\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgP9_sCu_aH-u1qdKILAc74zjHZBkjgI8SCT_7XGw-tRPhbzw-UQlgqvz50cL8XfCIIoU4SYoejDym1gIo6s1jUaGrV66VV5VZWp4rNkidyWWipNmN1RXmv1SmRYQsZtOzvkPTg06srX_NP9bb8qEr4q_6gc8-cRePjQr7PCZOR6q8ZV",
+                  "width": 4000
+              }
+          ],
+          "place_id": "ChIJ6_3yMNUEdkgRgYFYwtACqqo",
+          "plus_code": {
+              "compound_code": "GV75+GX London, United Kingdom",
+              "global_code": "9C3XGV75+GX"
+          },
+          "price_level": 4,
+          "rating": 4.5,
+          "reference": "ChIJ6_3yMNUEdkgRgYFYwtACqqo",
+          "scope": "GOOGLE",
+          "types": [
+              "department_store",
+              "tourist_attraction",
+              "spa",
+              "beauty_salon",
+              "hair_care",
+              "clothing_store",
+              "store",
+              "health",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 16530,
+          "vicinity": "Regent St., London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.51636569999999,
+                  "lng": -0.136608
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51748852989272,
+                      "lng": -0.1351585701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51478887010728,
+                      "lng": -0.1378582298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Next",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 490,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104729548239099217188\">ajayi oluwaseun</a>"
+                  ],
+                  "photo_reference": "AfLeUgPocn2CfaXWUh8S29Peuy9E5bi8m8WBRQBcHpPdWB7xrn9loTW7cQ45hbO3Wwt7_jKSKJ6mYC4ye1GfWz7CVnHwPTHTG0GNIeuh71mh3PAGYhWmwohi4L6ydAUBxoxfdukwonZq-x6UMXN4DmAxybXOHNLejMjNaqJh6o4sEVF8oVGX",
+                  "width": 720
+              }
+          ],
+          "place_id": "ChIJO80GtCQbdkgRVZgVyWd1FQ0",
+          "plus_code": {
+              "compound_code": "GV87+G9 London, United Kingdom",
+              "global_code": "9C3XGV87+G9"
+          },
+          "price_level": 2,
+          "rating": 3.7,
+          "reference": "ChIJO80GtCQbdkgRVZgVyWd1FQ0",
+          "scope": "GOOGLE",
+          "types": [
+              "clothing_store",
+              "department_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 202,
+          "vicinity": "Plaza Oxford Street, 120-128 Oxford St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.4971002,
+                  "lng": -0.141117
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50019225,
+                      "lng": -0.1382411
+                  },
+                  "southwest": {
+                      "lat": 51.49548365,
+                      "lng": -0.1440799
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Cardinal Place",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3728,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/101282473590433745585\">Cardinal Place</a>"
+                  ],
+                  "photo_reference": "AfLeUgPbtohDIUhulMM6TxZlAUh5HCiKlk7EZDtnpVeWyL_xN9l7PRhihjHV-6-Ft8nTM7a8_ztgkvK5-jz4itFhZ9OrSGCz6KYxeVvtbJs0THzI3_slHFp9HeEtlZx4GoB9G1dJahG6qdcAM7pLGqEZ_BxEO0Co2-YCHy233YVJbDIi4eA8",
+                  "width": 5600
+              }
+          ],
+          "place_id": "ChIJr5Trb98EdkgR726OHLFbM_U",
+          "plus_code": {
+              "compound_code": "FVW5+RH London, United Kingdom",
+              "global_code": "9C3XFVW5+RH"
+          },
+          "rating": 4.3,
+          "reference": "ChIJr5Trb98EdkgR726OHLFbM_U",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5880,
+          "vicinity": "Victoria St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5160553,
+                  "lng": -0.1335274
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51745032989272,
+                      "lng": -0.1321763701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51475067010728,
+                      "lng": -0.1348760298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Phoenix Center",
+          "opening_hours": {
+              "open_now": true
+          },
+          "place_id": "ChIJvbbDwCwbdkgRw36Dgjji9f8",
+          "plus_code": {
+              "compound_code": "GV88+CH London, United Kingdom",
+              "global_code": "9C3XGV88+CH"
+          },
+          "rating": 2,
+          "reference": "ChIJvbbDwCwbdkgRw36Dgjji9f8",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 2,
+          "vicinity": "Premier House, 73 Oxford St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5054174,
+                  "lng": -0.1170678
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50665262989272,
+                      "lng": -0.1152708201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50395297010727,
+                      "lng": -0.1179704798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Southbank Centre Shop, Mandela Walk",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2268,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108495442062937626053\">Philip Hughes</a>"
+                  ],
+                  "photo_reference": "AfLeUgMiuzkeZ1kWhs90p43cwVU21UxLFYlg3DPcdgy6BMAYoU5OP26KC95qJyxHw1lz8rBrUP4DfoLPPRXqNhC9xoH0NZTXREM3fyey35ci6KfMOvFjOdR-wnOnS93rNsCP-zcE9dKLR7hWJQVh-_YToTyKQdHa7u3RIdmObp1dQCfJ7-Qf",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJT7C33bcEdkgRYgXfzlv_g3U",
+          "plus_code": {
+              "compound_code": "GV4M+55 London, United Kingdom",
+              "global_code": "9C3XGV4M+55"
+          },
+          "rating": 4.3,
+          "reference": "ChIJT7C33bcEdkgRYgXfzlv_g3U",
+          "scope": "GOOGLE",
+          "types": [
+              "home_goods_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 27,
+          "vicinity": "Southbank Centre, Belvedere Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.4947102,
+                  "lng": -0.14589
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.49691129999999,
+                      "lng": -0.1406908
+                  },
+                  "southwest": {
+                      "lat": 51.49273530000001,
+                      "lng": -0.1486224
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Victoria Place",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 1836,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/110923056359264018352\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOgFGHVtTEOK_vY_2BVV3seNElsDp4NTHkv2zUHXkB8ml57uCmLsYfWKe928gT_oPXjdRd_JQ2IsoZP1vfxGYbmwfT8TNKpzX9ZJKRcHFeeIMmxUAHd7AI4gC1woEAkCkdaw4Wc9zO5y1DV0w6oMzLgAnd9d6dF0llgnDqJ6WkUTfoq",
+                  "width": 3264
+              }
+          ],
+          "place_id": "ChIJScmL5SEFdkgR4e5jqRr1KZ8",
+          "plus_code": {
+              "compound_code": "FVV3+VJ London, United Kingdom",
+              "global_code": "9C3XFVV3+VJ"
+          },
+          "rating": 4.1,
+          "reference": "ChIJScmL5SEFdkgR4e5jqRr1KZ8",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5637,
+          "vicinity": "115 Buckingham Palace Rd, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5139808,
+                  "lng": -0.1254239
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51529352989272,
+                      "lng": -0.1241530201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51259387010727,
+                      "lng": -0.1268526798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Thomas Neals Centre",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100613369194334384501\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOFYb4cIAmRBe8GqLNLtV2cHU_xCZnpAClcIzV4hyDsL91y2YLStWbH2uPsqTkfUCZyvN6BlkVm-D9dprq6mNy9trYetWhN7zKez140uoZeoqzWJJexqSUc2t3I18naEp76cDYnW7fux0u4NNBC_uq7RgizjFyEhCHyOQeK29dvDm5v",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJlUVX28wEdkgR2X0RG3mYP3U",
+          "plus_code": {
+              "compound_code": "GV7F+HR London, United Kingdom",
+              "global_code": "9C3XGV7F+HR"
+          },
+          "rating": 4,
+          "reference": "ChIJlUVX28wEdkgR2X0RG3mYP3U",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 16,
+          "vicinity": "London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5157099,
+                  "lng": -0.1371584
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51707082989272,
+                      "lng": -0.1358004701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51437117010727,
+                      "lng": -0.1385001298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Matalan",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3120,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/103743058890761535571\">Szymon Krawczyk</a>"
+                  ],
+                  "photo_reference": "AfLeUgMNBWMiJvK1YHIj8wJ6z7O0ebDKTPAS6OoI6CK72ZNiGkkVuKWO7VwC8237Arw6px2dyjHRpyd0iVS3FmklatJz6hInD2ybPd0wJa5ZdRVhIwzt-VUavMQctUEI4gZshFOGb9OoxwmuFwI9v3EdDPwxyS_66SYjyUiLRmgHIGWm7fyc",
+                  "width": 4160
+              }
+          ],
+          "place_id": "ChIJYZwrOisbdkgRAMfrPasdV-s",
+          "plus_code": {
+              "compound_code": "GV87+75 London, United Kingdom",
+              "global_code": "9C3XGV87+75"
+          },
+          "price_level": 1,
+          "rating": 4,
+          "reference": "ChIJYZwrOisbdkgRAMfrPasdV-s",
+          "scope": "GOOGLE",
+          "types": [
+              "clothing_store",
+              "department_store",
+              "shoe_store",
+              "home_goods_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 709,
+          "vicinity": "149-151 Oxford St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.512504,
+                  "lng": -0.149776
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51383867989271,
+                      "lng": -0.1484200701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51113902010727,
+                      "lng": -0.1511197298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Mall Solutions Europe",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 600,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/115355021060731187433\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgNAduhTiw4EweZ1i4RNaXyTz1RGGHaTfIXeRpGGthVtPBuHTm9TCLnQEBqwCB9dOJs8ACJ5S1iaMkdoyxxQ1fwfmnnrqTUs1cXj4puq_r62EKmBagAc0bIZHrHxYUoY0-a4bsIJJ8UK3NETonPlwkqEpEHyNpNFC_n2VWg23W4iPsWT",
+                  "width": 600
+              }
+          ],
+          "place_id": "ChIJpa3kAS0FdkgR_l6_il60OjA",
+          "plus_code": {
+              "compound_code": "GV72+23 London, United Kingdom",
+              "global_code": "9C3XGV72+23"
+          },
+          "rating": 4.7,
+          "reference": "ChIJpa3kAS0FdkgR_l6_il60OjA",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 12,
+          "vicinity": "84 Brook St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5247596,
+                  "lng": -0.1240282
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.5262185,
+                      "lng": -0.12095635
+                  },
+                  "southwest": {
+                      "lat": 51.5228077,
+                      "lng": -0.12645415
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "The Brunswick Centre",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4016,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/116951963488898640856\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgPjWzgQ5Myw2XMAzDbIyL2O7TfhVqslQ3VmHzN5OA_MEsV_626O6GaV8Uin8wDGoxdihmzteS2DuVXCBOvDjxWXQq6r_eWQrkGXiCq_pXxVTRLuPIlPDek6v6RFmOSom5gpHiC6JgI5w8heMrxjxlb714BKj497QKbZ6dCQcmuYy0ID",
+                  "width": 6016
+              }
+          ],
+          "place_id": "ChIJI7h_SjcbdkgRJcCnnXzZM2Q",
+          "plus_code": {
+              "compound_code": "GVFG+W9 London, United Kingdom",
+              "global_code": "9C3XGVFG+W9"
+          },
+          "rating": 4.2,
+          "reference": "ChIJI7h_SjcbdkgRJcCnnXzZM2Q",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 5608,
+          "vicinity": "Unit 57, Bernard St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5154229,
+                  "lng": -0.1452416
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51685492989272,
+                      "lng": -0.1434791
+                  },
+                  "southwest": {
+                      "lat": 51.51415527010727,
+                      "lng": -0.1469735
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "John Lewis & Partners",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4000,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/105493084767010088375\">Moin Uddin</a>"
+                  ],
+                  "photo_reference": "AfLeUgMSwvaXDuBvZiytnD8C4fOeSnCj5wMDMv5tnBpL0h4Y7kImpnFrPO947gvpkK4yqgrYBy1GJSycjPS3aqP5erai3t_2RqMW4VoyyRJiVfcax4f_QyUlrbKZbk_xcmC9_4tNXk3jCCmwQ_HheXCJcYXjgMMsZuvJfaTB3N3bXVzzgnxS",
+                  "width": 2252
+              }
+          ],
+          "place_id": "ChIJI6IWjywbdkgRZCa6K6ZF4UI",
+          "plus_code": {
+              "compound_code": "GV83+5W London, United Kingdom",
+              "global_code": "9C3XGV83+5W"
+          },
+          "price_level": 2,
+          "rating": 4.3,
+          "reference": "ChIJI6IWjywbdkgRZCa6K6ZF4UI",
+          "scope": "GOOGLE",
+          "types": [
+              "department_store",
+              "hardware_store",
+              "furniture_store",
+              "home_goods_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 8744,
+          "vicinity": "300 Oxford St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5144233,
+                  "lng": -0.152767
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51588617989272,
+                      "lng": -0.1508267201072777
+                  },
+                  "southwest": {
+                      "lat": 51.51318652010728,
+                      "lng": -0.1535263798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Selfridges",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3685,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/104091569948628872362\">Anthony Brigden</a>"
+                  ],
+                  "photo_reference": "AfLeUgPidYjLpglRAJvFIQAE0qP9C9fytrOSJ_4GTrHVyBUq-gPrbpEqQ_5UHCjozWM2FBllnIdRSaIykKtcMtuS_H8b3EKsXyN90YapFbFOYlUoY2odOKHiFM9siJMez_S6xQhMdaQgaCrJNm1BJZJymq_1MU4YxhQG-s2xs2PZvb1n6Vx_",
+                  "width": 5527
+              }
+          ],
+          "place_id": "ChIJDUkDWC0FdkgRvr1r4roiH4E",
+          "plus_code": {
+              "compound_code": "GR7W+QV London, United Kingdom",
+              "global_code": "9C3XGR7W+QV"
+          },
+          "rating": 4.4,
+          "reference": "ChIJDUkDWC0FdkgRvr1r4roiH4E",
+          "scope": "GOOGLE",
+          "types": [
+              "department_store",
+              "meal_takeaway",
+              "grocery_or_supermarket",
+              "bar",
+              "cafe",
+              "home_goods_store",
+              "store",
+              "restaurant",
+              "food",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 33379,
+          "vicinity": "400 Oxford St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.508624,
+                  "lng": -0.137695
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50999947989272,
+                      "lng": -0.1363525201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50729982010727,
+                      "lng": -0.1390521798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Princes Arcade",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4002,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/100629790635200681122\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgMswiJ9rt7CVkLvXZeeF1r70bPqeUBGU-AW7oKZlRgV7VfjMEK5kD22ATmghRewMdL_3ga7r8G2p6cogLySNvtubNJ0hMoxDqKb1EI5d4vQmdi8oWg64TLpsy4LqvyI3JZQhw6Y3YYhhxzYiCIUpYUHvV1xNRCld1ShKT4jDcHrjEfH",
+                  "width": 3001
+              }
+          ],
+          "place_id": "ChIJpSAhjtYEdkgRGgx8eHfj8MA",
+          "plus_code": {
+              "compound_code": "GV56+CW London, United Kingdom",
+              "global_code": "9C3XGV56+CW"
+          },
+          "rating": 4.2,
+          "reference": "ChIJpSAhjtYEdkgRGgx8eHfj8MA",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 208,
+          "vicinity": "196 Piccadilly, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5125778,
+                  "lng": -0.1262899
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51381832989272,
+                      "lng": -0.1247215201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51111867010728,
+                      "lng": -0.1274211798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "The White Company",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3987,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108218973256738993926\">Andreas Ludwig</a>"
+                  ],
+                  "photo_reference": "AfLeUgN53FElPhfZqYeTIHiT5gP_GB3DAPyvMPwK8vC3yH4w5-LSrAD2h2bcYF-Of6BVYyKIJx0rHeXzwLbP6Qa2o8mlb3UBBtmzM77YpQKYZMBvGrZupD-owmnmjw9oB6VeYlGiZWAKHtfnrNL6XsmHqYIJPsLNFDjhgkdk546Dpm8igrBc",
+                  "width": 5980
+              }
+          ],
+          "place_id": "ChIJIztg4swEdkgRiYHNvpgonGk",
+          "plus_code": {
+              "compound_code": "GV7F+2F London, United Kingdom",
+              "global_code": "9C3XGV7F+2F"
+          },
+          "price_level": 3,
+          "rating": 4.2,
+          "reference": "ChIJIztg4swEdkgRiYHNvpgonGk",
+          "scope": "GOOGLE",
+          "types": [
+              "department_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 77,
+          "vicinity": "5, St Martin's Courtyard, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5185815,
+                  "lng": -0.1517755
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51993957989272,
+                      "lng": -0.1503396201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51723992010727,
+                      "lng": -0.1530392798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "The White Company",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2846,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/105064036512151504501\">patheesen</a>"
+                  ],
+                  "photo_reference": "AfLeUgPjPAmmitKYuBFeuVEYSkszPofj1kKLFoG0WC5U16BHrnb8hPnRIn_0hA_A7HcP8KIOFqWwFgmQKDTbLxAc74af2qEbVlf5XzvzMtIJ_guK4zitgiyntFEke9Mc5agMO2gv1eHiWPYxnTN2MTHf6ZrxXDwtXeKk7jxY1htc2ARfF8nb",
+                  "width": 3792
+              }
+          ],
+          "place_id": "ChIJKTlvFdIadkgReNvAPveTspE",
+          "plus_code": {
+              "compound_code": "GR9X+C7 London, United Kingdom",
+              "global_code": "9C3XGR9X+C7"
+          },
+          "price_level": 3,
+          "rating": 4.4,
+          "reference": "ChIJKTlvFdIadkgReNvAPveTspE",
+          "scope": "GOOGLE",
+          "types": [
+              "department_store",
+              "furniture_store",
+              "home_goods_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 151,
+          "vicinity": "112-114 Marylebone High St, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5125677,
+                  "lng": -0.1266129
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51381582989272,
+                      "lng": -0.1251398201072778
+                  },
+                  "southwest": {
+                      "lat": 51.51111617010728,
+                      "lng": -0.1278394798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "St Martin's Courtyard",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 4032,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/109330694588951241161\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgPNpzX7L-bXuNCuuWy-BO93zRAwEo8N5VaWIkcwrVZxIKbVvnGi8ZilUaHNWP2ZZJ-S9sOuqnv_YkTIokrNXjWnzaw6iwtyBx2qZ3bSGmgh6aTYKljFHx00vztq2ECzq2rgixUAghnw7knyIn7IdfwvifOVl1H8wld62FgmcOtss1Sa",
+                  "width": 3024
+              }
+          ],
+          "place_id": "ChIJVcjKBs0EdkgRYnVLQmcNBfk",
+          "plus_code": {
+              "compound_code": "GV7F+29 London, United Kingdom",
+              "global_code": "9C3XGV7F+29"
+          },
+          "rating": 4.5,
+          "reference": "ChIJVcjKBs0EdkgRYnVLQmcNBfk",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 489,
+          "vicinity": "St Martin's Courtyard, Slingsby Pl, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5080274,
+                  "lng": -0.1102514
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.50908312989272,
+                      "lng": -0.1086771201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50638347010727,
+                      "lng": -0.1113767798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Gabriel's Wharf",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 2667,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/110434531886104468640\">A Google User</a>"
+                  ],
+                  "photo_reference": "AfLeUgOr5KAHLXtSnqRcZbIImygL_3RfSPDgKLwzyY9671N0pGLtpu2-o-MEuCgom_Q7QvphgBIl2II1wnPUHl4ca3Nm7rWAJ8b3WBOMe3dP3Aul3Er76Ag_8ZzbVs1hNWQLV5DBUYYPjpApBRkwxXigRlvvEsp1oFZ_h9v8rHNZ2rwjADqR",
+                  "width": 4000
+              }
+          ],
+          "place_id": "ChIJVVW5PrEEdkgR9nuadzGs16c",
+          "plus_code": {
+              "compound_code": "GV5Q+6V London, United Kingdom",
+              "global_code": "9C3XGV5Q+6V"
+          },
+          "rating": 4.4,
+          "reference": "ChIJVVW5PrEEdkgR9nuadzGs16c",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "food",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 822,
+          "vicinity": "Upper Ground, London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5102,
+                  "lng": -0.1363548
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51149012989272,
+                      "lng": -0.1348372201072778
+                  },
+                  "southwest": {
+                      "lat": 51.50879047010728,
+                      "lng": -0.1375368798927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Quadrant Arcade",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/108265500329559672356\">nini mimi</a>"
+                  ],
+                  "photo_reference": "AfLeUgMcPChZPQJkRHfkQsI1hF7pbULLiFMrraUCt5PO2NGhfrt9mFwr6W2rwU_L_nFdDXhejHy3U6sQGzBGcd6wC5m_ZmuPz59NevaDNtxIJTNb509os35ZLhuf5o-oYUZegCNhCQ7a3eG1Jmsluzi1SHqQpcMItXjMpGwmKLuB-Zn5BxUY",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJ62_fI9QEdkgR4l0rMmF6x6c",
+          "plus_code": {
+              "compound_code": "GV67+3H London, United Kingdom",
+              "global_code": "9C3XGV67+3H"
+          },
+          "rating": 4.3,
+          "reference": "ChIJ62_fI9QEdkgR4l0rMmF6x6c",
+          "scope": "GOOGLE",
+          "types": [
+              "shopping_mall",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 101,
+          "vicinity": "London"
+      },
+      {
+          "business_status": "OPERATIONAL",
+          "geometry": {
+              "location": {
+                  "lat": 51.5131119,
+                  "lng": -0.1450555
+              },
+              "viewport": {
+                  "northeast": {
+                      "lat": 51.51446872989272,
+                      "lng": -0.1437069701072778
+                  },
+                  "southwest": {
+                      "lat": 51.51176907010728,
+                      "lng": -0.1464066298927222
+                  }
+              }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+          "icon_background_color": "#4B96F3",
+          "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+          "name": "Fenwick",
+          "opening_hours": {
+              "open_now": true
+          },
+          "photos": [
+              {
+                  "height": 3024,
+                  "html_attributions": [
+                      "<a href=\"https://maps.google.com/maps/contrib/107712303283477284581\">Chris Cullen</a>"
+                  ],
+                  "photo_reference": "AfLeUgPoRjxWwuvL7xN1zXxLdToss9fV_PfGzqOWwaOq0U7gqW6iIZ7PQpt5GW6PzTTX2nTmKiPfsY10bxWaG2u-wE4-apAdGLNbrzV-Q9Wu4_F8NyPJytBi38eOrAl9j2G7_pw1Lgvbn_V9tsiJaVSzF5NQP-tiHtclAq4da14CTGakQN4n",
+                  "width": 4032
+              }
+          ],
+          "place_id": "ChIJEZvtEisFdkgRvzVUh7LcEb4",
+          "plus_code": {
+              "compound_code": "GV73+6X London, United Kingdom",
+              "global_code": "9C3XGV73+6X"
+          },
+          "price_level": 3,
+          "rating": 4.2,
+          "reference": "ChIJEZvtEisFdkgRvzVUh7LcEb4",
+          "scope": "GOOGLE",
+          "types": [
+              "department_store",
+              "clothing_store",
+              "store",
+              "point_of_interest",
+              "establishment"
+          ],
+          "user_ratings_total": 932,
+          "vicinity": "63 New Bond St, London"
+      }
+  ],
+  "status": "OK"
+}

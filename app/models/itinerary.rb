@@ -8,9 +8,8 @@ class Itinerary < ApplicationRecord
   validates :start_time, presence: true
   validates :end_time, presence: true
   validates :interests, presence: true
-  validates :budget, presence: true
 
   attr_accessor :details_wheelchair_accessible_entrance
 
-  INTERESTS = ["History", "Art_culture", "Dining", "Drinks", "Activity", "Shopping", "Outdoors", "Attraction"]
+  INTERESTS = ["History", "Art & Culture", "Dining", "Drinks", "Activity", "Shopping", "Outdoors", "Attraction"]
 end

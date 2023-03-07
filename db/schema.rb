@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_06_110921) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_06_180513) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -81,6 +81,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_06_110921) do
     t.index ["user_id"], name: "index_itineraries_on_user_id"
   end
 
+  create_table "itinerary_templates", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "places", force: :cascade do |t|
     t.string "details_formatted_address"
     t.string "search_types"
@@ -98,6 +103,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_06_110921) do
     t.string "details_url"
     t.string "search_geometry_location"
     t.boolean "details_serves_vegetarian_food"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "populate_itineraries", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
