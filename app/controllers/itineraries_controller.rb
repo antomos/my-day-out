@@ -18,7 +18,6 @@ class ItinerariesController < ApplicationController
       itinerary_template = ItineraryTemplate.new(itinerary_params).perform
 
       PopulateItinerary.new({ itinerary: @itinerary, template: itinerary_template, params: itinerary_params }).perform
-
       redirect_to itinerary_path(@itinerary)
     else
       render root_path, status: :unprocessable_entity
