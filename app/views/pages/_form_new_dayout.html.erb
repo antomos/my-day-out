@@ -8,11 +8,25 @@
     <div class="col-5">
       <div class="bg-color col-8">
         <div class="parent2">
-          <%= simple_form_for [itinerary], data: { controller: 'flatpickr' } do |f| %>
-            <%= f.input :start_address, placeholder: "Enter address here", required: true %>
-            <%= f.input :date, as: :string, required: true  %>
-            <%= f.input :start_time, :as => :time, :minute_step => 15, required: true %>
-            <%= f.input :end_time, :as => :time, :minute_step => 15, required: true %>
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center spacing3">Create a new plan</h2>
+          <%= simple_form_for [itinerary], data: { controller: 'flatpickr' }  do |f| %>
+          <%= f.input :start_address,
+                         placeholder: "Enter address here",
+                         required: true,
+                         input_html: {data: {address_target: "address"}, class: "d-none"},
+                         wrapper_html: {data: {controller: "address", address_api_key_value: ENV["MAPBOX_API_KEY"]}}
+            %>
+            <%= button_tag(type: 'submit' ,class: "btn btn-light loc-icon") do %>
+    <i class="fa-solid fa-location-crosshairs"></i>
+  <% end %>
+
+
+            <%= f.input :date, as: :string, input_html: { data: {flatpickr_target: "date" } } %>
+            <%= f.input :start_time,  as: :string, input_html: { data: {flatpickr_target: "start" } } %>
+            <%= f.input :end_time,  as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+
             <%= f.input :budget, as: :range, input_html: { min: 0, step: 1, max: 4} %>
             <%= f.input :interests,
                         as: :check_boxes,
