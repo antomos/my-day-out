@@ -1,14 +1,8 @@
 <div class="container">
   <div class="parent1">
-    <div class="col-3">
-      <h1 class="text-center spacing3">Get a plan now!</h1>
-    </div>
-  </div>
-  <div class="parent1">
     <div class="col-5">
-      <div class="bg-color col-8">
+      <div class="col-8">
         <div class="parent2">
-        <div class="row">
           <div class="col-12">
 
           <%= simple_form_for [itinerary], data: { controller: 'flatpickr' }  do |f| %>
@@ -38,7 +32,6 @@
             <%= f.submit class: "btn btn-pink border2 spacing1" %>
           <% end %>
         </div>
-      </div>
     </div>
   </div>
 </div>

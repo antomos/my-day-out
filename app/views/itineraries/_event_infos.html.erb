@@ -6,15 +6,15 @@
     <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
         <h2><%= event.title %><small> (<%= event.duration %> mins)</small></h2>
     </div>
-    <div style="display:flex;">
+    <div style="display:flex";>
 
     <%# card image %>
-      <%= image_tag event.image_url, style: "min-width:250px; min-height:350px;" %>
+      <%= image_tag event.image_url, style: "min-width:190px; min-height:220px"; %>
 
       <%# edit form %>
-      <div class="col d-none edit-form" data-edit-event-target="formdiv", style="min-width:350px; max-height:350px;">
-        <button aria-label="Edit <%= event.title %>" style="float: right;">
-          <i class="fa-solid fa-circle-xmark " data-action="click->edit-event#hideForm"></i>
+      <div class="col d-none edit-form" data-edit-event-target="formdiv", style="min-width:150px; max-height:320px";>
+        <button class= "x-button btn btn-pink border1" aria-label= Edit <%= event.title %> style="float: right";>
+          <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
         </button>
         <h2>Edit <strong><%= event.title %></strong></h2>
           <%= simple_form_for event,
@@ -23,24 +23,24 @@
               data: {
 
                 edit_event_target: "form",
-                action: "submit->edit-event#update  "
+                action: "submit->edit-event#update"
               }
             } do |f|
           %>
             <%= f.input :title, label: 'Swap with', collection: ["Event1","Event2","Event3","Event4","Event5"] %>
-            <%= f.input :duration, label: 'Change Duration',collection: [["30mins","30"],["45mins",45],["1h",60],["1h15mins",75],["1h30mins",90],["1h45mins",105],["2h",120]]%>
-            <%= f.submit "Update event", class: "btn btn-sm btn-primary btn-block mt-2" %>
+            <%= f.input :duration, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
+            <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
           <% end %>
       </div>
     </div>
 
     <%# details %>
-    <div class="d-none" data-edit-event-target="details" >
+    <div class="d-none zoom" data-edit-event-target="details" style="min-width:150px; max-height:300px"; >
         <h2>Description: </h2><%= event.description %> <br>
         <h2>Address: </h2><%= event.address %></p>
-        <button class="btn btn-primary " data-edit-event-target="button" data-action="click->edit-event#displayForm">
+        <button class="btn btn-pink border2 m-1" data-edit-event-target="button" data-action="click->edit-event#displayForm">
                 Edit
-              </button>
+        </button>
     </div>
   </div>
 
