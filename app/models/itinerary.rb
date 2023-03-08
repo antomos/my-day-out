@@ -1,6 +1,6 @@
 class Itinerary < ApplicationRecord
   belongs_to :user
-  has_many :events
+  has_many :events, dependent: :destroy
   has_many :places, through: :events
 
   validates :start_address, presence: true

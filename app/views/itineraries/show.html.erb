@@ -3,4 +3,9 @@
   <p><%= event.place.details_overview %></p>
   <p><%= event.start_time  %></p>
   <p><%= event.end_time  %></p>
+  <% if event.place.photo.attached? %>
+    <%= cl_image_tag event.place.photo.key, height: 300, width: 400, crop: :fill %>
+  <% else %>
+    <img src="https://res.cloudinary.com/danwlbu2c/image/upload/c_fill,h_300,w_400/v1/development/nm0x8y7ykna21y2h1w2gpxi0fto6" alt="Placeholder Image of London">
+  <% end %>
 <% end %>

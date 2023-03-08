@@ -20,10 +20,9 @@ class PopulateItinerary < ApplicationRecord
     location = "#{@itinerary.latitude},#{@itinerary.longitude}"
 
     @itinerary_template.each do |event_details|
-
       search_location = location
       url = generate_url(search_location, event_details)
-      alternative_places = fetch_places(url, event_details) # DELETE EVENT ARG
+      alternative_places = fetch_places(url, event_details)
 
       formatted_places = { "results" => format_places(alternative_places["results"]) }
 
@@ -32,17 +31,13 @@ class PopulateItinerary < ApplicationRecord
       place_details = alternative_places["results"].shift
       # place_details = populate_place(place) no longer need?
 
-
       event = PopulateEvent.new({
                                   itinerary: @itinerary,
                                   event_details: event_details,
                                   place_details: place_details,
                                   alternative_places: alternative_places
                                 }).perform
-
-
     end
-
   end
 
   def generate_url(search_location, event_details)
@@ -51,7 +46,7 @@ class PopulateItinerary < ApplicationRecord
     URI("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{search_location}&radius=#{event_details[:radius]}&type=#{event_details[:place_type]}&keyword=#{event_details[:keyword]}&maxprice=#{event_details[:maxprice]}&rankby=prominence&key=#{key}")
   end
 
-  def fetch_places(url, event_details) # DELETE EVENT PARAM
+  def fetch_places(url, event_details)
     # https = Net::HTTP.new(url.host, url.port)
     # https.use_ssl = true
 
@@ -62,7 +57,7 @@ class PopulateItinerary < ApplicationRecord
     # response_json = response.read_body
     # JSON.parse(response_json)
 
-    # # TEST JSONS
+    # TEST JSONS
     if event_details[:input_category] == "History"
       filepath = "app/services/test_results/museum_history|culture|immersive.json"
     elsif event_details[:input_category] == "Art & Culture"
@@ -106,11 +101,10 @@ class PopulateItinerary < ApplicationRecord
   end
 
   def populate_place(place)
-
     if place["photos"]
       photo = place["photos"][0]["photo_reference"] # String
     else
-      photo = ""
+      photo = nil
     end
 
     {
