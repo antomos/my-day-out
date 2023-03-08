@@ -8,6 +8,7 @@ class ItinerariesController < ApplicationController
   end
 
   def show
+    @it=Itinerary.new
   end
 
   def create
