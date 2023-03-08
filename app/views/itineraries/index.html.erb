@@ -13,14 +13,3 @@
 </div>
 -->
 <div class="flex-container" id="event" >     <% @events.each do |event| %>     <%= render "event_infos", event: event %>    <% end %> </div>
-
-
-<div>
-  <% @itineraries.each do |itinerary| %>
-    <p><%= itinerary %></p>
-    <% itinerary.events.each do |event| %>
-      <p><%= event %></p>
-      <p><%= event.place %></p>
-    <% end %>
-  <% end %>
-</div>
