@@ -48,10 +48,13 @@
     <%# details %>
     <div class="d-none zoom" data-edit-event-target="details" style="min-width:150px; max-height:300px"; >
         <h2>Description: </h2><%= event.place.details_overview %> <br>
-        <h2>Address: </h2><%= event.place.details_formatted_address %> </p>
+        <h2>Address: </h2><%= event.place.details_formatted_address %>
+        <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
+        <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
         <button class="btn btn-pink border2 m-1" data-edit-event-target="button" data-action="click->edit-event#displayForm">
                 Edit
         </button>
+
     </div>
   </div>
 
