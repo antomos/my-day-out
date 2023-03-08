@@ -10,9 +10,6 @@ application.register("edit-event", EditEventController)
 import AddressController from "./address_controller"
 application.register("address", AddressController)
 
-import EventsController from "./events_controller"
-application.register("events", EventsController)
-
 import FlatpickrController from "./flatpickr_controller"
 application.register("flatpickr", FlatpickrController)
 

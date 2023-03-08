@@ -1,4 +1,4 @@
-<%# <%# <!-- %>
+
 <div class="container">
   <div class="parent1">
     <div class="container event-container">
@@ -11,16 +11,4 @@
         <% end %>
       </div>
   </div>
-</div>
-
-
-
-<div>
-  <% @itineraries.each do |itinerary| %>
-    <p><%= itinerary %></p>
-    <% itinerary.events.each do |event| %>
-      <p><%= event %></p>
-      <p><%= event.place %></p>
-    <% end %>
-  <% end %>
 </div>
