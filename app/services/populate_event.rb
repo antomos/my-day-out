@@ -25,10 +25,7 @@ class PopulateEvent < ApplicationRecord
     event.order_number = @event_details[:order_number]
     event.alternative_places = @alternative_places
 
-    #get event details
     url = generate_url
-
-    # raise
 
     if Place.find_by(search_place_details_id: @search_place_details[:place_id])
       event.place = Place.find_by(search_place_details_id: @search_place_details[:place_id])
@@ -71,5 +68,4 @@ class PopulateEvent < ApplicationRecord
     serialized_places = File.read(filepath)
     JSON.parse(serialized_places)
   end
-
 end

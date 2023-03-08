@@ -32,8 +32,18 @@ class PopulatePlace < ApplicationRecord
     place.search_geometry_location = @search_place_details[:location]
     place.details_serves_vegetarian_food = @place_details["result"]["serves_vegetarian_food"]
 
-    place.save!
+    if @search_place_details[:photo_reference]
+      # TEST
+      # file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg/1280px-City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg")
 
+      # COMMENTED OUT TO STOP CLOGGING UP CLOUDINARY DIRING DEVELOPMENT
+      # NEED TO ADD A GENERIC PHOTO HOSTED ON CLOUDINARY IF NO PHOTO REFERENCE
+      # key = ENV["GOOGLE_API_KEY"]
+      # file = URI.open("https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&maxheight=800&photo_reference=#{@search_place_details[:photo_reference]}&key=#{key}")
+      # place.photo.attach(io: file, filename: "#{@search_place_details[:name]}.png", content_type: "image/png")
+    end
+
+    place.save!
     place
   end
 end
