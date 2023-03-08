@@ -23,6 +23,7 @@ export default class extends Controller {
       minTime: startMinTime,
       maxTime: startMaxTime,
       time_24hr: true,
+      minuteIncrement: 15,
       dateFormat: "H:i",
       onChange: function(selectedDates, dateStr, instance) {
         // When the start time changes, update the minimum allowed time for the end time input
@@ -37,6 +38,7 @@ export default class extends Controller {
       minTime: endMinTime,
       maxTime: endMaxTime,
       time_24hr: true,
+      minuteIncrement: 15,
       dateFormat: "H:i",
       onChange: function(selectedDates, dateStr, instance) {
         // When the end time changes, update the maximum allowed time for the start time input
