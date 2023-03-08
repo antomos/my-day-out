@@ -3,6 +3,7 @@ class ItinerariesController < ApplicationController
 
   def index
      @events = TestEvent.all
+    @events = TestEvent.all
     @itineraries = Itinerary.all
   end
 
