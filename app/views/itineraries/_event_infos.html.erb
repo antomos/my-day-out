@@ -9,7 +9,7 @@
     <div style="display:flex";>
 
     <%# card image %>
-      <%= image_tag event.image_url, style: "min-width:180px; min-height:230px"; %>
+      <%= image_tag event.image_url, style: "min-width:190px; min-height:220px"; %>
 
       <%# edit form %>
       <div class="col d-none edit-form" data-edit-event-target="formdiv", style="min-width:150px; max-height:320px";>
@@ -35,10 +35,10 @@
     </div>
 
     <%# details %>
-    <div class="d-none" data-edit-event-target="details" >
+    <div class="d-none zoom" data-edit-event-target="details" style="min-width:150px; max-height:300px"; >
         <h2>Description: </h2><%= event.description %> <br>
         <h2>Address: </h2><%= event.address %></p>
-        <button class="btn btn-pink border2 m-2" data-edit-event-target="button" data-action="click->edit-event#displayForm">
+        <button class="btn btn-pink border2 m-1" data-edit-event-target="button" data-action="click->edit-event#displayForm">
                 Edit
         </button>
     </div>
