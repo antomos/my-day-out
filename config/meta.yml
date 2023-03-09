@@ -1,0 +1,5 @@
+meta_name: "My Day Out"
+meta_title: "Plan my day out, anywhere in the world"
+meta_description: "The app provides an itinerary of fun activities in line with your preferences"
+meta_image: "cover.png" # should exist in app/assets/images/
+twitter_account: "@googlemaps" # required for Twitter Cards
