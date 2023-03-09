@@ -4,10 +4,14 @@
       <div class="col">
         <h1 class="h2 m-4 d-flex justify-content-center content5">We got you this amazing Day Out: </h1>
       </div>
+
+
+
       <div class="flex-container justify-content-center" id="event" >
         <% @itinerary.events.each do |event| %>
           <%= render "event_infos", event: event, itinerary: @itinerary %>
         <% end %>
       </div>
   </div>
+  <%= button_to 'Confirm Itinerary', itineraries_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
 </div>

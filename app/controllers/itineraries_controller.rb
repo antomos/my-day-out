@@ -2,13 +2,14 @@ class ItinerariesController < ApplicationController
   before_action :set_itinerary, only: [:show, :update, :destroy]
 
   def index
-     @events = TestEvent.all
+
     @events = TestEvent.all
-    @itineraries = Itinerary.all
+
+    @itinerary = Itinerary.find(params[:format])
   end
 
   def show
-    @it=Itinerary.new
+
   end
 
   def create
