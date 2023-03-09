@@ -9,6 +9,12 @@
   grid-gap: 5px;
 }
 
+.share-button{
+  position: absolute;
+  bottom: -685px;
+  right: 175px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -53,7 +59,7 @@ ul {
 
 .event-card {
   border-radius: 8px;
-  position: relative;
+  // position: relative;
 
   padding: 5px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
@@ -124,8 +130,8 @@ ul {
 }
 
 .event-container{
-  margin-top: 120px;
-  margin-bottom: 100px;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 // ================================================== START Edit form card==================================================//
 /* .form-right {
