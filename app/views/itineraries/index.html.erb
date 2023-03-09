@@ -5,9 +5,9 @@
         <h1 class= "parent1 spacing2 content5">Your itinerary #68760 has been confirmed: </h1>
         <div class= "d-flex flex-column">
           <div>
-            <% @events.each do |event| %>
-              <%= render "confirmed_itinerary", event: event %>
-            <% end %> <br>
+          <% @itinerary.events.each do |event| %>
+            <%= render "confirmed_itinerary", event: event, itinerary: @itinerary %>
+          <% end %> <br>
           </div>
           <div class=>
             <button class="btn btn-pink border2">
