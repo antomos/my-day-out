@@ -1,9 +1,10 @@
-<% alternatives=Array.new %>
-<% event.alternative_places.each do |value| %>
-   <% value[1].first(5).each do |v| %><br>
-      <% alternatives << v["name"] %>
-   <% end %>
+
+<% alternatives = Array.new %>
+<% event.alternative_places["results"].first(5).each do |place| %>
+  <% alternatives << place["name"] %>
 <% end %>
+
+
 
 
 
@@ -13,7 +14,7 @@
 
   <%# title  %>
     <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
-        <h2><%= event.place.name  %></h2><br>
+        <h2><%= event.place.name  %> #<%= event.place.id %></h2><br>
         <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
     </div>
     <div style="display:flex";>
@@ -38,8 +39,8 @@
               }
             } do |f|
           %>
-            <%= f.input :start_time, label: 'Swap with', collection: alternatives %>
-            <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
+            <%= f.input :place, label: 'Swap with', collection: alternatives %>
+            <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%> %>
              <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
            <% end %>
       </div>
