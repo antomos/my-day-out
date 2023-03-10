@@ -1,5 +1,3 @@
-require 'pry-byebug'
-
 class EventsController < ApplicationController
   before_action :set_event, only: [:update, :destroy]
 
