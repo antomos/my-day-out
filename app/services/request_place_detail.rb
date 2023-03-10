@@ -11,12 +11,12 @@ class RequestPlaceDetail < ApplicationRecord
 
   def fetch_place_details
 
-    key_to_symbols = @place_details
-    @place_details = {}
+    # key_to_symbols = @place_details
+    # @place_details = {}
 
-    key_to_symbols.each do |key, value|
-      @place_details[key.to_sym] = value
-    end
+    # key_to_symbols.each do |key, value|
+    #   @place_details[key.to_sym] = value
+    # end
 
     url = generate_url
 

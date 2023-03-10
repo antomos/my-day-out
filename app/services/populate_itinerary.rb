@@ -28,7 +28,7 @@ class PopulateItinerary < ApplicationRecord
 
       alternative_places = formatted_places
 
-      place_details = alternative_places["results"].shift
+      place_details = alternative_places["results"][0]#.shift ###############
       # place_details = populate_place(place) no longer need?
 
       event = PopulateEvent.new({

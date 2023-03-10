@@ -18,23 +18,31 @@ class EventsController < ApplicationController
       end
     end
 
-    # binding.pry
+    #convert string keys to symbols
+    key_to_symbols = @search_place_details
+    @search_place_details = {}
 
-    place_details = RequestPlaceDetail.new(@search_place_details).perform
-
-    # binding.pry
-    place = PopulatePlace.new({
-                              # event_details: @event_details,
-                                search_place_details: @search_place_details,
-                                place_details: place_details
-                              }).perform
-
-    if place.save!
-      @event.update(place: place)
-      #REFRESH PAGE AUTOMATICALLY
-    else
-      raise
+    key_to_symbols.each do |key, value|
+      @search_place_details[key.to_sym] = value
     end
+
+    # Making 2 new places??
+    # binding.pry
+
+    if Place.find_by(search_place_details_id: @search_place_details[:place_id])
+      place = Place.find_by(search_place_details_id: @search_place_details[:place_id])
+    else
+      place_details = RequestPlaceDetail.new(@search_place_details).perform
+
+      place = PopulatePlace.new({
+                                # event_details: @event_details,
+                                  search_place_details: @search_place_details,
+                                  place_details: place_details
+                                }).perform
+    end
+
+    @event.update(place: place)
+    # REFRESH PAGE AUTOMATICALLY
   end
 
   def destroy
