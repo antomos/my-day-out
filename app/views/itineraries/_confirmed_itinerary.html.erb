@@ -1,0 +1,26 @@
+<div class="row event-card col-5" data-controller="edit-event" data-edit-event-target="card" >
+  <div class="col-12" data-action="mouseover->edit-event#displayDetails mouseout->edit-event#hideDetails">
+
+  <%# title  %>
+
+    <div class="event-infos" data-edit-event-target= "infos">
+        <h2><%= event.place.name  %></h2><br>
+        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
+    </div>
+     <div style="display:flex";>
+    <%# card image %>
+<img src="https://res.cloudinary.com/danwlbu2c/image/upload/c_fill,h_300,w_400/v1/development/nm0x8y7ykna21y2h1w2gpxi0fto6" style= "min-width:320px; min-height:200px">
+    <div style="width: 100%; height: 200px;"
+  data-controller="map"
+
+  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+   </div>
+    <%# details %>
+    <div class="d-none zoom col-12" data-edit-event-target="details" style="min-width:250px; max-height:200px"; >
+        <h2>Description: </h2><%= event.place.details_overview %> <br>
+        <h2>Address: </h2><%= event.place.details_formatted_address %>
+        <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
+        <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+    </div>
+  </div>
+</div>

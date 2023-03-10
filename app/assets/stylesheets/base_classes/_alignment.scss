@@ -19,7 +19,7 @@
 // Only one child option:
 
 .child {
-  flex: 1 1 300px;
+  // flex: 1 1 300px;
 }
 
 @media only screen and (max-width: 767px) { /* For phones */
@@ -61,4 +61,9 @@
 .child3 {
   width: 100%;
   height: auto;
+}
+
+.parent3{
+  display: flex;
+  justify-content: left;
 }

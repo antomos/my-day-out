@@ -1,14 +1,22 @@
 
 <div class="container">
-  <div class="parent1">
-    <div class="container event-container">
-      <div class="col">
-        <h1 class="h2 m-4 d-flex justify-content-center">We got you this amazing Day Out: </h1>
-      </div>
-      <div class="flex-container justify-content-center" id="event" >
-        <% @events.each do |event| %>
-          <%= render "event_infos", event: event %>
-        <% end %>
+  <div class="d-flex flex-column">
+      <div class="event-container">
+        <h1 class= "parent1 spacing2 content5">Your itinerary #68760 has been confirmed: </h1>
+        <div class= "d-flex flex-column">
+          <div>
+          <% @itinerary.events.each do |event| %>
+            <%= render "confirmed_itinerary", event: event, itinerary: @itinerary %>
+          <% end %> <br>
+          </div>
+          <div class=>
+            <button class="btn btn-pink border2">
+              <%="Share"%>
+            </button>
+          </div>
+          <div>
+          </div>
+        </div>
       </div>
   </div>
 </div>
