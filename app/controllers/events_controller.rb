@@ -41,8 +41,12 @@ class EventsController < ApplicationController
                                 }).perform
     end
 
+    # DOUBE ENTRY TO DB MADE BEFORE THIS LINE!!!
+    # ISSUE WHEN SAVING - CHANGE THE EXISTING PLACE CHECK TO THE ONE LINE FIND_BY_OR_CREATE
+
     @event.update(place: place)
     # REFRESH PAGE AUTOMATICALLY
+    redirect_to itinerary_path
   end
 
   def destroy

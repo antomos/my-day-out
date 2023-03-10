@@ -16,6 +16,8 @@ class PopulatePlace < ApplicationRecord
   def new_place
     place = Place.new
 
+    # binding.pry
+
     ## changed for JSON testing butshould still work
     place.name = @search_place_details[:name] # @place_details["result"]["name"]
     place.details_formatted_address = @place_details["result"]["formatted_address"]
@@ -37,6 +39,8 @@ class PopulatePlace < ApplicationRecord
     place.search_geometry_location = "#{@place_details["result"]["geometry"]["location"]["lat"]},#{@place_details["result"]["geometry"]["location"]["lng"]}" # @search_place_details[:location]
     place.details_serves_vegetarian_food = @place_details["result"]["serves_vegetarian_food"]
 
+    # binding.pry
+
     if @search_place_details[:photo_reference]
       # TEST
       # file = URI.open("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg/1280px-City_of_London_skyline_from_London_City_Hall_-_Sept_2015_-_Crop_Aligned.jpg")
@@ -49,6 +53,7 @@ class PopulatePlace < ApplicationRecord
     end
 
     place.save!
+
     place
   end
 end
