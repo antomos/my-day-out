@@ -9,7 +9,7 @@ class TestEventsController < ApplicationController
     @event.update!(event_params)
     respond_to do |format|
       format.html { redirect_to events_path }
-      format.text { render partial: "itineraries/event_infos", locals: {event: @event}, formats: [:html] }
+      format.text { render partial: "itineraries/card", locals: {event: @event}, formats: [:html] }
     end
   end
 
