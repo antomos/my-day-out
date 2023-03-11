@@ -5,7 +5,7 @@
         <h1 class="h2 m-4 d-flex justify-content-center content5">Here is our recommended itinerary. Feel free to edit!</h1>
       </div>
       <div class="flex-container justify-content-center" id="event" >
-        <% @itinerary.events.each do |event| %>
+        <% @events.each do |event| %>
           <%= render "event_infos", event: event, itinerary: @itinerary %>
         <% end %>
       </div>
