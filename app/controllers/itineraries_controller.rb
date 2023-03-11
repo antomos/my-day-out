@@ -9,7 +9,7 @@ class ItinerariesController < ApplicationController
   end
 
   def show
-
+    @events = @itinerary.events.order(:order_number)
   end
 
   def create
