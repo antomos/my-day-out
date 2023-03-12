@@ -1,16 +1,15 @@
+require 'pry-byebug'
+
 class ItinerariesController < ApplicationController
   before_action :set_itinerary, only: [:show, :update, :destroy]
+  before_action :set_events, only: [:show]
 
   def index
-
-    @events = TestEvent.all
-
-    @itinerary = Itinerary.find(params[:format])
+    # @events = TestEvent.all
+    # @itinerary = Itinerary.find(params[:format])
   end
 
-  def show
-    @events = @itinerary.events.order(:order_number)
-  end
+  def show; end
 
   def create
     @itinerary = Itinerary.new(itinerary_params)
@@ -27,14 +26,38 @@ class ItinerariesController < ApplicationController
     end
   end
 
-  def update
+  def update; end
 
-  end
+  def destroy; end
 
-  def destroy
+  def edit_order
+    change_event_orders(params["_json"])
   end
 
   private
+
+  def change_event_orders(order)
+
+    @itinerary = Itinerary.find(params[:id])
+    @events = @itinerary.events.order(:order_number)
+
+    # sets index positions for old and new event position
+    old_index = order.split(",")[0].to_i #1
+    new_index = order.split(",")[1].to_i #3
+
+    # creates array of index for each event
+    event_order = @events.length.times.map { |i| i }
+
+    # updates array of event indexes to reflect new order
+    event_order.insert(new_index, event_order.delete_at(old_index))
+
+    # assigns correct order_number value to each event
+    event_order.length.times { |i| @events[event_order[i]].update(order_number: i + 1) }
+  end
+
+  def set_events
+    @events = @itinerary.events.order(:order_number)
+  end
 
   def set_itinerary
     @itinerary = Itinerary.find(params[:id])
@@ -51,9 +74,5 @@ class ItinerariesController < ApplicationController
       :details_wheelchair_accessible_entrance,
       interests: []
     )
-  end
-
-  def event_params
-    params.require(:event).permit(:title, :durasion)
   end
 end

@@ -14,7 +14,7 @@
 
   <%# title  %>
     <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
-        <h2><%= event.place.name  %></h2><br>
+        <h2><%= event.order_number %>. <%= event.place.name  %></h2>
         <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
     </div>
     <div style="display:flex";>
