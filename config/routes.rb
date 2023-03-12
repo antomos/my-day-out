@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   root to: "pages#home"
   resources :itineraries, only: [:index, :show, :create, :update, :destroy] do
     resources :events, only: [:create, :update, :destroy]
+    member do
+      post "edit_order"
+    end
   end
   resources :places, only: [:create]
   resources :test_events, only: [:index, :update]
