@@ -42,6 +42,7 @@
               }
             } do |f|
           %>
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
             <%= f.input :place, label: 'Swap with', collection: alternatives %>
             <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%> %>
              <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>

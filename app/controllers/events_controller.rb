@@ -1,3 +1,4 @@
+require "pry-byebug"
 class EventsController < ApplicationController
   before_action :set_event, only: [:update, :destroy]
 
@@ -44,6 +45,10 @@ class EventsController < ApplicationController
 
     @event.update(place: new_place)
     # REFRESH PAGE AUTOMATICALLY
+    # @itinerary = Itinerary.find_by
+    # @event = @itinerary.events.find_by(itinerary_id: )
+    # binding.pry
+    redirect_to itinerary_path(@event.itinerary_id) # (fallback_location: itinerary_path, _csrf_token: form_authenticity_token)
   end
 
   def destroy

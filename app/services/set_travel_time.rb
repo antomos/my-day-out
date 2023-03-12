@@ -1,0 +1,2 @@
+class SetTravelTime < ApplicationRecord
+end
