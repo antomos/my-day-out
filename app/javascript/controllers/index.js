@@ -3,8 +3,8 @@ import { application } from "./application"
 import EditEventController from "./edit_event_controller"
 application.register("edit-event", EditEventController)
 
-import AddressController from "./address_controller"
-application.register("address", AddressController)
+// import AddressController from "./address_controller"
+// application.register("address", AddressController)
 
 import FlatpickrController from "./flatpickr_controller"
 application.register("flatpickr", FlatpickrController)

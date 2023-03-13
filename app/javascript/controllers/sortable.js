@@ -1,9 +1,10 @@
 import Sortable from "sortablejs"
 
-const list = document.getElementById('event');
+
 
 const initSortable = () => {
   const list = document.getElementById('event');
+  if (list){
 
   const itinerary = document.getElementById('event').getAttribute('data-target-id');
 
@@ -29,5 +30,6 @@ const initSortable = () => {
       }, 50);
     }
   })
+}
 }
 export { initSortable }
