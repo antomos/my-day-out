@@ -24,6 +24,9 @@ const initSortable = () => {
         // headers: { "Accept": "text/plain", "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content },
         // body: data
       })
+      setTimeout(function() {
+        location.reload();
+      }, 50);
     }
   })
 }
