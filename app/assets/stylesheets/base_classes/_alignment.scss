@@ -18,9 +18,9 @@
 
 // Only one child option:
 
-.child {
+// .child {
   // flex: 1 1 300px;
-}
+// }
 
 @media only screen and (max-width: 767px) { /* For phones */
   .child {
@@ -65,5 +65,11 @@
 
 .parent3{
   display: flex;
-  justify-content: left;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
 }

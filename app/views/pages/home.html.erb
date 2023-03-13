@@ -1,16 +1,8 @@
-<div class="banner parent1 content1">
-  <%# <div class="banner-content child2 border1 content1 spacing2">
-    <h1>Plan my day out in London</h1>
-    <p>A personalised itinerary in minutes, browse popular itineraries and save your favourites.</p>
-    <%= button_to "Sign Up", new_user_session_path, :class => "btn btn-pink border2 spacing1" %>
-  <%# </div> %>
-</div>
 
 <div class="mt-2">
   <h2 class="content5 p-3">Plan an amazing Day Out</h2>
+  <p class="content1">Just tell us when, where and what do you like to do, we'll do the rest! ;)</p>
   <div class="col-12">
     <%= render "form_new_dayout", itinerary: @itinerary%>
   </div>
 </div>
-
-<h1 class="content4">Work in progress by the Dream Team</h1>

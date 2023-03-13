@@ -4,20 +4,31 @@
 // }
 
 .navbar {
-  position: absolute;
+  // opacity: 0.5;
+  position: sticky;
+  top: 0;
   width: 100%;
   background: transparent;
   box-shadow: none;
-  // .navbar-wagon-link {
-  //   color: white;
-  //   font-weight: bold;
-  // }
+  z-index: 100;
 }
 
-.navbar .navbar-collapse {
-  flex-grow: 0;
+.nav-link{
+  color: $color1;
+  font-size: 16px;
+  font-weight: $jost-font-weight-normal;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 3px;
+  transition: all 0.3s ease;
+  &:hover{
+    color: $color4;
+  }
 }
 
-.navbar .navbar-brand img {
-  width: 40px;
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
