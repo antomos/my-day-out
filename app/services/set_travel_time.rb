@@ -16,33 +16,34 @@ class SetTravelTime < ApplicationRecord
 
   def add_travel_to_schedule
     start_location = "#{@itinerary.latitude},#{@itinerary.longitude}"
-    start_date = @itinerary[:date].strftime('%Y%m%d')
-    start_time = @itinerary[:start_time].strftime('%H%M')
 
+    start_date = @itinerary[:date].strftime('%Y%m%d')
+    end_time = @itinerary[:start_time].strftime('%H%M')
 
     @itinerary.events.each do |event|
-      # event_duration = @
-
+      start_time = end_time
 
       destination_location = event.place.search_geometry_location
 
       url = generate_url(start_location, destination_location, start_time, start_date)
       directions = fetch_directions(url)
 
-      event.directions_to_event = directions
-
       hours = start_time.first(2)
       minutes = start_time.last(2)
       time = Time.new(1, 1, 1, hours, minutes, 0)
       start_time = time + (directions[:journey_duration].to_i * 60)
 
-      start_time = calculate_time(start_time)
+      start_time = round_time(start_time)
+      event_duration = event.event_duration
 
-      min = start_time.min
-      hour = start_time.hour
+      end_time = start_time + (event_duration * 60)
 
+      event.update(directions_to_event: directions)
+      event.update(start_time: start_time.strftime('%H:%M'))
+      event.update(end_time: end_time.strftime('%H:%M'))
 
-
+      end_time = end_time.strftime('%H%M')
+      start_location = destination_location
     end
   end
 
@@ -61,9 +62,14 @@ class SetTravelTime < ApplicationRecord
     response_json = response.read_body
     search_data = JSON.parse(response_json)
 
-    journey_duration = search_data["journeys"].first["duration"]
-    journey_legs = search_data["journeys"].first["legs"].map do |leg|
-      "#{leg["instruction"]["summary"]} (#{leg["duration"]} mins)"
+    if search_data["journeys"]
+      journey_duration = search_data["journeys"].first["duration"]
+      journey_legs = search_data["journeys"].first["legs"].map do |leg|
+        "#{leg["instruction"]["summary"]} (#{leg["duration"]} mins)"
+      end
+    else
+      journey_duration = 15
+      journey_legs = []
     end
 
     {
@@ -72,7 +78,10 @@ class SetTravelTime < ApplicationRecord
     }
   end
 
-  def calculate_time
+  def round_time(start_time)
+    min = start_time.min
+    hour = start_time.hour
+
     while (min % 5).positive?
       min += 1
       if min == 60
