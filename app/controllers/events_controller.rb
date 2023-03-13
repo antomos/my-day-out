@@ -5,7 +5,7 @@ class EventsController < ApplicationController
   end
 
   def update
-    # raise
+
     params = event_params
     place_name = params["place"]
 
@@ -44,6 +44,8 @@ class EventsController < ApplicationController
 
     @event.update(place: new_place)
     # REFRESH PAGE AUTOMATICALLY
+    @itinerary=Itinerary.find(params[:itinerary_id])
+    redirect_to itinerary_path(@itinerary)
   end
 
   def destroy

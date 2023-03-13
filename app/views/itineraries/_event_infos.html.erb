@@ -32,18 +32,10 @@
           <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
         </button>
         <h2>Edit <strong><%= event.place.name %></strong></h2>
-          <%= simple_form_for [itinerary,event],
-            html: {
-
-              data: {
-
-                edit_event_target: "form",
-                action: "submit->edit-event#update"
-              }
-            } do |f|
+          <%= simple_form_for [itinerary,event]          do |f|
           %>
             <%= f.input :place, label: 'Swap with', collection: alternatives %>
-            <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%> %>
+            <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
              <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
            <% end %>
       </div>
