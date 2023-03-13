@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   end
 
   def update
-    # raise
+
     params = event_params
     place_name = params["place"]
 
