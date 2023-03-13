@@ -262,7 +262,8 @@ class ItineraryTemplate < ApplicationRecord
         filter_type: INTEREST_VALUES[:"#{event}"][:filter_type],
         filter_ratings: INTEREST_VALUES[:"#{event}"][:filter_ratings],
         event_start_time: event_start.strftime('%H:%M'),
-        event_end_time: event_end.strftime('%H:%M')
+        event_end_time: event_end.strftime('%H:%M'),
+        event_duration: INTEREST_VALUES[:"#{event}"][:time]
       }
     end
 
