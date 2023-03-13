@@ -33,10 +33,10 @@ export default class extends Controller {
     this.addressTarget.value = ""
   }
 
-  getLocation() {
-    console.log("link", this.linkTarget);
-    console.log('location address target', this.addressTarget)
-  }
+  // getLocation() {
+  //   console.log("link", this.linkTarget);
+  //   console.log('location address target', this.addressTarget)
+  // }
   /* getLocation(event) {
     console.log("get location");
     event.preventDefault();
