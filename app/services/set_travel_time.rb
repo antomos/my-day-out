@@ -20,7 +20,9 @@ class SetTravelTime < ApplicationRecord
     start_date = @itinerary[:date].strftime('%Y%m%d')
     end_time = @itinerary[:start_time].strftime('%H%M')
 
-    @itinerary.events.each do |event|
+    events = @itinerary.events.order(:order_number)
+
+    events.each do |event|
       start_time = end_time
 
       destination_location = event.place.search_geometry_location

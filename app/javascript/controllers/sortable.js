@@ -27,7 +27,7 @@ const initSortable = () => {
       })
       setTimeout(function() {
         location.reload();
-      }, 50);
+      }, 2000);
     }
   })
 }

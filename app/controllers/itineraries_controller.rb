@@ -55,6 +55,9 @@ class ItinerariesController < ApplicationController
 
     # assigns correct order_number value to each event
     event_order.length.times { |i| @events[event_order[i]].update(order_number: i + 1) }
+
+    #recalculate Itinerary timings with updated travel instructions
+    SetTravelTime.new(@itinerary).perform
   end
 
   def set_events
