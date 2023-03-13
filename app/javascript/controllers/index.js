@@ -16,7 +16,7 @@ import MapController from "./map_controller"
 application.register("map", MapController)
 
 
-import { initSortable } from "./init_sortable"
+import { initSortable } from "./sortable"
 initSortable()
 
 import { Application } from "@hotwired/stimulus"
