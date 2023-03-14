@@ -4,7 +4,7 @@
       <div class="col">
         <h1 class="h2 m-4 d-flex justify-content-center content5">We got you this amazing Day Out: </h1>
       </div>
-      <div class="flex-container justify-content-center" id="event" data-target-id="<%= @itinerary.id %>" >
+      <div class="flex-container justify-content-center" data-controller="sortable" id="event" data-target-id="<%= @itinerary.id %>" >
         <% @events.each do |event| %>
           <%= render "event_infos", event: event, itinerary: @itinerary %>
         <% end %>
