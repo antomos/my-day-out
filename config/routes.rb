@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   end
   resources :places, only: [:create]
   resources :test_events, only: [:index, :update]
+  get 'confirm', to: 'itineraries#confirm', as: :confirm
+
 end
