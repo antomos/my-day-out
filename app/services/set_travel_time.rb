@@ -16,14 +16,18 @@ class SetTravelTime < ApplicationRecord
   private
 
   def add_travel_to_schedule
+
+    # events = @itinerary.events.order(:order_number)
+    events = @itinerary.events.where(removed: false).order(:order_number)
+
+
+    return if @index == events.length
+
+
     start_location = "#{@itinerary.latitude},#{@itinerary.longitude}"
 
     start_date = @itinerary[:date].strftime('%Y%m%d')
     end_time = @itinerary[:start_time].strftime('%H%M')
-
-    events = @itinerary.events.order(:order_number)
-
-    # events = events.slice(@index, array.length) if @index
 
     events.each_with_index do |event, i|
       start_time = end_time
@@ -58,8 +62,9 @@ class SetTravelTime < ApplicationRecord
   end
 
   def generate_url(start_location, destination_location, start_time, start_date)
+    key = ENV["TFL_API_KEY"]
     mode = "tube,overground,dlr"
-    URI("https://api.tfl.gov.uk/Journey/JourneyResults/#{start_location}/to/#{destination_location}?date=#{start_date}&time=#{start_time}&timeIs=departing&journeyPreference=leasttime&mode=#{mode}&walkingSpeed=average")
+    URI("https://api.tfl.gov.uk/Journey/JourneyResults/#{start_location}/to/#{destination_location}?date=#{start_date}&time=#{start_time}&timeIs=departing&journeyPreference=leasttime&mode=#{mode}&walkingSpeed=average&key=#{key}")
   end
 
   def fetch_directions(url)

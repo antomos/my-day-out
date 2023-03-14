@@ -60,10 +60,14 @@
         <h2>Address: </h2><%= event.place.details_formatted_address %>
         <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
         <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
+        <p><%= link_to "Remove", remove_path(event), data: {
+              turbo_method: :get,
+              turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."
+              }
+        %></p>
         <button class="btn btn-pink border2 m-1" data-edit-event-target="button" data-action="click->edit-event#displayForm">
                 Edit
         </button>
-
     </div>
   </div>
 

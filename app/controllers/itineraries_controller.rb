@@ -41,7 +41,8 @@ class ItinerariesController < ApplicationController
   def change_event_orders(order)
 
     @itinerary = Itinerary.find(params[:id])
-    @events = @itinerary.events.order(:order_number)
+    # @events = @itinerary.events.order(:order_number)
+    @events = @itinerary.events.where(removed: false).order(:order_number)
 
     # sets index positions for old and new event position
     old_index = order.split(",")[0].to_i #1
@@ -70,7 +71,8 @@ class ItinerariesController < ApplicationController
   end
 
   def set_events
-    @events = @itinerary.events.order(:order_number)
+    # @events = @itinerary.events.order(:order_number)
+    @events = @itinerary.events.where(removed: false).order(:order_number)
   end
 
   def set_itinerary
