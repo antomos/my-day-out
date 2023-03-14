@@ -14,7 +14,9 @@ export default class extends Controller {
 
     this.geocoder = new MapboxGeocoder({
       accessToken: this.apiKeyValue,
-      types: "country,region,place,postcode,locality,neighborhood,address"
+      types: "country,region,place,postcode,locality,neighborhood,address",
+
+      proximity: [ -0.118092, 51.509865 ]
     })
     this.geocoder.addTo(this.element)
 
@@ -31,10 +33,10 @@ export default class extends Controller {
     this.addressTarget.value = ""
   }
 
-  getLocation() {
-    console.log("link", this.linkTarget);
-    console.log('location address target', this.addressTarget)
-  }
+  // getLocation() {
+  //   console.log("link", this.linkTarget);
+  //   console.log('location address target', this.addressTarget)
+  // }
   /* getLocation(event) {
     console.log("get location");
     event.preventDefault();

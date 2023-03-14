@@ -1,0 +1,46 @@
+.transparent-footer {
+  background-color: transparent;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border-radius: 25px;
+  background-color: $color5;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.round-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.linkedin-icon {
+  content: url('linkedin.svg');
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.github-icon {
+  content: url('github.svg');
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}

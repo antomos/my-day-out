@@ -1,11 +1,12 @@
+require "pry-byebug"
 class EventsController < ApplicationController
-  before_action :set_event, only: [:update, :destroy]
+  before_action :set_event, only: [:update, :destroy, :remove]
 
   def create
   end
 
   def update
-    # raise
+
     params = event_params
     place_name = params["place"]
 
@@ -43,10 +44,36 @@ class EventsController < ApplicationController
     # ISSUE WHEN SAVING - CHANGE THE EXISTING PLACE CHECK TO THE ONE LINE FIND_BY_OR_CREATE??
 
     @event.update(place: new_place)
-    # REFRESH PAGE AUTOMATICALLY
+
+    # sets point from where new travel information and times should be generated
+    @index = @event[:order_number].to_i - 1
+
+    @itinerary = Itinerary.find(@event.itinerary_id)
+    SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
+
+    redirect_to itinerary_path(@event.itinerary_id) # (fallback_location: itinerary_path, _csrf_token: form_authenticity_token)
   end
 
   def destroy
+  end
+
+  def remove
+    @event.update(removed: true)
+
+    # sets point from where new travel information and times should be generated
+    @index = @event[:order_number].to_i - 1
+
+    @itinerary = Itinerary.find(@event.itinerary_id)
+
+    @events = @itinerary.events.where(removed: false).order(:order_number)
+
+    @events.each_with_index do |event, index|
+      event.update(order_number: index + 1)
+    end
+
+    SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
+
+    redirect_to itinerary_path(@event.itinerary_id)
   end
 
   private
