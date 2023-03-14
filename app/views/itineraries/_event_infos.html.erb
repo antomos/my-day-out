@@ -11,6 +11,22 @@
 
 <div class="row card" data-controller="edit-event" data-edit-event-target="card" >
   <div class="col" style="" data-action="mouseover->edit-event#displayDetails mouseout->edit-event#hideDetails">
+<button data-controller="card-details" data-action="click->card-details#showDetails" data-card-id="<%= event.id %>">View details</button>
+  <div class="modal fade" id="card-details-modal" tabindex="-1" role="dialog" aria-labelledby="card-details-modal-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" data-card-details-target="modalTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" data-card-details-target="modalBody">
+        <p>Loading details...</p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <%# title  %>
     <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
