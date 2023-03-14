@@ -15,9 +15,9 @@ application.register("hello", HelloController)
 import MapController from "./map_controller"
 application.register("map", MapController)
 
+import SortableController from "./sortable_controller"
+application.register("sortable", SortableController)
 
-import { initSortable } from "./sortable"
-initSortable()
 
 import { Application } from "@hotwired/stimulus"
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
