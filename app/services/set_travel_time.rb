@@ -4,8 +4,9 @@ require "json"
 require "open-uri"
 
 class SetTravelTime < ApplicationRecord
-  def initialize(itinerary)
-    @itinerary = itinerary
+  def initialize(params = {})
+    @itinerary = params[:itinerary]
+    @index = params[:index]
   end
 
   def perform
@@ -22,30 +23,37 @@ class SetTravelTime < ApplicationRecord
 
     events = @itinerary.events.order(:order_number)
 
-    events.each do |event|
+    # events = events.slice(@index, array.length) if @index
+
+    events.each_with_index do |event, i|
       start_time = end_time
 
-      destination_location = event.place.search_geometry_location
+      # Only calls API and sets timings from the first change in the schedule
+      if i >= @index
+        destination_location = event.place.search_geometry_location
 
-      url = generate_url(start_location, destination_location, start_time, start_date)
-      directions = fetch_directions(url)
+        url = generate_url(start_location, destination_location, start_time, start_date)
+        directions = fetch_directions(url)
 
-      hours = start_time.first(2)
-      minutes = start_time.last(2)
-      time = Time.new(1, 1, 1, hours, minutes, 0)
-      start_time = time + (directions[:journey_duration].to_i * 60)
+        hours = start_time.first(2)
+        minutes = start_time.last(2)
+        time = Time.new(1, 1, 1, hours, minutes, 0)
+        start_time = time + (directions[:journey_duration].to_i * 60)
 
-      start_time = round_time(start_time)
-      event_duration = event.event_duration
+        start_time = round_time(start_time)
+        event_duration = event.event_duration
 
-      end_time = start_time + (event_duration * 60)
+        end_time = start_time + (event_duration * 60)
 
-      event.update(directions_to_event: directions)
-      event.update(start_time: start_time.strftime('%H:%M'))
-      event.update(end_time: end_time.strftime('%H:%M'))
+        event.update(directions_to_event: directions)
+        event.update(start_time: start_time.strftime('%H:%M'))
+        event.update(end_time: end_time.strftime('%H:%M'))
+      end
 
-      end_time = end_time.strftime('%H%M')
-      start_location = destination_location
+      # end_time = end_time.strftime('%H%M')
+      # start_location = destination_location
+      end_time = event.end_time.gsub(":", "")
+      start_location = event.place.search_geometry_location
     end
   end
 

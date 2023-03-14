@@ -20,7 +20,7 @@ class ItinerariesController < ApplicationController
       itinerary_template = ItineraryTemplate.new(itinerary_params).perform
 
       PopulateItinerary.new({ itinerary: @itinerary, template: itinerary_template, params: itinerary_params }).perform
-      SetTravelTime.new(@itinerary).perform
+      SetTravelTime.new({ itinerary: @itinerary, index: 0 }).perform
 
       redirect_to itinerary_path(@itinerary)
     else
@@ -47,6 +47,8 @@ class ItinerariesController < ApplicationController
     old_index = order.split(",")[0].to_i #1
     new_index = order.split(",")[1].to_i #3
 
+    return unless old_index != new_index
+
     # creates array of index for each event
     event_order = @events.length.times.map { |i| i }
 
@@ -56,8 +58,15 @@ class ItinerariesController < ApplicationController
     # assigns correct order_number value to each event
     event_order.length.times { |i| @events[event_order[i]].update(order_number: i + 1) }
 
-    #recalculate Itinerary timings with updated travel instructions
-    SetTravelTime.new(@itinerary).perform
+    # sets point from where new travel information and times should be generated
+    if old_index < new_index
+      @index = old_index
+    else
+      @index = new_index
+    end
+
+    # recalculate Itinerary timings with updated travel instructions
+    SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
   end
 
   def set_events
