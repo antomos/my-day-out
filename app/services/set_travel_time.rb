@@ -50,8 +50,8 @@ class SetTravelTime < ApplicationRecord
   end
 
   def generate_url(start_location, destination_location, start_time, start_date)
-    mode = "bus,overground,tube,coach,dlr"
-    URI("https://api.tfl.gov.uk/Journey/JourneyResults/#{start_location}/to/#{destination_location}?date=#{start_date}&time=#{start_time}&timeIs=Departing&journeyPreference=LeastTime&mode=#{mode}&walkingSpeed=Average")
+    mode = "tube,overground,dlr"
+    URI("https://api.tfl.gov.uk/Journey/JourneyResults/#{start_location}/to/#{destination_location}?date=#{start_date}&time=#{start_time}&timeIs=departing&journeyPreference=leasttime&mode=#{mode}&walkingSpeed=average")
   end
 
   def fetch_directions(url)
@@ -67,7 +67,7 @@ class SetTravelTime < ApplicationRecord
     if search_data["journeys"]
       journey_duration = search_data["journeys"].first["duration"]
       journey_legs = search_data["journeys"].first["legs"].map do |leg|
-        "#{leg["instruction"]["summary"]} (#{leg["duration"]} mins)"
+        "#{leg["instruction"]["summary"].gsub("9999", "")} (#{leg["duration"]} mins)"
       end
     else
       journey_duration = 15
@@ -92,7 +92,6 @@ class SetTravelTime < ApplicationRecord
         hour = 0 if hour == 24
       end
     end
-
     Time.new(1, 1, 1, hour, min, 0)
   end
 end
