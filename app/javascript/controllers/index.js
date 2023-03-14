@@ -3,8 +3,8 @@ import { application } from "./application"
 import EditEventController from "./edit_event_controller"
 application.register("edit-event", EditEventController)
 
-import AddressController from "./address_controller"
-application.register("address", AddressController)
+// import AddressController from "./address_controller"
+// application.register("address", AddressController)
 
 import FlatpickrController from "./flatpickr_controller"
 application.register("flatpickr", FlatpickrController)
@@ -15,9 +15,9 @@ application.register("hello", HelloController)
 import MapController from "./map_controller"
 application.register("map", MapController)
 
+import SortableController from "./sortable_controller"
+application.register("sortable", SortableController)
 
-import { initSortable } from "./init_sortable"
-initSortable()
 
 import { Application } from "@hotwired/stimulus"
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers"
