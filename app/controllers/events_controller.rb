@@ -44,12 +44,13 @@ class EventsController < ApplicationController
     # ISSUE WHEN SAVING - CHANGE THE EXISTING PLACE CHECK TO THE ONE LINE FIND_BY_OR_CREATE??
 
     @event.update(place: new_place)
+
+    # sets point from where new travel information and times should be generated
+    @index = @event[:order_number].to_i - 1
+
     @itinerary = Itinerary.find(@event.itinerary_id)
-    SetTravelTime.new(@itinerary).perform
-    # REFRESH PAGE AUTOMATICALLY
-    # @itinerary = Itinerary.find_by
-    # @event = @itinerary.events.find_by(itinerary_id: )
-    # binding.pry
+    SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
+
     redirect_to itinerary_path(@event.itinerary_id) # (fallback_location: itinerary_path, _csrf_token: form_authenticity_token)
   end
 
