@@ -16,6 +16,7 @@
 .category-selector {
   position: absolute;
   transform: scale(0);
+  opacity: 1;
 }
 
 .category-selector + label {
@@ -28,7 +29,7 @@
   font-size: 16px;
   text-align: center;
   padding: 12px 10px 10px 12px;
-  border: 1px outset $color1;
+  border: 1px solid $color1;
   border-radius: 5px;
   background-color: transparent;
 }
@@ -44,7 +45,7 @@
   justify-content: center;
   background-color: $color4;
   color: $color1;
-  width: 90%;
+  width: 100%;
 }
 
 .inputs {
@@ -64,4 +65,16 @@
   display: flex;
   justify-content: left;
   width: 100%;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
