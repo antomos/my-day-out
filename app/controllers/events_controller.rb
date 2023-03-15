@@ -51,7 +51,7 @@ class EventsController < ApplicationController
     @itinerary = Itinerary.find(@event.itinerary_id)
     SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
 
-    redirect_to itinerary_path(@event.itinerary_id) # (fallback_location: itinerary_path, _csrf_token: form_authenticity_token)
+   //redirect_to itinerary_path(@event.itinerary_id) # (fallback_location: itinerary_path, _csrf_token: form_authenticity_token)
   end
 
   def destroy

@@ -6,6 +6,7 @@ export default class extends Controller {
 
   showDetails(event) {
     console.log('showDetails');
+    console.log(event.target.dataset.cardId);
     const cardId = event.target.dataset.cardId;
     const modal = document.getElementById('card-details-modal');
     const modalTitle = this.modalTitleTarget;
