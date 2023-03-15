@@ -11,7 +11,7 @@ class ItinerariesController < ApplicationController
 
   def show
     @confirmed = params[:confirmed]
-    @marker = render_to_string(partial: "marker")
+
 
 
   end
