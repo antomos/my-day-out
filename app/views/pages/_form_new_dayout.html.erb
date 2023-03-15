@@ -1,37 +1,51 @@
-<div class="container">
-  <div class="parent3">
-    <div class="col-5">
-      <div class="col-8">
-        <div class="parent2">
-          <div class="col-12">
 
-          <%= simple_form_for [itinerary], data: { controller: 'flatpickr' }  do |f| %>
-          <%= f.input :start_address,
-                         placeholder: "Enter address here",
-                         required: true,
-                         input_html: {data: {address_target: "address"}, class: "d-none"},
-                         wrapper_html: {data: {controller: "address", address_api_key_value: ENV["MAPBOX_API_KEY"]}}
-            %>
-
-
-
-            <%= f.input :date, as: :string, input_html: { data: {flatpickr_target: "date" } } %>
-            <%= f.input :start_time,  as: :string, input_html: { data: {flatpickr_target: "start" } } %>
-            <%= f.input :end_time,  as: :string, input_html: { data: {flatpickr_target: "end" } } %>
-            <%= f.input :budget, as: :range, input_html: { min: 0, step: 1, max: 4} %>
-            <%= f.input :interests,
-                        as: :check_boxes,
-                        collection_wrapper_tag: 'div',
-                        collection_wrapper_class: 'category-wrapper spacing3',
-                        item_wrapper_class: 'category-item border1',
-                        input_html: {class: 'category-selector'},
-                        collection: Itinerary::INTERESTS,
-                        include_hidden: false %>
-            <%= f.input :dining_requirements %>
-            <%= f.input :details_wheelchair_accessible_entrance, as: :radio_buttons %>
-            <%= f.submit class: "btn btn-pink border2 spacing1" %>
-          <% end %>
+<div class="d-flex flex-row justify-content-center">
+  <div class="d-flex flex-column">
+    <%# <div class="container"> %>
+      <%= simple_form_for [itinerary], data: { controller: 'flatpickr' }  do |f| %>
+      <div class="input-tag-off mt-4">
+        <%= f.input :start_address,
+                    required: true,
+                    input_html: {data: {address_target: "address"}, class: "d-none"},
+                    wrapper_html: {data: {controller: "address", address_api_key_value: ENV["MAPBOX_API_KEY"]}}
+        %>
         </div>
+      <div class="d-flex justify-content-around col-8">
+        <div class="inputs input-tag-off">
+          <%= f.input :date, as: :string, placeholder: "Date", input_html: { data: {flatpickr_target: "date" } } %>
+        </div>
+        <div class="inputs input-tag-off">
+          <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { data: {flatpickr_target: "start" } } %>
+        </div>
+        <div class="inputs input-tag-off">
+          <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+        </div>
+      </div>
+      <div class="col-6 dining-input input-tag-off">
+        <%= f.input :dining_requirements, placeholder: "    Preferences, e.g. 'tapas'" %>
+      </div>
+    <%# </div> %>
+  </div>
+
+  <div class="container m-3 col-5">
+    <div>
+      <%= f.input :interests, class: "input-tag-off",
+                  as: :check_boxes,
+                  collection_wrapper_tag: 'div',
+                  collection_wrapper_class: 'category-wrapper spacing3',
+                  item_wrapper_class: 'category-item border1',
+                  input_html: {class: 'category-selector'},
+                  collection: Itinerary::INTERESTS,
+                  include_hidden: false %>
+    </div>
+    <div class="col-12 input-tag-off slider">
+      <%= f.input :budget, as: :range, input_html: { min: 0, step: 1, max: 4} %>
     </div>
   </div>
+  </div>
+  <div class="container flex-column col-12">
+    <%= f.submit class: "btn btn-pink border2 spacing1" %>
+  <% end %>
+  </div>
+
 </div>

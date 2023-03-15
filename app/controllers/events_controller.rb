@@ -1,6 +1,6 @@
 require "pry-byebug"
 class EventsController < ApplicationController
-  before_action :set_event, only: [:update, :destroy]
+  before_action :set_event, only: [:update, :destroy, :remove]
 
   def create
   end
@@ -55,6 +55,25 @@ class EventsController < ApplicationController
   end
 
   def destroy
+  end
+
+  def remove
+    @event.update(removed: true)
+
+    # sets point from where new travel information and times should be generated
+    @index = @event[:order_number].to_i - 1
+
+    @itinerary = Itinerary.find(@event.itinerary_id)
+
+    @events = @itinerary.events.where(removed: false).order(:order_number)
+
+    @events.each_with_index do |event, index|
+      event.update(order_number: index + 1)
+    end
+
+    SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
+
+    redirect_to itinerary_path(@event.itinerary_id)
   end
 
   private

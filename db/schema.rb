@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_13_093609) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_14_143529) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -53,6 +53,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_13_093609) do
     t.jsonb "alternative_places", default: {}
     t.jsonb "directions_to_event", default: {}
     t.integer "event_duration"
+    t.boolean "removed", default: false
     t.index ["itinerary_id"], name: "index_events_on_itinerary_id"
     t.index ["place_id"], name: "index_events_on_place_id"
   end

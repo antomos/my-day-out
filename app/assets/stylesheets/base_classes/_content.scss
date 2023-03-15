@@ -3,9 +3,12 @@
 .content1 {
   font-family: $jost-font;
   font-weight: $jost-font-weight-normal;
-  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
   line-height: 1.5;
   color: $color1;
+  margin-bottom: 0;
 }
 
 .content2 {
@@ -14,8 +17,9 @@
 }
 
 .content3 {
-  font-family: $monoton-font;
+  font-family: $pacifico-font;
   font-size: 40px;
+  text-shadow: 1px 1px rgb(44, 44, 44);
   line-height: 2;
   color: $color4;
   letter-spacing: 0.05em;
@@ -23,15 +27,14 @@
 
 .content4 {
   font-family: $pacifico-font;
-  font-size: 24px;
-  line-height: 3;
+  font-size: 18px;
+  line-height: 1.5;
   color: $color1;
-  text-align: center;
   background: linear-gradient(to bottom, $color3, $color4);
 }
 
 .content5{
   @extend .content1;
   text-shadow: 2px 2px $color4;
-  font-size: 40px;
+  font-size: 28px;
 }

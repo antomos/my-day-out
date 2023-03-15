@@ -1,33 +1,17 @@
-<div class="navbar navbar-expand-sm navbar-light navbar">
-  <div class="container-fluid">
-    <%= link_to "/", class: "navbar-brand" do %>
-      <h1 class="content3"><%= "My Day Out" %></h1>
+
+<div class="navbar">
+  <div class="navbar-container p-2">
+    <%= link_to root_url do %>
+      <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834960/Icon_a9bbpe.webp", :class => "avatar-large" %>
     <% end %>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to "Popular Days Out", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <%= image_tag "giulio.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "My Favourites", "#", class: "dropdown-item" %>
-              <%= link_to "Preferences", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
-            </div>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
+      <h1 class="content3"><%= "My Day Out" %></h1>
+      <% if user_signed_in? %>
+        <div class="d-flex align-items-center">
+          <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %>
+          <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834961/giulio_l3pxx3.png", class: "avatar"%>
+        </div>
+      <% else %>
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      <% end %>
   </div>
 </div>
