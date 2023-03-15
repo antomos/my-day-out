@@ -3,6 +3,14 @@
 <% event.alternative_places["results"].first(5).each do |place| %>
   <% alternatives << place["name"] %>
 <% end %>
+<%= coord = event.place.search_geometry_location.split(',') %>
+<% @markers =
+      [{
+        lat: coord[0],
+        lng: coord[1],
+        marker_html: marker
+      }]
+%>
 
 
 
@@ -10,15 +18,18 @@
 
 
 <div class="row card" data-controller="edit-event" data-edit-event-target="card" >
-  <div class="col" style="" data-action="mouseover->edit-event#displayDetails mouseout->edit-event#hideDetails">
+  <div class="col" style="" >
 
 
   <%# title  %>
     <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
-        <h2><%= event.order_number %>. <%= event.place.name  %></h2>
+        <h2><%= event.order_number %>. <%= event.place.name  %> </h2>
         <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
     </div>
     <div style="display:flex";>
+
+
+
 
     <%# card image %>
       <% if event.place.photo.attached? %>
@@ -33,16 +44,7 @@
           <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
         </button>
         <h2>Edit <strong><%= event.place.name %></strong></h2>
-          <%= simple_form_for [itinerary,event],
-            html: {
-
-              # data: {
-
-              #   edit_event_target: "form",
-              #   action: "submit->edit-event#update"
-              # }
-            } do |f|
-          %>
+          <%= simple_form_for [itinerary,event] do |f| %>
             <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
             <%= f.input :place, label: 'Swap with', collection: alternatives %>
             <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
@@ -52,21 +54,27 @@
     </div>
 
     <%# details %>
-    <div class="d-none zoom" data-edit-event-target="details" style="min-width:150px; max-height:300px"; >
+    <div  data-edit-event-target="details" style="min-width:150px; max-height:300px"; >
         <p><%= event.directions_to_event["journey_duration"] %></p>
         <% event.directions_to_event["journey_legs"].each do |leg| %>
           <li><%= leg %></li>
         <% end %>
         <h2>Description: </h2><%= event.place.details_overview %> <br>
-        <h2>Address: </h2><%= event.place.details_formatted_address %>
+        <h2>Address: </h2><%= event.place.details_formatted_address  %>
         <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
         <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
         <button class="btn btn-pink border2 m-1" data-edit-event-target="button" data-action="click->edit-event#displayForm">
                 Edit
         </button>
+      <div style="width: 200px; height: 200px;"
+  data-controller="map"
+  data-map-markers-value="<%= @markers.to_json %>"
 
+  data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
+
   </div>
+
 
 
 </div>

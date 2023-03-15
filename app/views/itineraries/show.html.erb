@@ -6,7 +6,7 @@
       </div>
       <div class="flex-container justify-content-center" data-controller="sortable" id="event" data-target-id="<%= @itinerary.id %>" >
         <% @events.each do |event| %>
-          <%= render "event_infos", event: event, itinerary: @itinerary, confirmed: @confirmed %>
+          <%= render "event_infos", event: event, itinerary: @itinerary, confirmed: @confirmed, marker: @marker%>
         <% end %>
       </div>
     </div>

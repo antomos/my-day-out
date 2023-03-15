@@ -10,6 +10,5 @@ Rails.application.routes.draw do
   resources :places, only: [:create]
   resources :test_events, only: [:index, :update]
   get 'confirm', to: 'itineraries#confirm', as: :confirm
-  get 'my_view', to: 'itineraries#my_view', as: :my_view
 
 end

@@ -11,14 +11,9 @@ class ItinerariesController < ApplicationController
 
   def show
     @confirmed = params[:confirmed]
+    @marker = render_to_string(partial: "marker")
 
-    #redirect_to action: :my_view, id: params[:id]
 
-  end
-
-  def my_view
-    @itinerary = Itinerary.find(params[:id])
-    render 'show'
   end
 
   def create
