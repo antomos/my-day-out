@@ -61,28 +61,27 @@
         <div class="card-header">
           <h2><%= event.order_number %>. <%= event.place.name  %></h2>
           <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
+        </div><br>
+        <div>
+          <p><%= event.place.details_overview %></p>
+          <p><%= event.place.details_formatted_address %></p>
         </div>
-        <p><%= event.directions_to_event["journey_duration"] %></p>
-        <% event.directions_to_event["journey_legs"].each do |leg| %>
-          <li><%= leg %></li>
-        <% end %>
-        <p><%= event.place.details_overview %></p>
-        <p><%= event.place.details_formatted_address %></p>
-        <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
-        <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
-        <p><%= link_to "Remove", remove_path(event), data: {
-              turbo_method: :get,
-              turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."
-              }
-        %></p>
-        <button class="btn btn-pink border2" data-edit-event-target="button" data-action="click->edit-event#displayForm">
-                Edit
-        </button>
-        <div style="width: 200px; height: 200px;"
+        <div class="mb-2" style="width: 220px; height: 150px;"
             data-controller="map"
             data-map-markers-value="<%= @markers.to_json %>"
             data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-      </div>
+        </div>
+        <div class="d-flex flex-row justify-content-evenly">
+          <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe link-dec"></i></a></p>
+          <p><%= link_to "Remove this event", remove_path(event), :class => "link-dec", data: {
+                turbo_method: :get,
+                turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."
+                }
+          %></p>
+        </div>
+        <button class="btn btn-pink border2" data-edit-event-target="button" data-action="click->edit-event#displayForm">
+                Edit
+        </button>
     </div>
   </div>
 

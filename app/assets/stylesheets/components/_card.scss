@@ -60,6 +60,16 @@ ul {
   color: $color1;
 }
 
+.link-dec{
+  text-decoration: none;
+  color: $color3;
+}
+
+.link-dec:hover{
+  text-decoration: none;
+  color: $color4;
+}
+
 .card {
   border-radius: 8px;
   background-color: $color1;
@@ -77,6 +87,7 @@ ul {
   //   object-fit: cover;
   //   margin-bottom: 10px;
   // }
+
 
   h2 {
     font-weight: bold;
