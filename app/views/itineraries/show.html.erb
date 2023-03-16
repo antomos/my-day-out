@@ -2,14 +2,16 @@
   <div class="parent1">
     <div class="container event-container">
       <div class="col">
-        <h3 class="h2 m-4 d-flex justify-content-center content5">Your itinerary for the day </h3>
+        <h3 class="h2 m-4 d-flex justify-content-center content5"><%= @confirmed == "true" ? "Itinerary Confirmed" : "Customise your Itinerary"%></h3>
       </div>
-      <div class="flex-container justify-content-center" data-controller="sortable" id="event" data-target-id="<%= @itinerary.id %>" >
+      <div class="flex-container justify-content-center" <% if @confirmed!="true" %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
         <% @events.each do |event| %>
-          <%= render "events/event_infos", event: event, itinerary: @itinerary %>
+          <%= render "events/event_infos", event: event, itinerary: @itinerary, confirmed:@confirmed %>
         <% end %>
       </div>
     </div>
   </div>
-  <%= button_to 'Confirm Itinerary', itineraries_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
+  <% if @confirmed!="true"%>
+    <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
+  <% end %>
 </div>

@@ -6,10 +6,15 @@ class ItinerariesController < ApplicationController
 
   def index
     # @events = TestEvent.all
-    # @itinerary = Itinerary.find(params[:format])
+
   end
 
-  def show; end
+  def show
+    @confirmed = params[:confirmed]
+
+
+
+  end
 
   def create
     @itinerary = Itinerary.new(itinerary_params)
@@ -24,7 +29,7 @@ class ItinerariesController < ApplicationController
       CheckOpenEvent.new(@itinerary).perform
       raise
 
-      redirect_to itinerary_path(@itinerary)
+      redirect_to itinerary_path(@itinerary, confirmed: false)
     else
       render root_path, status: :unprocessable_entity
     end
@@ -36,6 +41,12 @@ class ItinerariesController < ApplicationController
 
   def edit_order
     change_event_orders(params["_json"])
+  end
+
+  def confirm
+
+
+    redirect_to itinerary_path(params[:format] , confirmed: true)
   end
 
   private
