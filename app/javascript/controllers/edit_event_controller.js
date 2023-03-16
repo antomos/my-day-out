@@ -13,7 +13,13 @@ export default class extends Controller {
   editButtons.forEach((button) => {
     button.addEventListener("click", () => {
       // Get the card's data
-      this.formdivTarget.classList.remove("d-none")
+      const forms = document.querySelectorAll("div.edit-form")
+    forms.forEach((form) => {
+      form.classList.add("d-none");
+      console.log("form hidden")
+    });
+
+    this.formdivTarget.classList.remove("d-none")
       const card = button.parentNode;
       const title = card.querySelector("h2").textContent;
       const details = card.querySelector("p").textContent;

@@ -17,10 +17,10 @@
 
 
 
-<div class="card" data-controller="edit-event" data-edit-event-target="card" >
-  <div class="col" style="" data-action="mouseover->edit-event#displayDetails mouseout->edit-event#hideDetails">
+<div class="card"  data-edit-event-target="card" >
+  <div class="col" style="" >
 
- <%= link_to "Edit this post", edit_path, data: { turbo_frame: "modal" } %>
+
   <%# title  %>
     <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
         <h2><%= event.order_number %>. <%= event.place.name  %></h2>
@@ -45,25 +45,31 @@
         <% event.directions_to_event["journey_legs"].each do |leg| %>
           <li><%= leg %></li>
         <% end %>
-        <h2>Description: </h2><%= event.place.details_overview %> <br>
-        <h2>Address: </h2><%= event.place.details_formatted_address %>
-        <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
-        <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
-        <p><%= link_to "Remove", remove_path(event), data: {
-              turbo_method: :get,
-              turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."
-              }
-        %></p>
-        <button class="btn btn-pink border2 m-1 edit-button" data-edit-event-target="button" data-action="click->edit-event#displayForm">
+
+
+
+    </div>
+  </div>
+<button class="btn btn-pink border2 m-1 edit-button" data-edit-event-target="button" >
                 Edit
         </button>
-        <div style="width: 200px; height: 200px;"
+<div class="edit-form d-none" data-edit-event-target="formdiv">
+  <button class= "" style="float: right";>
+    <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
+  </button>
+      <div style="width: 200px; height: 200px;"
             data-controller="map"
             data-map-markers-value="<%= @markers.to_json %>"
             data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
-    </div>
-  </div>
-
+  <form  id="edit-form" style="display:none;" >
+    <label for="edit-title">Title:</label>
+    <input type="text" id="edit-title">
+    <label for="edit-details">Details:</label>
+    <textarea id="edit-details"></textarea>
+    <input type="hidden" id="edit-id">
+    <button type="submit">Save</button>
+  </form>
+</div>
 
 </div>
