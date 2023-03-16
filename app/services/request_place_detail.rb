@@ -20,20 +20,20 @@ class RequestPlaceDetail < ApplicationRecord
 
     url = generate_url
 
+    ######################### API JSONS ##########################
     # https = Net::HTTP.new(url.host, url.port)
     # https.use_ssl = true
-
     # request = Net::HTTP::Get.new(url)
-
     # response = https.request(request)
-
     # response_json = response.read_body
     # JSON.parse(response_json)
+    ##############################################################
 
-    # TEST JSONS
+    ######################### TEST JSONS #########################
     filepath = "app/services/test_results/place_details_test.json"
     serialized_places = File.read(filepath)
     JSON.parse(serialized_places)
+    #############################################################
   end
 
   def generate_url
