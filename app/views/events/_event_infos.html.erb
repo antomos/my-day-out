@@ -17,7 +17,7 @@
 
 
 
-<div class="card"  data-edit-event-target="card" >
+<div class="card"  data-edit-event-target="card" data-controller="edit-event" >
   <div class="col" style="" >
   <%# title  %>
     <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
@@ -46,7 +46,7 @@
                 Details
   </button>
   <%# edit form %>
-  <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv<%= event.id %>" id="formdiv" data-target-id="<%= event.id %>">
+  <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
     <button class= "" style="float: right";>
       <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
     </button>

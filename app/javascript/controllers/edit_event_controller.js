@@ -1,22 +1,22 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="edit-movie"
-export default class extends Controller {
 
+export default class extends Controller {
+  static targets = [ "formdiv","button"]
  connect(){
-  const editButtons = document.querySelectorAll(".edit-button");
-  const id = document.getElementById('formdiv').getAttribute('data-target-id');
-  const formnum = "formdiv" + id
-  console.log(formnum)
-  var cardElement = document.querySelector(`.${formnum}`);
+  // const button = document.querySelector(".edit-button");
+  // const id = document.getElementById('formdiv').getAttribute('data-target-id');
+  // const formnum = "formdiv" + id
+  // console.log(formnum)
+  // var cardElement = document.querySelector(`.${formnum}`);
 
   // const editForm = document.getElementById("edit-form");
   // const editTitle = document.getElementById("edit-title");
   // const editDetails = document.getElementById("edit-details");
   // const editId = document.getElementById("edit-id");
 
-  editButtons.forEach((button) => {
-    button.addEventListener("click", () => {
+
+    this.buttonTarget.addEventListener("click", () => {
       // Get the card's data
     //   const forms = document.querySelectorAll("div.edit-form")
     // forms.forEach((form) => {
@@ -24,7 +24,7 @@ export default class extends Controller {
     //   console.log("form hidden")
     // });
     //console.log(cardElement)
-    cardElement.classList.remove("d-none")
+    this.formdivTarget.classList.remove("d-none")
       // const card = button.parentNode;
       // const title = card.querySelector("h2").textContent;
       // const details = card.querySelector("p").textContent;
@@ -41,7 +41,7 @@ export default class extends Controller {
       // // Display the form
       // editForm.style.display = "block";
     });
-  });
+
 
   // editForm.addEventListener("submit", (event) => {
   //   // Prevent the form from submitting
@@ -58,12 +58,7 @@ export default class extends Controller {
 
  hideForm() {
   // this.infosTarget.classList.remove("d-none")
-  const editButtons = document.querySelectorAll(".edit-button");
-  const id = document.getElementById('formdiv').getAttribute('data-target-id');
-  const formnum = "formdiv" + id
-  console.log(formnum)
-  var cardElement = document.querySelector(`.${formnum}`);
-  cardElement.classList.add("d-none")
+  this.formdivTarget.classList.add("d-none")
 
 }
 
