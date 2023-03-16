@@ -3,6 +3,14 @@
 <% event.alternative_places["results"].first(5).each do |place| %>
   <% alternatives << place["name"] %>
 <% end %>
+<% coord = event.place.search_geometry_location.split(',') %>
+<% @markers =
+      [{
+        lat: coord[0],
+        lng: coord[1]
+
+      }]
+%>
 
 
 
@@ -70,6 +78,11 @@
         <button class="btn btn-pink border2" data-edit-event-target="button" data-action="click->edit-event#displayForm">
                 Edit
         </button>
+        <div style="width: 200px; height: 200px;"
+            data-controller="map"
+            data-map-markers-value="<%= @markers.to_json %>"
+            data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
     </div>
   </div>
 
