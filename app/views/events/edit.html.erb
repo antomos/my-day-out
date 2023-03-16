@@ -1,0 +1,15 @@
+<%= turbo_frame_tag "modal" do %>
+  <div class="modal">
+    <h1>Editing Place</h1>
+    <%= render "form", itinerary:@itinerary, event: @event %>
+    <br>
+    <div>
+
+       |
+      <%= link_to "Cancel", "#", data: {
+        controller: "modals",
+        action: "modals#close"
+      }, class: "cancel-button" %>
+    </div>
+  </div>
+<% end %>

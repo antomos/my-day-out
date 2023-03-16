@@ -22,5 +22,8 @@ application.register("hello", HelloController)
 import MapController from "./map_controller"
 application.register("map", MapController)
 
+import ModalsController from "./modals_controller"
+application.register("modals", ModalsController)
+
 import SortableController from "./sortable_controller"
 application.register("sortable", SortableController)
