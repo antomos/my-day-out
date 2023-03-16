@@ -18,6 +18,7 @@
  .global-style {
    font-family: $jost-font;
    font-weight: $jost-font-weight-normal;
-   color: white;
-   background-color: white;
+   color: $color3;
+   background-color: $color3;
+   overflow: scroll;
 }

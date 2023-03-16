@@ -7,8 +7,9 @@
   justify-content: center;
   font-size: 24px;
   line-height: 1.5;
-  color: $color1;
+  color: white;
   margin-bottom: 0;
+  text-shadow: 4px 4px black;
 }
 
 .content2 {
@@ -35,7 +36,7 @@
 
 .content5{
   @extend .content1;
-  text-shadow: 2px 2px $color4;
+  text-shadow: 2px 2px white;
   display: flex;
   justify-content: center;
   color: $color3;
