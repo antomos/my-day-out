@@ -36,5 +36,6 @@
 .content5{
   @extend .content1;
   text-shadow: 2px 2px $color4;
+  color: $color3;
   font-size: 40px;
 }
