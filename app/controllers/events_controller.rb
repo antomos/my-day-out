@@ -5,6 +5,13 @@ class EventsController < ApplicationController
   def create
   end
 
+  def edit
+    @event = Event.find(params[:id])
+    @itinerary = Itinerary.find(@event.itinerary_id)
+
+
+  end
+
   def update
 
     params = event_params
