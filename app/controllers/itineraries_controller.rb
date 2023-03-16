@@ -70,6 +70,7 @@ class ItinerariesController < ApplicationController
 
     # recalculate Itinerary timings with updated travel instructions
     SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
+    CheckOpenEvent.new(@itinerary).perform
   end
 
   def set_events
