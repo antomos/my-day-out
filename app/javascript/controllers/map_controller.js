@@ -7,9 +7,10 @@ export default class extends Controller {
   }
 
   connect() {
+
     mapboxgl.accessToken = this.apiKeyValue
-    const lat= "51.528239"
-    const  lng= "-0.130928"
+    const lat= this.markersValue[0].lat
+    const  lng= this.markersValue[0].lng
     this.map = new mapboxgl.Map({
       container: this.element,
       style: "mapbox://styles/mapbox/streets-v10",
@@ -17,7 +18,7 @@ export default class extends Controller {
       zoom: 14
     })
     const marker = new mapboxgl.Marker({
-      color: 'red' // Set the marker color
+      color: 'blue' // Set the marker color
   })
   .setLngLat([lng, lat]) // Set the marker coordinates
   .addTo(this.map); // Add the marker to the map
@@ -27,5 +28,26 @@ export default class extends Controller {
 
 
   }
+  // #addMarkersToMap() {
+  //   console.log("Hello")
+
+  //   this.markersValue.forEach((marker) => {
+
+
+  //     // Create a HTML element for your custom marker
+  //     const customMarker = document.createElement("div")
+  //     customMarker.innerHTML = marker.marker_html
+
+  //     // Pass the element as an argument to the new marker
+  //     new mapboxgl.Marker(customMarker)
+  //       .setLngLat([marker.lng, marker.lat])
+  //       .addTo(this.map)
+  //   })
+  //  }
+  //   #fitMapToMarkers() {
+  //     const bounds = new mapboxgl.LngLatBounds()
+  //     this.markersValue.forEach(marker => bounds.extend([ marker.lng, marker.lat ]))
+  //     this.map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 })
+  //   }
 
 }
