@@ -50,17 +50,17 @@ class PopulateItinerary < ApplicationRecord
   end
 
   def fetch_places(url, event_details)
+
+    ######################### API JSONS ##########################
     # https = Net::HTTP.new(url.host, url.port)
     # https.use_ssl = true
-
     # request = Net::HTTP::Get.new(url)
-
     # response = https.request(request)
-
     # response_json = response.read_body
     # JSON.parse(response_json)
+    ##############################################################
 
-    # TEST JSONS
+    ######################### TEST JSONS #########################
     if event_details[:input_category] == "History"
       filepath = "app/services/test_results/museum_history|culture|immersive.json"
     elsif event_details[:input_category] == "Art & Culture"
@@ -88,6 +88,7 @@ class PopulateItinerary < ApplicationRecord
     elsif event_details[:input_category] == "activity_attraction"
       filepath = "app/services/test_results/tourist_attraction_activity|adventure|experience|interactive.json"
     end
+    ##############################################################
 
     serialized_places = File.read(filepath)
     JSON.parse(serialized_places)
