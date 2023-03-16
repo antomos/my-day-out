@@ -27,7 +27,6 @@ class ItinerariesController < ApplicationController
       PopulateItinerary.new({ itinerary: @itinerary, template: itinerary_template, params: itinerary_params }).perform
       SetTravelTime.new({ itinerary: @itinerary, index: 0 }).perform
       CheckOpenEvent.new(@itinerary).perform
-      raise
 
       redirect_to itinerary_path(@itinerary, confirmed: false)
     else
