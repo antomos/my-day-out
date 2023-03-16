@@ -60,6 +60,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_16_124137) do
     t.integer "event_duration"
     t.boolean "removed", default: false
     t.boolean "open_now"
+    t.string "date"
     t.index ["itinerary_id"], name: "index_events_on_itinerary_id"
     t.index ["place_id"], name: "index_events_on_place_id"
   end
