@@ -56,22 +56,38 @@ ul {
   width: 50px;
   height: 260px;
 }
+.card-header{
+  color: $color3;
+}
+
+.link-dec{
+  text-decoration: none;
+  color: $color3;
+}
+
+.link-dec:hover{
+  text-decoration: none;
+  color: $color4;
+}
 
 .card {
   border-radius: 8px;
-  // position: relative;
+  background-color: $color1;
+  color: $color3;
+  position: relative;
 
   padding: 5px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
   height: fit-content;
   margin-right: 20px;
 
-  img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
+  // img {
+  //   width: 100%;
+  //   height: 120px;
+  //   object-fit: cover;
+  //   margin-bottom: 10px;
+  // }
+
 
   h2 {
     font-weight: bold;
@@ -80,7 +96,7 @@ ul {
     white-space: nowrap;
     overflow: hidden;
     max-width: 100%;
-    font-size: 17px;
+    font-size: 13px;
   }
 
   form {
@@ -95,34 +111,34 @@ ul {
       margin-bottom: 0;
     }
   }
-
-  .event-infos {
-    position: relative;
-
-    button {
-      position: absolute;
-      top: -12px;
-      right: 5px;
-      height: 30px;
-      border: 1px solid white;
-      border-radius: 50%;
-      display: none;
-      padding: 0px 6px 15px 6px;
-      background: black;
-      color: white;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-
-  &:hover {
-    button {
-      display: block;
-    }
-  }
 }
+//   .event-infos {
+//     position: relative;
+
+//     button {
+//       position: absolute;
+//       top: -12px;
+//       right: 5px;
+//       height: 30px;
+//       border: 1px solid white;
+//       border-radius: 50%;
+//       display: none;
+//       padding: 0px 6px 15px 6px;
+//       background: black;
+//       color: white;
+
+//       &:hover {
+//         cursor: pointer;
+//       }
+//     }
+//   }
+
+//   &:hover {
+//     button {
+//       display: block;
+//     }
+//   }
+// }
 
 .x-button{
   background-color: transparent;
@@ -130,8 +146,17 @@ ul {
 }
 
 .event-container{
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  margin-top: 10px;
+}
+
+.card-img{
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  object-fit: cover;
+  padding-right: 6px;
 }
 // ================================================== START Edit form card==================================================//
 /* .form-right {

@@ -2,15 +2,19 @@ import { Controller } from "@hotwired/stimulus";
 import flatpickr from "flatpickr";
 
 export default class extends Controller {
-  static targets = ["date", "start", "end"]
+  static targets = [ "start", "end"]
   connect() {
    // Initialize Flatpickr on both inputs
-
-
+    const date=document.getElementById('itinerary_date')
+console.log(date)
     console.log("flatpickr controller connected!");
-    new flatpickr(this.dateTarget, {minDate: "today",
+    if (date!==null) {
+
+
+    new flatpickr(date, {minDate: "today",
                   dateFormat: "d-m-Y"
         });
+    }
 
     // Initialize Flatpickr on the start time input
     const startMinTime = "08:00";

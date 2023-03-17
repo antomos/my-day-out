@@ -7,8 +7,7 @@ import { application } from "./application"
 import AddressController from "./address_controller"
 application.register("address", AddressController)
 
-import CardDetailsController from "./card_details_controller"
-application.register("card-details", CardDetailsController)
+
 
 import EditEventController from "./edit_event_controller"
 application.register("edit-event", EditEventController)
@@ -21,6 +20,8 @@ application.register("hello", HelloController)
 
 import MapController from "./map_controller"
 application.register("map", MapController)
+
+
 
 import SortableController from "./sortable_controller"
 application.register("sortable", SortableController)
