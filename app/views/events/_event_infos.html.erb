@@ -15,7 +15,7 @@
 <div class="d-flex flex-column card justify-content-center rounded" data-controller="edit-event"  >
     <%# edit form %>
   <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
-    <button class= "" style="float: right";>
+    <button class= "close-btn" style="float: right";>
       <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
     </button>
     <div style="display:flex";>

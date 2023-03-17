@@ -46,6 +46,21 @@ ul {
   z-index: 10;
 }
 
+.close-btn {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background-color: $color3;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #555;
+}
 .edit-form{
 
   display: block;
