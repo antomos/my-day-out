@@ -95,8 +95,8 @@ ul {
   background-color: $color1;
   color: $color3;
   position: relative;
-
-  padding: 5px;
+  min-width: 250px;
+  padding: 11px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
   height: fit-content;
   margin-right: 20px;
