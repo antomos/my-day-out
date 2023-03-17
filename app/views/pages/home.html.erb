@@ -1,9 +1,6 @@
 
-<div class="mt-2">
-  <%= video_tag "https://res.cloudinary.com/danwlbu2c/video/upload/v1678829745/Untitled_Project-Untitled_MPEG-4_jmg8jg.mp4", autoplay: :autoplay, loop: :loop, mute: :mute, id: "background-video" %>
+<div class="m-5">
+  <video src="https://res.cloudinary.com/danwlbu2c/video/upload/v1678829745/Untitled_Project-Untitled_MPEG-4_jmg8jg.mp4" autoplay loop muted playsinline id="background-video"></video>
   <h3 class="content1">Just tell us when, where and what do you like to do, we'll do the rest!</h3>
-  <div class="col-12">
-    <%= render "form_new_dayout", itinerary: @itinerary%>
-  </div>
-
+  <%= render "form_new_dayout", itinerary: @itinerary%>
 </div>

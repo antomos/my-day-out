@@ -17,66 +17,39 @@
 
 
 
-<div class="card"  data-edit-event-target="card" data-controller="edit-event" >
-  <div class="col" style="" >
-  <%# title  %>
-    <div class="event-infos <%= 'd-none' if event.errors.any? %>" data-edit-event-target="infos">
+<div class="d-flex flex-column card justify-content-center rounded" >
+  <div class="col">
+    <%# card image %>
+    <div class="card-img" style="min-width:200px; min-height: 310px";>
+      <div class="card-header">
         <h2><%= event.order_number %>. <%= event.place.name  %></h2>
         <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
-    </div>
-    <div style="display:flex";>
-    <%# card image %>
+      </div>
       <% if event.place.photo.attached? %>
-        <%= cl_image_tag event.place.photo.key, style: "min-width:190px; min-height:220px" %>
+        <%= cl_image_tag event.place.photo.key%>
       <% else %>
-        <img src="https://res.cloudinary.com/danwlbu2c/image/upload/c_fill,h_300,w_400/v1/development/nm0x8y7ykna21y2h1w2gpxi0fto6" style= "min-width:190px; min-height:220px">
+        <img src="https://res.cloudinary.com/danwlbu2c/image/upload/c_fill,h_300,w_400/v1/development/nm0x8y7ykna21y2h1w2gpxi0fto6" style= "min-width:40px; min-height:170px">
       <% end %>
-
-
-    </div>
-    <%# details %>
-    <div class="zoom" data-edit-event-target="details" style="min-width:150px; max-height:300px"; >
-        <p><%= event.directions_to_event["journey_duration"] %></p>
-        <% event.directions_to_event["journey_legs"].each do |leg| %>
-          <li><%= leg %></li>
-        <% end %>
-    </div>
-  </div>
-  <button class="btn btn-pink border2 m-1 edit-button" data-edit-event-target="button" >
-                Details
-  </button>
-  <%# edit form %>
-  <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
-    <button class= "" style="float: right";>
-      <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
-    </button>
-    <div style="display:flex";>
-        <div style="width: 100%; height: 300px;"
-              data-controller="map"
-              data-map-markers-value="<%= @markers.to_json %>"
-              data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
-        </div>
-        <div  style="min-width:150px; max-height:300px"; >
-          <h2>Description: <%= event.place.id %>  </h2><%= event.place.details_overview %> <br>
-          <h2>Address: </h2><%= event.place.details_formatted_address %>
-          <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
-          <a href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe"></i></a></p>
-          <h2>Phone: </h2><%= event.place.details_formatted_phone_number %> <br>
-        </div>
+      <br>
+      <div class="d-flex flex-column" style="min-width:200px; min-height: 200px";>
+        <button class="btn btn-pink border2" data-edit-event-target="button" data-action="click->edit-event#displayForm">
+                Edit
+        </button>
+      </div>
     </div>
     <% if confirmed!="true" %>
         <h2>Edit <strong><%= event.place.name %></strong></h2>
           <%= simple_form_for [itinerary,event],
-             data: { controller: 'flatpickr' } do |f|
+            data: { controller: 'flatpickr' } do |f|
           %>
             <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { data: {flatpickr_target: "start" } } %>
-           <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+          <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
 
             <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
             <%= f.input :place, label: 'Swap with', collection: alternatives %>
             <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
-             <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
-           <% end %>
+            <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
+          <% end %>
     <% end %>
   </div>
 </div>
