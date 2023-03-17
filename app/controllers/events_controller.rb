@@ -95,10 +95,34 @@ class EventsController < ApplicationController
     old_end = convert_time(@event.end_time)
     new_end = convert_time(new_end)
 
-    @event.update(start_time: new_start.strftime('%H:%M'))
-    @event.update(end_time: new_end.strftime('%H:%M'))
+    new_end = new_start + (5 * 60) if new_end <= new_start
+
+    @event.update(end_time: new_end.strftime('%H:%M')) if new_end != old_end
 
     @itinerary = Itinerary.find(@event.itinerary_id)
+
+    if new_start != old_start
+      @event.update(start_time: new_start.strftime('%H:%M'))
+
+      if @event.order_number.to_i == 1
+        new_itinerary_start_time = round_time(new_start - (@event.directions_to_event["journey_duration"].to_i * 60))
+        @itinerary.update(start_time: new_itinerary_start_time)
+
+      elsif new_start < old_start
+        prior_event_order_number = @event.order_number.to_i - 1
+        prior_event = Event.find_by(itinerary_id: @event.itinerary_id, order_number: prior_event_order_number.to_s)
+        prior_event_end_time = round_time(new_start - (@event.directions_to_event["journey_duration"].to_i * 60))
+        prior_event.update(end_time: prior_event_end_time.strftime('%H:%M'))
+
+      end
+
+    end
+
+    @index = @event[:order_number].to_i
+    new_event_duration = (new_end - new_start) / 60
+    @event.update(event_duration: new_event_duration)
+
+    SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
 
 
     # if new_start >= new_end
