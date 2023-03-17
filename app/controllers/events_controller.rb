@@ -19,7 +19,7 @@ class EventsController < ApplicationController
 
     # raise
 
-    upate_event_place(place_name) if place_name != "" || place_name == @event.place.name
+    upate_event_place(place_name) if place_name != "" && place_name != @event.place.name
     update_event_time(new_start, new_end) if new_start != @event.start_time || new_end != @event.end_time
 
     redirect_to itinerary_path(@event.itinerary_id) # (fallback_location: itinerary_path, _csrf_token: form_authenticity_token)
@@ -90,33 +90,48 @@ class EventsController < ApplicationController
   end
 
   def update_event_time(new_start, new_end)
-    # hours = new_start.first(2)
-    # minutes = new_start.last(2)
-    # new_start = Time.new(1, 1, 1, hours, minutes, 0)
-
-    # hours = @event.start_time.first(2)
-    # minutes = @event.start_time.last(2)
-    # old_start = Time.new(1, 1, 1, hours, minutes, 0)
-
-    # hours = new_end.first(2)
-    # minutes = new_end.last(2)
-    # new_end = Time.new(1, 1, 1, hours, minutes, 0)
-
-    # hours = @event.end_time.first(2)
-    # minutes = @event.end_time.last(2)
-    # old_end = Time.new(1, 1, 1, hours, minutes, 0)
     old_start = convert_time(@event.start_time)
     new_start = convert_time(new_start)
     old_end = convert_time(@event.end_time)
     new_end = convert_time(new_end)
 
-    raise
+    @event.update(start_time: new_start.strftime('%H:%M'))
+    @event.update(end_time: new_end.strftime('%H:%M'))
+
+    # raise
+
+    if new_start < old_start
+      prior_event_order_number = @event.order_number.to_i - 1
+      prior_event = Event.find_by(itinerary_id: @event.itinerary_id, order_number: prior_event_order_number.to_s)
+      # raise
+
+      prior_event_end_time = round_time(new_start - (@event.directions_to_event["journey_duration"].to_i) * 60)
+      prior_event_end_time = prior_event_end_time.strftime('%H:%M')
+      prior_event.update(end_time: prior_event_end_time)
+    end
+
+    # raise
   end
 
   def convert_time(time)
     hours = time.first(2)
     minutes = time.last(2)
     Time.new(1, 1, 1, hours, minutes, 0)
+  end
+
+  def round_time(time)
+    min = time.min
+    hour = time.hour
+
+    while (min % 5).positive?
+      min -= 1 # -???
+      if min == 60
+        min = 0
+        hour += 1
+        hour = 0 if hour == 24
+      end
+    end
+    Time.new(1, 1, 1, hour, min, 0)
   end
 
   def set_event
