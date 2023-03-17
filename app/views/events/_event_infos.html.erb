@@ -40,16 +40,16 @@
     <% if confirmed!="true" %>
         <h2>Edit <strong><%= event.place.name %></strong></h2>
           <%= simple_form_for [itinerary,event],
-             data: { controller: 'flatpickr' } do |f|
+            data: { controller: 'flatpickr' } do |f|
           %>
             <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { data: {flatpickr_target: "start" } } %>
-           <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+          <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
 
             <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
             <%= f.input :place, label: 'Swap with', collection: alternatives %>
             <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
-             <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
-           <% end %>
+            <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
+          <% end %>
     <% end %>
   </div>
 </div>
