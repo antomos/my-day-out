@@ -101,6 +101,10 @@ class EventsController < ApplicationController
 
     @itinerary = Itinerary.find(@event.itinerary_id)
 
+    prior_event_order_number = @event.order_number.to_i - 1
+    prior_event = Event.find_by(itinerary_id: @event.itinerary_id, order_number: prior_event_order_number.to_s)
+
+
     if new_start != old_start
       @event.update(start_time: new_start.strftime('%H:%M'))
 
@@ -109,13 +113,19 @@ class EventsController < ApplicationController
         @itinerary.update(start_time: new_itinerary_start_time)
 
       elsif new_start < old_start
-        prior_event_order_number = @event.order_number.to_i - 1
-        prior_event = Event.find_by(itinerary_id: @event.itinerary_id, order_number: prior_event_order_number.to_s)
         prior_event_end_time = round_time(new_start - (@event.directions_to_event["journey_duration"].to_i * 60))
         prior_event.update(end_time: prior_event_end_time.strftime('%H:%M'))
 
       end
 
+      if @event.order_number.to_i > 1
+        if new_start - (@event.directions_to_event["journey_duration"].to_i * 60) > convert_time(prior_event.end_time)
+          delay = (new_start - (@event.directions_to_event["journey_duration"].to_i * 60)) - convert_time(prior_event.end_time)
+          @event.update(delay: delay / 60)
+        else
+          @event.update(delay: 0)
+        end
+      end
     end
 
     @index = @event[:order_number].to_i - 1
