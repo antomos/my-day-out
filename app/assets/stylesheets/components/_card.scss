@@ -52,14 +52,15 @@ ul {
   height: 30px;
   font-size: 20px;
   background-color: $color3;
-  color: #fff;
+  color: $color1;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
 .close-btn:hover {
-  background-color: #555;
+  background-color: transparent;
+  color: $color3;
 }
 .edit-form{
 
@@ -92,7 +93,7 @@ ul {
 
 .website-icon {
   color: $color3; /* replace with your desired color value */
-  filter: invert(100%);
+  border-radius: 50%;
 }
 
 .travel-icon{
@@ -103,6 +104,7 @@ ul {
   justify-content: center;
   padding-right: 10px;
 }
+
 
 .card {
   border-radius: 8px;
