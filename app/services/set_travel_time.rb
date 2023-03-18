@@ -30,7 +30,7 @@ class SetTravelTime < ApplicationRecord
     end_time = @itinerary[:start_time].strftime('%H%M')
 
     events.each_with_index do |event, i|
-      start_time = end_time
+      start_time = end_time # Add delay element here?
 
       # Only calls API and sets timings from the first change in the schedule
       if i >= @index
@@ -42,8 +42,8 @@ class SetTravelTime < ApplicationRecord
         hours = start_time.first(2)
         minutes = start_time.last(2)
         time = Time.new(1, 1, 1, hours, minutes, 0)
-        start_time = time + (directions[:journey_duration].to_i * 60)
-
+        start_time = time + (directions[:journey_duration].to_i * 60) + event.delay * 60
+        # raise
         start_time = round_time(start_time)
         event_duration = event.event_duration
 
