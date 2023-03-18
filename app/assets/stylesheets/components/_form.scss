@@ -15,11 +15,13 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  height: 100%;
 }
 .category-item {
   display: flex;
   justify-content: flex-end;
   flex: 0 0 50%;
+  padding-bottom: 7.5px;
 }
 .category-selector {
   position: absolute;
@@ -84,4 +86,13 @@ legend {
 
 .slider{
   margin-bottom: 0;
+}
+
+.myborders {
+  border-radius: 5px;
+  border: none;
+}
+
+.pound {
+  color: $color4;
 }
