@@ -118,7 +118,7 @@ class EventsController < ApplicationController
 
     end
 
-    @index = @event[:order_number].to_i
+    @index = @event[:order_number].to_i - 1
     new_event_duration = (new_end - new_start) / 60
     @event.update(event_duration: new_event_duration)
 
