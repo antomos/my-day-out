@@ -1,4 +1,4 @@
-.loc-icon {
+.icon {
   float: right;
   bottom: 53px;
   left:-100px;
@@ -22,10 +22,11 @@
   position: relative;
   background-color: $color1;
   width: 100%;
-  min-width: 240px;
+  min-width: 310px;
   z-index: 1;
   border-radius: 4px;
   transition: width .25s, min-width .25s;
+  margin-top: 3px;
 }
 
 .mapboxgl-ctrl-geocoder--input {
