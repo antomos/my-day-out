@@ -46,15 +46,35 @@ ul {
   z-index: 10;
 }
 
+.close-btn {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  background-color: $color3;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #555;
+}
 .edit-form{
 
-  // position: absolute;
-  // top: 0px;
-  // right: -200px;
-  background-color: transparent;
-  border: 2px solid transparent;
-  width: 50px;
-  height: 260px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-shadow: 0px 0px 20px $color3;
+  padding: 20px;
+  background-color: white;
+  width: 1000px;
+  background-color: $color1;
+  color: $color3;
 }
 .card-header{
   color: $color3;
@@ -75,8 +95,8 @@ ul {
   background-color: $color1;
   color: $color3;
   position: relative;
-
-  padding: 5px;
+  min-width: 250px;
+  padding: 11px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
   height: fit-content;
   margin-right: 20px;
@@ -157,6 +177,9 @@ ul {
   height: 90px;
   object-fit: cover;
   padding-right: 6px;
+}
+a {
+  text-decoration: none;
 }
 // ================================================== START Edit form card==================================================//
 /* .form-right {
