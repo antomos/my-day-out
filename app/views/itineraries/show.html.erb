@@ -15,6 +15,12 @@
 
     </div>
   </div>
+
+  <div style="width: 320px;">
+    <h3 class="h2 content5">Add your own destination</h3>
+    <%= render "events/new_event", itinerary: @itinerary%>
+  </div>
+
  <% if @confirmed!="true"%>
           <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
         <% end %>

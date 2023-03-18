@@ -3,6 +3,22 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:update, :destroy, :remove]
 
   def create
+    # place = event_params[:place]
+    place = "Heliot Steak House, Hippodrome Casino, Cranbourn Street, Leicester Square, London, UK"
+    itinerary_id = params[:itinerary_id]
+
+    event = CreateUserEvent.new({ new_event: Event.new, place: place, itinerary_id: itinerary_id }).perform
+
+    if event.save!
+      @itinerary = Itinerary.find(itinerary_id)
+      SetTravelTime.new({ itinerary: @itinerary, index: 0 }).perform
+      CheckOpenEvent.new(@itinerary).perform
+
+      redirect_to itinerary_path(@itinerary, confirmed: false)
+    else
+      render itinerary_path(@itinerary), status: :unprocessable_entity
+    end
+
   end
 
   def edit
@@ -193,6 +209,6 @@ class EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:place, :start_time, :end_time)
+    params.require(:event).permit(:place, :start_time, :end_time, :itinerary_id)
   end
 end
