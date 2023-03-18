@@ -5,6 +5,7 @@ require "rails/all"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+Rails.application.routes.default_url_options[:protocol]= 'https'
 
 module MyDayOut
   class Application < Rails::Application
@@ -15,6 +16,7 @@ module MyDayOut
     end
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
+
 
     # Configuration for the application, engines, and railties goes here.
     #
