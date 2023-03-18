@@ -5,7 +5,7 @@ require "rails/all"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-Rails.application.routes.default_url_options[:protocol]= 'https'
+
 
 module MyDayOut
   class Application < Rails::Application
