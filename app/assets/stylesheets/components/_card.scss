@@ -1,8 +1,9 @@
 .flex-container {
   display: flex;
-  justify-content: center;
+  max-width: fit-content;
+  // justify-content: right;
+  // overflow-y: scroll;
 }
-
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -102,20 +103,20 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 
 .card {
-  border-radius: 8px;
+  // border-radius: 25px;
   background-color: $color1;
   color: $color3;
   position: relative;
-  min-width: 250px;
-  padding: 11px;
+  min-width: 223px;
+  // padding: 11px;
   box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
   height: fit-content;
-  margin-right: 20px;
+  margin-right: 8px;
 
   // img {
   //   width: 100%;
@@ -187,12 +188,12 @@ ul {
 }
 
 .card-img{
-  width: 230px;
+  width: 225px;
   display: flex;
   flex-direction: column;
   height: 90px;
   object-fit: cover;
-  padding-right: 6px;
+  padding-right: 1px;
 }
 a {
   text-decoration: none;
