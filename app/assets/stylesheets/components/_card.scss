@@ -90,6 +90,20 @@ ul {
   color: $color4;
 }
 
+.website-icon {
+  color: $color3; /* replace with your desired color value */
+  filter: invert(100%);
+}
+
+.travel-icon{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
 .card {
   border-radius: 8px;
   background-color: $color1;
