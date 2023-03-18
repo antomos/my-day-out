@@ -1,4 +1,5 @@
 require 'pry-byebug'
+require 'securerandom'
 
 class ItinerariesController < ApplicationController
   before_action :set_itinerary, only: [:show, :update, :destroy]
@@ -20,6 +21,7 @@ class ItinerariesController < ApplicationController
     @itinerary = Itinerary.new(itinerary_params)
     @itinerary.user = current_user
     @params = itinerary_params
+    @itinerary.share_token = SecureRandom.hex(16)
 
     if @itinerary.save!
       itinerary_template = ItineraryTemplate.new(itinerary_params).perform
@@ -42,10 +44,18 @@ class ItinerariesController < ApplicationController
     change_event_orders(params["_json"])
   end
 
-  def confirm
+  def save
+    @itinerary = Itinerary.find(params[:format])
+    @itinerary.saved = true
+    @itinerary.save
+    redirect_to itinerary_path(@itinerary)
+  end
 
-
-    redirect_to itinerary_path(params[:format] , confirmed: true)
+  def share
+    @itinerary = Itinerary.find_by(share_token: params[:share_token])
+    # if @itinerary.nil?
+    #   # Handle invalid share tokens here
+    # end
   end
 
   private

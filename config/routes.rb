@@ -16,7 +16,8 @@ Rails.application.routes.draw do
 
   get "remove/:id", to: "events#remove", as: :remove
   get "edit/:id", to: "events#edit", as: :edit
-  get 'confirm', to: 'itineraries#confirm', as: :confirm
+  patch 'save', to: 'itineraries#save', as: :save
+  get 'share', to: 'itineraries#share', as: :share
 
 
 end

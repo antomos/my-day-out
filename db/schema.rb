@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_18_092329) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_18_173208) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -60,7 +60,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_18_092329) do
     t.integer "event_duration"
     t.boolean "removed", default: false
     t.boolean "open_now"
-    t.string "date"
     t.integer "delay", default: 0
     t.index ["itinerary_id"], name: "index_events_on_itinerary_id"
     t.index ["place_id"], name: "index_events_on_place_id"
@@ -91,6 +90,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_18_092329) do
     t.text "interests", default: [], array: true
     t.float "latitude"
     t.float "longitude"
+    t.boolean "saved", default: false
+    t.string "share_token"
+    t.index ["share_token"], name: "index_itineraries_on_share_token"
     t.index ["user_id"], name: "index_itineraries_on_user_id"
   end
 
