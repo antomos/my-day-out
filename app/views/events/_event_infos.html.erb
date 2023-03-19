@@ -72,6 +72,9 @@
     <%# card %>
     <div>
       <%# card image %>
+      <button class="remove-event-button border2">
+        <%= link_to "x", remove_path(event), class: 'remove-button', data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     }%>
+      </button>
       <div class="card-img" style="min-width:180px; min-height: 278px";>
         <% if event.place.photo.attached? %>
           <%= cl_image_tag event.place.photo.key%>
