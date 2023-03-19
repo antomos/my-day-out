@@ -1,16 +1,15 @@
 <script>
   let autocomplete;
   function initAutocomplete() {
-    const itinerary = document.getElementById('event').getAttribute('data-target-id');
-    console.log(itinerary)
-
     autocomplete = new google.maps.places.Autocomplete(
       document.getElementById('autocomplete'),
       {
         types: ['establishment'],
         // componentRestrictions: {'country': ['EN']},
         // bounds: `${coords}`,
-        fields: ['name', 'url', 'formatted_address', 'rating', 'user_ratings_total', 'place_id', 'formatted_phone_number', 'opening_hours', 'price_level', 'reviews', 'website', 'photos']
+        // fields: ['name', 'url', 'formatted_address', 'rating', 'user_ratings_total', 'place_id', 'formatted_phone_number', 'opening_hours', 'price_level', 'reviews', 'website', 'photos']
+        fields: ['place_id']
+
       });
     console.log(autocomplete)
     autocomplete.addListener('place_changed', onPlaceChanged);
@@ -24,15 +23,29 @@
     } else {
       document.getElementById('details').innerHTML = place.name;
     }
+
     console.log(place)
+    const itinerary = document.getElementById('new-event').getAttribute('data-target-id');
+    console.log(itinerary)
 
+    createEvent(itinerary, place)
+  }
 
-
+  const createEvent = (itinerary, place) => {
+    const url = `${itinerary}/events`
+    fetch(url, {
+      method: "POST",
+      headers: {  "Content-Type": "application/json", "Accept": "application/json" , "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content},
+      body: JSON.stringify(place)
+    })
+      .then((data) => {
+        window.location.reload();
+      })
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["GOOGLE_API_KEY"] %>&libraries=places&callback=initAutocomplete" async defer></script>
 
-<div id="event" data-target-id="<%= @itinerary.id %>">
+<div id="new-event" data-target-id="<%= @itinerary.id %>">
   <%= simple_form_for [itinerary,Event.new] do |f| %>
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <%= f.input :place, input_html: { id: 'autocomplete', placeholder: 'Enter a place', style: "width: 320px;" } %>
