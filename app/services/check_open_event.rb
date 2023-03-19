@@ -23,16 +23,19 @@ class CheckOpenEvent < ApplicationRecord
         opening_hours_string = event.place.details_opening_hours_periods
         opening_hours_hash = JSON.parse(opening_hours_string.gsub('=>', ':'))
 
-        opening_string = opening_hours_hash["periods"][week.index(weekday)]["open"]["time"]
-        closing_string = opening_hours_hash["periods"][week.index(weekday)]["close"]["time"]
-        # opening_time = Time.parse(opening_string)
-        # closing_time = Time.parse(closing_string)
-        opening_time = Time.strptime(opening_string, "%H%M")
-        closing_time = Time.strptime(closing_string, "%H%M")
+        if opening_hours_hash
+          opening_string = opening_hours_hash["periods"][week.index(weekday)]["open"]["time"] if opening_hours_hash["periods"][week.index(weekday)]
+          closing_string = opening_hours_hash["periods"][week.index(weekday)]["close"]["time"] if opening_hours_hash["periods"][week.index(weekday)]
+          # opening_time = Time.parse(opening_string)
+          # closing_time = Time.parse(closing_string)
+
+          opening_time = Time.strptime(opening_string, "%H%M") if opening_string
+          closing_time = Time.strptime(closing_string, "%H%M") if closing_string
+        end
 
 
-        if event.start_time > opening_time && event.end_time < closing_time
-          event.update(open_now: true)
+        if opening_time &&  closing_time
+          event.update(open_now: true) if event.start_time > opening_time && event.end_time < closing_time
         else
           event.update(open_now: false)
         end

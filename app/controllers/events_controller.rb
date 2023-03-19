@@ -3,13 +3,21 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:update, :destroy, :remove]
 
   def create
+    place = event_params[:place_id]
+    itinerary_id = params[:itinerary_id]
+
+    event = CreateUserEvent.new({ new_event: Event.new, place: place, itinerary_id: itinerary_id }).perform
+
+    if event.save!
+      @itinerary = Itinerary.find(itinerary_id)
+      SetTravelTime.new({ itinerary: @itinerary, index: 0 }).perform
+      CheckOpenEvent.new(@itinerary).perform
+    end
   end
 
   def edit
     @event = Event.find(params[:id])
     @itinerary = Itinerary.find(@event.itinerary_id)
-
-
   end
 
   def update
@@ -193,6 +201,6 @@ class EventsController < ApplicationController
   end
 
   def event_params
-    params.require(:event).permit(:place, :start_time, :end_time)
+    params.require(:event).permit(:place, :start_time, :end_time, :place_id, :name)
   end
 end

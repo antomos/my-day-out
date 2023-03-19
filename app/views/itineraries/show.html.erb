@@ -10,8 +10,13 @@
         <% end %>
       </div>
     </div>
-    <% if @confirmed!="true"%>
-      <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
-    <% end %>
+
+  <div style="width: 320px;">
+    <h2 class="h2 content5">Add your own destination</h2>
+    <%= render "events/new_event_form", itinerary: @itinerary%>
   </div>
+
+ <% if @confirmed!="true"%>
+          <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
+        <% end %>
 </div>

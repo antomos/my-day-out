@@ -1,7 +1,8 @@
-
 <% alternatives = Array.new %>
-<% event.alternative_places["results"].first(5).each do |place| %>
-  <% alternatives << place["name"] %>
+<% if event.alternative_places.length != 0 %>
+  <% event.alternative_places["results"].first(5).each do |place| %>
+    <% alternatives << place["name"] %>
+  <% end %>
 <% end %>
 <% coord = event.place.search_geometry_location.split(',') %>
 <% @markers =
