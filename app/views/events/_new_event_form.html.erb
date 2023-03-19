@@ -1,14 +1,16 @@
 <script>
   let autocomplete;
   function initAutocomplete() {
-    const coords = "<%= itinerary.longitude %>, <%= itinerary.latitude%>"
+    const itinerary = document.getElementById('event').getAttribute('data-target-id');
+    console.log(itinerary)
+
     autocomplete = new google.maps.places.Autocomplete(
       document.getElementById('autocomplete'),
       {
         types: ['establishment'],
         // componentRestrictions: {'country': ['EN']},
         // bounds: `${coords}`,
-        fields: ['name']
+        fields: ['name', 'url', 'formatted_address', 'rating', 'user_ratings_total', 'place_id', 'formatted_phone_number', 'opening_hours', 'price_level', 'reviews', 'website', 'photos']
       });
     console.log(autocomplete)
     autocomplete.addListener('place_changed', onPlaceChanged);
@@ -22,18 +24,17 @@
     } else {
       document.getElementById('details').innerHTML = place.name;
     }
-    console.log(place.name)
-
     console.log(place)
+
+
+
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["GOOGLE_API_KEY"] %>&libraries=places&callback=initAutocomplete" async defer></script>
 
-
-<%= simple_form_for [itinerary,Event.new] do |f| %>
-  <div class="d-flex justify-content-between">
-    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-    <%= f.input :place, input_html: { id: 'autocomplete', placeholder: 'Enter a place', style: "width: 320px;" } %>
-  </div>
-  <%= f.submit "Add event", class: "btn btn-sm btn-pink border2 " %>
-<% end %>
+<div id="event" data-target-id="<%= @itinerary.id %>">
+  <%= simple_form_for [itinerary,Event.new] do |f| %>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= f.input :place, input_html: { id: 'autocomplete', placeholder: 'Enter a place', style: "width: 320px;" } %>
+  <% end %>
+</div>
