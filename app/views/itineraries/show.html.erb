@@ -1,8 +1,8 @@
 <div class="container">
-  <div>
+  <div class="d-flex flex-column align-items-center" style="min-width:100%">
     <div class="container event-container">
       <div>
-        <h3 class="h2 mb-4 content5"><%= @confirmed == "true" ? "Itinerary Confirmed" : "Customise your Itinerary"%></h3>
+        <h3 class="h2 mb-3 content5"><%= @confirmed == "true" ? "Itinerary Confirmed" : "Customise your Itinerary"%></h3>
       </div>
       <div class="flex-container justify-content-center" <% if @confirmed!="true" %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
         <% @events.each do |event| %>
@@ -11,12 +11,19 @@
       </div>
     </div>
 
-  <div style="width: 320px;">
-    <h2 class="h2 content5">Add your own destination</h2>
+  <div class="content5">
+    <h2>OR:</h2>
+  </div>
+
+  <div class="d-flex flex-column" style="width: 320px;">
+    <h2 class="h2 content5">Add your destination</h2>
     <%= render "events/new_event_form", itinerary: @itinerary%>
   </div>
 
- <% if @confirmed!="true"%>
-          <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
-        <% end %>
+  <div>
+    <% if @confirmed!="true"%>
+      <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2 confirm-itinerary' %>
+    <% end %>
+  </div>
+
 </div>
