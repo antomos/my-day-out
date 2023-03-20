@@ -19,7 +19,7 @@ class SetTravelTime < ApplicationRecord
 
     # events = @itinerary.events.order(:order_number)
     events = @itinerary.events.where(removed: false).order(:order_number)
-
+    events.first.update(delay: 0)
 
     return if @index == events.length
 
