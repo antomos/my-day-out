@@ -141,7 +141,7 @@ class EventsController < ApplicationController
     @event.update(event_duration: new_event_duration)
 
     SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
-
+    CheckOpenEvent.new(@itinerary).perform
 
     # if new_start >= new_end
     #   @event.update(end_time: (new_start + (5 * 60)).strftime('%H:%M'))
