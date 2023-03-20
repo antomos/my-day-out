@@ -11,7 +11,7 @@
 }
 
 .details-button{
-  width: 220px;;
+  // width: 220px;;
 }
 
 .share-button{
@@ -39,8 +39,8 @@
 
 .confirm-itinerary{
   min-width: 1250px;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 ul {
@@ -135,7 +135,7 @@ ul {
 
 
 .card {
-  // border-radius: 25px;
+  border-radius: 25px;
   background-color: $color1;
   color: $color3;
   position: relative;
