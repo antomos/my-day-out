@@ -18,9 +18,9 @@ console.log(date)
 
     // Initialize Flatpickr on the start time input
     const startMinTime = "08:00";
-    const startMaxTime = "18:00";
+    const startMaxTime = "23:00";
     const endMinTime = "09:00";
-    const endMaxTime = "19:00";
+    const endMaxTime = "23:45";
     const startTimeInput = flatpickr(this.startTarget, {
       enableTime: true,
       noCalendar: true,
