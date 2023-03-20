@@ -1,5 +1,5 @@
-<div>
-  <div>
+
+<div class="d-flex flex-column align-items-center fix-navbar">
     <div class="event-container justify-content-center">
       <div>
         <h3 class="h2 mb-4 content5"><%= @confirmed == "true" ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
@@ -12,14 +12,16 @@
       </div>
     </div>
 
-  <div style="width: 320px;">
+  <div class="content5">
+    <h2>OR:</h2>
+  </div>
+
+  <div class="d-flex flex-column align-items-center" style="width: 320px;">
     <h2 class="h2 content5">Add your own destination</h2>
     <%= render "events/new_event_form", itinerary: @itinerary%>
   </div>
 
- <% if @confirmed!="true"%>
-          <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2' %>
-        <% end %>
+  <% if @confirmed!="true"%>
+      <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2 confirm-itinerary'  %>
+  <% end %>
 </div>
-
-<%#   "flex-container justify-content-center"
