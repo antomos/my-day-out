@@ -1,7 +1,8 @@
-
 <% alternatives = Array.new %>
-<% event.alternative_places["results"].first(5).each do |place| %>
-  <% alternatives << place["name"] %>
+<% if event.alternative_places.length != 0 %>
+  <% event.alternative_places["results"].first(5).each do |place| %>
+    <% alternatives << place["name"] %>
+  <% end %>
 <% end %>
 <% coord = event.place.search_geometry_location.split(',') %>
 <% @markers =
@@ -69,25 +70,26 @@
       <% end %>
     </div>
     <%# card %>
-    <div class="col">
+    <div>
       <%# card image %>
-      <div class="card-img" style="min-width:200px; min-height: 310px";>
-        <div class="card-header">
-          <h2><%= event.order_number %>. <%= event.place.name  %></h2>
-          <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
-        </div>
+      <button class="remove-event-button border2">
+        <%= link_to "x", remove_path(event), class: 'remove-button', data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     }%>
+      </button>
+      <div class="card-img" style="min-width:180px; min-height: 278px";>
         <% if event.place.photo.attached? %>
           <%= cl_image_tag event.place.photo.key%>
         <% else %>
           <img src="https://res.cloudinary.com/danwlbu2c/image/upload/c_fill,h_300,w_400/v1/development/nm0x8y7ykna21y2h1w2gpxi0fto6" style= "min-width:40px; min-height:170px">
         <% end %>
-        <br>
-        <div  style="min-width:200px; min-height: 200px";>
-
-          <button class="btn btn-pink border2 m-1 edit-button" data-edit-event-target="button" >
-                  Details
-          </button>
-        </div>
+      <div class="card-header">
+        <h2><%= event.order_number %>. <%= event.place.name  %></h2>
+        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <br>
+      </div>
+      <div>
+        <button class="btn btn-pink border2 details-button", style= "min-width:225px; max-height: 98%;" data-edit-event-target="button" >
+          Details
+        </button>
+      </div>
       </div>
     </div>
   </div>
