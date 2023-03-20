@@ -1,0 +1,95 @@
+
+<% alternatives = Array.new %>
+<% event.alternative_places["results"].first(5).each do |place| %>
+  <% alternatives << place["name"] %>
+<% end %>
+<% coord = event.place.search_geometry_location.split(',') %>
+<% @markers =
+      [{
+        lat: coord[0],
+        lng: coord[1]
+
+      }]
+%>
+<div class="d-flex">
+  <%#start icon container %>
+  <div class="travel-icon justify-content-center">
+  <a href="<%= event.place.details_url %>" target="_blank"><img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679141206/destination_trhdxu.png" style= "width:40px; height:40px">
+          </a><br><%= event.directions_to_event["journey_duration"] %> <br>mins
+  </div>
+  <%#end icon container %>
+  <div class="d-flex flex-column card justify-content-center rounded" data-controller="edit-event"  >
+      <%# edit form %>
+    <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
+      <div class="d-flex justify-content-center">
+        <h1><strong><%= event.place.name %></strong></h1>
+      </div>
+      <button class= "close-btn" style="float: right";>
+        <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
+      </button>
+      <div style="display:flex";>
+          <div style="width: 50%; height: 300px;"
+                data-controller="map"
+                data-map-markers-value="<%= @markers.to_json %>"
+                data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+          </div>
+          <div class="m-3" style="min-width:120px; max-height:300px"; >
+            <h2>Description:</h2>
+            <p><%= event.place.details_overview %></p>
+            <h2>Address: </h2>
+            <p><%= event.place.details_formatted_address %></p>
+            <h2>Phone: </h2>
+            <p><%= event.place.details_formatted_phone_number %></p>
+            <div>
+              <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-map link-dec"></i></a>
+              <a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe link-dec"> </i></a>
+            </div>
+          </div>
+      </div>
+      <% unless itinerary.saved %>
+      <br>
+            <%= simple_form_for [itinerary,event],
+              data: { controller: 'flatpickr' } do |f|
+            %>
+            <div class="d-flex justify-content-evenly">
+              <div class= "inputs">
+                <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { data: {flatpickr_target: "start" } } %>
+              </div>
+              <div class= "inputs">
+                <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+              </div>
+              <div>
+                <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                <%= f.input :place, label: 'Swap with', required: false, collection: alternatives %>
+              </div>
+            </div>
+              <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
+              <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
+            <% end %>
+      <% end %>
+    </div>
+    <%# card %>
+    <div class="col">
+      <%# card image %>
+      <div class="card-img" style="min-width:200px; min-height: 310px";>
+        <div class="card-header">
+          <h2><%= event.order_number %>. <%= event.place.name  %></h2>
+          <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small>
+        </div>
+        <% if event.place.photo.attached? %>
+          <%= cl_image_tag event.place.photo.key%>
+        <% else %>
+          <img src="https://res.cloudinary.com/danwlbu2c/image/upload/c_fill,h_300,w_400/v1/development/nm0x8y7ykna21y2h1w2gpxi0fto6" style= "min-width:40px; min-height:170px">
+        <% end %>
+        <br>
+        <div  style="min-width:200px; min-height: 200px";>
+
+          <button class="btn btn-pink border2 m-1 edit-button" data-edit-event-target="button" >
+                  Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<%#end outer container %>
+</div>

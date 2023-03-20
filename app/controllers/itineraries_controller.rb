@@ -12,9 +12,6 @@ class ItinerariesController < ApplicationController
 
   def show
     @confirmed = params[:confirmed]
-
-
-
   end
 
   def create
@@ -51,12 +48,12 @@ class ItinerariesController < ApplicationController
     redirect_to itinerary_path(@itinerary)
   end
 
-  def share
-    @itinerary = Itinerary.find_by(share_token: params[:share_token])
+  # def share
+  #   @itinerary = Itinerary.find_by(share_token: params[:share_token])
     # if @itinerary.nil?
     #   # Handle invalid share tokens here
     # end
-  end
+  # end
 
   private
 
