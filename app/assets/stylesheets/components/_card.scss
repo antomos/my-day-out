@@ -4,6 +4,13 @@
   // justify-content: right;
   // overflow-y: scroll;
 }
+
+.cl-img{
+  min-width: 40px;
+  min-height: 170px;
+  object-fit: cover;
+}
+
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
