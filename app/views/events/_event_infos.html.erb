@@ -77,6 +77,21 @@
               <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
             <% end %>
       <% end %>
+      <%# reviews %>
+      <div>
+      <strong>Reviews <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p>
+      <% if event.place.details_reviews != 0 %>
+        <% eval(event.place.details_reviews).each do |review| %>
+          <strong>Author:</strong> <%= review["author_name"] %><br>
+          <strong>Rating: </strong><%= review["rating"] %><br>
+          <strong>Review: </strong><%= review["text"] %><br>
+          <br>
+        <% end %>
+
+      <% else %>
+        <p>There are no reviews for this place yet</p>
+      <% end %>
+      </div>
     </div>
     <%# card %>
     <div>
@@ -92,6 +107,7 @@
         <% end %>
       <div class="card-header">
         <h2><%= event.order_number %>. <%= event.place.name  %></h2>
+        <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
         <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <br>
       </div>
       <div>
