@@ -5,7 +5,7 @@
 
 .navbar {
   // opacity: 0.5;
-  position: sticky;
+  position: absolute;
   top: 0;
   width: 100%;
   background: transparent;
@@ -31,4 +31,8 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
+}
+
+.fix-navbar{
+  margin-top: 120px;
 }

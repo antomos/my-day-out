@@ -4,6 +4,13 @@
   // justify-content: right;
   // overflow-y: scroll;
 }
+
+.cl-img{
+  min-width: 40px;
+  min-height: 170px;
+  object-fit: cover;
+}
+
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -11,7 +18,7 @@
 }
 
 .details-button{
-  width: 220px;;
+  // width: 220px;;
 }
 
 .share-button{
@@ -35,6 +42,12 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+.confirm-itinerary{
+  min-width: 1250px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 ul {
@@ -99,6 +112,28 @@ ul {
   background-color: $color1;
   color: $color3;
 }
+.edit-container {
+  display: flex;
+  max-height: 500px;
+  width:1000px;
+}
+
+.left-column {
+  /* Styles for the left column */
+  flex: 1;
+  overflow: auto;
+}
+
+.right-column {
+  /* Styles for the right column */
+  flex: 3;
+
+}
+.scrollable-content {
+  /* Styles for the scrollable content */
+  height: 100%;
+  overflow: auto;
+}
 .card-header{
   color: $color3;
 }
@@ -129,7 +164,7 @@ ul {
 
 
 .card {
-  // border-radius: 25px;
+  border-radius: 25px;
   background-color: $color1;
   color: $color3;
   position: relative;
@@ -204,8 +239,8 @@ ul {
 }
 
 .event-container{
-  margin-bottom: 70px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 5px;
 }
 
 .card-img{
