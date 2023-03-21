@@ -83,6 +83,9 @@ ul {
 
 .close-btn {
   border-radius: 50%;
+  position: absolute;
+  left: 703px;
+  top: -15px;
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -115,7 +118,7 @@ ul {
 .edit-container {
   display: flex;
   max-height: 500px;
-  width:1000px;
+  // width:1000px;
 }
 
 .left-column {
@@ -127,6 +130,7 @@ ul {
 .right-column {
   /* Styles for the right column */
   flex: 3;
+  position: relative;
 
 }
 .scrollable-content {
@@ -136,6 +140,7 @@ ul {
 }
 .card-header{
   color: $color3;
+  padding: 8px;
 }
 
 .link-dec{
@@ -232,6 +237,10 @@ ul {
 //     }
 //   }
 // }
+.swap-with-input{
+  width: 195px;
+}
+
 
 .x-button{
   background-color: transparent;
@@ -244,12 +253,15 @@ ul {
 }
 
 .card-img{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 90px;
-  object-fit: cover;
-  padding-right: 1px;
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  // object-fit: cover;
+  // padding-right: 1px;
 }
 a {
   text-decoration: none;
