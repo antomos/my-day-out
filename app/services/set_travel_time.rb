@@ -170,8 +170,16 @@ end
 #         directions = fetch_directions(url)
 #         ######################
 
+#         if directions[:journey_duration].include?("h")
+#           hours = directions[:journey_duration].split[0].to_i
+#           mins = directions[:journey_duration].split[2].to_i
+#           journey_duration = ((hours * 60) + mins) * 60
+#         else
+#           journey_duration = directions[:journey_duration].to_i * 60
+#         end
+
 #         # Google
-#         start_time = start_time + (directions[:journey_duration].to_i * 60) + (event.delay * 60)
+#         start_time = start_time + journey_duration + (event.delay * 60)
 #         ########################
 
 #         start_time = round_time(start_time)
@@ -183,6 +191,16 @@ end
 #         event.update(start_time: start_time.strftime('%H:%M'))
 #         event.update(end_time: end_time.strftime('%H:%M'))
 #       end
+
+#       end_time = event.end_time.gsub(":", "")
+
+#       year = start_date.strftime('%Y')
+#       month = start_date.strftime('%m')
+#       day = start_date.strftime('%d')
+#       hour = end_time.first(2)
+#       min = end_time.last(2)
+
+#       end_time = Time.new(year, month, day, hour, min, 0)
 
 #       start_location = event.place.search_geometry_location
 #     end
@@ -227,6 +245,9 @@ end
 #           end
 #         end
 #       end
+#     else
+#       journey_duration = "15 m"
+#       journey_legs = []
 #     end
 
 #     directions = {
