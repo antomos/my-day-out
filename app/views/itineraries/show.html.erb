@@ -2,7 +2,8 @@
 <div class="d-flex flex-column align-items-center fix-navbar">
     <div class="event-container justify-content-center">
       <div>
-        <h3 class="h2 mb-4 content5"><%= @confirmed == "true" ? "Itinerary Confirmed" : "Customise your Itinerary"%></h3>
+        <h3 class="h2 mb-4 content5"><%= @confirmed == "true" ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
+        <h2 class="mb-4 content5"><%= @itinerary.date.strftime("%d %B %Y") %></h2>
       </div>
       <div class="container" <% if @confirmed!="true" %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
         <% @events.each do |event| %>

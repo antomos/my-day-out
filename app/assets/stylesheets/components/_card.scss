@@ -4,6 +4,13 @@
   // justify-content: right;
   // overflow-y: scroll;
 }
+
+.cl-img{
+  min-width: 40px;
+  min-height: 170px;
+  object-fit: cover;
+}
+
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -104,6 +111,28 @@ ul {
   width: 1000px;
   background-color: $color1;
   color: $color3;
+}
+.edit-container {
+  display: flex;
+  max-height: 500px;
+  width:1000px;
+}
+
+.left-column {
+  /* Styles for the left column */
+  flex: 1;
+  overflow: auto;
+}
+
+.right-column {
+  /* Styles for the right column */
+  flex: 3;
+
+}
+.scrollable-content {
+  /* Styles for the scrollable content */
+  height: 100%;
+  overflow: auto;
 }
 .card-header{
   color: $color3;
