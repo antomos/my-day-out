@@ -3,6 +3,11 @@ class PagesController < ApplicationController
     @itinerary = Itinerary.new
   end
 
+  def share
+    @itinerary = Itinerary.find_by(share_token: params[:share_token])
+    @events = @itinerary.events.where(removed: false).order(:order_number)
+  end
+
   def shared
     @itinerary = Itinerary.find_by(share_token: params[:share_token])
     @events = @itinerary.events.where(removed: false).order(:order_number)

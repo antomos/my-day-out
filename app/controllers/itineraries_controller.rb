@@ -11,7 +11,7 @@ class ItinerariesController < ApplicationController
   end
 
   def show
-    @confirmed = params[:confirmed]
+    @itinerary = Itinerary.find(params[:id])
   end
 
   def create

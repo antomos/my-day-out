@@ -15,10 +15,32 @@
     <h2 class="h2 content5">Add your own destination</h2>
     <%= render "events/new_event_form", itinerary: @itinerary%>
   </div>
-  <% if @itinerary.saved%>
-    <%= link_to "Share", share_path(@itinerary.share_token), class: 'btn btn-pink border2' %>
-  <% else %>
+  <% unless @itinerary.saved%>
     <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, class: 'btn btn-pink border2' %>
+  <% else %>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-pink border2" data-bs-toggle="modal" data-bs-target="#share">
+      Share
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" style="z-index:9999;" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="shareLabel">Share link with your friends</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="http://localhost:3000/shared?share_token=<%= @itinerary.share_token %>" target="_blank">http://localhost:3000/shared?share_token=<%= @itinerary.share_token %></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
   <% end %>
 
 </div>
