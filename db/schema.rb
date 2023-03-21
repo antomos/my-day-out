@@ -96,6 +96,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_21_183115) do
     t.text "interests", default: [], array: true
     t.float "latitude"
     t.float "longitude"
+    t.boolean "saved", default: false
+    t.string "share_token"
+    t.index ["share_token"], name: "index_itineraries_on_share_token"
     t.index ["user_id"], name: "index_itineraries_on_user_id"
   end
 
