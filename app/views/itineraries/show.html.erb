@@ -15,11 +15,11 @@
 
 
   <div class="d-flex flex-row align-items-center" style="width: 480px;">
-    <h2 class="h2">Add a stop:</h2>
+    <h4 style="text-top">Add a stop:</h4>
     <h2><%= render "events/new_event_form", itinerary: @itinerary%></h2>
   </div>
   <% unless @itinerary.saved%>
-    <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, class: 'btn btn-pink border2' %>
+    <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, id: 'button-width', class: 'btn btn-pink border2' %>
   <% else %>
 
     <!-- Button trigger modal -->

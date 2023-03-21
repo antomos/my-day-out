@@ -50,7 +50,7 @@ background-color: $color4;
   justify-content: center;
   background-color: $color4;
   color: $color3;
-  width: 102%;
+  width: 100%;
 }
 .inputs {
   margin-right: 5px;
@@ -95,4 +95,13 @@ legend {
 
 .pound {
   color: $color4;
+}
+
+.sliderpadding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#button-width {
+  width: 500px;
 }
