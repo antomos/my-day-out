@@ -7,8 +7,6 @@ import { application } from "./application"
 import AddressController from "./address_controller"
 application.register("address", AddressController)
 
-
-
 import EditEventController from "./edit_event_controller"
 application.register("edit-event", EditEventController)
 
@@ -21,7 +19,8 @@ application.register("hello", HelloController)
 import MapController from "./map_controller"
 application.register("map", MapController)
 
-
+import PopoverController from "./popover_controller"
+application.register("popover", PopoverController)
 
 import SortableController from "./sortable_controller"
 application.register("sortable", SortableController)

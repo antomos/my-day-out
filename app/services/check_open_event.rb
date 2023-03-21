@@ -1,4 +1,5 @@
 require 'json'
+require 'pry-byebug'
 
 class CheckOpenEvent < ApplicationRecord
   def initialize(itinerary)
@@ -20,8 +21,10 @@ class CheckOpenEvent < ApplicationRecord
 
       if event.place.details_opening_hours_periods # places with no opening hours details crashes
 
-        opening_hours_string = event.place.details_opening_hours_periods
-        opening_hours_hash = JSON.parse(opening_hours_string.gsub('=>', ':'))
+        opening_hours_hash = event.place.details_opening_hours_periods
+        # opening_hours_hash = eval(opening_hours_string)
+
+        # binding.pry
 
         if opening_hours_hash
           opening_string = opening_hours_hash["periods"][week.index(weekday)]["open"]["time"] if opening_hours_hash["periods"][week.index(weekday)]
@@ -31,15 +34,22 @@ class CheckOpenEvent < ApplicationRecord
 
           opening_time = Time.strptime(opening_string, "%H%M") if opening_string
           closing_time = Time.strptime(closing_string, "%H%M") if closing_string
+
+          # make sure event start & end time are both time objects for comparison
+          # for some reason, event.start_time and event.end_time call different values to that is stored in event...
+          start_time = Time.strptime(event.start_time.gsub(":", ""), "%H%M")
+          end_time = Time.strptime(event.end_time.gsub(":", ""), "%H%M")
         end
 
-
-        if opening_time &&  closing_time
-          event.update(open_now: true) if event.start_time > opening_time && event.end_time < closing_time
+        if opening_time && closing_time
+          if start_time >= opening_time && end_time <= closing_time
+            event.update(open_now: true)
+          else
+            event.update(open_now: false)
+          end
         else
           event.update(open_now: false)
         end
-
       end
     end
   end
