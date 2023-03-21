@@ -192,6 +192,16 @@ class SetTravelTime < ApplicationRecord
         event.update(end_time: end_time.strftime('%H:%M'))
       end
 
+      end_time = event.end_time.gsub(":", "")
+
+      year = start_date.strftime('%Y')
+      month = start_date.strftime('%m')
+      day = start_date.strftime('%d')
+      hour = end_time.first(2)
+      min = end_time.last(2)
+
+      end_time = Time.new(year, month, day, hour, min, 0)
+
       start_location = event.place.search_geometry_location
     end
   end
