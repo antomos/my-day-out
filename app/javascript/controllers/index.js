@@ -24,3 +24,6 @@ application.register("popover", PopoverController)
 
 import SortableController from "./sortable_controller"
 application.register("sortable", SortableController)
+
+import TooltipController from "./tooltip_controller"
+application.register("tooltip", TooltipController)

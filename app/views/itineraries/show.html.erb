@@ -7,18 +7,16 @@
       </div>
       <div class="container" <% unless @itinerary.saved %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
         <% @events.each do |event| %>
-          <%= render "events/event_infos", event: event, itinerary: @itinerary, confirmed:@confirmed %>
+          <%= render "events/event_infos", event: event, itinerary: @itinerary %>
         <% end %>
       </div>
     </div>
 
-  <div class="content5">
-    <h2>OR:</h2>
-  </div>
 
-  <div class="d-flex flex-column align-items-center" style="width: 320px;">
-    <h2 class="h2 content5">Add your own destination</h2>
-    <%= render "events/new_event_form", itinerary: @itinerary%>
+
+  <div class="d-flex flex-row align-items-center" style="width: 480px;">
+    <h2 class="h2">Add a stop:</h2>
+    <h2><%= render "events/new_event_form", itinerary: @itinerary%></h2>
   </div>
   <% unless @itinerary.saved%>
     <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, class: 'btn btn-pink border2' %>

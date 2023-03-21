@@ -27,7 +27,7 @@ class ItinerariesController < ApplicationController
       SetTravelTime.new({ itinerary: @itinerary, index: 0 }).perform
       CheckOpenEvent.new(@itinerary).perform
 
-      redirect_to itinerary_path(@itinerary, confirmed: false)
+      redirect_to itinerary_path(@itinerary)
     else
       render root_path, status: :unprocessable_entity
     end
