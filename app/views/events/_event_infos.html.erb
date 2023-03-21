@@ -114,7 +114,7 @@
         <i class="fa-solid fa-xmark"></i>
        <% end %>
       </button>
-      <div class="card-img" style="min-width:180px; min-height: 278px";>
+      <div class="card-img" style="min-width:180px; min-height: 278px;">
         <% if event.place.photo.attached? %>
           <%= cl_image_tag(event.place.photo.key, class:"cl-img") %>
         <% else %>
@@ -123,9 +123,9 @@
       </div>
       <div class="card-header">
         <h2><%= event.order_number %>. <%= event.place.name  %></h2>
-
-        <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
-        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <br>
+         <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
+        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i>
+      <br>
        <button class="btn btn-pink border2", style= "min-width:225px; max-height: 98%;" data-edit-event-target="button" >
           Details
         </button>
