@@ -21,8 +21,10 @@ class CheckOpenEvent < ApplicationRecord
 
       if event.place.details_opening_hours_periods # places with no opening hours details crashes
 
-        opening_hours_string = event.place.details_opening_hours_periods
-        opening_hours_hash = JSON.parse(opening_hours_string.gsub('=>', ':'))
+        opening_hours_hash = event.place.details_opening_hours_periods
+        # opening_hours_hash = eval(opening_hours_string)
+
+        # binding.pry
 
         if opening_hours_hash
           opening_string = opening_hours_hash["periods"][week.index(weekday)]["open"]["time"] if opening_hours_hash["periods"][week.index(weekday)]
