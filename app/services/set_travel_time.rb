@@ -132,8 +132,6 @@ end
 ##############################################################################
 
 
-
-
 # ############################## GOOGLE ########################################
 # ##############################################################################
 #   def add_travel_to_schedule
@@ -197,7 +195,7 @@ end
 #     # url = "https://maps.googleapis.com/maps/api/directions/json?origin=#{start_location}&destination=#{destination_location}&departure_time=#{start_time}&mode=transit&transit_mode=subway|train|tram|rail&key=#{key}"
 
 #     # binding.pry
-#     URI("https://maps.googleapis.com/maps/api/directions/json?origin=#{start_location}&destination=#{destination_location}&departure_time=#{start_time}&mode=transit&transit_mode=subway|train|tram|rail&key=#{key}")
+#     URI("https://maps.googleapis.com/maps/api/directions/json?origin=#{start_location}&destination=#{destination_location}&departure_time=#{start_time}&mode=transit&transit_mode=subway|train|tram|rail|bus&key=#{key}")
 #   end
 #   ############################
 
@@ -214,7 +212,7 @@ end
 
 #     if search_data["routes"].first
 #       if search_data["routes"].first["legs"].first
-#         journey_duration = search_data["routes"].first["legs"].first["duration"]["text"].split(" ").first
+#         journey_duration = search_data["routes"].first["legs"].first["duration"]["text"].gsub("hours", "h").gsub("mins", "m")
 
 #         journey_legs = []
 #         search_data["routes"].first["legs"].first["steps"].each do |step|
