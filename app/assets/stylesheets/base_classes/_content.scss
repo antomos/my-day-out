@@ -3,12 +3,10 @@
 .content1 {
   font-family: $jost-font;
   font-weight: $jost-font-weight-normal;
-  display: flex;
-  justify-content: center;
   font-size: 24px;
   line-height: 1.5;
   color: white;
-  margin-bottom: 0;
+  text-align: center;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 

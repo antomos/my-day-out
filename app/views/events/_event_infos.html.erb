@@ -55,12 +55,12 @@
 
         </div>
         <div class="right-column">
+            <button class= "close-btn" style="float: right";>
+              <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
+            </button>
         <div class="d-flex justify-content-center">
             <h1><strong><%= event.place.name %></strong></h1>
           </div>
-          <button class= "close-btn" style="float: right";>
-            <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
-          </button>
           <div style="display:flex";>
               <div style="width: 70%; height: 300px;"
                     data-controller="map"
@@ -92,13 +92,13 @@
                   <div class= "inputs">
                     <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
                   </div>
-                  <div>
+                  <div class="swap-with-input">
                     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
                     <%= f.input :place, label: 'Swap with', required: false, collection: alternatives %>
                   </div>
                 </div>
                   <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
-                  <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
+                  <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
                 <% end %>
           <% end %>
 
@@ -110,23 +110,26 @@
     <div>
       <%# card image %>
       <button class="remove-event-button border2">
-       <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
+        <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
         <i class="fa-solid fa-xmark"></i>
-       <% end %>
+      <% end %>
       </button>
-      <div class="card-img" style="min-width:180px; min-height: 278px";>
-        <% if event.place.photo.attached? %>
-          <%= cl_image_tag(event.place.photo.key, class:"cl-img") %>
-        <% else %>
-          <%= cl_image_tag(images.sample, class:"cl-img") %>
-        <% end %>
+      <% url = ""  %>
+      <% if event.place.photo.attached? %>
+      <% url =  cl_image_path event.place.photo.key  %>
+      <% else %>
+      <% url = cl_image_path images.sample %>
+      <% end%>
+
+      <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url %>')">
+
       </div>
       <div class="card-header">
         <h2><%= event.order_number %>. <%= event.place.name  %></h2>
 
         <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
         <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <br>
-       <button class="btn btn-pink border2", style= "min-width:225px; max-height: 98%;" data-edit-event-target="button" >
+        <button class="btn btn-pink border2", data-edit-event-target="button" >
           Details
         </button>
       </div>
