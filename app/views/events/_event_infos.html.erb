@@ -56,8 +56,6 @@
               <p>There are no reviews for this place yet</p>
             <% end %>
           </div>
-
-
         </div>
         <div class="right-column">
             <button class= "close-btn" style="float: right";>
@@ -85,7 +83,7 @@
                 </div>
               </div>
           </div>
-          <% if confirmed!="true" %>
+          <% unless itinerary.saved %>
           <br>
                 <%= simple_form_for [itinerary,event],
                   data: { controller: 'flatpickr' } do |f|

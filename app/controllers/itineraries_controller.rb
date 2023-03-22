@@ -1,4 +1,5 @@
 require 'pry-byebug'
+require 'securerandom'
 
 class ItinerariesController < ApplicationController
   before_action :set_itinerary, only: [:show, :update, :destroy]
@@ -10,16 +11,14 @@ class ItinerariesController < ApplicationController
   end
 
   def show
-    @confirmed = params[:confirmed]
-
-
-
+    @itinerary = Itinerary.find(params[:id])
   end
 
   def create
     @itinerary = Itinerary.new(itinerary_params)
     @itinerary.user = current_user
     @params = itinerary_params
+    @itinerary.share_token = SecureRandom.hex(16)
 
     if @itinerary.save!
       itinerary_template = ItineraryTemplate.new(itinerary_params).perform
@@ -28,7 +27,7 @@ class ItinerariesController < ApplicationController
       SetTravelTime.new({ itinerary: @itinerary, index: 0 }).perform
       CheckOpenEvent.new(@itinerary).perform
 
-      redirect_to itinerary_path(@itinerary, confirmed: false)
+      redirect_to itinerary_path(@itinerary)
     else
       render root_path, status: :unprocessable_entity
     end
@@ -42,11 +41,19 @@ class ItinerariesController < ApplicationController
     change_event_orders(params["_json"])
   end
 
-  def confirm
-
-
-    redirect_to itinerary_path(params[:format] , confirmed: true)
+  def save
+    @itinerary = Itinerary.find(params[:format])
+    @itinerary.saved = true
+    @itinerary.save
+    redirect_to itinerary_path(@itinerary)
   end
+
+  # def share
+  #   @itinerary = Itinerary.find_by(share_token: params[:share_token])
+    # if @itinerary.nil?
+    #   # Handle invalid share tokens here
+    # end
+  # end
 
   private
 

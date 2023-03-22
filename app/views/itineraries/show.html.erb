@@ -2,26 +2,48 @@
 <div class="d-flex flex-column align-items-center fix-navbar">
     <div class="event-container justify-content-center">
       <div>
-        <h3 class="h2 mb-4 content5"><%= @confirmed == "true" ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
+        <h3 class="h2 mb-4 content5"><%= @itinerary.saved ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
         <h2 class="mb-4 content5"><%= @itinerary.date.strftime("%d %B %Y") %></h2>
       </div>
-      <div class="container" <% if @confirmed!="true" %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
+      <div class="container" <% unless @itinerary.saved %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
         <% @events.each do |event| %>
-          <%= render "events/event_infos", event: event, itinerary: @itinerary, confirmed:@confirmed %>
+          <%= render "events/event_infos", event: event, itinerary: @itinerary %>
         <% end %>
       </div>
     </div>
 
-  <div class="content5">
-    <h2>OR:</h2>
-  </div>
 
-  <div class="d-flex flex-column align-items-center" style="width: 320px;">
-    <h2 class="h2 content5">Add your own destination</h2>
-    <%= render "events/new_event_form", itinerary: @itinerary%>
-  </div>
 
-  <% if @confirmed!="true"%>
-      <%= button_to 'Confirm Itinerary', confirm_path(@itinerary), method: :get, class: 'btn btn-pink border2 confirm-itinerary'  %>
+  <div class="d-flex flex-row align-items-center" style="width: 480px;">
+    <h4 style="text-top">Add a stop:</h4>
+    <h2><%= render "events/new_event_form", itinerary: @itinerary%></h2>
+  </div>
+  <% unless @itinerary.saved%>
+    <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, id: 'button-width', class: 'btn btn-pink border2' %>
+  <% else %>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-pink border2" data-bs-toggle="modal" data-bs-target="#share">
+      Share
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" style="z-index:9999;" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="shareLabel">Share link with your friends</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="http://localhost:3000/shared?share_token=<%= @itinerary.share_token %>" target="_blank">http://localhost:3000/shared?share_token=<%= @itinerary.share_token %></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
   <% end %>
+
 </div>
