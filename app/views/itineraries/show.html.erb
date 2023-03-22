@@ -9,7 +9,7 @@
       <% @events.each do |event| %>
         <%= render "events/event_infos", event: event, itinerary: @itinerary %>
       <% end %>
-    </div><br><br>
+    </div>
     <% unless @itinerary.saved%>
       <div class="d-flex justify-content-center">
         <h4 style="text-top">Add your stop:</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -22,7 +22,7 @@
           <button type="button" class="btn btn-pink border2" id="button-width" data-bs-toggle="modal" data-bs-target="#share">
             Share
           </button>
-        </div>
+      </div>
       </div>
     </div>
 
