@@ -30,6 +30,8 @@
   <% end %>
 <% end %>
 
+ <% name = event.place.name.length>30 ?  "#{event.place.name.slice(0, 28)}..." : event.place.name %>
+
 <div class="d-flex">
   <%#start icon container %>
   <div class="travel-icon justify-content-center" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right" title="Directions" data-bs-content="<%= directions %>">
@@ -47,33 +49,36 @@
       </div>
       <div class="edit-container">
         <div class="left-column">
-          <div class="d-flex justify-content-center">
-            <h1><strong><%= event.place.name %></strong></h1>
+          <div class="partial-title d-flex justify-content-center">
+            <h1><strong><%= name %></strong></h1>
           </div>
           <div style="display:flex";>
               <div class="left-column-details">
-                <div style="width: 70%; height: 300px;"
+                <div class="map"
+                      style="width: 90%; height: 90%;"
                       data-controller="map"
                       data-map-markers-value="<%= @markers.to_json %>"
                       data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
                 </div>
+                <br>
+                <span class="review-header">Address: </span>
+                <p><%= event.place.details_formatted_address ? event.place.details_formatted_address : "N/A" %></p>
+                <span class="review-header">Phone: </span>
+                <p><%= event.place.details_formatted_phone_number ? event.place.details_formatted_phone_number : "N/A" %></p>
+                <p>
+                  <% if event.place.details_url %><a class ="website-icon" href="<%= event.place.details_url %>" target="_blank">Directions <i class="fa-solid fa-map link-dec"></i></a> <% end  %>
+                  <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> Website <i class="fa-solid fa-globe link-dec"> </i></a> <% end  %>
+                </p>
               </div>
               <%# Details%>
               <div class="right-column-details" style="min-width:120px; max-height:300px"; >
                <div class="scrollable-content-details">
-                <h2>Description:</h2>
+                <span class="review-header">Description:</span>
                 <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %>hjsahkdhkdsahksdhksdhkh d hnxnhxhkhknhxkahkhsdxh kxhhxdshkdshkhkdshkhksdahkdshaksdhkdkhsahksd h xh hhsdakhk xhshkxsdhk xsdh khkxhk dh ksdxhkhs dk</p>
-                <h2>Address: </h2>
-                <p><%= event.place.details_formatted_address ? event.place.details_formatted_address : "N/A" %></p>
-                <h2>Phone: </h2>
-                <p><%= event.place.details_formatted_phone_number ? event.place.details_formatted_phone_number : "N/A" %></p>
-                <div>
-                  <% if event.place.details_url %><a href="<%= event.place.details_url %>" target="_blank">Directions <i class="fa-solid fa-map link-dec"></i></a> <% end  %>
-                  <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> Website <i class="fa-solid fa-globe link-dec"> </i></a> <% end  %>
-                </div>
+
                 <div>
                   <% if event.place.details_opening_hours_periods["weekday_text"] %>
-                  <br>Opening Hours:<br>
+                  <span class="review-header">Opening Hours:</span><br>
                     <% event.place.details_opening_hours_periods["weekday_text"].each do |day| %>
                       <%= day %><br>
                     <% end %>
@@ -84,7 +89,7 @@
           </div>
         </div>
         <div class="right-column">
-          <div>
+          <div class="review-title">
             <strong>Reviews <% if event.place.details_reviews %> <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p> <% end %>
           </div>
           <div class="scrollable-content">
@@ -154,10 +159,11 @@
 
       </div>
       <div class="card-header">
-        <h2><%= event.order_number %>. <%= event.place.name  %></h2>
-
-        <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
-        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <%  if !event.open_now %> <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i> <% end %> <br>
+        <h2><%= event.order_number %>. <%= name  %></h2>
+        <div class="card-info">
+          <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
+          <small> ( <%= event.start_time  %> - <%= event.end_time  %> )</small> <%  if !event.open_now %> <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i> <% end %> <br>
+        </div>
         <button class="btn btn-pink border2", data-edit-event-target="button" >
           Details
         </button>

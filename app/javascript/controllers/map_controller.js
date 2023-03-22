@@ -13,12 +13,12 @@ export default class extends Controller {
     const  lng= this.markersValue[0].lng
     this.map = new mapboxgl.Map({
       container: this.element,
-      style: "mapbox://styles/mapbox/streets-v10",
+      style: "mapbox://styles/mapbox/streets-v11",
       center: [lng, lat], // Specify the map center coordinates
-      zoom: 14
+      zoom: 14 // Specify the map zoom level
     })
     const marker = new mapboxgl.Marker({
-      color: 'blue' // Set the marker color
+      color: 'green' // Set the marker color
   })
   .setLngLat([lng, lat]) // Set the marker coordinates
   .addTo(this.map); // Add the marker to the map

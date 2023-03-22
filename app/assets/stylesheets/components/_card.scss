@@ -11,6 +11,11 @@
   object-fit: cover;
 }
 
+.card-info{
+  position:relative;
+  bottom: 10px;
+}
+
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -129,6 +134,7 @@ ul {
 .left-column {
   /* Styles for the left column */
   flex: 3;
+  padding: 10px;
 }
 
 .right-column {
@@ -154,6 +160,19 @@ ul {
   height: 157%;
   overflow: auto;
 }
+
+.partial-title{
+  position: relative;
+  bottom: 45px;
+}
+
+.review-title{
+  font-size: 25px;
+}
+
+.review-header{
+  font-size: 20px;
+}
 .card-header{
   color: $color3;
   padding: 8px;
@@ -174,6 +193,14 @@ ul {
   border-radius: 50%;
 }
 
+.map {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 450px;
+}
+
 .travel-icon{
   color: white;
   display: flex;
@@ -181,6 +208,8 @@ ul {
   align-items: center;
   justify-content: center;
   padding-right: 5px;
+  position: relative;
+  right: 7px;
 }
 
 
