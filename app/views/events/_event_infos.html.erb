@@ -7,11 +7,11 @@
 ]
 %>
 
-<% require "json" %>
+
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
-  <% event.alternative_places["results"].first(10).each do |place| %>
+  <% event.alternative_places["results"].first(20).each do |place| %>
     <% alternatives << place["name"] %>
   <% end %>
 <% end %>
@@ -47,9 +47,10 @@
             <strong>Reviews <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p>
             <% if event.place.details_reviews %>
               <% event.place.details_reviews.each do |review| %>
-                <strong>Author:</strong> <%= JSON.parse(review.gsub("=>", ":"))["author_name"] %><br>
-                <strong>Rating: </strong><%= JSON.parse(review.gsub("=>", ":"))["rating"] %><br>
-                <strong>Review: </strong><%= JSON.parse(review.gsub("=>", ":"))["text"] %><br>
+                <% review = JSON.parse(review) %>
+                <strong>Author:</strong> <%= review["author_name"] %><br>
+                <strong>Rating: </strong><%= review["rating"] %><br>
+                <strong>Review: </strong><%= review["text"] %><br>
                 <br>
               <% end %>
             <% else %>
