@@ -11,7 +11,7 @@
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
-  <% event.alternative_places["results"].first(5).each do |place| %>
+  <% event.alternative_places["results"].first(10).each do |place| %>
     <% alternatives << place["name"] %>
   <% end %>
 <% end %>
