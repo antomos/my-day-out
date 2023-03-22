@@ -129,7 +129,7 @@
         <h2><%= event.order_number %>. <%= event.place.name  %></h2>
 
         <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
-        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <br>
+        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <%  if !event.open_now %> <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i> <% end %> <br>
         <button class="btn btn-pink border2", data-edit-event-target="button" >
           Details
         </button>
