@@ -37,12 +37,12 @@
   text-align: center;
   padding: 8px;
   border-radius: 3px;
-  border: 1px solid $color1;
+  // border: 1px solid $color1;
   background-color: $color1;
 }
 .category-selector:checked + label {
 color: $color3;
-border: 1px $color3 solid;
+// border: 1px $color3 solid;
 background-color: $color4;
 }
 .btn-pink {
@@ -106,11 +106,27 @@ legend {
   width: 300px;
 }
 
+.hundredwidthclass {
+  width: 300px !important;
+}
+
 #toproundborders {
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px
+  border-top-right-radius: 15px !important;
+  border-top-left-radius: 15px !important;
+  border-bottom-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+#bottomroundborders {
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  border-color: transparent !important;
 }
 
 #transparent {
-  opacity: 0;
+  // background-color: $color3 !important;
+  // border-color: unset !important;
+  --bs-card-border-color: transparent !important;
 }

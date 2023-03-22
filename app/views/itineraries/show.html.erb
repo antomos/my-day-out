@@ -18,10 +18,10 @@
     <div id='hundredwidth'><%= render "events/new_event_form", itinerary: @itinerary%></div>
 
     <% unless @itinerary.saved%>
-      <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, id: 'hundredwidth', class: 'btn btn-pink border2' %>
+      <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, id: 'bottomroundborders', class: 'btn btn-pink border2 hundredwidthclass' %>
     <% else %>
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-pink border2" id="hundredwidth" data-bs-toggle="modal" data-bs-target="#share">Share</button>
+      <button type="button" class="btn btn-pink border2 hundredwidthclass" id="bottomroundborders" data-bs-toggle="modal" data-bs-target="#share">Share</button>
 
       <!-- Modal -->
       <div class="modal fade" style="z-index:9999;" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">

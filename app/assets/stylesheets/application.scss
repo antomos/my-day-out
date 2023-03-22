@@ -42,7 +42,7 @@
 }
 
 .cancel-button {
-  background-color: #1530ff;
+  background-color: $color4;
   font-size: 12px;
   color: white;
   padding: 4px 8px;
@@ -53,5 +53,10 @@
   text-decoration: none;
 }
 .cancel-button:hover {
-  background-color: #2640fe;
+  background-color: $color3;
+}
+
+* {
+  --bs-card-border-color: transparent !important;
+  --bs-card-cap-bg: transparent !important;
 }
