@@ -40,11 +40,13 @@
   <div class="d-flex flex-column card justify-content-center rounded" data-controller="edit-event"  >
       <%# edit form %>
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
+      <div class="edit-close-div">
+          <button class= "close-btn" style="float: right";>
+                <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
+          </button>
+      </div>
       <div class="edit-container">
         <div class="left-column">
-            <button class= "close-btn" style="float: right";>
-              <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
-            </button>
           <div class="d-flex justify-content-center">
             <h1><strong><%= event.place.name %></strong></h1>
           </div>
@@ -90,15 +92,22 @@
           <% end %>
         </div>
         <div class="right-column">
+          <div>
+            <strong>Reviews <% if event.place.details_reviews %> <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p> <% end %>
+          </div>
           <div class="scrollable-content">
           <%# reviews %>
-            <strong>Reviews <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p>
             <% if event.place.details_reviews %>
               <% event.place.details_reviews.each do |review| %>
-                <strong>Author:</strong> <%= JSON.parse(review.gsub("=>", ":"))["author_name"] %><br>
-                <strong>Rating: </strong><%= JSON.parse(review.gsub("=>", ":"))["rating"] %><br>
-                <strong>Review: </strong><%= JSON.parse(review.gsub("=>", ":"))["text"] %><br>
-                <br>
+                  <br>
+                  <strong><%= JSON.parse(review.gsub("=>", ":"))["author_name"] %></strong>
+                  <br>
+                  <% (JSON.parse(review.gsub("=>", ":"))["rating"].to_i).times do %>
+                    <%= image_tag "star.png", width: 20, height: 20 %>
+                  <% end %>
+                  <br>
+                  <%= JSON.parse(review.gsub("=>", ":"))["text"] %>
+                  <br>
               <% end %>
             <% else %>
               <p>There are no reviews for this place yet</p>
@@ -110,11 +119,13 @@
     <%# card %>
     <div>
       <%# card image %>
-      <button class="remove-event-button border2">
-        <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
-        <i class="fa-solid fa-xmark"></i>
+      <% unless itinerary.saved %>
+        <button class="remove-event-button border2">
+          <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
+          <i class="fa-solid fa-xmark"></i>
+        <% end %>
+        </button>
       <% end %>
-      </button>
       <% url = ""  %>
       <% if event.place.photo.attached? %>
       <% url =  cl_image_path event.place.photo.key  %>
