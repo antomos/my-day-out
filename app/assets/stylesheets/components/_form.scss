@@ -102,6 +102,15 @@ legend {
   padding-right: 25px;
 }
 
-#button-width {
-  width: 500px;
+#hundredwidth {
+  width: 300px;
+}
+
+#toproundborders {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px
+}
+
+#transparent {
+  opacity: 0;
 }

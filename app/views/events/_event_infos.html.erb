@@ -37,7 +37,7 @@
           </a><br><%= event.directions_to_event["journey_duration"] %> <br>
   </div>
   <%#end icon container %>
-  <div class="d-flex flex-column card justify-content-center rounded" data-controller="edit-event"  >
+  <div id="roundborders transparent" class="d-flex flex-column card justify-content-center rounded" data-controller="edit-event"  >
       <%# edit form %>
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
       <div class="edit-container">
@@ -126,7 +126,7 @@
       <% url = cl_image_path images.sample %>
       <% end%>
 
-      <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url %>')">
+      <div id="toproundborders" class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url %>')">
 
       </div>
       <div class="card-header">
