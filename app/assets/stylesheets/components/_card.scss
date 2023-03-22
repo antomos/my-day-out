@@ -37,6 +37,7 @@
 
 .remove-event-button{
   position: absolute;
+  text-decoration: none;
   right: 0px;
   background-color: $color4;
   width: 30px;
@@ -89,16 +90,16 @@ ul {
   width: 30px;
   height: 30px;
   font-size: 20px;
-  background-color: $color3;
-  color: $color1;
+  background-color: $color1;
+  color: $color3;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
 .close-btn:hover {
-  background-color: transparent;
-  color: $color3;
+  background-color: $color3;
+  color: $color1;
 }
 .edit-form{
 
@@ -253,8 +254,20 @@ ul {
 }
 
 .event-container{
-  margin-bottom: 40px;
-  margin-top: 5px;
+  // margin-bottom: 40px;
+  height: 155vh;
+  overflow: hidden;
+  // padding-top: 95px;
+}
+
+.itinerary-confirmed-container{
+  height: 105vh;
+  overflow: hidden;
+}
+
+.shared-itinerary-container{
+  height: 125vh;
+  overflow: hidden;
 }
 
 .card-img{

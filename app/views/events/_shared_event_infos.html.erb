@@ -1,3 +1,14 @@
+<% images =["https://res.cloudinary.com/danwlbu2c/image/upload/v1679248198/development/ac1ef69v8iiwnumni317p8e20asb.jpg",
+"https://res.cloudinary.com/danwlbu2c/image/upload/v1679248201/development/q24pk1mmbn475eeurttywes93iur.jpg",
+"https://res.cloudinary.com/danwlbu2c/image/upload/v1678784231/development/bttwkoipqbo4gfmu5hbv9cwdmsoo.jpg",
+"https://res.cloudinary.com/danwlbu2c/image/upload/v1678784222/development/xpgqll3r7oaqj4lq9jz6g7r45kxh.jpg",
+"https://res.cloudinary.com/danwlbu2c/image/upload/v1678783340/development/u2vflcy43s44k4199i5zaclbenm0.jpg",
+"https://res.cloudinary.com/danwlbu2c/image/upload/v1678782165/development/m8dcvebecxp8zrp265crrigsxadp.jpg"
+]
+%>
+
+<% require "json" %>
+
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
   <% event.alternative_places["results"].first(5).each do |place| %>
@@ -12,85 +23,129 @@
 
       }]
 %>
+<% directions=""%>
+<% if event.directions_to_event["journey_legs"] %>
+  <% event.directions_to_event["journey_legs"].each do |leg| %>
+    <% directions << "<p>#{leg}</p>\n"%>
+  <% end %>
+<% end %>
+
 <div class="d-flex">
   <%#start icon container %>
-  <div class="travel-icon justify-content-center">
+  <div class="travel-icon justify-content-center" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right" title="Directions" data-bs-content="<%= directions %>">
   <a href="<%= event.place.details_url %>" target="_blank"><img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679141206/destination_trhdxu.png" style= "width:40px; height:40px">
-          </a><br><%= event.directions_to_event["journey_duration"] %> <br>mins
+          </a><br><%= event.directions_to_event["journey_duration"] %> <br>
   </div>
   <%#end icon container %>
   <div class="d-flex flex-column card justify-content-center rounded" data-controller="edit-event"  >
       <%# edit form %>
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
-      <div class="d-flex justify-content-center">
-        <h1><strong><%= event.place.name %></strong></h1>
+      <div class="edit-close-div">
+          <button class= "close-btn" style="float: right";>
+                <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
+          </button>
       </div>
-      <button class= "close-btn" style="float: right";>
-        <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
-      </button>
-      <div style="display:flex";>
-          <div style="width: 50%; height: 300px;"
-                data-controller="map"
-                data-map-markers-value="<%= @markers.to_json %>"
-                data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+      <div class="edit-container">
+        <div class="left-column">
+          <div class="d-flex justify-content-center">
+            <h1><strong><%= event.place.name %></strong></h1>
           </div>
-          <div class="m-3" style="min-width:120px; max-height:300px"; >
-            <h2>Description:</h2>
-            <p><%= event.place.details_overview %></p>
-            <h2>Address: </h2>
-            <p><%= event.place.details_formatted_address %></p>
-            <h2>Phone: </h2>
-            <p><%= event.place.details_formatted_phone_number %></p>
-            <div>
-              <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-map link-dec"></i></a>
-              <a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe link-dec"> </i></a>
-            </div>
+          <div style="display:flex";>
+              <div style="width: 70%; height: 300px;"
+                    data-controller="map"
+                    data-map-markers-value="<%= @markers.to_json %>"
+                    data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+              </div>
+              <div class="m-3" style="min-width:120px; max-height:300px"; >
+                <h2>Description:</h2>
+                <p><%= event.place.details_overview %></p>
+                <h2>Address: </h2>
+                <p><%= event.place.details_formatted_address %></p>
+                <h2>Phone: </h2>
+                <p><%= event.place.details_formatted_phone_number %></p>
+                <div>
+                  <a href="<%= event.place.details_url %>" target="_blank"><i class="fa-solid fa-map link-dec"></i></a>
+                  <a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"><i class="fa-solid fa-globe link-dec"> </i></a>
+                </div>
+              </div>
           </div>
-      </div>
-      <% unless itinerary.saved %>
-      <br>
-            <%= simple_form_for [itinerary,event],
-              data: { controller: 'flatpickr' } do |f|
-            %>
-            <div class="d-flex justify-content-evenly">
-              <div class= "inputs">
-                <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { data: {flatpickr_target: "start" } } %>
-              </div>
-              <div class= "inputs">
-                <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
-              </div>
-              <div>
-                <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-                <%= f.input :place, label: 'Swap with', required: false, collection: alternatives %>
-              </div>
-            </div>
-              <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
-              <%= f.submit "Update event", class: "btn btn-sm btn-pink border2 " %>
+          <% unless itinerary.saved %>
+          <br>
+                <%= simple_form_for [itinerary,event],
+                  data: { controller: 'flatpickr' } do |f|
+                %>
+                <div class="d-flex justify-content-evenly">
+                  <div class= "inputs">
+                    <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { data: {flatpickr_target: "start" } } %>
+                  </div>
+                  <div class= "inputs">
+                    <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+                  </div>
+                  <div class="swap-with-input">
+                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                    <%= f.input :place, label: 'Swap with', required: false, collection: alternatives %>
+                  </div>
+                </div>
+                  <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
+                  <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
+                <% end %>
+          <% end %>
+        </div>
+        <div class="right-column">
+          <div>
+            <strong>Reviews <% if event.place.details_reviews %> <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p> <% end %>
+          </div>
+          <div class="scrollable-content">
+          <%# reviews %>
+            <% if event.place.details_reviews %>
+              <% event.place.details_reviews.each do |review| %>
+                  <br>
+                  <strong><%= JSON.parse(review.gsub("=>", ":"))["author_name"] %></strong>
+                  <br>
+                  <% (JSON.parse(review.gsub("=>", ":"))["rating"].to_i).times do %>
+                    <%= image_tag "star.png", width: 20, height: 20 %>
+                  <% end %>
+                  <br>
+                  <%= JSON.parse(review.gsub("=>", ":"))["text"] %>
+                  <br>
+              <% end %>
+            <% else %>
+              <p>There are no reviews for this place yet</p>
             <% end %>
-      <% end %>
+          </div>
+        </div>
+      </div>
     </div>
     <%# card %>
     <div>
       <%# card image %>
-      <button class="remove-event-button border2">
-        <%= link_to "x", remove_path(event), class: 'remove-button', data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     }%>
-      </button>
-      <div class="card-img" style="min-width:180px; min-height: 278px";>
-        <% if event.place.photo.attached? %>
-          <%= cl_image_tag event.place.photo.key%>
-        <% else %>
-          <img src="https://res.cloudinary.com/danwlbu2c/image/upload/c_fill,h_300,w_400/v1/development/nm0x8y7ykna21y2h1w2gpxi0fto6" style= "min-width:40px; min-height:170px">
+      <% unless itinerary.saved %>
+        <button class="remove-event-button border2">
+          <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
+          <i class="fa-solid fa-xmark"></i>
         <% end %>
+        </button>
+      <% end %>
+      <% url = ""  %>
+      <% if event.place.photo.attached? %>
+      <% url =  cl_image_path event.place.photo.key  %>
+      <% else %>
+      <% url = cl_image_path images.sample %>
+      <% end%>
+
+      <div class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url %>')">
+
+      </div>
       <div class="card-header">
         <h2><%= event.order_number %>. <%= event.place.name  %></h2>
-        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <br>
-      </div>
-      <div>
-        <button class="btn btn-pink border2 details-button", style= "min-width:225px; max-height: 98%;" data-edit-event-target="button" >
+
+        <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
+        <small> ( <%= event.start_time  %> - <%= event.end_time  %>)</small> <%  if !event.open_now %> <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i> <% end %> <br>
+        <button class="btn btn-pink border2", data-edit-event-target="button" >
           Details
         </button>
       </div>
-      </div>
+
     </div>
   </div>
 <%#end outer container %>
