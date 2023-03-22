@@ -56,7 +56,7 @@ background-color: $color4;
   margin-right: 5px;
 }
 .inputs:last-child {
-  margin-right: 0;
+  // margin-right: 0 !important;
 }
 
 legend {
@@ -95,6 +95,7 @@ legend {
 
 .pound {
   color: $color4;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .sliderpadding {
@@ -129,4 +130,14 @@ legend {
   // background-color: $color3 !important;
   // border-color: unset !important;
   --bs-card-border-color: transparent !important;
+}
+
+.cardborder {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19) !important;
+  border-radius: 15px !important;
+}
+
+.customrightspacing {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
 }

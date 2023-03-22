@@ -3,3 +3,23 @@
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-gap: 20px;
 }
+
+// .bringforward {
+//   z-index: 300;
+// }
+
+// .sendback {
+//   z-index: 400;
+// }
+
+.hoveraction {
+  transition: background-color 2s ease;
+  border-radius: 15px;
+}
+
+.hoveraction:hover {
+  background-color: $color2;
+  // opacity: 50%;
+  z-index: 500;
+  border-radius: 15px;
+}

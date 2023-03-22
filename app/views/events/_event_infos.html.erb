@@ -37,7 +37,7 @@
   <p><small><%= event.directions_to_event["journey_duration"] %> min </small><p>
   </div>
   <%#end icon container %>
-  <div id="roundborders transparent" class="d-flex flex-column card justify-content-center rounded" data-controller="edit-event"  >
+  <div id="roundborders transparent" class="d-flex flex-column card justify-content-center rounded cardborder" data-controller="edit-event"  >
       <%# edit form %>
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
       <div class="edit-container">
@@ -131,7 +131,7 @@
       </div>
       <div class="card-header">
         <h6 class="card-title"><%= event.place.name  %></h6>
-        <small><%= event.start_time  %> - <%= event.end_time  %></small> <br>
+        <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %></small> <br>
         <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>
