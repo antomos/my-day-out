@@ -1,10 +1,12 @@
 
 <div class="navbar">
   <div class="navbar-container p-2">
-    <%= link_to root_url do %>
-      <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834960/Icon_a9bbpe.webp", :class => "avatar-large" %>
-    <% end %>
-      <h1 class="content3"><%= "My Day Out" %></h1>
+    <%= link_to "Home Page", root_url %>
+
+    <div>
+    <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1679444826/logo_5_qb33it.png", :class => "logo" %>
+    </div>
+
       <% if user_signed_in? %>
         <div class="d-flex align-items-center">
           <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %>

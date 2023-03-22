@@ -42,26 +42,10 @@
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
       <div class="edit-container">
         <div class="left-column">
-          <div class="scrollable-content">
-          <%# reviews %>
-            <strong>Reviews <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p>
-            <% if event.place.details_reviews %>
-              <% event.place.details_reviews.each do |review| %>
-                <strong>Author:</strong> <%= JSON.parse(review.gsub("=>", ":"))["author_name"] %><br>
-                <strong>Rating: </strong><%= JSON.parse(review.gsub("=>", ":"))["rating"] %><br>
-                <strong>Review: </strong><%= JSON.parse(review.gsub("=>", ":"))["text"] %><br>
-                <br>
-              <% end %>
-            <% else %>
-              <p>There are no reviews for this place yet</p>
-            <% end %>
-          </div>
-        </div>
-        <div class="right-column">
             <button class= "close-btn" style="float: right";>
               <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
             </button>
-        <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
             <h1><strong><%= event.place.name %></strong></h1>
           </div>
           <div style="display:flex";>
@@ -104,8 +88,22 @@
                   <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
                 <% end %>
           <% end %>
-
-
+        </div>
+        <div class="right-column">
+          <div class="scrollable-content">
+          <%# reviews %>
+            <strong>Reviews <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p>
+            <% if event.place.details_reviews %>
+              <% event.place.details_reviews.each do |review| %>
+                <strong>Author:</strong> <%= JSON.parse(review.gsub("=>", ":"))["author_name"] %><br>
+                <strong>Rating: </strong><%= JSON.parse(review.gsub("=>", ":"))["rating"] %><br>
+                <strong>Review: </strong><%= JSON.parse(review.gsub("=>", ":"))["text"] %><br>
+                <br>
+              <% end %>
+            <% else %>
+              <p>There are no reviews for this place yet</p>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

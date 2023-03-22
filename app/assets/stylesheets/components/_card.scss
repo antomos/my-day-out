@@ -123,13 +123,13 @@ ul {
 
 .left-column {
   /* Styles for the left column */
-  flex: 1;
+  flex: 3;
   overflow: auto;
 }
 
 .right-column {
   /* Styles for the right column */
-  flex: 3;
+  flex: 1;
   position: relative;
 
 }
