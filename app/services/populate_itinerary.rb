@@ -28,8 +28,6 @@ class PopulateItinerary < ApplicationRecord
 
       alternative_places = formatted_places
 
-      # raise
-
       if event_details[:filter_type].length > 0
         alternative_places = { "results" => order_filter_places(alternative_places, :types, event_details[:filter_type]) }
       end
@@ -38,10 +36,9 @@ class PopulateItinerary < ApplicationRecord
         alternative_places = { "results" => order_filter_places(alternative_places, :user_ratings_total, event_details[:filter_ratings]) }
       end
 
-      # raise
+
       place_details = alternative_places["results"].first#.shift ###############
       # place_details = populate_place(place) no longer need?
-      # raise
 
       event = PopulateEvent.new({
                                   itinerary: @itinerary,
@@ -138,21 +135,12 @@ class PopulateItinerary < ApplicationRecord
   def order_filter_places(alternative_places, type, filter_value)
     sorted_places = alternative_places["results"].sort_by { |place| -place[:rating].to_f }
 
-    # raise
     if type == :types
-      filtered_places = sorted_places.reject do |place|
-        # raise
-        place[type].include?(filter_value)
-      end
-      # raise
+      filtered_places = sorted_places.reject { |place| place[type].include?(filter_value) }
     elsif type == :user_ratings_total
       filtered_places = sorted_places.reject { |place| place[type] < filter_value }
     end
 
-
-    # sorted_places = sorted_places.reject{ |place| place["user_ratings_total"].to_i < 100 }
     filtered_places
-    # raise
-
   end
 end
