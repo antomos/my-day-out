@@ -129,18 +129,29 @@ ul {
 .left-column {
   /* Styles for the left column */
   flex: 3;
-
 }
 
 .right-column {
   /* Styles for the right column */
   flex: 1;
+}
+.left-column-details {
+  /* Styles for the left column */
+  flex: 1;
+}
 
-
+.right-column-details {
+  /* Styles for the right column */
+  flex: 1;
 }
 .scrollable-content {
   /* Styles for the scrollable content */
   height: 92%;
+  overflow: auto;
+}
+.scrollable-content-details {
+  /* Styles for the scrollable content */
+  height: 157%;
   overflow: auto;
 }
 .card-header{
