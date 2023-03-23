@@ -47,6 +47,8 @@ class PopulateEvent < ApplicationRecord
       end
     end
 
+    return if event.place_id.nil?
+
     event.save!
     event
   end
