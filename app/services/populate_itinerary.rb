@@ -2,6 +2,7 @@ require "uri"
 require "net/http"
 require "json"
 require "open-uri"
+require 'pry-byebug'
 
 class PopulateItinerary < ApplicationRecord
   def initialize(itinerary_template = {})
@@ -37,8 +38,10 @@ class PopulateItinerary < ApplicationRecord
       end
 
 
-      place_details = alternative_places["results"].first#.shift ###############
-      # place_details = populate_place(place) no longer need?
+      # place_details = alternative_places["results"].first#.shift ###############
+
+      place_details = check_duplicates(alternative_places)
+
 
       event = PopulateEvent.new({
                                   itinerary: @itinerary,
@@ -142,5 +145,16 @@ class PopulateItinerary < ApplicationRecord
     end
 
     filtered_places
+  end
+
+  def check_duplicates(alternative_places)
+    return alternative_places["results"].first unless @itinerary.events.count.positive?
+
+    @itinerary.events.each do |event|
+      next if event.place.search_place_details_id == alternative_places["results"].first[:place_id]
+
+      place = alternative_places["results"].length > 1 ? alternative_places["results"][1] : alternative_places["results"].first
+      return place
+    end
   end
 end
