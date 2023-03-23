@@ -25,9 +25,10 @@ class EventsController < ApplicationController
     new_start = event_params["start_time"]
     new_end = event_params["end_time"]
 
-    # raise
+    if @event.alternative_places.length.positive?
+      upate_event_place(place_name) if place_name != "" && place_name != @event.place.name
+    end
 
-    upate_event_place(place_name) if place_name != "" && place_name != @event.place.name
     update_event_time(new_start, new_end) if new_start != @event.start_time || new_end != @event.end_time
 
     redirect_to itinerary_path(@event.itinerary_id) # (fallback_location: itinerary_path, _csrf_token: form_authenticity_token)
@@ -49,7 +50,7 @@ class EventsController < ApplicationController
     @events.each_with_index do |event, index|
       event.update(order_number: index + 1)
     end
-    # raise
+
     if @events.count.positive?
       SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
       CheckOpenEvent.new(@itinerary).perform
