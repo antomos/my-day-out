@@ -5,7 +5,7 @@
 <div class="d-flex flex-column align-items-center scrollable-content">
   <div class="justify-content-center">
     <div>
-      <h3 class="h2 mb-4 content5"><%= @itinerary.saved ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
+      <h3 class="h2 mb-2 content5"><%= @itinerary.saved ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
       <h2 class="mb-4 content5"><%= @itinerary.date.strftime("%d %B %Y") %></h2>
     </div>
     <div class="container" <% unless @itinerary.saved %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >

@@ -153,9 +153,9 @@
       <%# card image %>
       <div class="card-id-button"><%= event.order_number %></div>
       <% unless itinerary.saved %>
-      <button class="remove-event-button border2" style="border-color: transparent !important;">
+      <button class="remove-event-button border2 colorX" style="border-color: transparent !important;">
         <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
-          <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark colorX"></i>
         <% end %>
       </button>
       <% end %>

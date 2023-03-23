@@ -8,3 +8,12 @@ $color4: #FDA521;
 $color5: #e1ff00;
 // $color6: #00fffb;
 // $color7: #00ff15;
+
+
+.colorX {
+  color: $color2 !important;
+}
+
+.colorX:hover {
+  color: $color4 !important;
+}
