@@ -37,12 +37,12 @@
   text-align: center;
   padding: 8px;
   border-radius: 3px;
-  border: 1px solid $color1;
+  // border: 1px solid $color1;
   background-color: $color1;
 }
 .category-selector:checked + label {
 color: $color3;
-border: 1px $color3 solid;
+// border: 1px $color3 solid;
 background-color: $color4;
 }
 .btn-pink {
@@ -56,7 +56,7 @@ background-color: $color4;
   margin-right: 5px;
 }
 .inputs:last-child {
-  margin-right: 0;
+  // margin-right: 0 !important;
 }
 
 legend {
@@ -95,6 +95,7 @@ legend {
 
 .pound {
   color: $color4;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .sliderpadding {
@@ -102,6 +103,43 @@ legend {
   padding-right: 25px;
 }
 
-#button-width {
-  width: 500px;
+#hundredwidth {
+  width: 300px;
+  margin-top: 30px;
+}
+
+.hundredwidthclass {
+  width: 300px !important;
+  margin-top: 30px;
+}
+
+#toproundborders {
+  border-top-right-radius: 15px !important;
+  border-top-left-radius: 15px !important;
+  border-bottom-right-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+#bottomroundborders {
+  border-top-right-radius: 5px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  border-color: transparent !important;
+}
+
+#transparent {
+  // background-color: $color3 !important;
+  // border-color: unset !important;
+  --bs-card-border-color: transparent !important;
+}
+
+.cardborder {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19) !important;
+  border-radius: 15px !important;
+}
+
+.customrightspacing {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
 }

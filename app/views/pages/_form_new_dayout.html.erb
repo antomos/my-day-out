@@ -1,6 +1,7 @@
 <div class="d-flex justify-content-center">
   <%= simple_form_for [itinerary], data: { controller: 'flatpickr' }  do |f| %>
-  <div class="m-4 p-4" style="max-width:850px; max-height: 800px";>
+  <div class="m-4 p-4 hoveraction" style="max-width:850px; max-height: 800px";>
+    <h3 class="content1">Let's build an itinerary for your day out</h3>
     <div>
       <div class="d-flex" style="justify-content: space-evenly;">
         <div class="input-container">
@@ -14,18 +15,18 @@
               <%= f.input :date, as: :string, placeholder: "Date", input_html: { class: "myborders", data: {flatpickr_target: "date" } } %>
             </div>
             <div class="inputs">
-              <%= f.input :start_time, placeholder: "Start", as: :string, input_html: { class: "myborders", data: {flatpickr_target: "start" } } %>
+              <%= f.input :start_time, placeholder: "Start time", as: :string, input_html: { class: "myborders", data: {flatpickr_target: "start" } } %>
             </div>
             <div class="inputs">
-              <%= f.input :end_time, placeholder: "End", as: :string, input_html: { class: "myborders", data: {flatpickr_target: "end" } } %>
+              <%= f.input :end_time, placeholder: "End time", as: :string, input_html: { class: "myborders", data: {flatpickr_target: "end" } } %>
             </div>
           </div>
           <div class="inputs">
             <%= f.input :dining_requirements, placeholder: "Dining preferences, e.g. vegan", input_html: { class: "myborders" } %>
           </div>
           <div class="slider">
-            <p class="pound mb-0"><strong>&nbsp;&nbsp;&nbsp;Dining budget:</strong></p>
-            <p class="mb-0 pound">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;£&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;£££&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;£££££</p>
+            <p class="pound mb-0"><strong>&nbsp;&nbsp;&nbsp;Dining budget</strong></p>
+            <p class="mb-0 pound">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;£&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;£££&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;£££££</p>
             <div><%= f.input :budget, as: :range, input_html: { min: 0, step: 1, max: 4, class: "mb-0 sliderpadding"} %></div>
           </div>
         </div>

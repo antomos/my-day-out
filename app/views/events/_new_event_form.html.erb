@@ -48,6 +48,6 @@
 <div id="new-event" data-target-id="<%= @itinerary.id %>">
   <%= simple_form_for [itinerary,Event.new] do |f| %>
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-      <%= f.input :place, label: false, input_html: { id: 'autocomplete', placeholder: 'Enter a place', style: "width: 320px; margin-bottom: 0px" } %>
+      <%= f.input :place, label: false, input_html: { id: 'autocomplete', placeholder: 'Add a stop', style: "width: 100%; margin-bottom: 0px" } %>
   <% end %>
 </div>

@@ -1,44 +1,46 @@
+<div class="navbarshow">
+  <%= render "shared/navbar" %>
+</div>
 
-<div class="d-flex flex-column align-items-center">
-  <div class="event-container d-flex flex-column justify-content-center">
-    <div class="flex-column content5 mb-2">
-      <h3><%= @itinerary.saved ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
-      <h2><%= @itinerary.date.strftime("%d %B %Y") %></h2>
-    </div><br>
-    <div class="container justify-content-center" <% unless @itinerary.saved %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
+<div class="d-flex flex-column align-items-center scrollable-content">
+  <div class="justify-content-center">
+    <div>
+      <h3 class="h2 mb-4 content5"><%= @itinerary.saved ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
+      <h2 class="mb-4 content5"><%= @itinerary.date.strftime("%d %B %Y") %></h2>
+    </div>
+    <div class="container" <% unless @itinerary.saved %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
       <% @events.each do |event| %>
         <%= render "events/event_infos", event: event, itinerary: @itinerary %>
       <% end %>
     </div>
-    <% unless @itinerary.saved%>
-      <div class="d-flex justify-content-center">
-        <h4 style="text-top">Add your stop:</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <%= render "events/new_event_form", itinerary: @itinerary%>
-      </div>
-      <div  class="d-flex justify-content-center">
-        <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, id: 'button-width', class: 'btn btn-pink border2' %>
-    <% else %>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-pink border2" id="button-width" data-bs-toggle="modal" data-bs-target="#share">
-            Share
-          </button>
-      </div>
-      </div>
-    </div>
+  </div>
 
-        <!-- Modal -->
-        <div class="modal fade" style="z-index:9999;" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="shareLabel">Yay! Share this link with your friends:</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <a href="http://localhost:3000/shared?share_token=<%= @itinerary.share_token %>" target="_blank">http://localhost:3000/shared?share_token=<%= @itinerary.share_token %></a>
-              </div>
+  <div class="d-flex flex-column align-items-center content-justify" style="width: 480px; padding-top: 20px">
+    <% unless @itinerary.saved%>
+      <div id='hundredwidth'><%= render "events/new_event_form", itinerary: @itinerary%></div>
+      <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, id: 'bottomroundborders', class: 'btn btn-pink border2 hundredwidthclass' %>
+    <% else %>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-pink border2 hundredwidthclass" id="bottomroundborders" data-bs-toggle="modal" data-bs-target="#share">Share</button>
+
+      <!-- Modal -->
+      <div class="modal fade" style="z-index:9999;" id="share" tabindex="-1" aria-labelledby="shareLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="shareLabel">Share link with your friends</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <a href="http://localhost:3000/shared?share_token=<%= @itinerary.share_token %>" target="_blank">http://localhost:3000/shared?share_token=<%= @itinerary.share_token %></a>
             </div>
           </div>
         </div>
-  <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="footershow">
+  <%= render "shared/footer" %>
 </div>

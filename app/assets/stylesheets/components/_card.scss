@@ -48,6 +48,23 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  color: $color3;
+}
+
+.card-id-button{
+  position: absolute;
+  left: 0px;
+  background-color: $color4;
+  width: 30px;
+  height: 30px;
+  border-radius: 0%;
+  background-color: $color1;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 5px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  font-weight: bold;
 }
 
 .confirm-itinerary{
@@ -175,8 +192,13 @@ ul {
   font-size: 20px;
 }
 .card-header{
-  color: $color3;
+  color: $color1;
   padding: 8px;
+}
+
+.card-title{
+  min-height: 39px;
+  max-width: 200px;
 }
 
 .link-dec{
@@ -186,7 +208,7 @@ ul {
 
 .link-dec:hover{
   text-decoration: none;
-  color: $color4;
+  color: $color4 !important;
 }
 
 .website-icon {
@@ -207,7 +229,8 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  padding-top: 20%;
   padding-right: 5px;
   position: relative;
   right: 7px;
@@ -215,13 +238,13 @@ ul {
 
 
 .card {
-  border-radius: 25px;
-  background-color: $color1;
+  // border-radius: 25px;
+  background-color: transparent;
   color: $color3;
   position: relative;
   min-width: 223px;
   // padding: 11px;
-  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
+  // box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
   min-height: 280px;
   margin-right: 8px;
 
