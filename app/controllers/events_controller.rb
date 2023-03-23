@@ -49,9 +49,11 @@ class EventsController < ApplicationController
     @events.each_with_index do |event, index|
       event.update(order_number: index + 1)
     end
-
-    SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
-    CheckOpenEvent.new(@itinerary).perform
+    # raise
+    if @events.count.positive?
+      SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
+      CheckOpenEvent.new(@itinerary).perform
+    end
 
     redirect_to itinerary_path(@event.itinerary_id)
   end
