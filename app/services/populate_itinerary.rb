@@ -149,11 +149,13 @@ class PopulateItinerary < ApplicationRecord
     return alternative_places["results"].first unless @itinerary.events.count.positive?
     return alternative_places["results"].first unless alternative_places["results"].count > 1
 
-    @itinerary.events.each do |event|
-      next if event.place.search_place_details_id != alternative_places["results"].first[:place_id]
+    @events = Event.where(itinerary_id: @itinerary.id)
+    places = @events.map { |event| event.place.search_place_details_id }
 
-      return alternative_places["results"][1]
+    alternative_places["results"].each do |place|
+      next if places.include?(place[:place_id])
+
+      return place
     end
-    return alternative_places["results"][1]
   end
 end
