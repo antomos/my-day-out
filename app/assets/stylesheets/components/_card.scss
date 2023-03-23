@@ -197,7 +197,7 @@ ul {
 }
 
 .card-title{
-  min-height: 35px;
+  min-height: 39px;
   max-width: 200px;
 }
 
@@ -208,7 +208,7 @@ ul {
 
 .link-dec:hover{
   text-decoration: none;
-  color: $color4;
+  color: $color4 !important;
 }
 
 .website-icon {

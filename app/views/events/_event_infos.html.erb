@@ -34,7 +34,7 @@
 
 <div class="d-flex transparent">
   <%#start icon container %>
-  <div class="travel-icon transparent" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right" title="Directions" data-bs-content="<%= directions %>">
+  <div class="travel-icon transparent" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" title="Directions" data-bs-content="<%= directions %>">
   <a href="<%= event.place.details_url %>" target="_blank"><img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679141206/destination_trhdxu.png" style= "width:40px; height:40px"></a>
   <p><small><%= event.directions_to_event["journey_duration"] %> min </small><p>
   </div>
@@ -65,9 +65,9 @@
                 <p><%= event.place.details_formatted_address ? event.place.details_formatted_address : "N/A" %></p>
                 <span class="review-header">Phone: </span>
                 <p><%= event.place.details_formatted_phone_number ? event.place.details_formatted_phone_number : "N/A" %></p>
-                <p>
-                  <% if event.place.details_url %><a class ="website-icon" href="<%= event.place.details_url %>" target="_blank">Directions <i class="fa-solid fa-map link-dec"></i></a> <% end  %>
-                  <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> Website <i class="fa-solid fa-globe link-dec"> </i></a> <% end  %>
+                <p class="review-header link-dec">
+                  <% if event.place.details_url %><a class ="website-icon" href="<%= event.place.details_url %>" target="_blank">Directions: <i class="fa-solid fa-map"></i></a> <% end  %>
+                  <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> &nbsp;&nbsp;Website: <i class="fa-solid fa-globe"> </i></a> <% end  %>
                 </p>
               </div>
               <%# Details%>
