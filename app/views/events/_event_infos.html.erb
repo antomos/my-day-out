@@ -7,11 +7,11 @@
 ]
 %>
 
-<% require "json" %>
+
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
-  <% event.alternative_places["results"].first(5).each do |place| %>
+  <% event.alternative_places["results"].first(10).each do |place| %>
     <% alternatives << place["name"] %>
   <% end %>
 <% end %>
@@ -77,10 +77,12 @@
                 <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %></p>
 
                 <div>
-                  <% if event.place.details_opening_hours_periods["weekday_text"] %>
-                  <span class="review-header">Opening Hours:</span><br>
-                    <% event.place.details_opening_hours_periods["weekday_text"].each do |day| %>
-                      <%= day %><br>
+                  <% if event.place.details_opening_hours_periods %>
+                    <span class="review-header">Opening Hours:</span><br>
+                    <% if event.place.details_opening_hours_periods["weekday_text"] %>
+                      <% event.place.details_opening_hours_periods["weekday_text"].each do |day| %>
+                        <%= day %><br>
+                      <% end %>
                     <% end %>
                   <% end %>
                 </div>
@@ -96,17 +98,25 @@
           <%# reviews %>
             <% if event.place.details_reviews %>
               <% event.place.details_reviews.each do |review| %>
+
+                <% begin %>
+                  <% review = JSON.parse(review) %>
                   <br>
-                  <strong><%= JSON.parse(review.gsub("=>", ":"))["author_name"] %></strong>
+                  <strong><%= review["author_name"] %></strong>
                   <br>
-                  <% (JSON.parse(review.gsub("=>", ":"))["rating"].to_i).times do %>
+                  <% review["rating"].to_i.times do %>
                     <%= image_tag "star.png", width: 20, height: 20 %>
                   <% end %>
                   <br>
-                  <i><%= (Time.at(JSON.parse(review.gsub("=>", ":"))["time"].to_i).to_datetime).strftime("%a, %d %b %Y") %></i>
+                  <i><%= (Time.at(review["time"].to_i).to_datetime).strftime("%a, %d %b %Y") %></i>
                   <br>
-                  <%= JSON.parse(review.gsub("=>", ":"))["text"] %>
+                  <%= (review)["text"] %>
                   <br>
+                <% rescue %>
+                  <% next %>
+                <% end %>
+
+
               <% end %>
             <% else %>
               <p>There are no reviews for this place yet</p>

@@ -20,7 +20,7 @@ class ItineraryTemplate < ApplicationRecord
   #   "Drinks": {time: 45, type: "bar", keyword: "cocktail|pub|bar", radius: 500, filter_type: "", filter_ratings: 0},
   #   "Activity": {time: 90, type: "tourist_attraction", keyword: "activity|adventure|experience|interactive", radius: 2500, filter_type: "", filter_ratings: 0},
   #   "Outdoors": {time: 45, type: "tourist_attraction", keyword: "park|walk|outdoor|outside|nature", radius: 2000, filter_type: "", filter_ratings: 0},
-  #   "Attraction": {time: 60, type: "tourist_attraction", keyword: "tourist|attraction", radius: 2500, filter_type: "museum", filter_ratings: 0},
+  #   "Attraction": {time: 60, type: "tourist_attraction", keyword: "tourist|attraction", radius: 2500, filter_type: "museum", filter_ratings: 100},
   #   "history_art_culture": {time: 75, type: "museum", keyword: "history|culture|immersive|art|culture|exhibition", radius: 2000, filter_type: "", filter_ratings: 50},
   #   "dining_dinner_drinks": {time: 90, type: "restaurant", keyword: "cocktail|wine|beer", radius: 500, filter_type: "", filter_ratings: 0},
   #   "dining_lunch_drinks": {time: 75, type: "restaurant", keyword: "cocktail|wine|beer", radius: 500, filter_type: "", filter_ratings: 0},
@@ -31,13 +31,13 @@ class ItineraryTemplate < ApplicationRecord
   INTEREST_VALUES = {
     "History": {time: 75, type: "museum", keyword: "history|culture|immersive", radius: 1500, filter_type: "art_gallery", filter_ratings: 0},
     "Art & Culture": {time: 60, type: "art_gallery", keyword: "art|culture|exhibition", radius: 1500, filter_type: "", filter_ratings: 50},
-    "Shopping": {time: 60, type: "establishment", keyword: "shopping|mall|centre|department|store", radius: 2000, filter_type: "", filter_ratings: 100}, # switch type to shopping_mall?
+    "Shopping": {time: 60, type: "shopping_mall", keyword: "shopping|mall|centre|department|store", radius: 2000, filter_type: "", filter_ratings: 100}, # switch type to shopping_mall?
     "dining_dinner": {time: 90, type: "restaurant", keyword: "", radius: 500, filter_type: "", filter_ratings: 0},
     "dining_lunch": {time: 60, type: "restaurant", keyword: "", radius: 500, filter_type: "", filter_ratings: 0},
     "Drinks": {time: 45, type: "bar", keyword: "cocktail|pub|bar", radius: 500, filter_type: "", filter_ratings: 0},
     "Activity": {time: 90, type: "tourist_attraction", keyword: "activity|adventure|experience|interactive", radius: 1500, filter_type: "", filter_ratings: 0},
     "Outdoors": {time: 45, type: "tourist_attraction", keyword: "park|walk|outdoor|outside|nature", radius: 2000, filter_type: "", filter_ratings: 0},
-    "Attraction": {time: 60, type: "tourist_attraction", keyword: "tourist|attraction", radius: 1500, filter_type: "museum", filter_ratings: 0},
+    "Attraction": {time: 60, type: "tourist_attraction", keyword: "tourist|attraction", radius: 1500, filter_type: "museum", filter_ratings: 100},
     "history_art_culture": {time: 75, type: "museum", keyword: "history|culture|immersive|art|culture|exhibition", radius: 1500, filter_type: "", filter_ratings: 50},
     "dining_dinner_drinks": {time: 90, type: "restaurant", keyword: "cocktail|wine|beer", radius: 500, filter_type: "", filter_ratings: 0},
     "dining_lunch_drinks": {time: 75, type: "restaurant", keyword: "cocktail|wine|beer", radius: 500, filter_type: "", filter_ratings: 0},

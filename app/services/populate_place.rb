@@ -31,7 +31,23 @@ class PopulatePlace < ApplicationRecord
     place.details_opening_hours_periods = @place_details["result"]["opening_hours"]
     place.search_price_level = @place_details["result"]["price_level"] #  @search_place_details[:price_level]
     ## Commented out for testing
-    place.details_reviews = @place_details["result"]["reviews"]
+
+    reviews = []
+    if @place_details["result"]["reviews"]
+      @place_details["result"]["reviews"].each do |review|
+
+        begin
+          JSON.parse(review.to_s.gsub("=>", ":"))
+          review = review.to_s.gsub("=>", ":")
+          reviews << review
+        rescue
+          next
+        end
+
+      end
+    end
+    place.details_reviews = reviews
+
     place.details_website = @place_details["result"]["website"]
     place.details_wheelchair_accessible_entrance = @place_details["result"]["wheelchair_accessible_entrance"]
     place.details_url = @place_details["result"]["url"]
