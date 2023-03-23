@@ -63,9 +63,9 @@ class PopulatePlace < ApplicationRecord
       # COMMENTED OUT TO STOP CLOGGING UP CLOUDINARY DIRING DEVELOPMENT
       # NEED TO ADD A GENERIC PHOTO HOSTED ON CLOUDINARY IF NO PHOTO REFERENCE
 
-      # key = ENV["GOOGLE_API_KEY"]
-      # file = URI.open("https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&maxheight=800&photo_reference=#{@search_place_details[:photo_reference]}&key=#{key}")
-      # place.photo.attach(io: file, filename: "#{@search_place_details[:name]}.png", content_type: "image/png")
+      key = ENV["GOOGLE_API_KEY"]
+      file = URI.open("https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&maxheight=800&photo_reference=#{@search_place_details[:photo_reference]}&key=#{key}")
+      place.photo.attach(io: file, filename: "#{@search_place_details[:name]}.png", content_type: "image/png")
     end
 
     place.save!
