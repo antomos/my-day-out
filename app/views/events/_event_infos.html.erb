@@ -1,13 +1,32 @@
-<% images =["https://res.cloudinary.com/danwlbu2c/image/upload/v1679248198/development/ac1ef69v8iiwnumni317p8e20asb.jpg",
-"https://res.cloudinary.com/danwlbu2c/image/upload/v1679248201/development/q24pk1mmbn475eeurttywes93iur.jpg",
-"https://res.cloudinary.com/danwlbu2c/image/upload/v1678784231/development/bttwkoipqbo4gfmu5hbv9cwdmsoo.jpg",
-"https://res.cloudinary.com/danwlbu2c/image/upload/v1678784222/development/xpgqll3r7oaqj4lq9jz6g7r45kxh.jpg",
-"https://res.cloudinary.com/danwlbu2c/image/upload/v1678783340/development/u2vflcy43s44k4199i5zaclbenm0.jpg",
-"https://res.cloudinary.com/danwlbu2c/image/upload/v1678782165/development/m8dcvebecxp8zrp265crrigsxadp.jpg"
+<% icons =Hash["History"=>["History","https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/museum_1_fjicz5.png"],
+"Art & Culture"=>["Art & Culture","https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/art_xfqnbi.png"],
+"Shopping"=>["Shopping","https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/online-shopping_zwmfwi.png"],
+"dining_dinner"=>["Restaurant","https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/fork_yu5lpv.png"],
+"dining_lunch"=>["Restaurant","https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/fork_yu5lpv.png"],
+"Drinks"=>["Drinks","https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/martini_vicip8.png"],
+"Activity"=>["Activity","https://res.cloudinary.com/danwlbu2c/image/upload/v1679590273/production/activity_r3z647.png"],
+"Outdoors"=>["Outdoor","https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/park_ltec6l.png"],
+"Attraction"=>["Attraction","https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/ferris-wheel_tkfzl3.png"],
+"history_art_culture"=>["Art & Culture","https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/museum_1_fjicz5.png"],
+"dining_dinner_drinks"=>["Restaurant and drinks","https://res.cloudinary.com/danwlbu2c/image/upload/v1679586352/production/dinner_itylp6.png"],
+"dining_lunch_drinks"=>["Restaurant","https://res.cloudinary.com/danwlbu2c/image/upload/v1679586352/production/dinner_itylp6.png"],
+"activity_attraction"=>["Attraction","https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/ferris-wheel_tkfzl3.png"]
 ]
 %>
-
-
+<%category=["History",
+"Art & Culture",
+"Shopping",
+"dining_dinner",
+"dining_lunch",
+"Drinks",
+"Activity",
+"Outdoors",
+"Attraction",
+"history_art_culture",
+"dining_dinner_drinks",
+"dining_lunch_drinks",
+"activity_attraction"]  %>
+<% require "json" %>
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
@@ -189,6 +208,7 @@
       <div id="toproundborders" class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url %>')">
       </div>
       <div class="card-header">
+       <img class="remove-event-button" src="<%= event.category ? icons[event.category][1] : "https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/pencil_aaldec.png"%> "  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="<%= event.category ? icons[event.category][0] : "Custom Place"%>"></i>
         <h6 class="card-title"><%= name  %></h6>
         <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %> </small> <br>
         <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
