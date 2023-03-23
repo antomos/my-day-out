@@ -1,20 +1,32 @@
-<% icons =Hash["History"
-"Art & Culture"
-"Shopping"
-"dining_dinner"
-"dining_lunch"
-"Drinks"
-"Activity"
-"Outdoors"
-"Attraction"
-"history_art_culture"
-"dining_dinner_drinks"
-"dining_lunch_drinks"
-"activity_attraction"
+<% icons =Hash["History"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/museum_1_fjicz5.png",
+"Art & Culture"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/art_xfqnbi.png",
+"Shopping"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/online-shopping_zwmfwi.png",
+"dining_dinner"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/fork_yu5lpv.png",
+"dining_lunch"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/fork_yu5lpv.png",
+"Drinks"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/martini_vicip8.png",
+"Activity"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679590273/production/activity_r3z647.png",
+"Outdoors"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/park_ltec6l.png",
+"Attraction"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/ferris-wheel_tkfzl3.png",
+"history_art_culture"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679589757/production/museum_1_fjicz5.png",
+"dining_dinner_drinks"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679586352/production/dinner_itylp6.png",
+"dining_lunch_drinks"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679586352/production/dinner_itylp6.png",
+"activity_attraction"=>"https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/ferris-wheel_tkfzl3.png"
 ]
 %>
-
-
+<%category=["History",
+"Art & Culture",
+"Shopping",
+"dining_dinner",
+"dining_lunch",
+"Drinks",
+"Activity",
+"Outdoors",
+"Attraction",
+"history_art_culture",
+"dining_dinner_drinks",
+"dining_lunch_drinks",
+"activity_attraction"]  %>
+<% require "json" %>
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
@@ -194,6 +206,7 @@
       <div id="toproundborders" class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url %>')">
       </div>
       <div class="card-header">
+       <img class="remove-event-button" src="<%= icons[category.sample]%> "  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i>
         <h6 class="card-title"><%= name  %></h6>
         <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %></small> <br>
         <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
