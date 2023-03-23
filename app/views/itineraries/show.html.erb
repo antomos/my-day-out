@@ -18,7 +18,29 @@
   <div class="d-flex flex-column align-items-center content-justify" style="width: 480px; padding-top: 20px">
     <% unless @itinerary.saved%>
       <div id='hundredwidth'><%= render "events/new_event_form", itinerary: @itinerary%></div>
-      <%= button_to 'Save Itinerary', save_path(@itinerary), method: :patch, id: 'bottomroundborders', class: 'btn btn-pink border2 hundredwidthclass' %>
+        <button type="button" class="btn btn-pink border2 hundredwidthclass" id="bottomroundborders" data-bs-toggle="modal" data-bs-target="#savedModalCenter">
+          Save itinerary
+        </button>
+
+    <div class="modal fade" id="savedModalCenter" style="z-index:9999;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title content3" id="removeModalLongTitle">My Day Out</h3>
+            <button type="button" class="border2" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to save this itinerary?
+          </div>
+          <div class="modal-footer">
+            <%= button_to "Save", save_path(@itinerary), :class => "btn btn-pink border2 no-text-decoration", method: :patch %>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <% else %>
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-pink border2 hundredwidthclass" id="bottomroundborders" data-bs-toggle="modal" data-bs-target="#share">Share</button>
