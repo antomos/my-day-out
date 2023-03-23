@@ -30,7 +30,7 @@
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
-  <% event.alternative_places["results"].first(10).each do |place| %>
+  <% event.alternative_places["results"].first(20).each do |place| %>
     <% alternatives << place["name"] %>
   <% end %>
 <% end %>
@@ -156,10 +156,12 @@
                   <div class= "inputs">
                     <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
                   </div>
-                  <div class="swap-with-input">
-                    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-                    <%= f.input :place, label: 'Swap with', required: false, collection: alternatives %>
-                  </div>
+                  <% if event.category %>
+                    <div class="swap-with-input">
+                      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+                      <%= f.input :place, label: 'Swap with', required: false, collection: alternatives %>
+                    </div>
+                  <% end %>
                 </div>
                   <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
                   <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
@@ -208,7 +210,7 @@
       <div class="card-header">
        <img class="remove-event-button" src="<%= icons[category.sample]%> "  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i>
         <h6 class="card-title"><%= name  %></h6>
-        <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %></small> <br>
+        <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %> </small> <br>
         <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>
