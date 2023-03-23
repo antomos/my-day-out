@@ -155,12 +155,30 @@
       <%# card image %>
       <div class="card-id-button"><%= event.order_number %></div>
       <% unless itinerary.saved %>
-      <button class="remove-event-button border2" style="border-color: transparent !important;">
-        <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
-          <i class="fa-solid fa-xmark"></i>
-        <% end %>
-      </button>
+      <button class="remove-event-button border2" style="border-color: transparent !important" data-bs-toggle="modal" data-bs-target="#removeModalCenter">x</button>
       <% end %>
+
+    <div class="modal fade" id="removeModalCenter" style="z-index:9999;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title content3" id="removeModalLongTitle">My Day Out</h3>
+            <button type="button" class="border2" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to remove this event? This change cannot be undone.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-pink border2">
+              <%= link_to "Continue", remove_path(event), :class => "no-text-decoration" %>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <% url = ""  %>
       <% if event.place.photo.attached? %>
       <% url =  cl_image_path event.place.photo.key  %>
