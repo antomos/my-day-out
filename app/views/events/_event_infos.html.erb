@@ -47,11 +47,17 @@
             <strong>Reviews <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p>
             <% if event.place.details_reviews %>
               <% event.place.details_reviews.each do |review| %>
-                <% review = JSON.parse(review) %>
-                <strong>Author:</strong> <%= review["author_name"] %><br>
-                <strong>Rating: </strong><%= review["rating"] %><br>
-                <strong>Review: </strong><%= review["text"] %><br>
-                <br>
+
+                <% begin %>
+                  <% review = JSON.parse(review) %>
+                  <strong>Author:</strong> <%= review["author_name"] %><br>
+                  <strong>Rating: </strong><%= review["rating"] %><br>
+                  <strong>Review: </strong><%= review["text"] %><br>
+                  <br>
+                <% rescue %>
+                  <% next %>
+                <% end %>
+
               <% end %>
             <% else %>
               <p>There are no reviews for this place yet</p>

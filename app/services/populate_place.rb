@@ -35,8 +35,15 @@ class PopulatePlace < ApplicationRecord
     reviews = []
     if @place_details["result"]["reviews"]
       @place_details["result"]["reviews"].each do |review|
-        review = review.to_s.gsub("=>", ":")
-        reviews << review
+
+        begin
+          JSON.parse(review.to_s.gsub("=>", ":"))
+          review = review.to_s.gsub("=>", ":")
+          reviews << review
+        rescue
+          next
+        end
+
       end
     end
     place.details_reviews = reviews
