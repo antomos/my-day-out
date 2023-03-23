@@ -39,9 +39,7 @@ class PopulateItinerary < ApplicationRecord
 
 
       # place_details = alternative_places["results"].first#.shift ###############
-
       place_details = check_duplicates(alternative_places)
-
 
       event = PopulateEvent.new({
                                   itinerary: @itinerary,
@@ -149,12 +147,12 @@ class PopulateItinerary < ApplicationRecord
 
   def check_duplicates(alternative_places)
     return alternative_places["results"].first unless @itinerary.events.count.positive?
+    return alternative_places["results"].first unless alternative_places["results"].count > 1
 
     @itinerary.events.each do |event|
-      next if event.place.search_place_details_id == alternative_places["results"].first[:place_id]
+      next if event.place.search_place_details_id != alternative_places["results"].first[:place_id]
 
-      place = alternative_places["results"].length > 1 ? alternative_places["results"][1] : alternative_places["results"].first
-      return place
+      return alternative_places["results"][1]
     end
   end
 end

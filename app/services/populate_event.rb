@@ -2,6 +2,7 @@ require "uri"
 require "net/http"
 require "json"
 require "open-uri"
+require 'pry-byebug'
 
 class PopulateEvent < ApplicationRecord
   def initialize(event_template = {})
