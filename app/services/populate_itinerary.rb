@@ -154,5 +154,6 @@ class PopulateItinerary < ApplicationRecord
 
       return alternative_places["results"][1]
     end
+    return alternative_places["results"][1]
   end
 end
