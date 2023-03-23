@@ -347,6 +347,19 @@ ul {
 a {
   text-decoration: none;
 }
+
+#removeModalLongTitle{
+  color: $color3;
+  text-align: center;
+}
+
+.no-text-decoration{
+  color: $color3;
+}
+
+.no-text-decoration:hover{
+  color: $color4;
+}
 // ================================================== START Edit form card==================================================//
 /* .form-right {
   transform: translateX(80px);
