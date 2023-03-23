@@ -5,7 +5,9 @@
     <% end %>
   </div>
 
-  <h1 class="content3"><%= "My Day Out" %></h1>
+  <%= link_to root_url do %>
+    <h1 class="content3"><%= "My Day Out" %></h1>
+  <% end %>
 
   <% if user_signed_in? %>
     <div class="d-flex align-items-center" style="padding-right: 5px;">
