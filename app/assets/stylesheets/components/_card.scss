@@ -133,10 +133,10 @@ ul {
   z-index: 9999;
   box-shadow: 0px 0px 20px $color3;
   padding: 20px;
-  background-color: white;
   width: 1000px;
-  background-color: $color1;
-  color: $color3;
+  background-color: $color6;
+  color: $color1;
+  border-radius: 15px;
 }
 .edit-container {
   display: flex;
@@ -212,7 +212,7 @@ ul {
 }
 
 .website-icon {
-  color: $color3; /* replace with your desired color value */
+  color: $color1;
   border-radius: 50%;
 }
 
@@ -372,4 +372,8 @@ a {
 .redshadow {
   box-shadow: 0px 0px 20px red !important;
   border-radius: 15px !important;
+}
+
+.interests {
+
 }

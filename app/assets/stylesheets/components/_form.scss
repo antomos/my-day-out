@@ -48,7 +48,7 @@ background-color: $color4;
 .btn-pink {
   display: flex;
   justify-content: center;
-  background-color: $color4;
+  background-color: $color1;
   color: $color3;
   width: 100%;
 }
@@ -57,6 +57,16 @@ background-color: $color4;
 }
 .inputs:last-child {
   // margin-right: 0 !important;
+}
+
+.datetimecolor {
+  background-color: none !important;
+  background-color: $color3 !important;
+}
+
+.addstopcolor {
+  background-color: $color3 !important;
+  border-color: $color1 !important;
 }
 
 legend {
