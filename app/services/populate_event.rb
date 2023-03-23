@@ -25,6 +25,7 @@ class PopulateEvent < ApplicationRecord
     event.order_number = @event_details[:order_number]
     event.alternative_places = @alternative_places
     event.event_duration = @event_details[:event_duration]
+    event.category = @event_details[:input_category]
 
     if @search_place_details
       if Place.find_by(search_place_details_id: @search_place_details[:place_id])

@@ -11,7 +11,7 @@
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
-  <% event.alternative_places["results"].first(10).each do |place| %>
+  <% event.alternative_places["results"].first(20).each do |place| %>
     <% alternatives << place["name"] %>
   <% end %>
 <% end %>
@@ -170,7 +170,7 @@
       </div>
       <div class="card-header">
         <h6 class="card-title"><%= name  %></h6>
-        <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %></small> <br>
+        <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %> - <%= event.category %> </small> <br>
         <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>
