@@ -22,6 +22,7 @@
   line-height: 1.8;
   color: $color4;
   letter-spacing: 0.05em;
+  padding-top: 5px;
 }
 
 .content4 {
@@ -35,8 +36,7 @@
 .content5{
   @extend .content1;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
+  text-align: center;
   color: $color1;
   font-size: 28px;
 }

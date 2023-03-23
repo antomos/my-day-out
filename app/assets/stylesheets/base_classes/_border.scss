@@ -25,7 +25,7 @@
 .border2:hover {
   border-color: $color3;
   background-color: $color2;
-  color: $color4;
+  color: $color4 !important;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* increases the size of the drop shadow on hover */
   transform: translateY(-1px); /* moves the element up 2 pixels on hover */
 }

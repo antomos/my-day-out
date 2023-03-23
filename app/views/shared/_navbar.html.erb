@@ -1,17 +1,18 @@
-
-<div class="navbar">
-  <div class="navbar-container p-2">
+<div class="navbar-container p-2">
+  <div style="padding-right: 61px">
     <%= link_to root_url do %>
       <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834960/Icon_a9bbpe.webp", :class => "avatar-large" %>
     <% end %>
-      <h1 class="content3"><%= "My Day Out" %></h1>
-      <% if user_signed_in? %>
-        <div class="d-flex align-items-center">
-          <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %>
-          <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834961/giulio_l3pxx3.png", class: "avatar"%>
-        </div>
-      <% else %>
-        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-      <% end %>
   </div>
+
+  <h1 class="content3"><%= "My Day Out" %></h1>
+
+  <% if user_signed_in? %>
+    <div class="d-flex align-items-center">
+      <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %>
+      <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834961/giulio_l3pxx3.png", class: "avatar"%>
+    </div>
+  <% else %>
+    <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+  <% end %>
 </div>

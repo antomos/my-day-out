@@ -11,6 +11,11 @@
   object-fit: cover;
 }
 
+.card-info{
+  position:relative;
+  bottom: 10px;
+}
+
 .events {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -37,11 +42,29 @@
 
 .remove-event-button{
   position: absolute;
+  text-decoration: none;
   right: 0px;
   background-color: $color4;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  color: $color3;
+}
+
+.card-id-button{
+  position: absolute;
+  left: 0px;
+  background-color: $color4;
+  width: 30px;
+  height: 30px;
+  border-radius: 0%;
+  background-color: $color1;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 5px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  font-weight: bold;
 }
 
 .confirm-itinerary{
@@ -83,22 +106,22 @@ ul {
 
 .close-btn {
   border-radius: 50%;
-  position: absolute;
-  left: 703px;
-  top: -15px;
+  // position: absolute;
+  // left: 703px;
+  // top: -15px;
   width: 30px;
   height: 30px;
   font-size: 20px;
-  background-color: $color3;
-  color: $color1;
+  background-color: $color1;
+  color: $color3;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
 .close-btn:hover {
-  background-color: transparent;
-  color: $color3;
+  background-color: $color3;
+  color: $color1;
 }
 .edit-form{
 
@@ -118,29 +141,64 @@ ul {
 .edit-container {
   display: flex;
   max-height: 500px;
+  position: relative;
   // width:1000px;
+}
+
+.edit-close-div{
+  height: 45px;
 }
 
 .left-column {
   /* Styles for the left column */
-  flex: 1;
-  overflow: auto;
+  flex: 3;
+  padding: 10px;
 }
 
 .right-column {
   /* Styles for the right column */
-  flex: 3;
-  position: relative;
+  flex: 1;
+}
+.left-column-details {
+  /* Styles for the left column */
+  flex: 1;
+}
 
+.right-column-details {
+  /* Styles for the right column */
+  flex: 1;
 }
 .scrollable-content {
   /* Styles for the scrollable content */
-  height: 100%;
+  height: 92%;
   overflow: auto;
 }
+.scrollable-content-details {
+  /* Styles for the scrollable content */
+  height: 157%;
+  overflow: auto;
+}
+
+.partial-title{
+  position: relative;
+  bottom: 45px;
+}
+
+.review-title{
+  font-size: 25px;
+}
+
+.review-header{
+  font-size: 20px;
+}
 .card-header{
-  color: $color3;
+  color: $color1;
   padding: 8px;
+}
+
+.card-title{
+  min-height: 39px;
+  max-width: 200px;
 }
 
 .link-dec{
@@ -150,7 +208,7 @@ ul {
 
 .link-dec:hover{
   text-decoration: none;
-  color: $color4;
+  color: $color4 !important;
 }
 
 .website-icon {
@@ -158,24 +216,35 @@ ul {
   border-radius: 50%;
 }
 
+.map {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 450px;
+}
+
 .travel-icon{
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  padding-top: 20%;
   padding-right: 5px;
+  position: relative;
+  right: 7px;
 }
 
 
 .card {
-  border-radius: 25px;
-  background-color: $color1;
+  // border-radius: 25px;
+  background-color: transparent;
   color: $color3;
   position: relative;
   min-width: 223px;
   // padding: 11px;
-  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
+  // box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.5);
   min-height: 280px;
   margin-right: 8px;
 
@@ -248,8 +317,20 @@ ul {
 }
 
 .event-container{
-  margin-bottom: 40px;
-  margin-top: 5px;
+  // margin-bottom: 40px;
+  height: 155vh;
+  overflow: hidden;
+  // padding-top: 95px;
+}
+
+.itinerary-confirmed-container{
+  height: 105vh;
+  overflow: hidden;
+}
+
+.shared-itinerary-container{
+  height: 125vh;
+  overflow: hidden;
 }
 
 .card-img{
