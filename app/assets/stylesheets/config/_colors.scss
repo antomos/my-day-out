@@ -11,9 +11,13 @@ $color5: #e1ff00;
 
 
 .colorX {
-  color: $color2 !important;
+  color: $color3 !important;
 }
 
-.colorX:hover {
-  color: $color4 !important;
+// .colorX:hover {
+//   color: $color4 !important;
+// }
+
+colorRed {
+  color: red !important;
 }

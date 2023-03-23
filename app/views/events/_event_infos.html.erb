@@ -149,14 +149,15 @@
       </div>
     </div>
     <%# card %>
-    <div id="toproundborders transparent">
+    <div <% unless event.open_now %> class="redshadow" <% end %>>
       <%# card image %>
       <div class="card-id-button"><%= event.order_number %></div>
       <% unless itinerary.saved %>
       <button class="remove-event-button border2 colorX" style="border-color: transparent !important;">
-        <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
-          <i class="fa-solid fa-xmark colorX"></i>
-        <% end %>
+        <i class="fa-solid fa-xmark colorX">
+          <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
+          <% end %>
+        </i>
       </button>
       <% end %>
 
@@ -191,8 +192,17 @@
       <div id="toproundborders" class="card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= url %>')">
       </div>
       <div class="card-header">
-        <h6 class="card-title"><%= name  %></h6>
-        <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %></small> <br>
+        <h6 class="card-title" ><%= name  %></h6>
+        <small>
+          <%  if event.open_now %>
+            <i class="fa-solid fa-clock">
+          <%  else %>
+            <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i>
+          <%  end %>
+          </i>
+          <%= event.start_time  %> - <%= event.end_time  %>
+        </small>
+        <br>
         <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>

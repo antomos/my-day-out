@@ -18,9 +18,9 @@
   <div class="d-flex flex-column align-items-center content-justify" style="width: 480px; padding-top: 20px">
     <% unless @itinerary.saved%>
       <div id='hundredwidth'><%= render "events/new_event_form", itinerary: @itinerary%></div>
-        <button type="button" class="btn btn-pink border2 hundredwidthclass" id="bottomroundborders" data-bs-toggle="modal" data-bs-target="#savedModalCenter">
-          Save itinerary
-        </button>
+      <button type="button" class="btn btn-pink border2 hundredwidthclass" id="bottomroundborders" data-bs-toggle="modal" data-bs-target="#savedModalCenter">
+        Save itinerary
+      </button>
 
     <div class="modal fade" id="savedModalCenter" style="z-index:9999;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -42,6 +42,7 @@
     </div>
 
     <% else %>
+      <%= button_to "Back to edit", back_path(@itinerary), method: :patch, class: "btn btn-pink border2 hundredwidthclass", id: "toproundborders" %>
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-pink border2 hundredwidthclass" id="bottomroundborders" data-bs-toggle="modal" data-bs-target="#share">Share</button>
 
