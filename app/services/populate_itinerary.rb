@@ -29,12 +29,16 @@ class PopulateItinerary < ApplicationRecord
 
       alternative_places = formatted_places
 
-      if event_details[:filter_type].length > 0
+      if event_details[:filter_type].length.positive?
         alternative_places = { "results" => order_filter_places(alternative_places, :types, event_details[:filter_type]) }
       end
 
       if event_details[:filter_ratings].positive?
         alternative_places = { "results" => order_filter_places(alternative_places, :user_ratings_total, event_details[:filter_ratings]) }
+      end
+
+      if event_details[:filter_type].length.zero? && event_details[:filter_ratings].zero?
+        alternative_places = { "results" => order_filter_places(alternative_places) }
       end
 
 
@@ -124,7 +128,7 @@ class PopulateItinerary < ApplicationRecord
     {
       name: place["name"], # String
       types: place["types"], # Array
-      rating: place["rating"].to_i, # Integer
+      rating: place["rating"].to_f, # float
       user_ratings_total: place["user_ratings_total"].to_i, # Integer
       photo_reference: photo,
       location: "#{place["geometry"]["location"]["lat"]},#{place["geometry"]["location"]["lng"]}", # String
@@ -133,13 +137,15 @@ class PopulateItinerary < ApplicationRecord
     }
   end
 
-  def order_filter_places(alternative_places, type, filter_value)
-    sorted_places = alternative_places["results"].sort_by { |place| -place[:rating].to_f }
+  def order_filter_places(alternative_places, type = nil, filter_value = nil)
+    sorted_places = alternative_places["results"].sort_by { |place| -(place[:rating].to_f * place[:user_ratings_total].to_i) }
 
     if type == :types
       filtered_places = sorted_places.reject { |place| place[type].include?(filter_value) }
     elsif type == :user_ratings_total
       filtered_places = sorted_places.reject { |place| place[type] < filter_value }
+    else
+      filtered_places = sorted_places
     end
 
     filtered_places

@@ -30,7 +30,7 @@ class ItineraryTemplate < ApplicationRecord
   ## EXPERIMENTAL
   INTEREST_VALUES = {
     "History": {time: 75, type: "museum", keyword: "history|culture|immersive", radius: 1500, filter_type: "art_gallery", filter_ratings: 0},
-    "Art & Culture": {time: 60, type: "art_gallery", keyword: "", radius: 1500, filter_type: "", filter_ratings: 0},
+    "Art & Culture": {time: 60, type: "art_gallery", keyword: "", radius: 1500, filter_type: "", filter_ratings: 3},
     "Shopping": {time: 60, type: "shopping_mall", keyword: "shopping|mall|centre|department|store", radius: 2000, filter_type: "", filter_ratings: 100}, # switch type to shopping_mall?
     "dining_dinner": {time: 90, type: "restaurant", keyword: "", radius: 500, filter_type: "", filter_ratings: 0},
     "dining_lunch": {time: 60, type: "restaurant", keyword: "", radius: 500, filter_type: "", filter_ratings: 0},
