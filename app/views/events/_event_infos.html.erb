@@ -138,7 +138,7 @@
         </div>
         <div class="right-column">
           <div class="review-title">
-            <strong>Reviews <% if event.place.details_reviews %> <%= image_tag "star.png", width: 20, height: 20 %><small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> </strong><p> <% end %>
+            <strong>Reviews  <%= image_tag "star.png", width: 20, height: 20 %><% if event.place.search_rating %> <small><%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <% else %> N/A <% end %>
           </div>
           <div class="scrollable-content">
           <%# reviews %>
@@ -251,7 +251,7 @@
           <%  if event.open_now %>
             <i class="fa-solid fa-clock">
           <%  else %>
-            <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i>
+            <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This destination might not be open for entry at this time or opening hours might be missing."></i>
           <%  end %>
           </i>
           <%= event.start_time  %> - <%= event.end_time  %>
