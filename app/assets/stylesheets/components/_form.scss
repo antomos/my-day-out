@@ -38,12 +38,17 @@
   padding: 8px;
   border-radius: 3px;
   // border: 1px solid $color1;
-  background-color: $color1;
+  background-color: $color4;
+  color: $color1
+
 }
+
+
 .category-selector:checked + label {
-color: $color3;
-// border: 1px $color3 solid;
-background-color: $color4;
+color: $color4;
+background-color: $color1;
+box-shadow: inset 0 0 0 5px $color4;
+
 }
 .btn-pink {
   display: flex;

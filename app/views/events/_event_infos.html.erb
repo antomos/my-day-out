@@ -107,21 +107,21 @@
               </div>
               <%# Right details column%>
               <div class="right-column-details" style="min-width:120px; max-height:300px"; >
-               <div class="scrollable-content-details">
-                <span class="review-header">Description:</span>
-                <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %></p>
+                <div class="scrollable-content-details">
+                  <span class="review-header">Description:</span>
+                  <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %></p>
 
-                <div>
-                  <% if event.place.details_opening_hours_periods %>
-                    <span class="review-header">Opening Hours:</span><br>
-                    <% if event.place.details_opening_hours_periods["weekday_text"] %>
-                      <% event.place.details_opening_hours_periods["weekday_text"].each do |day| %>
-                        <%= day %><br>
+                  <div>
+                    <% if event.place.details_opening_hours_periods %>
+                      <span class="review-header">Opening Hours:</span><br>
+                      <% if event.place.details_opening_hours_periods["weekday_text"] %>
+                        <% event.place.details_opening_hours_periods["weekday_text"].each do |day| %>
+                          <%= day %><br>
+                        <% end %>
                       <% end %>
                     <% end %>
-                  <% end %>
+                  </div>
                 </div>
-               </div>
               </div>
           </div>
         </div>
@@ -192,7 +192,11 @@
         <%= event.order_number %>
       </div>
       <% unless itinerary.saved %>
-        <button class="remove-event-button border2" style="border-color: transparent !important" data-bs-toggle="modal" data-bs-target="#removeModalCenter"><i class="fa-solid fa-xmark"></i></button>
+        <button class="remove-event-button border2" style="border-color: transparent !important;">
+          <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
+            <i class="fa-solid fa-xmark"></i>
+          <% end %>
+        </button>
       <% end %>
     <div class="modal fade" id="removeModalCenter" style="z-index:9999;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
