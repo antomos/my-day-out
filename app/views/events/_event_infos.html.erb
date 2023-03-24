@@ -107,21 +107,21 @@
               </div>
               <%# Right details column%>
               <div class="right-column-details" style="min-width:120px; max-height:300px"; >
-               <div class="scrollable-content-details">
-                <span class="review-header">Description:</span>
-                <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %></p>
+                <div class="scrollable-content-details">
+                  <span class="review-header">Description:</span>
+                  <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %></p>
 
-                <div>
-                  <% if event.place.details_opening_hours_periods %>
-                    <span class="review-header">Opening Hours:</span><br>
-                    <% if event.place.details_opening_hours_periods["weekday_text"] %>
-                      <% event.place.details_opening_hours_periods["weekday_text"].each do |day| %>
-                        <%= day %><br>
+                  <div>
+                    <% if event.place.details_opening_hours_periods %>
+                      <span class="review-header">Opening Hours:</span><br>
+                      <% if event.place.details_opening_hours_periods["weekday_text"] %>
+                        <% event.place.details_opening_hours_periods["weekday_text"].each do |day| %>
+                          <%= day %><br>
+                        <% end %>
                       <% end %>
                     <% end %>
-                  <% end %>
+                  </div>
                 </div>
-               </div>
               </div>
           </div>
         </div>
