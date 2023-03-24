@@ -13,7 +13,11 @@ class CreateUserEvent < ApplicationRecord
   private
 
   def create_event
-    order_number = Event.where(itinerary_id: @itinerary_id, removed: false).order(:order_number).last.order_number.to_i + 1
+    if Event.where(itinerary_id: @itinerary_id, removed: false).count.positive?
+      order_number = Event.where(itinerary_id: @itinerary_id, removed: false).order(:order_number).last.order_number.to_i + 1
+    else
+      order_number = 1
+    end
 
     @new_event.itinerary_id = @itinerary_id.to_i
     @new_event.start_time = "00:00"
