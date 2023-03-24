@@ -27,6 +27,17 @@ class CheckOpenEvent < ApplicationRecord
         # binding.pry
 
         if opening_hours_hash
+
+          # modifier = week.count - opening_hours_hash["periods"].count
+
+          opening_hours_hash["periods"].each do |hash|
+
+            day = hash if hash["open"]["day"] == week.index(weekday)
+
+          end
+
+          binding.pry
+
           opening_string = opening_hours_hash["periods"][week.index(weekday)]["open"]["time"] if opening_hours_hash["periods"][week.index(weekday)]
           closing_string = opening_hours_hash["periods"][week.index(weekday)]["close"]["time"] if opening_hours_hash["periods"][week.index(weekday)]
           # opening_time = Time.parse(opening_string)
