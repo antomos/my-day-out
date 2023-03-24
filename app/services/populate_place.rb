@@ -1,3 +1,8 @@
+require "uri"
+require "net/http"
+require "json"
+require "open-uri"
+
 class PopulatePlace < ApplicationRecord
   def initialize (place_template = {})
     # @event_details = place_template[:event_details]
