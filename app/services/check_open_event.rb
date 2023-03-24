@@ -35,6 +35,10 @@ class CheckOpenEvent < ApplicationRecord
           opening_time = Time.strptime(opening_string, "%H%M") if opening_string
           closing_time = Time.strptime(closing_string, "%H%M") if closing_string
 
+          if closing_time && opening_time
+            closing_time += (60*60*24) if closing_time < opening_time
+          end
+
           # make sure event start & end time are both time objects for comparison
           # for some reason, event.start_time and event.end_time call different values to that is stored in event...
           start_time = Time.strptime(event.start_time.gsub(":", ""), "%H%M")
