@@ -57,14 +57,27 @@
   <%#start icon container %>
   <div class="travel-icon transparent" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" title="Directions" data-bs-content="<%= directions %>">
   <a href="<%= event.place.details_url %>" target="_blank"><img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679141206/destination_trhdxu.png" style= "width:40px; height:40px"></a>
-  <p><small><%= event.directions_to_event["journey_duration"] %></small><p>
+
+  <p>
+    <small>
+      <% time = event.directions_to_event["journey_duration"] %>
+      <% if time.include?('h') %>
+        <% h = time.slice(..time.index('h')) %>
+        <% m = time.slice(time.index('h')+1..) %>
+        <%= h %><br>
+        <%= m %>
+      <% else %>
+        <%= time %>
+      <% end %>
+    </small>
+  <p>
   </div>
   <%#end icon container %>
   <div id="roundborders transparent" class="d-flex flex-column card justify-content-center rounded cardborder" data-controller="edit-event"  >
       <%# edit form %>
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
       <div class="edit-close-div">
-          <button class= "close-btn" style="float: right";>
+          <button class="border2 close-btn" style="border-color: transparent !important; float: right";>
                 <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
           </button>
       </div>
@@ -74,6 +87,7 @@
             <h1><strong><%= name %></strong></h1>
           </div>
           <div style="display:flex";>
+              <%# Left details column%>
               <div class="left-column-details">
                 <div class="map"
                       style="width: 90%; height: 90%;"
@@ -91,7 +105,7 @@
                   <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> &nbsp;&nbsp;Website: <i class="fa-solid fa-globe"> </i></a> <% end  %>
                 </p>
               </div>
-              <%# Details%>
+              <%# Right details column%>
               <div class="right-column-details" style="min-width:120px; max-height:300px"; >
                <div class="scrollable-content-details">
                 <span class="review-header">Description:</span>
@@ -178,7 +192,7 @@
         <%= event.order_number %>
       </div>
       <% unless itinerary.saved %>
-        <button class="remove-event-button border2" style="border-color: transparent !important" data-bs-toggle="modal" data-bs-target="#removeModalCenter">x</button>
+        <button class="remove-event-button border2" style="border-color: transparent !important" data-bs-toggle="modal" data-bs-target="#removeModalCenter"><i class="fa-solid fa-xmark"></i></button>
       <% end %>
     <div class="modal fade" id="removeModalCenter" style="z-index:9999;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
