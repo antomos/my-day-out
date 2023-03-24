@@ -12,17 +12,17 @@
           </div>
           <div class="d-flex" >
             <div class="inputs">
-              <%= f.input :date, as: :string, placeholder: "Date", input_html: { class: "myborders", data: {flatpickr_target: "date" } } %>
+              <%= f.input :date, as: :string, placeholder: "Date", input_html: { class: "addstopcolor", data: {flatpickr_target: "date" } } %>
             </div>
             <div class="inputs">
-              <%= f.input :start_time, placeholder: "Start time", as: :string, input_html: { class: "myborders", data: {flatpickr_target: "start" } } %>
+              <%= f.input :start_time, placeholder: "Start time", as: :string, input_html: { class: "addstopcolor", data: {flatpickr_target: "start" } } %>
             </div>
             <div class="inputs">
-              <%= f.input :end_time, placeholder: "End time", as: :string, input_html: { class: "myborders", data: {flatpickr_target: "end" } } %>
+              <%= f.input :end_time, placeholder: "End time", as: :string, input_html: { class: "addstopcolor", data: {flatpickr_target: "end" } } %>
             </div>
           </div>
           <div class="inputs">
-            <%= f.input :dining_requirements, placeholder: "Dining preferences, e.g. vegan", input_html: { class: "myborders" } %>
+            <%= f.input :dining_requirements, placeholder: "Dining preferences, e.g. vegan", input_html: { class: "addstopcolor" } %>
           </div>
           <div class="slider">
             <p class="pound mb-0"><strong>&nbsp;&nbsp;&nbsp;Dining budget</strong></p>
@@ -34,7 +34,7 @@
           <%= f.input :interests, as: :check_boxes, collection_wrapper_tag: 'div', collection_wrapper_class: 'category-wrapper', item_wrapper_class: 'category-item', input_html: {class: 'category-selector'}, collection: Itinerary::INTERESTS, include_hidden: false %>
         </div>
       </div>
-      <%= f.submit class: "btn btn-pink border2" %>
+      <%= f.submit id: "bottomroundborders", class: "btn btn-pink border2" %>
     </div>
     </div>
   <% end %>
