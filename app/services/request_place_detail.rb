@@ -1,3 +1,8 @@
+require "uri"
+require "net/http"
+require "json"
+require "open-uri"
+
 class RequestPlaceDetail < ApplicationRecord
   def initialize(place_details)
     @place_details = place_details
