@@ -60,6 +60,7 @@
   <p>
     <small>
       <% time = event.directions_to_event["journey_duration"] %>
+      <% time = time.to_s %>
       <% if time.include?('h') %>
         <% h = time.slice(..time.index('h')) %>
         <% m = time.slice(time.index('h')+1..) %>
