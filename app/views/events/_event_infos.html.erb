@@ -237,14 +237,14 @@
       <% if event.place.photo.attached? %>
         <% url =  cl_image_path event.place.photo.key  %>
       <% else %>
-        <% url = cl_image_path "https://res.cloudinary.com/danwlbu2c/image/upload/v1679487069/production/placeholder_oygtzp.jpg" %>
+        <% url = cl_image_path "https://res.cloudinary.com/danwlbu2c/image/upload/v1679682332/production/default-image_ju9yth.jpg" %>
       <% end%>
 
       <div id="toproundborders" class="card-img" style="background-image: url('<%= url %>')">
       </div>
       <div class="card-header">
         <div class="d-flex interests">
-          <img class="" src="<%= event.category ? icons[event.category][1] : "https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/pencil_aaldec.png"%> "  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="<%= event.category ? icons[event.category][0] : "Custom Place"%>"></i>
+          <img class="interest-icon" src="<%= event.category ? icons[event.category][1] : "https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/pencil_aaldec.png"%> "  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="<%= event.category ? icons[event.category][0] : "Custom Place"%>"></i>
           <h6 class="card-title" >&nbsp;<%= name  %></h6>
         </div>
         <small>
