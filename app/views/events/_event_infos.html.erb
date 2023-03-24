@@ -28,7 +28,6 @@
 "dining_lunch_drinks",
 "activity_attraction"]  %>
 
-<% require "json" %>
 
 <% alternatives = Array.new %>
 <% if event.alternative_places.length != 0 %>
@@ -61,6 +60,7 @@
   <p>
     <small>
       <% time = event.directions_to_event["journey_duration"] %>
+      <% time = time.to_s %>
       <% if time.include?('h') %>
         <% h = time.slice(..time.index('h')) %>
         <% m = time.slice(time.index('h')+1..) %>
