@@ -206,15 +206,11 @@
         <%= event.order_number %>
       </div>
       <% unless itinerary.saved %>
-<<<<<<< HEAD
-        <button class="remove-event-button border2" style="border-color: transparent !important;">     <%= link_to remove_path(event), data: { turbo_method: :get, turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone." } do %>     <i class="fa-solid fa-xmark"></i>     <% end %>    </button>
-=======
         <button class="remove-event-button border2" style="border-color: transparent !important;">
           <%= link_to remove_path(event), input_html: { class:"remove-event-button"}, data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
             <i class="fa-solid fa-xmark"></i>
           <% end %>
         </button>
->>>>>>> main
       <% end %>
 
       <% url = ""  %>
