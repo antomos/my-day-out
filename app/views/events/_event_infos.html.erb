@@ -238,7 +238,7 @@
           <%= event.start_time  %> - <%= event.end_time  %>
         </small>
         <br>
-        <%= image_tag "star.png", width: 20, height: 20 %><small><% if event.place.search_rating %> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <% else %> N/A <% end %> <br>
+        <%= image_tag "star.png", width: 20, height: 20 %><small><% if event.place.search_rating %> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>) <% else %> N/A <% end %></small> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>
     </div>
