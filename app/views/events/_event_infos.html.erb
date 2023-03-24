@@ -63,7 +63,7 @@
       <% time = time.to_s %>
       <% if time.include?('h') %>
         <% h = time.slice(..time.index('h')) %>
-        <% m = time.slice(time.index('h')+1..) %>
+        <% m = time.slice(time.index('h')+4..) %>
         <%= h %><br>
         <%= m %>
       <% else %>
@@ -243,7 +243,7 @@
           <%= event.start_time  %> - <%= event.end_time  %>
         </small>
         <br>
-        <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
+        <%= image_tag "star.png", width: 20, height: 20 %><small><% if event.place.search_rating %> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <% else %> N/A <% end %> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>
     </div>
