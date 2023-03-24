@@ -161,6 +161,8 @@ class SetTravelTime < ApplicationRecord
     events.each_with_index do |event, i|
       start_time = end_time
 
+      event.update(order_number: (i + 1).to_s)
+
       # Only calls API and sets timings from the first change in the schedule
       if i >= @index
         destination_location = event.place.search_geometry_location
