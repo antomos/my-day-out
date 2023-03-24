@@ -34,7 +34,7 @@
           <%= f.input :interests, as: :check_boxes, collection_wrapper_tag: 'div', collection_wrapper_class: 'category-wrapper', item_wrapper_class: 'category-item', input_html: {class: 'category-selector'}, collection: Itinerary::INTERESTS, include_hidden: false %>
         </div>
       </div>
-      <%= f.submit class: "btn btn-pink border2" %>
+      <%= f.submit id: "bottomroundborders", class: "btn btn-pink border2" %>
     </div>
     </div>
   <% end %>

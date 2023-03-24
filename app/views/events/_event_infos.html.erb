@@ -63,7 +63,7 @@
       <% time = time.to_s %>
       <% if time.include?('h') %>
         <% h = time.slice(..time.index('h')) %>
-        <% m = time.slice(time.index('h')+1..) %>
+        <% m = time.slice(time.index('h')+4..) %>
         <%= h %><br>
         <%= m %>
       <% else %>
@@ -73,43 +73,54 @@
   <p>
   </div>
   <%#end icon container %>
+
+
+
   <div id="roundborders transparent" class="d-flex flex-column card justify-content-center rounded cardborder" data-controller="edit-event"  >
       <%# edit form %>
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
       <div class="edit-close-div">
-          <button class="border2 close-btn" style="border-color: transparent !important; float: right";>
-                <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
-          </button>
+        <button class="border2 close-btn" style="border-color: transparent !important; float: right"; data-action="click->edit-event#hideForm"><i class="fa-solid fa-xmark"></i></button>
       </div>
+
+
+
       <div class="edit-container">
         <div class="left-column">
-          <div class="partial-title d-flex justify-content-center">
+          <div class="partial-title d-flex">
             <h1><strong><%= name %></strong></h1>
           </div>
           <div style="display:flex";>
               <%# Left details column%>
               <div class="left-column-details">
-                <div class="map"
-                      style="width: 90%; height: 90%;"
-                      data-controller="map"
-                      data-map-markers-value="<%= @markers.to_json %>"
-                      data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+
+                  <div class="map"
+                        style="width: 90%; height: 90%; max-height: 250px"
+                        data-controller="map"
+                        data-map-markers-value="<%= @markers.to_json %>"
+                        data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
+                  </div>
+
+
+                <div class="">
+                  <span class="review-header">Phone: </span>
+                  <p><%= event.place.details_formatted_phone_number ? event.place.details_formatted_phone_number : "N/A" %></p>
+                  <p class="review-header link-dec">
+                    <% if event.place.details_url %><a class ="website-icon" href="<%= event.place.details_url %>" target="_blank">Directions: <i class="fa-solid fa-map"></i></a> <% end  %>
+                    <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> &nbsp;&nbsp;Website: <i class="fa-solid fa-globe"> </i></a> <% end  %>
+                  </p>
+
+                  <span class="review-header">Address: </span>
+                  <p><%= event.place.details_formatted_address ? event.place.details_formatted_address : "N/A" %></p>
                 </div>
-                <br>
-                <span class="review-header">Address: </span>
-                <p><%= event.place.details_formatted_address ? event.place.details_formatted_address : "N/A" %></p>
-                <span class="review-header">Phone: </span>
-                <p><%= event.place.details_formatted_phone_number ? event.place.details_formatted_phone_number : "N/A" %></p>
-                <p class="review-header link-dec">
-                  <% if event.place.details_url %><a class ="website-icon" href="<%= event.place.details_url %>" target="_blank">Directions: <i class="fa-solid fa-map"></i></a> <% end  %>
-                  <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> &nbsp;&nbsp;Website: <i class="fa-solid fa-globe"> </i></a> <% end  %>
-                </p>
+
               </div>
               <%# Right details column%>
               <div class="right-column-details" style="min-width:120px; max-height:300px"; >
-                <div class="scrollable-content-details">
-                  <span class="review-header">Description:</span>
-                  <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %></p>
+               <div class="scrollable-content-details">
+
+                <span class="review-header">Description:</span>
+                <p><%= event.place.details_overview ? event.place.details_overview : "You are going to love it!" %></p>
 
                   <div>
                     <% if event.place.details_opening_hours_periods %>
@@ -185,6 +196,9 @@
           <% end %>
       </div>
     </div>
+
+
+
     <%# card %>
     <div <% unless event.open_now %> class="redshadow" <% end %>>
       <%# card image %>
@@ -193,7 +207,7 @@
       </div>
       <% unless itinerary.saved %>
         <button class="remove-event-button border2" style="border-color: transparent !important;">
-          <%= link_to remove_path(event), data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
+          <%= link_to remove_path(event), input_html: { class:"remove-event-button"}, data: {     turbo_method: :get,     turbo_confirm: "Are you sure you want to remove this event from your Itinerary? This cannot be undone."     } do %>
             <i class="fa-solid fa-xmark"></i>
           <% end %>
         </button>
@@ -243,7 +257,7 @@
           <%= event.start_time  %> - <%= event.end_time  %>
         </small>
         <br>
-        <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
+        <%= image_tag "star.png", width: 20, height: 20 %><small><% if event.place.search_rating %> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <% else %> N/A <% end %> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>
     </div>
