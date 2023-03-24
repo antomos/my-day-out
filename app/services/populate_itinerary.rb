@@ -138,7 +138,7 @@ class PopulateItinerary < ApplicationRecord
   end
 
   def order_filter_places(alternative_places, type = nil, filter_value = nil)
-    sorted_places = alternative_places["results"].sort_by { |place| -(place[:rating].to_f * place[:user_ratings_total].to_i) }
+    sorted_places = alternative_places["results"].sort_by { |place| -(place[:rating].to_f * place[:user_ratings_total].to_i * (20 - alternative_places["results"].find_index(place))) }
 
     if type == :types
       filtered_places = sorted_places.reject { |place| place[type].include?(filter_value) }
