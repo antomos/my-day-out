@@ -53,7 +53,7 @@
 }
 
 .linkedin-icon:hover {
-  background-image: linear-gradient(to right, $color1, $color2, $color3, $color4);
+  background-image: linear-gradient(to right, $color4, $color5, $color1);
   border: 2px solid $color4;
   box-shadow: 0 0 5px #fff;
 }
@@ -70,7 +70,7 @@
 }
 
 .github-icon:hover {
-  background-image: linear-gradient(to right, $color1, $color2, $color3, $color4);
+  background-image: linear-gradient(to right, $color4, $color5, $color1);
   border: 2px solid $color4;
   box-shadow: 0 0 5px #fff;
 }
