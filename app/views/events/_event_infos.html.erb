@@ -57,14 +57,27 @@
   <%#start icon container %>
   <div class="travel-icon transparent" data-controller="popover" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" title="Directions" data-bs-content="<%= directions %>">
   <a href="<%= event.place.details_url %>" target="_blank"><img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679141206/destination_trhdxu.png" style= "width:40px; height:40px"></a>
-  <p><small><%= event.directions_to_event["journey_duration"] %> min </small><p>
+
+  <p>
+    <small>
+      <% time = event.directions_to_event["journey_duration"] %>
+      <% if time.include?('h') %>
+        <% h = time.slice(..time.index('h')) %>
+        <% m = time.slice(time.index('h')+1..) %>
+        <%= h %><br>
+        <%= m %>
+      <% else %>
+        <%= time %>
+      <% end %>
+    </small>
+  <p>
   </div>
   <%#end icon container %>
   <div id="roundborders transparent" class="d-flex flex-column card justify-content-center rounded cardborder" data-controller="edit-event"  >
       <%# edit form %>
     <div class="edit-form d-none formdiv<%= event.id %>" data-edit-event-target="formdiv" id="formdiv" data-target-id="<%= event.id %>">
       <div class="edit-close-div">
-          <button class= "close-btn" style="float: right";>
+          <button class="border2 close-btn" style="border-color: transparent !important; float: right";>
                 <i class="fa-solid fa-xmark" data-action="click->edit-event#hideForm"></i>
           </button>
       </div>
@@ -74,6 +87,7 @@
             <h1><strong><%= name %></strong></h1>
           </div>
           <div style="display:flex";>
+              <%# Left details column%>
               <div class="left-column-details">
                 <div class="map"
                       style="width: 90%; height: 90%;"
@@ -91,7 +105,7 @@
                   <% if event.place.details_website %><a class ="website-icon" href="<%= event.place.details_website %>" target="_blank"> &nbsp;&nbsp;Website: <i class="fa-solid fa-globe"> </i></a> <% end  %>
                 </p>
               </div>
-              <%# Details%>
+              <%# Right details column%>
               <div class="right-column-details" style="min-width:120px; max-height:300px"; >
                <div class="scrollable-content-details">
                 <span class="review-header">Description:</span>
@@ -153,32 +167,32 @@
                 %>
                 <div class="d-flex justify-content-evenly">
                   <div class= "inputs">
-                    <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { data: {flatpickr_target: "start" } } %>
+                    <%= f.input :start_time, placeholder: "Starting time", as: :string, input_html: { class:"datetimecolor", data: {flatpickr_target: "start" } } %>
                   </div>
                   <div class= "inputs">
-                    <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { data: {flatpickr_target: "end" } } %>
+                    <%= f.input :end_time, placeholder: "Ending time", as: :string, input_html: { class:"datetimecolor", data: {flatpickr_target: "end" } } %>
                   </div>
                   <% if event.category %>
                     <div class="swap-with-input">
                       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-                      <%= f.input :place, label: 'Swap with', required: false, collection: alternatives %>
+                      <%= f.input :place, label: 'Swap with', required: false, collection: alternatives, input_html: { class:"datetimecolor"} %>
                     </div>
                   <% end %>
                 </div>
                   <%# <%= f.input :end_time, label: 'Change Duration',collection: [["30 mins", 30],["45 mins",45],["1h",60],["1h 15 mins",75],["1h 30 mins",90],["1h 45 mins",105],["2h",120]]%>
-                  <%= f.submit "Update event", class: "btn btn-sm btn-pink border2" %>
+                  <%= f.submit "Update event", class: "btn btn-sm btn-pink border2", id: "bottomroundborders" %>
                 <% end %>
           <% end %>
       </div>
     </div>
     <%# card %>
-    <div id="toproundborders transparent">
+    <div <% unless event.open_now %> class="redshadow" <% end %>>
       <%# card image %>
       <div class="card-id-button">
         <%= event.order_number %>
       </div>
       <% unless itinerary.saved %>
-        <button class="remove-event-button border2" style="border-color: transparent !important" data-bs-toggle="modal" data-bs-target="#removeModalCenter">x</button>
+        <button class="remove-event-button border2" style="border-color: transparent !important" data-bs-toggle="modal" data-bs-target="#removeModalCenter"><i class="fa-solid fa-xmark"></i></button>
       <% end %>
     <div class="modal fade" id="removeModalCenter" style="z-index:9999;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -203,17 +217,28 @@
 
       <% url = ""  %>
       <% if event.place.photo.attached? %>
-      <% url =  cl_image_path event.place.photo.key  %>
+        <% url =  cl_image_path event.place.photo.key  %>
       <% else %>
-      <% url = cl_image_path "https://res.cloudinary.com/danwlbu2c/image/upload/v1679487069/production/placeholder_oygtzp.jpg" %>
+        <% url = cl_image_path "https://res.cloudinary.com/danwlbu2c/image/upload/v1679487069/production/placeholder_oygtzp.jpg" %>
       <% end%>
 
       <div id="toproundborders" class="card-img" style="background-image: url('<%= url %>')">
       </div>
       <div class="card-header">
-       <img class="remove-event-button" src="<%= event.category ? icons[event.category][1] : "https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/pencil_aaldec.png"%> "  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="<%= event.category ? icons[event.category][0] : "Custom Place"%>"></i>
-        <h6 class="card-title"><%= name  %></h6>
-        <small><i class="fa-solid fa-clock"></i> <%= event.start_time  %> - <%= event.end_time  %> </small> <br>
+        <div class="d-flex interests">
+          <img class="" src="<%= event.category ? icons[event.category][1] : "https://res.cloudinary.com/danwlbu2c/image/upload/v1679586195/production/pencil_aaldec.png"%> "  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="<%= event.category ? icons[event.category][0] : "Custom Place"%>"></i>
+          <h6 class="card-title" >&nbsp;<%= name  %></h6>
+        </div>
+        <small>
+          <%  if event.open_now %>
+            <i class="fa-solid fa-clock">
+          <%  else %>
+            <img src="https://res.cloudinary.com/danwlbu2c/image/upload/v1679421402/alert_qrihs9.png"  width="20" height="20" data-controller="tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="This place might be closed at this time"></i>
+          <%  end %>
+          </i>
+          <%= event.start_time  %> - <%= event.end_time  %>
+        </small>
+        <br>
         <%= image_tag "star.png", width: 20, height: 20 %><small> <%= event.place.search_rating %> (<%= event.place.search_user_ratings_total  %>)</small> <br>
       </div>
       <button class="btn btn-pink border2" id="bottomroundborders", data-edit-event-target="button" >Details</button>

@@ -51,6 +51,13 @@ class ItinerariesController < ApplicationController
     redirect_to itinerary_path(@itinerary)
   end
 
+  def back
+    @itinerary = Itinerary.find(params[:format])
+    @itinerary.saved = false
+    @itinerary.save
+    redirect_to itinerary_path(@itinerary)
+  end
+
   # def share
   #   @itinerary = Itinerary.find_by(share_token: params[:share_token])
     # if @itinerary.nil?

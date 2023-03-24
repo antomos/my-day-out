@@ -44,7 +44,7 @@
   position: absolute;
   text-decoration: none;
   right: 0px;
-  background-color: $color4;
+  background-color: $color1;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -54,11 +54,11 @@
 .card-id-button{
   position: absolute;
   left: 0px;
-  background-color: $color4;
+  color: $color1;
   width: 30px;
   height: 30px;
   border-radius: 0%;
-  background-color: $color1;
+  background-color: $color4;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 5px;
   justify-content: center;
@@ -120,7 +120,7 @@ ul {
 }
 
 .close-btn:hover {
-  background-color: $color3;
+  background-color: $color4;
   color: $color1;
 }
 .edit-form{
@@ -133,10 +133,10 @@ ul {
   z-index: 9999;
   box-shadow: 0px 0px 20px $color3;
   padding: 20px;
-  background-color: white;
   width: 1000px;
-  background-color: $color1;
-  color: $color3;
+  background-color: $color6;
+  color: $color1;
+  border-radius: 15px;
 }
 .edit-container {
   display: flex;
@@ -198,7 +198,7 @@ ul {
 
 .card-title{
   min-height: 39px;
-  max-width: 200px;
+  max-width: 180px;
 }
 
 .link-dec{
@@ -212,7 +212,7 @@ ul {
 }
 
 .website-icon {
-  color: $color3; /* replace with your desired color value */
+  color: $color1;
   border-radius: 50%;
 }
 
@@ -225,7 +225,7 @@ ul {
 }
 
 .travel-icon{
-  color: white;
+  color: $color1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,3 +368,12 @@ a {
   background: darkgreen;
 } */
 // ================================================== END Edit form card==================================================//
+
+.redshadow {
+  // box-shadow: 0px 0px 20px red !important;
+  // border-radius: 15px !important;
+}
+
+.interests {
+
+}

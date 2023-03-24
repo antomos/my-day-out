@@ -16,16 +16,16 @@
 }
 
 .border2 {
-  border: 2px solid $color3;
+  // border: 2px solid $color4;
   border-radius: 8px; /* rounded corners with an 8-pixel radius */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* creates a subtle drop shadow */
   transition: all 0.3s ease; /* animates all CSS properties with a 0.3-second ease transition */
 }
 
 .border2:hover {
-  border-color: $color3;
-  background-color: $color2;
-  color: $color4 !important;
+  // border-color: $color2;
+  background-color: $color4;
+  color: $color1 !important;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* increases the size of the drop shadow on hover */
   transform: translateY(-1px); /* moves the element up 2 pixels on hover */
 }

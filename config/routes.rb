@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   get "remove/:id", to: "events#remove", as: :remove
   get "edit/:id", to: "events#edit", as: :edit
   patch 'save', to: 'itineraries#save', as: :save
+  patch 'back', to: 'itineraries#back', as: :back
   get 'shared', to: 'pages#shared', as: :shared
 end
