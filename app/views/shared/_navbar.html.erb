@@ -1,14 +1,16 @@
 <div class="navbar-container p-2">
-  <div style="padding-right: 61px">
+  <div style="padding-left: 5px; padding-right: 61px;">
     <%= link_to root_url do %>
-      <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834960/Icon_a9bbpe.webp", :class => "avatar-large" %>
+      <%= image_tag "map.svg", :class => "avatar-large" %>
     <% end %>
   </div>
 
-  <h1 class="content3"><%= "My Day Out" %></h1>
+  <%= link_to root_url do %>
+    <h1 class="content3"><%= "My Day Out" %></h1>
+  <% end %>
 
   <% if user_signed_in? %>
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center" style="padding-right: 5px;">
       <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "nav-link" %>
       <%= image_tag "https://res.cloudinary.com/danwlbu2c/image/upload/v1678834961/giulio_l3pxx3.png", class: "avatar"%>
     </div>
