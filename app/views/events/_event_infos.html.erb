@@ -216,9 +216,9 @@
 
       <% url = ""  %>
       <% if event.place.photo.attached? %>
-        <% url =  cl_image_path event.place.photo.key  %>
+        <% url = cl_image_path event.place.photo.key  %>
       <% else %>
-        <% url = cl_image_path "https://res.cloudinary.com/danwlbu2c/image/upload/v1679682332/production/default-image_ju9yth.jpg" %>
+        <% url =  "https://res.cloudinary.com/danwlbu2c/image/upload/v1679682332/production/default-image_ju9yth.jpg" %>
       <% end%>
 
       <div id="toproundborders" class="card-img" style="background-image: url('<%= url %>')">
