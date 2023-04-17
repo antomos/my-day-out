@@ -16,7 +16,7 @@ class ItinerariesController < ApplicationController
 
   def create
     @itinerary = Itinerary.new(itinerary_params)
-    @itinerary.user = current_user
+    @itinerary.user_id = 1
     @params = itinerary_params
     @itinerary.share_token = SecureRandom.hex(16)
 
