@@ -6,7 +6,8 @@
   <div class="justify-content-center">
     <div>
       <h3 class="h2 mb-2 content5"><%= @itinerary.saved ? "Itinerary Confirmed" : "Customise your Itinerary"%> </h3>
-      <h2 class="mb-4 content5"><%= @itinerary.date.strftime("%d %B %Y") %></h2>
+      <h2 class="mb-4 content5"><%= @itinerary.date.strftime("%A, %d %B %Y") %></h2>
+      <p class="mb-4 content7">Drag and drop the events around to change the order, or you can select <em>Details</em> to see extra information, change the event times and change the event location. </p>
       <h2 class="mb-4 content5"> <%= "This Itinerary has no events. Add some using search option below!" if @events.count == 0 %> </h2>
     </div>
     <div class="container" <% unless @itinerary.saved %>data-controller="sortable"<%end%> id="event" data-target-id="<%= @itinerary.id %>" >
