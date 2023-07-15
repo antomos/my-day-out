@@ -26,6 +26,7 @@ class ItinerariesController < ApplicationController
       PopulateItinerary.new({ itinerary: @itinerary, template: itinerary_template, params: itinerary_params }).perform
 
       if @itinerary.events.count.positive?
+        # first time travel/directions are generated, index is set to 0 to generate travel times for all events
         SetTravelTime.new({ itinerary: @itinerary, index: 0 }).perform
         CheckOpenEvent.new(@itinerary).perform
       end
@@ -96,6 +97,7 @@ class ItinerariesController < ApplicationController
     end
 
     # recalculate Itinerary timings with updated travel instructions
+    # index is set to the index of the first event that has had its travel time updated
     SetTravelTime.new({ itinerary: @itinerary, index: @index }).perform
     CheckOpenEvent.new(@itinerary).perform
   end

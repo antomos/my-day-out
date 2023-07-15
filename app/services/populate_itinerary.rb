@@ -29,6 +29,7 @@ class PopulateItinerary < ApplicationRecord
 
       alternative_places = formatted_places
 
+      # Can I refactor this - check to see if the three conditions that all call the order_filter_places method can be combined into one?
       if event_details[:filter_type].length.positive?
         alternative_places = { "results" => order_filter_places(alternative_places, :types, event_details[:filter_type]) }
       end
@@ -137,11 +138,15 @@ class PopulateItinerary < ApplicationRecord
     }
   end
 
+  # method accepts symbol as type argument stored in variable named type - used to either filter by type or user_ratings_total
   def order_filter_places(alternative_places, type = nil, filter_value = nil)
     sorted_places = alternative_places["results"].sort_by { |place| -(place[:rating].to_f * place[:user_ratings_total].to_i * (20 - alternative_places["results"].find_index(place))) }
 
+    # removes places of type that matches filter_value
     if type == :types
       filtered_places = sorted_places.reject { |place| place[type].include?(filter_value) }
+
+    # removes places with user_ratings_total less than filter_value
     elsif type == :user_ratings_total
       filtered_places = sorted_places.reject { |place| place[type] < filter_value }
     else
@@ -152,12 +157,18 @@ class PopulateItinerary < ApplicationRecord
   end
 
   def check_duplicates(alternative_places)
+    # returns first place if this is the first event of the itinerary
     return alternative_places["results"].first unless @itinerary.events.count.positive?
+    # reutrns first place if there are no alternative places
     return alternative_places["results"].first unless alternative_places["results"].count > 1
 
+    # need to check if place already exists in itinerary
     @events = Event.where(itinerary_id: @itinerary.id)
+
+    # creates array of place_ids of all events in itinerary
     places = @events.map { |event| event.place.search_place_details_id }
 
+    # iterates through alternative places and returns first place that is not in the places array (i.e. not in the itinerary)
     alternative_places["results"].each do |place|
       next if places.include?(place[:place_id])
 

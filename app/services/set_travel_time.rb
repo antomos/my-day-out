@@ -8,6 +8,7 @@ require 'pry-byebug'
 class SetTravelTime < ApplicationRecord
   def initialize(params = {})
     @itinerary = params[:itinerary]
+    # index determintes which event to start from when generating travel times and directions - used to avoid making unnecessary API calls for events that are not effected by order changes or time changes
     @index = params[:index]
   end
 
@@ -161,6 +162,7 @@ class SetTravelTime < ApplicationRecord
     events.each_with_index do |event, i|
       start_time = end_time
 
+      # set the order number of the event to the index of the array iteration + 1 (sets event order number)
       event.update(order_number: (i + 1).to_s)
 
       # Only calls API and sets timings from the first change in the schedule

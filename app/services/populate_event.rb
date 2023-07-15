@@ -28,6 +28,7 @@ class PopulateEvent < ApplicationRecord
     event.event_duration = @event_details[:event_duration]
     event.category = @event_details[:input_category]
 
+    # check if place already exists in database to avoid making unnecessary API calls
     if @search_place_details
       if Place.find_by(search_place_details_id: @search_place_details[:place_id])
         event.place = Place.find_by(search_place_details_id: @search_place_details[:place_id])
@@ -48,6 +49,7 @@ class PopulateEvent < ApplicationRecord
       end
     end
 
+    # returns if no place created as event cannot be created without a place
     return if event.place_id.nil?
 
     event.save!
